@@ -1,0 +1,95 @@
+<keepass:KeePassPage
+	x:Class="KeePass.GroupDetails"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+	xmlns:keepass="clr-namespace:KeePass.Utils"
+	xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+	xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+	xmlns:c4f="clr-namespace:Coding4Fun.Phone.Controls.Converters;assembly=Coding4Fun.Phone.Controls"
+    xmlns:uc="clr-namespace:KeePass.Controls"
+	Style="{StaticResource KeePassPage}" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="728" d:DesignWidth="480">
+
+    <phone:PhoneApplicationPage.Resources>
+        <c4f:BooleanToVisibilityConverter
+			x:Key="BoolConverter"/>
+    </phone:PhoneApplicationPage.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="ApplicationTitle" Grid.Row="0"
+			Text="{StaticResource AppName}"
+			Style="{StaticResource PhoneTextSubtleStyle}"/>
+
+        <controls:Pivot Grid.Row="1" Margin="12,0,12,0">
+            <controls:PivotItem Name="pivotGroup">
+                <uc:KeePassListBase x:Name="lstGroup" Navigation="lstGroup_Navigation"
+                                    toolkit:TiltEffect.IsTiltEnabled="True">
+                    <uc:KeePassListBase.ItemTemplate>
+                        <DataTemplate>
+                            <uc:ListItemView>
+                                <toolkit:ContextMenuService.ContextMenu>
+                                    <toolkit:ContextMenu>
+                                        <toolkit:MenuItem Header="{Binding Path=Strings.GroupDetails_Rename, Source={StaticResource UiStrings}}"
+                                                          Tag="{Binding Data}" Click="mnuRename_Click"
+                                                          Visibility="{Binding IsGroup, Converter={StaticResource BoolConverter}}" />
+
+                                        <toolkit:MenuItem Header="{Binding Path=Strings.GroupDetails_Move, Source={StaticResource UiStrings}}"
+                                                          Tag="{Binding Data}" Click="mnuMove_Click" />
+                                        <toolkit:MenuItem Header="{Binding Path=Strings.GroupDetails_Delete, Source={StaticResource UiStrings}}" Tag="{Binding Data}"
+                                                          Click="mnuDelete_Click"/>
+                                    </toolkit:ContextMenu>
+                                </toolkit:ContextMenuService.ContextMenu>
+                            </uc:ListItemView>
+                        </DataTemplate>
+                    </uc:KeePassListBase.ItemTemplate>
+                </uc:KeePassListBase>
+            </controls:PivotItem>
+
+            <controls:PivotItem Header="{Binding Path=Strings.GroupDetails_History, Source={StaticResource UiStrings}}">
+                <uc:KeePassList SelectionChanged="lstHistory_SelectionChanged" x:Name="lstHistory" />
+            </controls:PivotItem>
+        </controls:Pivot>
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <!-- <shell:ApplicationBarIconButton
+				IconUri="/Images/home.png"
+				Text="[Home]" Click="cmdHome_Click" /> -->
+            <shell:ApplicationBarIconButton
+				IconUri="/Images/entry.dark.png"
+				Text="[New Entry]" Click="cmdNewEntry_Click" />
+            <shell:ApplicationBarIconButton
+				IconUri="/Images/folder.dark.png"
+				Text="[New Group]" Click="cmdNewGroup_Click" />
+            <shell:ApplicationBarIconButton
+				IconUri="/Images/search.png"
+				Text="[Search]" Click="mnuSearch_Click" />
+            <shell:ApplicationBarIconButton
+				IconUri="/Images/settings.png"
+				Text="[Settings]" Click="mnuSettings_Click" />
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem
+					Text="[Select DB]"
+					Click="mnuRoot_Click" />
+                <shell:ApplicationBarMenuItem
+					Text="[Clear History List]"
+					Click="mnuHistory_Click" />
+                <shell:ApplicationBarMenuItem
+					Text="[Sync]" Click="mnuSync_Click" />
+                <shell:ApplicationBarMenuItem
+					Text="[Properties]" Click="mnuDispDBInfo" />
+                <shell:ApplicationBarMenuItem
+					Text="[About]"
+					Click="mnuAbout_Click" />
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</keepass:KeePassPage>

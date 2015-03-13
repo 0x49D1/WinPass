@@ -1,0 +1,53 @@
+<keepass:KeePassPage 
+    x:Class="KeePass.Sources.Download"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:keepass="clr-namespace:KeePass.Utils"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    Style="{StaticResource KeePassPage}" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="728" d:DesignWidth="480">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="{StaticResource AppName}"
+                       Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"
+                       Text="{Binding Path=Strings.Download_PageTitle, Source={StaticResource UiStrings}}" />
+        </StackPanel>
+
+        <StackPanel x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <HyperlinkButton Content="DropBox" Click="lnkDropBox_Click"
+                             FontSize="{StaticResource PhoneFontSizeExtraLarge}" />
+            <TextBlock Text=" " />
+            <HyperlinkButton Content="OneDrive" Click="lnkSkyDrive_Click"
+                             FontSize="{StaticResource PhoneFontSizeExtraLarge}" />
+            <TextBlock Text=" " />
+            <HyperlinkButton Content="WebDAV" Click="lnkWebDav_Click"
+                             FontSize="{StaticResource PhoneFontSizeExtraLarge}" />
+            <TextBlock Text=" " />
+            <HyperlinkButton Content="{Binding Path=Strings.Download_Web, Source={StaticResource UiStrings}}"
+                             Click="lnkWeb_Click" FontSize="{StaticResource PhoneFontSizeExtraLarge}" />
+            <TextBlock Text=" " />
+            <HyperlinkButton x:Name="lnkLocal" FontSize="{StaticResource PhoneFontSizeExtraLarge}"
+                             Content="{Binding Path=Strings.Download_LocalFile, Source={StaticResource UiStrings}}" Click="lnkLocal_Click" />
+            <TextBlock Text=" " />
+            <HyperlinkButton x:Name="lnkDemo" Click="lnkDemo_Click" FontSize="{StaticResource PhoneFontSizeExtraLarge}"
+                             Content="{Binding Path=Strings.Download_Demo, Source={StaticResource UiStrings}}" />
+        </StackPanel>
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem
+                    Text="[Demo Database]"
+                    Click="lnkDemo_Click" />
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+</keepass:KeePassPage>

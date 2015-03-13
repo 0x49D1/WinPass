@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConfirmDeleteDb" xml:space="preserve">
+    <value>Tényleg ki akarja törölni az adatokat {0}?
+
+A forrásfájl a szerverről nem törlődik, csak {0} a telefonról.</value>
+  </data>
+  <data name="CorruptedFile" xml:space="preserve">
+    <value>Az adatbázis megsérült.</value>
+  </data>
+  <data name="DeleteDbTitle" xml:space="preserve">
+    <value>Adatbázis törlése</value>
+  </data>
+  <data name="DemoDbText" xml:space="preserve">
+    <value>A példa adatbázis jelszava "demo" (idézőjelek nélkül).</value>
+  </data>
+  <data name="DemoDbTitle" xml:space="preserve">
+    <value>Adatbázisjelszó</value>
+  </data>
+  <data name="DownloadError" xml:space="preserve">
+    <value>Az adatbázis letöltése nem sikerült.
+Ellenőrizze, hogy a megadott URL helyes-e.
+
+</value>
+  </data>
+  <data name="DownloadTitle" xml:space="preserve">
+    <value>Adatbázis letöltése</value>
+  </data>
+  <data name="IncorrectPassword" xml:space="preserve">
+    <value>Rossz jelszót adott meg!
+
+7Pass nem támogatja a Windows felhasználói fiókok vagy más jelszó ellenőrzési rendszerek használatát a mesterjelszó ellenőrzésére.</value>
+  </data>
+  <data name="InvalidCertificate" xml:space="preserve">
+    <value>
+
+Lehetséges, hogy az Ön telefonja nem tartja megbízhatónak a szerver SSL biztonsági tanúsítványát.
+Szeretne a problémáról többet megtudni?</value>
+  </data>
+  <data name="InvalidCertificateUrl" xml:space="preserve">
+    <value>http://7pass.wordpress.com/2011/01/09/faq-updated-why-7pass-says-my-database-signature-is-invalid/</value>
+  </data>
+  <data name="NoNetwork" xml:space="preserve">
+    <value>Nincs elérhető internet kapcsolat.
+Próbálja meg később!</value>
+  </data>
+  <data name="ParseError" xml:space="preserve">
+    <value>Az Ön jelszava helyes és az adabázis is érvényesnek tűnik.
+Sajnos a 7Pass mégsem tudta betölteni az adatbázist. .
+
+Küldene egy hibajelentést a fejlesztőnek, hogy a következő verzióban ki tudja javítani ezt a hibát?</value>
+  </data>
+  <data name="PasswordTitle" xml:space="preserve">
+    <value>Mesterkulcs</value>
+  </data>
+  <data name="UpdateFailure" xml:space="preserve">
+    <value>Nem sikerült frissíteni a(z) {0} adatbázist:
+{1}</value>
+  </data>
+  <data name="UpdateTitle" xml:space="preserve">
+    <value>Adatbázis frissítés</value>
+  </data>
+  <data name="WarningStorePassword" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LinkRegex" xml:space="preserve">
+    <value />
+  </data>
+  <data name="InvalidKeyFile" xml:space="preserve">
+    <value />
+  </data>
+  <data name="KeyFileTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GlobalPassPrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GlobalPassTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UnhandledExPrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UnhandledExTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="InvalidUrlPrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="InvalidUrlTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SavedCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SavedTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Conflict" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ConflictTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AddNotes" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UnsavedChange" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UnsavedChangeTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DeletePernamentPrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DeletePrompt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DeleteTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Entry" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NewGroupTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PromptName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RenameTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RecycleBin" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LargeTransforms" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LargeTransformsTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToastFree" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToastTrial" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DigestRegex" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Update_Download" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Update_Sync" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UriCensors" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AlreadyPinned" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PinDatabase" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FieldsMenuItem" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Field_Protected" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EmptyField" xml:space="preserve">
+    <value />
+  </data>
+</root>

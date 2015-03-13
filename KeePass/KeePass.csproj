@@ -1,0 +1,912 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{37AFBD4F-8D32-4CDF-B01E-D60848AB1E90}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KeePass</RootNamespace>
+    <AssemblyName>KeePass</AssemblyName>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <SilverlightVersion>
+    </SilverlightVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>en,de,fr,hu,nl,pl,ru</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>KeePass_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>KeePass.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <DefaultLanguage>de-DE</DefaultLanguage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Paid|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Free|AnyCPU' ">
+    <OutputPath>bin\Free\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE;FREEWARE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Release\KeePass.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>
+    </PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Paid|x86' ">
+    <OutputPath>bin\Paid\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Free|x86' ">
+    <OutputPath>bin\Free\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE;FREEWARE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>Bin\Release\KeePass.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget />
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget />
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget />
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Coding4Fun.Phone.Controls, Version=1.5.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Coding4Fun.Phone.Controls.1.5.6\lib\sl4-windowsphone71\Coding4Fun.Phone.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="DropNet.WindowsPhone">
+      <HintPath>..\Libs\DropNet.WindowsPhone.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL">
+      <HintPath>..\packages\SilverlightToolkitWP.4.2011.12.14\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="NavigationListControl">
+      <HintPath>..\Libs\NavigationListControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.4.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\Libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp.WindowsPhone">
+      <HintPath>..\Libs\RestSharp.WindowsPhone.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpZipLib.Silverlight4">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\SL4\SharpZipLib.Silverlight4.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalInfo.cs">
+      <Link>Properties\GlobalInfo.cs</Link>
+    </Compile>
+    <Compile Include="About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\KeePassList.xaml.cs">
+      <DependentUpon>KeePassList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\KeePassListBase.cs" />
+    <Compile Include="Controls\ProtectedTextBox.xaml.cs">
+      <DependentUpon>ProtectedTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\QualityProgressBar.cs" />
+    <Compile Include="Data\CurrentEntry.cs" />
+    <Compile Include="Data\EntryBinding.cs" />
+    <Compile Include="Data\FieldBinding.cs" />
+    <Compile Include="DBDetails.xaml.cs">
+      <DependentUpon>DBDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EntryFields.xaml.cs">
+      <DependentUpon>EntryFields.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EntryNotes.xaml.cs">
+      <DependentUpon>EntryNotes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Generator\BracketSet.cs" />
+    <Compile Include="Generator\CharacterSetCheckBox.cs" />
+    <Compile Include="Generator\CharacterSets.cs" />
+    <Compile Include="Generator\GenerationResults.cs" />
+    <Compile Include="Generator\HighAnsiSet.cs" />
+    <Compile Include="Generator\DigitsSet.cs" />
+    <Compile Include="Generator\ICharacterSet.cs" />
+    <Compile Include="Generator\LowerCaseSet.cs" />
+    <Compile Include="Generator\MinusSet.cs" />
+    <Compile Include="Generator\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Generator\SpaceSet.cs" />
+    <Compile Include="Generator\SpecialSet.cs" />
+    <Compile Include="Generator\UnderlineSet.cs" />
+    <Compile Include="Generator\UpperCaseSet.cs" />
+    <Compile Include="GlobalPass.xaml.cs">
+      <DependentUpon>GlobalPass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DatabaseItem.cs" />
+    <Compile Include="Data\GroupItem.cs" />
+    <Compile Include="Data\WebLinkInfo.cs" />
+    <Compile Include="EntryDetails.xaml.cs">
+      <DependentUpon>EntryDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalPassVerify.xaml.cs">
+      <DependentUpon>GlobalPassVerify.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GroupDetails.xaml.cs">
+      <DependentUpon>GroupDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ListItemInfo.cs" />
+    <Compile Include="Controls\ListItemView.xaml.cs">
+      <DependentUpon>ListItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="I18n\UiStrings.cs" />
+    <Compile Include="I18n\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MetroGridHelper.cs" />
+    <Compile Include="MoveTarget.xaml.cs">
+      <DependentUpon>MoveTarget.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PassGen.xaml.cs">
+      <DependentUpon>PassGen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Password.xaml.cs">
+      <DependentUpon>Password.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProgressOverlay.xaml.cs">
+      <DependentUpon>ProgressOverlay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Refs\HybridOrientationChangesFrame.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Refs\MD5.cs" />
+    <Compile Include="Rename.xaml.cs">
+      <DependentUpon>Rename.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Search.xaml.cs">
+      <DependentUpon>Search.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\FileAssociation\AssociationUriMapper.cs" />
+    <Compile Include="Sources\DatabaseUpdater.cs" />
+    <Compile Include="Sources\DropBox\DropBoxAdapter.cs" />
+    <Compile Include="Sources\DropBox\DropBoxAuth.xaml.cs">
+      <DependentUpon>DropBoxAuth.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\DropBox\IListItem.cs" />
+    <Compile Include="Sources\IServiceAdapter.cs" />
+    <Compile Include="Sources\ListItem.cs" />
+    <Compile Include="Sources\ServiceAdapterBase.cs" />
+    <Compile Include="Sources\SkyDrive\AccessTokenData.cs" />
+    <Compile Include="Sources\SkyDrive\List.xaml.cs">
+      <DependentUpon>List.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\SkyDrive\LiveAuth.xaml.cs">
+      <DependentUpon>LiveAuth.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\SkyDrive\MetaListItemInfo.cs" />
+    <Compile Include="Sources\SkyDrive\ParentItem.cs" />
+    <Compile Include="Sources\SkyDrive\PathData.cs" />
+    <Compile Include="Sources\SkyDrive\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\SkyDrive\SkyDriveClient.cs" />
+    <Compile Include="Sources\SkyDrive\SkyDriveAdapter.cs" />
+    <Compile Include="Sources\SkyDrive\XExtensions.cs" />
+    <Compile Include="Sources\SourceCapabilityUpdater.cs" />
+    <Compile Include="Sources\SynchronizeErrorEventArgs.cs" />
+    <Compile Include="Sources\SynchronizeErrorEventHandler.cs" />
+    <Compile Include="Sources\SynchronizeException.cs" />
+    <Compile Include="Sources\Synchronizer.cs" />
+    <Compile Include="Sources\WebDav\WebDavAdapter.cs" />
+    <Compile Include="Sources\WebDav\WebDavResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebDavResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\WebDav\WebList.xaml.cs">
+      <DependentUpon>WebList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\SyncCompleteInfo.cs" />
+    <Compile Include="Sources\SyncInfo.cs" />
+    <Compile Include="Sources\DropBox\List.xaml.cs">
+      <DependentUpon>List.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\DropBox\MetaListItemInfo.cs" />
+    <Compile Include="Sources\ReportUpdateResult.cs" />
+    <Compile Include="Sources\SyncResults.cs" />
+    <Compile Include="Sources\WebDav\Api\BasicAuthenticator.cs" />
+    <Compile Include="Sources\WebDav\Api\DigestAuthenticator.cs" />
+    <Compile Include="Sources\WebDav\Api\DigestToken.cs" />
+    <Compile Include="Sources\WebDav\Api\IAuthenticator.cs" />
+    <Compile Include="Sources\WebDav\Api\ItemInfo.cs" />
+    <Compile Include="Sources\WebDav\Api\IWebAction.cs" />
+    <Compile Include="Sources\WebDav\Api\NullAuthenticator.cs" />
+    <Compile Include="Sources\WebDav\Api\WebDavClient.cs" />
+    <Compile Include="Sources\WebDav\Api\WebDavRequest.cs" />
+    <Compile Include="Sources\WebDav\MetaListItemInfo.cs" />
+    <Compile Include="Sources\Web\DownloadHandler.cs" />
+    <Compile Include="Sources\Web\WebAuth.xaml.cs">
+      <DependentUpon>WebAuth.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\Web\WebBrowse.xaml.cs">
+      <DependentUpon>WebBrowse.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\WebDav\WebDavDownload.xaml.cs">
+      <DependentUpon>WebDavDownload.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\Web\WebDownload.xaml.cs">
+      <DependentUpon>WebDownload.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\Web\WebLinks.cs" />
+    <Compile Include="Sources\Web\WebUpdater.cs" />
+    <Compile Include="Sources\Web\WebUrlInfo.cs" />
+    <Compile Include="Sources\Web\WebUtils.cs" />
+    <Compile Include="Storage\Cache.cs" />
+    <Compile Include="Storage\DatabaseDetails.cs" />
+    <Compile Include="Storage\DatabaseInfo.cs" />
+    <Compile Include="Storage\DatabaseVerifier.cs" />
+    <Compile Include="Storage\OpenDbResults.cs" />
+    <Compile Include="Storage\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Storage\SaveUtils.cs" />
+    <Compile Include="Storage\SourceTypes.cs" />
+    <Compile Include="Storage\VerifyResults.cs" />
+    <Compile Include="Storage\VerifyResultTypes.cs" />
+    <Compile Include="Utils\ApiKeys.cs" />
+    <Compile Include="Utils\AppSettings.cs" />
+    <Compile Include="Utils\BackTargets.cs" />
+    <Compile Include="Utils\EaseEffect.cs" />
+    <Compile Include="Utils\ErrorReport.cs" />
+    <Compile Include="Utils\ExtensionMethods.cs" />
+    <Compile Include="Utils\GlobalPassHandler.cs" />
+    <Compile Include="Utils\KeePassPage.cs" />
+    <Compile Include="Utils\Navigation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sources\Download.xaml.cs">
+      <DependentUpon>Download.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sources\DropBox\DropBoxUtils.cs" />
+    <Compile Include="Sources\DropBox\DropBoxResources.Designer.cs">
+      <DependentUpon>DropBoxResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Utils\Network.cs" />
+    <Compile Include="Utils\ThemeData.cs" />
+    <Compile Include="Utils\TilesManager.cs" />
+    <Compile Include="Utils\UrlUtils.cs" />
+    <Compile Include="WebView.xaml.cs">
+      <DependentUpon>WebView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\KeePassList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ProtectedTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DBDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EntryFields.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EntryNotes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GlobalPass.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EntryDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GlobalPassVerify.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GroupDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ListItemView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MoveTarget.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ProgressOverlay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PassGen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Sources\Download.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Password.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Rename.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Search.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Sources\DropBox\DropBoxAuth.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Sources\DropBox\List.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Sources\SkyDrive\List.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Sources\SkyDrive\LiveAuth.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Sources\WebDav\WebList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Sources\Web\WebAuth.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Sources\Web\WebBrowse.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Sources\WebDav\WebDavDownload.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Sources\Web\WebDownload.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WebView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\BadgeLogo.png" />
+    <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\SplashScreen.png" />
+    <Content Include="Assets\SquareTile150x150.png" />
+    <Content Include="Assets\SquareTile71x71.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\WideLogo.png" />
+    <Content Include="Images\box.png" />
+    <Content Include="Images\check.action.png" />
+    <Content Include="Images\deletedb.png" />
+    <Content Include="Images\edit.dark.png" />
+    <Content Include="Images\edit.light.png" />
+    <Content Include="Images\eintrag.png" />
+    <Content Include="Images\ordner.png" />
+    <Content Include="Images\parent.dark.png" />
+    <Content Include="Images\parent.light.png" />
+    <Content Include="Images\save.png" />
+    <Content Include="Images\search.action.png" />
+    <Content Include="Images\up.dark.png" />
+    <Content Include="Images\up.light.png" />
+    <Content Include="Images\uploaded.dark.png" />
+    <Content Include="Images\uploaded.light.png" />
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="Resources\TokenRefreshUrl.txt" />
+    <None Include="Resources\AuthTokenData.txt" />
+    <None Include="Resources\TokenRefreshData.txt" />
+    <None Include="Resources\AuthTokenUrl.txt" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+    <None Include="Resources\AuthUrl.txt" />
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Images\about.png" />
+    <Content Include="Images\back.png" />
+    <Content Include="Images\password.png" />
+    <Content Include="Images\root.png" />
+    <Content Include="Images\settings.png" />
+    <Content Include="Images\updated.dark.png" />
+    <Content Include="Images\updated.light.png" />
+    <Content Include="Images\username.png" />
+    <Content Include="Sources\Demo7Pass.kdbx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\close.dark.png" />
+    <Content Include="Images\close.light.png" />
+    <Content Include="Images\dropbox.png" />
+    <Content Include="Images\entry.dark.png" />
+    <Content Include="Images\entry.light.png" />
+    <Content Include="Images\folder.dark.png" />
+    <Content Include="Images\folder.light.png" />
+    <Content Include="Images\home.png" />
+    <Content Include="Images\KeePass\00.png" />
+    <Content Include="Images\KeePass\01.png" />
+    <Content Include="Images\KeePass\02.png" />
+    <Content Include="Images\KeePass\03.png" />
+    <Content Include="Images\KeePass\04.png" />
+    <Content Include="Images\KeePass\05.png" />
+    <Content Include="Images\KeePass\06.png" />
+    <Content Include="Images\KeePass\07.png" />
+    <Content Include="Images\KeePass\08.png" />
+    <Content Include="Images\KeePass\09.png" />
+    <Content Include="Images\KeePass\10.png" />
+    <Content Include="Images\KeePass\11.png" />
+    <Content Include="Images\KeePass\12.png" />
+    <Content Include="Images\KeePass\13.png" />
+    <Content Include="Images\KeePass\14.png" />
+    <Content Include="Images\KeePass\15.png" />
+    <Content Include="Images\KeePass\16.png" />
+    <Content Include="Images\KeePass\17.png" />
+    <Content Include="Images\KeePass\18.png" />
+    <Content Include="Images\KeePass\19.png" />
+    <Content Include="Images\KeePass\20.png" />
+    <Content Include="Images\KeePass\21.png" />
+    <Content Include="Images\KeePass\22.png" />
+    <Content Include="Images\KeePass\23.png" />
+    <Content Include="Images\KeePass\24.png" />
+    <Content Include="Images\KeePass\25.png" />
+    <Content Include="Images\KeePass\26.png" />
+    <Content Include="Images\KeePass\27.png" />
+    <Content Include="Images\KeePass\28.png" />
+    <Content Include="Images\KeePass\29.png" />
+    <Content Include="Images\KeePass\30.png" />
+    <Content Include="Images\KeePass\31.png" />
+    <Content Include="Images\KeePass\32.png" />
+    <Content Include="Images\KeePass\33.png" />
+    <Content Include="Images\KeePass\34.png" />
+    <Content Include="Images\KeePass\35.png" />
+    <Content Include="Images\KeePass\36.png" />
+    <Content Include="Images\KeePass\37.png" />
+    <Content Include="Images\KeePass\38.png" />
+    <Content Include="Images\KeePass\39.png" />
+    <Content Include="Images\KeePass\40.png" />
+    <Content Include="Images\KeePass\41.png" />
+    <Content Include="Images\KeePass\42.png" />
+    <Content Include="Images\KeePass\43.png" />
+    <Content Include="Images\KeePass\44.png" />
+    <Content Include="Images\KeePass\45.png" />
+    <Content Include="Images\KeePass\46.png" />
+    <Content Include="Images\KeePass\47.png" />
+    <Content Include="Images\KeePass\48.png" />
+    <Content Include="Images\KeePass\49.png" />
+    <Content Include="Images\KeePass\50.png" />
+    <Content Include="Images\KeePass\51.png" />
+    <Content Include="Images\KeePass\52.png" />
+    <Content Include="Images\KeePass\53.png" />
+    <Content Include="Images\KeePass\54.png" />
+    <Content Include="Images\KeePass\55.png" />
+    <Content Include="Images\KeePass\56.png" />
+    <Content Include="Images\KeePass\57.png" />
+    <Content Include="Images\KeePass\58.png" />
+    <Content Include="Images\KeePass\59.png" />
+    <Content Include="Images\KeePass\60.png" />
+    <Content Include="Images\KeePass\61.png" />
+    <Content Include="Images\KeePass\62.png" />
+    <Content Include="Images\KeePass\63.png" />
+    <Content Include="Images\KeePass\64.png" />
+    <Content Include="Images\KeePass\65.png" />
+    <Content Include="Images\KeePass\66.png" />
+    <Content Include="Images\KeePass\67.png" />
+    <Content Include="Images\KeePass\68.png" />
+    <Content Include="Images\new.png" />
+    <Content Include="Images\refresh.png" />
+    <Content Include="Images\check.png" />
+    <Content Include="Images\search.png" />
+    <Content Include="Images\unlock.dark.png" />
+    <Content Include="Images\unlock.light.png" />
+    <Content Include="Images\warning.dark.png" />
+    <Content Include="Images\warning.light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Generator\Resources.de.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generator\Resources.el.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generator\Resources.es.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generator\Resources.fr.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generator\Resources.hu.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generator\Resources.nl.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generator\Resources.pl.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generator\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generator\Resources.ru.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I18n\Strings.de.resx">
+      <DependentUpon>Strings.resx</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I18n\Strings.el.resx">
+      <DependentUpon>Strings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I18n\Strings.es.resx">
+      <DependentUpon>Strings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I18n\Strings.fr.resx">
+      <DependentUpon>Strings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I18n\Strings.hu.resx">
+      <DependentUpon>Strings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I18n\Strings.nl.resx">
+      <DependentUpon>Strings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I18n\Strings.pl.resx">
+      <DependentUpon>Strings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I18n\Strings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I18n\Strings.ru.resx">
+      <DependentUpon>Strings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.de.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.el.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.es.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.fr.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.hu.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.nl.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.pl.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.ru.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\DropBox\DropBoxResources.de.resx">
+      <DependentUpon>DropBoxResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\DropBox\DropBoxResources.el.resx">
+      <DependentUpon>DropBoxResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\DropBox\DropBoxResources.es.resx">
+      <DependentUpon>DropBoxResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\DropBox\DropBoxResources.fr.resx">
+      <DependentUpon>DropBoxResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\DropBox\DropBoxResources.hu.resx">
+      <DependentUpon>DropBoxResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\DropBox\DropBoxResources.nl.resx">
+      <DependentUpon>DropBoxResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\DropBox\DropBoxResources.pl.resx">
+      <DependentUpon>DropBoxResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\DropBox\DropBoxResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DropBoxResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\DropBox\DropBoxResources.ru.resx">
+      <DependentUpon>DropBoxResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\SkyDrive\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\WebDav\WebDavResources.de.resx">
+      <DependentUpon>WebDavResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\WebDav\WebDavResources.el.resx">
+      <DependentUpon>WebDavResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\WebDav\WebDavResources.es.resx">
+      <DependentUpon>WebDavResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\WebDav\WebDavResources.fr.resx">
+      <DependentUpon>WebDavResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\WebDav\WebDavResources.hu.resx">
+      <DependentUpon>WebDavResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\WebDav\WebDavResources.nl.resx">
+      <DependentUpon>WebDavResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\WebDav\WebDavResources.pl.resx">
+      <DependentUpon>WebDavResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\WebDav\WebDavResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WebDavResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\WebDav\WebDavResources.ru.resx">
+      <DependentUpon>WebDavResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\Resources.de.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\Resources.el.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\Resources.es.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\Resources.fr.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\Resources.hu.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\Resources.nl.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\Resources.pl.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage\Resources.ru.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KeePass.IO\KeePass.IO.csproj">
+      <Project>{3BC6B06B-0B8D-4E34-BF60-C026C4252E7B}</Project>
+      <Name>KeePass.IO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

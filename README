@@ -1,0 +1,42 @@
+A unofficial KeePass password manager client, compatible with KeePass 2.x for desktop.
+
+Support Info:
+ - Source code: https://github.com/bilbob74/8pass
+
+Version 4.1
+Bugfixes:
+ - Fixed Bug, which occurs by Sync a Database to Cloudstorage resulting in every time having a conflicted copy
+ - Fixed Bug, not encoding Password Strings correctly, so that copying this to the Clipboard and pasting it in the Target Window will result in wrong Password
+ - Some other Fixes and Performance Tweaks
+
+New Features:
+ - Optional AutoSync: Every Time the App is started, it looks now, if the Database in the Cloud is changed. If this is the Case, it gets the new Version. Optionally, AutoSync could be enabled only with WLAN
+ - Optional Notification for Sync, so you could get notified after the Sync
+ - Optionally Search in Password Fields
+ - Since this new App is based on 7Pass, it gets the Base of the old Layout and Design, but really all Screens are now updated and overhauled to gain a easier access to all the old and new functions of the App
+ - Properties Page for every Database. With this you could not only rename the DB locally, you could also change the Cloud Credentials or the URL (Specially for WebDAV and WebServer)
+ - Timestamp of the Actual DB on every Page
+ - Smaller Contextmenu on DB Page, the Functions are now on a Properties Page 
+ 
+Version 3.6:
+ - Removed .doc renaming on SkyDrive.
+ - Upgraded SkyDrive OAuth 2.0.
+ - Limit file size to 10MB.
+ - Updated Box.net WebDAV url.
+ - Fixed folder name not displayed on WebDAV.
+ 
+Version 3.5:
+ - Fixed SkyDrive synchronization
+ 
+Version 3.4:
+ - Added SkyDrive support.
+ - Removed usage of device ID.
+
+Version 3.3:
+ - Fixed WebDAV bug.
+ - Fixed global pass not displayed on app switch.
+ - Added field editing and asterisks support.
+ - Fixed protected field textbox display in light theme.
+
+Keywords:
+KeePass password dropbox encrypt 7Pass encryption privacy webdav synchronize

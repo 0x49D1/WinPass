@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Settings_PageTitle" xml:space="preserve">
+    <value>Beállítások</value>
+  </data>
+  <data name="Settings_HideRecycleBin" xml:space="preserve">
+    <value>A Lomtár elrejtése</value>
+  </data>
+  <data name="Settings_IntegratedBrwoser" xml:space="preserve">
+    <value>Az integrált böngésző használata</value>
+  </data>
+  <data name="Settings_GlobalPass" xml:space="preserve">
+    <value>Jelszó szükséges</value>
+  </data>
+  <data name="Settings_Analytics" xml:space="preserve">
+    <value>Használati adatok gyűjtése</value>
+  </data>
+  <data name="About_PageTitle" xml:space="preserve">
+    <value>Névjegy</value>
+  </data>
+  <data name="About_Blog" xml:space="preserve">
+    <value>
+Fejlesztői blog (hírek és visszajelzés)</value>
+  </data>
+  <data name="About_Version" xml:space="preserve">
+    <value>7Pass Verzió: {0}</value>
+  </data>
+  <data name="About_Purchase" xml:space="preserve">
+    <value>Vásárlás</value>
+  </data>
+  <data name="About_Review" xml:space="preserve">
+    <value>Értékelés</value>
+  </data>
+  <data name="About_Source_Code" xml:space="preserve">
+    <value>
+Forráskód:</value>
+  </data>
+  <data name="About_Libraries" xml:space="preserve">
+    <value>
+Felhasznált/hivatkozott könyvtárak:</value>
+  </data>
+  <data name="AnalyticsSettings_PageTitle" xml:space="preserve">
+    <value>Gyűjtött adatok elemzése</value>
+  </data>
+  <data name="AnalyticsSettings_Policy" xml:space="preserve">
+    <value>A felhasználói élmény javításának érdekében a 7Pass bizonyos információkat gyűjta a felhasználás körülményeivel kapcsolatosan.
+
+Az összegyűjtött információ semmilyen körülmények között nem tartalmazza az Ön adatbázisainak tartalmát, vagy semmilyen egyéb információt, ami alapján Önt közvetlenül azonosítani lehetne. Azonban:
+- 7Pass megjegyzi az Ön installációs azonosítóját azért, hogy összeköthesse az Ön telefonjáról küldött információkat. Az installációs azonosító minden egyes 7Pass installáció után megváltozik.
+- Usage collection uses very little network traffic, but the cost to your bill may add up if you're on a capped plan.
+
+The collected information will be very useful for development of 7Pass.
+
+Your installation ID that will be collected is:</value>
+  </data>
+  <data name="EntryDetails_PageTitle" xml:space="preserve">
+    <value>Bejegyzés</value>
+  </data>
+  <data name="EntryDetails_Title" xml:space="preserve">
+    <value>Név</value>
+  </data>
+  <data name="EntryDetails_Username" xml:space="preserve">
+    <value>Felhasználónév</value>
+  </data>
+  <data name="EntryDetails_Password" xml:space="preserve">
+    <value>Jelszó</value>
+  </data>
+  <data name="EntryDetails_Url" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="EntryDetails_ExternalBrowser" xml:space="preserve">
+    <value>Telefon böngészőjének használata</value>
+  </data>
+  <data name="EntryDetails_IntegratedBrowser" xml:space="preserve">
+    <value>Integrált böngésző használata</value>
+  </data>
+  <data name="EntryDetails_Notes" xml:space="preserve">
+    <value>Megjegyzések</value>
+  </data>
+  <data name="EntryFields_PageTitle" xml:space="preserve">
+    <value>Mezők</value>
+  </data>
+  <data name="EntryNotes_PageTitle" xml:space="preserve">
+    <value>Megjegyzések</value>
+  </data>
+  <data name="GlobalPass_PageTitle" xml:space="preserve">
+    <value>Globális jelszó</value>
+  </data>
+  <data name="GlobalPass_Password" xml:space="preserve">
+    <value>Globális jelszó</value>
+  </data>
+  <data name="GlobalPass_Confirm" xml:space="preserve">
+    <value>A jelszó megerősítése</value>
+  </data>
+  <data name="GlobalPassVerify_PageTitle" xml:space="preserve">
+    <value>Globális jelszó</value>
+  </data>
+  <data name="GlobalPassVerify_Prompt" xml:space="preserve">
+    <value>Adja meg a jelszavát a 7Pass kinyitásához</value>
+  </data>
+  <data name="GroupDetails_History" xml:space="preserve">
+    <value>Előzmények</value>
+  </data>
+  <data name="GroupDetails_Delete" xml:space="preserve">
+    <value>törlés</value>
+  </data>
+  <data name="GroupDetails_Move" xml:space="preserve">
+    <value>áthelyezés</value>
+  </data>
+  <data name="GroupDetails_Rename" xml:space="preserve">
+    <value>átnevezés</value>
+  </data>
+  <data name="MainPage_PageTitle" xml:space="preserve">
+    <value>Adatbázisok</value>
+  </data>
+  <data name="MainPage_ClearKeyfile" xml:space="preserve">
+    <value>kulcsfájl törlése</value>
+  </data>
+  <data name="MainPage_DownloadKeyfile" xml:space="preserve">
+    <value>kulcsfájl letöltése</value>
+  </data>
+  <data name="MainPage_ClearPassword" xml:space="preserve">
+    <value>jelszó törlése</value>
+  </data>
+  <data name="MainPage_Delete" xml:space="preserve">
+    <value>törlés</value>
+  </data>
+  <data name="MainPage_Rename" xml:space="preserve">
+    <value>átnevezés</value>
+  </data>
+  <data name="MainPage_Pin" xml:space="preserve">
+    <value>PIN-kód adatbázis</value>
+  </data>
+  <data name="MoveTarget_PageTitle" xml:space="preserve">
+    <value>Áthelyezés...</value>
+  </data>
+  <data name="PassGen_Settings" xml:space="preserve">
+    <value>Beállítások</value>
+  </data>
+  <data name="PassGen_PageTitle" xml:space="preserve">
+    <value>Jelszó</value>
+  </data>
+  <data name="PassGen_Length" xml:space="preserve">
+    <value>Jelszó hossza</value>
+  </data>
+  <data name="PassGen_Results" xml:space="preserve">
+    <value>Eredmény</value>
+  </data>
+  <data name="Password_PageTitle" xml:space="preserve">
+    <value>Mesterkulcs</value>
+  </data>
+  <data name="Password_Password" xml:space="preserve">
+    <value>Mesterjelszó</value>
+  </data>
+  <data name="Password_Remember" xml:space="preserve">
+    <value>Emlékezz a jelszavamra</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Betöltés</value>
+  </data>
+  <data name="Rename_PageTitle" xml:space="preserve">
+    <value>Átnevezés</value>
+  </data>
+  <data name="Rename_Prompt" xml:space="preserve">
+    <value>Adja meg a(z) {0} új nevét:</value>
+  </data>
+  <data name="Search_PageTitle" xml:space="preserve">
+    <value>Keresés</value>
+  </data>
+  <data name="Download_PageTitle" xml:space="preserve">
+    <value>Adatbázis hozzáadása</value>
+  </data>
+  <data name="Download_Web" xml:space="preserve">
+    <value>Web szerver</value>
+  </data>
+  <data name="Download_Demo" xml:space="preserve">
+    <value>Mintaadatbázis</value>
+  </data>
+  <data name="WebDavDownload_PageTitle" xml:space="preserve">
+    <value>Letöltés</value>
+  </data>
+  <data name="WebDavDownload_Url" xml:space="preserve">
+    <value>Adatbázis URL</value>
+  </data>
+  <data name="WebDavDownload_Username" xml:space="preserve">
+    <value>Felhasználónév</value>
+  </data>
+  <data name="WebDavDownload_Password" xml:space="preserve">
+    <value>Jelszó</value>
+  </data>
+  <data name="WebAuth_Authentication" xml:space="preserve">
+    <value>A kiszolgáló hitelesítést igényel</value>
+  </data>
+  <data name="WebAuth_User" xml:space="preserve">
+    <value>Felhasználó</value>
+  </data>
+  <data name="WebAuth_Password" xml:space="preserve">
+    <value>Jelszó</value>
+  </data>
+  <data name="WebAuth_Domain" xml:space="preserve">
+    <value>Tartomány</value>
+  </data>
+  <data name="WebBrowse_PageTitle" xml:space="preserve">
+    <value>Észlelt linkek</value>
+  </data>
+  <data name="WebDownload_PageTitle" xml:space="preserve">
+    <value>Letöltés</value>
+  </data>
+  <data name="WebDownload_Url" xml:space="preserve">
+    <value>Adatbázis URL</value>
+  </data>
+  <data name="DropBox_Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="DropBox_Password" xml:space="preserve">
+    <value>Jelszó</value>
+  </data>
+  <data name="AnalyticsSettings_Allow" xml:space="preserve">
+    <value>Engedélyezve</value>
+  </data>
+  <data name="AnalyticsSettings_Disable" xml:space="preserve">
+    <value>Letiltva</value>
+  </data>
+  <data name="EntryDetails_Fields" xml:space="preserve">
+    <value>Mezők</value>
+  </data>
+  <data name="App_Databases" xml:space="preserve">
+    <value>Jelölje ki a az adatbázist</value>
+  </data>
+  <data name="App_About" xml:space="preserve">
+    <value>Névjegy</value>
+  </data>
+  <data name="App_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="EntryDetails_GeneratePassword" xml:space="preserve">
+    <value>Jelszó létrehozása</value>
+  </data>
+  <data name="EntryDetails_SaveEntry" xml:space="preserve">
+    <value>Bejegyzés mentése</value>
+  </data>
+  <data name="EntryDetails_ResetEntry" xml:space="preserve">
+    <value>Bejegyzés alaphelyzetbe állítása</value>
+  </data>
+  <data name="EntryFields_Add" xml:space="preserve">
+    <value>Hozzáad</value>
+  </data>
+  <data name="EntryNotes_ClearAll" xml:space="preserve">
+    <value>Az összes törlése</value>
+  </data>
+  <data name="GlobalPass_Set" xml:space="preserve">
+    <value>Beállít</value>
+  </data>
+  <data name="GlobalPassVerify_OK" xml:space="preserve">
+    <value>rendben</value>
+  </data>
+  <data name="GroupDetails_ClearHistory" xml:space="preserve">
+    <value>Előzménylista törlése</value>
+  </data>
+  <data name="GroupDetails_NewEntry" xml:space="preserve">
+    <value>Új bejegyzés</value>
+  </data>
+  <data name="GroupDetails_NewGroup" xml:space="preserve">
+    <value>Új csoport</value>
+  </data>
+  <data name="GroupDetails_Search" xml:space="preserve">
+    <value>Keresés</value>
+  </data>
+  <data name="MainPage_SyncAll" xml:space="preserve">
+    <value>Szinkronizálás/minden frissítése</value>
+  </data>
+  <data name="MainPage_AddNew" xml:space="preserve">
+    <value>Új</value>
+  </data>
+  <data name="MainPage_Settings" xml:space="preserve">
+    <value>Beállítások</value>
+  </data>
+  <data name="MoveTarget_MoveHere" xml:space="preserve">
+    <value>Áthelyezés ide</value>
+  </data>
+  <data name="PassGen_Generate" xml:space="preserve">
+    <value>Létrehozás</value>
+  </data>
+  <data name="Password_Open" xml:space="preserve">
+    <value>Megnyitás</value>
+  </data>
+  <data name="Rename_Rename" xml:space="preserve">
+    <value>Átnevezés</value>
+  </data>
+  <data name="WebView_GoBack" xml:space="preserve">
+    <value>Visszalépés</value>
+  </data>
+  <data name="WebView_Username" xml:space="preserve">
+    <value>Felhasználónév</value>
+  </data>
+  <data name="WebView_Password" xml:space="preserve">
+    <value>Jelszó</value>
+  </data>
+  <data name="WebDavDownload_Open" xml:space="preserve">
+    <value>Megnyitás</value>
+  </data>
+  <data name="WebDownload_Open" xml:space="preserve">
+    <value>Megnyitás</value>
+  </data>
+  <data name="DropBox_Login" xml:space="preserve">
+    <value>Bejelentkezés</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Törlés</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Frissítés</value>
+  </data>
+  <data name="Settings_PWSearch" xml:space="preserve">
+    <value>Search in Passwords</value>
+  </data>
+</root>

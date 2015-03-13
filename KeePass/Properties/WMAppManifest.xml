@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2014/deployment" AppPlatformVersion="8.1">
+  <DefaultLanguage xmlns="" code="" />
+  <Languages xmlns="">
+    <Language code="en" />
+    <Language code="de" />
+    <Language code="fr" />
+    <Language code="hu" />
+    <Language code="nl" />
+    <Language code="pl" />
+    <Language code="ru" />
+  </Languages>
+  <App xmlns="" ProductID="{7de486f4-0e5a-4fae-8fbf-447897f93f39}" Title="8Pass WP8" RuntimeType="Silverlight" Version="4.2.0.0" Genre="apps.normal" Author="Sebastian Pfohl" Description="KeePass for Windows Phone" Publisher="Sebastian Pfohl" PublisherID="{c284a825-eb11-4a29-9429-a061dd0d94e6}">
+    <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_PUSH_NOTIFICATION" />
+      <Capability Name="ID_CAP_SENSORS" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="KeePassToken" TaskName="_default">
+        <TemplateFlip>
+          <SmallImageURI IsResource="false" IsRelative="true">Background.png</SmallImageURI>
+          <Count>0</Count>
+          <BackgroundImageURI IsResource="false" IsRelative="true">Background.png</BackgroundImageURI>
+          <Title>8Pass WP8</Title>
+          <BackContent>
+          </BackContent>
+          <BackBackgroundImageURI>
+          </BackBackgroundImageURI>
+          <BackTitle>
+          </BackTitle>
+          <DeviceLockImageURI>
+          </DeviceLockImageURI>
+          <HasLarge>false</HasLarge>
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <Extensions>
+      <FileTypeAssociation Name="KeePass Database" TaskID="_default" NavUriFragment="fileToken=%s">
+        <Logos>
+          <Logo Size="small" IsRelative="true">ApplicationIcon.png</Logo>
+          <Logo Size="medium" IsRelative="true">ApplicationIcon.png</Logo>
+          <Logo Size="large" IsRelative="true">ApplicationIcon.png</Logo>
+        </Logos>
+        <SupportedFileTypes>
+          <FileType ContentType="application/kdbx">.kdbx</FileType>
+        </SupportedFileTypes>
+      </FileTypeAssociation>
+    </Extensions>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>
