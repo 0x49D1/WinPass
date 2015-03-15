@@ -291,13 +291,7 @@ namespace KeePass
             else
                 item.UpdatedIcon = null;
         }
-/*
-        private void OnLoaded(object sender, RoutedEventArgs e)
-        {
-            if (!_moved)
-                TrialManager.CheckToastState();
-        }
-*/
+
         private void lstDatabases_Navigation(object sender,
             NavigationListControl.NavigationEventArgs e)
         {
@@ -360,7 +354,7 @@ namespace KeePass
             database.Delete();
             TilesManager.Deleted(database);
 
-            RefreshDbList(false, "");
+            RefreshDbList(false, null);
         }
 
         private void mnuKeyFile_Click(object sender, RoutedEventArgs e)
