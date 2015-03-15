@@ -8,18 +8,28 @@
     <StackPanel Orientation="Horizontal"
                 keepass:EaseEffect.IsEnabled="True">
 
-        <Grid Width="50" Height="50" Visibility="{Binding IconState}">
-            <Image Source="{Binding Icon}" Stretch="None"
-                   VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
-            <Image Source="{Binding Overlay}" Stretch="None" Margin="0,0,8,8"
-                   VerticalAlignment="Bottom" HorizontalAlignment="Right" />
-        </Grid>
+        <Grid Visibility="{Binding IconState}" MaxHeight="65" MinHeight="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" MaxHeight="23" MinHeight="1" />
+            </Grid.RowDefinitions>
 
-        <StackPanel>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Image Source="{Binding Overlay}" 
+                   Stretch="None"
+                   Grid.Column="0" Grid.RowSpan="2"/>
             <TextBlock Text="{Binding Title}"
-                       Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                       Style="{StaticResource PhoneTextLargeStyle}"
+                       Grid.Column="1" />
             <TextBlock Text="{Binding Notes}"
-                       Style="{StaticResource PhoneTextSubtleStyle}" />
-        </StackPanel>
+                       Style="{StaticResource PhoneTextSubtleStyle}"
+                       Grid.Column="1"
+                       Grid.Row="1"
+                       MaxHeight="23" MinHeight="1" />
+        </Grid>
     </StackPanel>
 </UserControl>
