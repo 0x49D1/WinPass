@@ -402,7 +402,7 @@ namespace KeePass
 
         private void mnuAbout_Click(object sender, EventArgs e)
         {
-            this.NavigateTo<About>();
+            this.NavigateTo<Settings>();
         }
 
         private void mnuBrowser_Click(object sender, RoutedEventArgs e)

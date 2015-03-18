@@ -4,42 +4,78 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:keepass="clr-namespace:KeePass.Utils"
     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
     Style="{StaticResource KeePassPage}" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="800" d:DesignWidth="480">
 
   <Grid x:Name="LayoutRoot" Background="Transparent">
+        <controls:Pivot Title="{StaticResource AppName}">
+            <!--Pivotelement eins-->
+            <controls:PivotItem Header="{Binding Path=Strings.Settings_PageTitle, Source={StaticResource UiStrings}}">
+                <ScrollViewer Grid.Row="1">
+                    <StackPanel>
+                        <toolkit:ToggleSwitch
+                    Name="chkRecycleBin" Checked="chkRecycleBin_CheckedChanged" Unchecked="chkRecycleBin_CheckedChanged"
+                    Header="{Binding Path=Strings.Settings_HideRecycleBin, Source={StaticResource UiStrings}}" />
+                        <toolkit:ToggleSwitch
+                    Name="chkBrowser" Checked="chkBrowser_CheckedChanged" Unchecked="chkBrowser_CheckedChanged"
+                    Header="{Binding Path=Strings.Settings_IntegratedBrwoser, Source={StaticResource UiStrings}}" />
+                        <toolkit:ToggleSwitch
+                    Name="chkPassword" Loaded="chkPassword_Loaded"
+                    Header="{Binding Path=Strings.Settings_GlobalPass, Source={StaticResource UiStrings}}" />
+                        <toolkit:ToggleSwitch
+                    Name="chkPWSearch" 
+                    Header="{Binding Path=Strings.Settings_PWSearch, Source={StaticResource UiStrings}}" Unchecked="chkPWSearch_CheckedChanged" Checked="chkPWSearch_CheckedChanged" />
+                        <toolkit:ListPicker 
+                    Name="lstAutoSyncSettings" 
+                    Header="{Binding Path=Strings.Settings_AutoUpdate, Source={StaticResource UiStrings}}" Unloaded="setWLAN" />
+                        <toolkit:ToggleSwitch
+                    Name="chkSyncToast" 
+                    Header="{Binding Path=Strings.Settings_SyncToast, Source={StaticResource UiStrings}}" Unchecked="chkSyncToast_CheckedChanged" Checked="chkSyncToast_CheckedChanged" />
+                    </StackPanel>
+                </ScrollViewer>
+            </controls:PivotItem>
+
+            <!--Pivotelement zwei-->
+            <controls:PivotItem Header="{Binding Path=Strings.About_PageTitle, Source={StaticResource UiStrings}}">
+                <ScrollViewer Grid.Row="1" Margin="12,0,12,0">
+                    <StackPanel Grid.Row="1" Margin="12,0,12,0">
+                        <TextBlock Name="lblVersion" HorizontalAlignment="Center"
+                           Text="{Binding Path=Strings.About_Version, Source={StaticResource UiStrings}}" />
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                           <HyperlinkButton Content="{Binding Path=Strings.About_Review, Source={StaticResource UiStrings}}"
+                                     Click="lnkReview_Click" />
+                        </StackPanel>                       
+
+                        <TextBlock Text="{Binding Path=Strings.About_Source_Code, Source={StaticResource UiStrings}}"
+                           HorizontalAlignment="Center" />
+                        <HyperlinkButton Content="github.com/bilbob74/8Pass-WP8" TargetName="_blank"
+                                 NavigateUri="https://github.com/bilbob74/8Pass-WP8" />
+                        <TextBlock Text=" " />
+                        <TextBlock Text="Contributors:" HorizontalAlignment="Center" />
+                        <HyperlinkButton Content="Sebastian Pfohl" TargetName="_blank" NavigateUri="https://github.com/frostieDE" />
+                        <HyperlinkButton Content="frostieDE" TargetName="_blank" NavigateUri="https://github.com/bilbob74/" />
+
+                        <TextBlock Text="{Binding Path=Strings.About_Libraries, Source={StaticResource UiStrings}}"
+                           HorizontalAlignment="Center" />
+
+                        <HyperlinkButton Content="KeePass" TargetName="_blank"
+                             NavigateUri="http://keepass.info" />
+                        <HyperlinkButton Content="DropNet" TargetName="_blank"
+                             NavigateUri="http://dkdevelopment.net/what-im-doing/dropnet/" />
+                        <HyperlinkButton Content="#ziplib" TargetName="_blank"
+                             NavigateUri="http://www.icsharpcode.net/opensource/sharpziplib/" />
+                        <HyperlinkButton Content="Json.NET" TargetName="_blank"
+                             NavigateUri="http://json.codeplex.com/" />
+                    </StackPanel>
+                </ScrollViewer>
+            </controls:PivotItem>
+        </controls:Pivot>
+      
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="ApplicationTitle" Text="{StaticResource AppName}"
-                       Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="PageTitle" Style="{StaticResource PhoneTextTitle1Style}" Margin="9,-7,0,0"
-                       Text="{Binding Path=Strings.Settings_PageTitle, Source={StaticResource UiStrings}}" />
-        </StackPanel>
-
-        <ScrollViewer Grid.Row="1">
-            <StackPanel>
-                <toolkit:ToggleSwitch
-                    Name="chkRecycleBin" Checked="chkRecycleBin_CheckedChanged" Unchecked="chkRecycleBin_CheckedChanged"
-                    Header="{Binding Path=Strings.Settings_HideRecycleBin, Source={StaticResource UiStrings}}" />
-                <toolkit:ToggleSwitch
-                    Name="chkBrowser" Checked="chkBrowser_CheckedChanged" Unchecked="chkBrowser_CheckedChanged"
-                    Header="{Binding Path=Strings.Settings_IntegratedBrwoser, Source={StaticResource UiStrings}}" />
-                <toolkit:ToggleSwitch
-                    Name="chkPassword" Loaded="chkPassword_Loaded"
-                    Header="{Binding Path=Strings.Settings_GlobalPass, Source={StaticResource UiStrings}}" />
-                <toolkit:ToggleSwitch
-                    Name="chkPWSearch" 
-                    Header="{Binding Path=Strings.Settings_PWSearch, Source={StaticResource UiStrings}}" Unchecked="chkPWSearch_CheckedChanged" Checked="chkPWSearch_CheckedChanged" />
-                <toolkit:ListPicker 
-                    Name="lstAutoSyncSettings" 
-                    Header="{Binding Path=Strings.Settings_AutoUpdate, Source={StaticResource UiStrings}}" Unloaded="setWLAN" />
-                <toolkit:ToggleSwitch
-                    Name="chkSyncToast" 
-                    Header="{Binding Path=Strings.Settings_SyncToast, Source={StaticResource UiStrings}}" Unchecked="chkSyncToast_CheckedChanged" Checked="chkSyncToast_CheckedChanged" />
-            </StackPanel>
-        </ScrollViewer>        
+                
     </Grid>
 </keepass:KeePassPage>

@@ -4,6 +4,9 @@ using System.Windows.Navigation;
 using KeePass.Utils;
 using KeePass.I18n;
 
+using Coding4Fun.Phone.Controls.Data;
+using Microsoft.Phone.Tasks;
+
 namespace KeePass
 {
     public partial class Settings
@@ -14,6 +17,12 @@ namespace KeePass
             lstAutoSyncSettings.Items.Add(Strings.Settings_AutoUpdateInactive);
             lstAutoSyncSettings.Items.Add(Strings.Settings_AutoUpdateActive);
             lstAutoSyncSettings.Items.Add(Strings.Settings_AutoUpdateSWLAN);
+
+            var version = PhoneHelper
+                .GetAppAttribute("Version");
+
+            lblVersion.Text = string.Format(
+                lblVersion.Text, version);
         }
 
         protected override void OnNavigatedTo(
@@ -104,6 +113,11 @@ namespace KeePass
                 AppSettings.Instance.AutoUpdateWLAN = true;
                 AppSettings.Instance.AutoUpdate = true;
             }
+        }
+
+        private void lnkReview_Click(object sender, RoutedEventArgs e)
+        {
+            new MarketplaceReviewTask().Show();
         }
     }
 }

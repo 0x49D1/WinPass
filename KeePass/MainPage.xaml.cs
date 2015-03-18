@@ -18,7 +18,6 @@ namespace KeePass
     public partial class MainPage
     {
         private readonly ObservableCollection<DatabaseItem> _items;
-        //private readonly ApplicationBarMenuItem _mnuUpdateAll;
         private readonly ApplicationBarIconButton _RefreshButton;
         string syncdb = string.Empty;
 
@@ -28,16 +27,13 @@ namespace KeePass
         {
             InitializeComponent();
 
-            //AppMenu(0).Text = Strings.MainPage_SyncAll;
             AppButton(0).Text = Strings.MainPage_AddNew;
             AppButton(1).Text = Strings.MainPage_SyncAll;
             AppButton(2).Text = Strings.MainPage_Settings;
-            //AppButton(2).Text = Strings.App_About;
 
             _items = new ObservableCollection<DatabaseItem>();
             lstDatabases.ItemsSource = _items;
 
-            //Loaded += OnLoaded;
             _RefreshButton = AppButton(1);
         }
 
@@ -64,7 +60,7 @@ namespace KeePass
 
             var checkTileOpen = e.NavigationMode !=
                 NavigationMode.Back;
-            RefreshDbList(checkTileOpen, syncdb);             
+            RefreshDbList(checkTileOpen, syncdb);       
         }
 
         private void DatabaseUpdated(DatabaseInfo info,
@@ -307,7 +303,7 @@ namespace KeePass
 
         private void mnuAbout_Click(object sender, EventArgs e)
         {
-            this.NavigateTo<About>();
+            this.NavigateTo<Settings>();
         }
 
         private void mnuClearKeyFile_Click(

@@ -19,8 +19,6 @@ namespace KeePass
 {
     public partial class GroupDetails
     {
-        //private readonly ApplicationBarIconButton _cmdHome;
-
         private Group _group;
         private IList<string> _ids;
         private DateTime _lastModified;
@@ -31,16 +29,14 @@ namespace KeePass
         {
             InitializeComponent();
 
-            //_cmdHome = AppButton(0);
             _ids = new List<string>();
 
             AppMenu(0).Text = Strings.App_Databases;
             AppMenu(1).Text = Strings.GroupDetails_ClearHistory;
             AppMenu(2).Text = Strings.Refresh;
-            AppMenu(3).Text = Strings.MainPage_DBInfo;
-            AppMenu(4).Text = Strings.App_About;
+            AppMenu(3).Text = Strings.MainPage_Pin;
+            AppMenu(4).Text = Strings.MainPage_DBInfo;            
             
-            //_cmdHome.Text = Strings.App_Home;
             AppButton(0).Text = Strings.GroupDetails_NewEntry;
             AppButton(1).Text = Strings.GroupDetails_NewGroup;
             AppButton(2).Text = Strings.GroupDetails_Search;
@@ -418,7 +414,7 @@ namespace KeePass
 
         private void mnuAbout_Click(object sender, EventArgs e)
         {
-            this.NavigateTo<About>();
+            this.NavigateTo<Settings>();
         }
 
         private void mnuDelete_Click(object sender, RoutedEventArgs e)
@@ -503,6 +499,20 @@ namespace KeePass
         {
             var dbfolder = Cache.DbInfo.Folder;
             this.NavigateTo<MainPage>("db={0}&sync=1", dbfolder);
+        }
+
+        private void mnuPin_Click(object sender, EventArgs e)
+        {
+            var item = (MenuItem)sender;
+            var database = (DatabaseInfo)item.Tag;
+
+            if (TilesManager.Pin(database))
+                return;
+
+            MessageBox.Show(
+                Properties.Resources.AlreadyPinned,
+                Properties.Resources.PinDatabase,
+                MessageBoxButton.OK);
         }
     }
 }

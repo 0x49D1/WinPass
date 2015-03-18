@@ -59,9 +59,6 @@
 
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <!-- <shell:ApplicationBarIconButton
-				IconUri="/Images/home.png"
-				Text="[Home]" Click="cmdHome_Click" /> -->
             <shell:ApplicationBarIconButton
 				IconUri="/Images/entry.dark.png"
 				Text="[New Entry]" Click="cmdNewEntry_Click" />
@@ -82,12 +79,12 @@
 					Text="[Clear History List]"
 					Click="mnuHistory_Click" />
                 <shell:ApplicationBarMenuItem
-					Text="[Sync]" Click="mnuSync_Click" />
+					Text="[Sync]" Click="mnuSync_Click" />                
+                <shell:ApplicationBarMenuItem
+					Text="[PIN]"
+					Click="mnuPin_Click" />
                 <shell:ApplicationBarMenuItem
 					Text="[Properties]" Click="mnuDispDBInfo" />
-                <shell:ApplicationBarMenuItem
-					Text="[About]"
-					Click="mnuAbout_Click" />
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>

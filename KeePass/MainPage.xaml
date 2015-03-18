@@ -47,20 +47,8 @@
                                                   Visibility="{Binding UpdateVisibility}" Click="mnuUpdate_Click" />
                                 <toolkit:MenuItem Header="{Binding Path=Strings.MainPage_Pin, Source={StaticResource UiStrings}}"
                                                   Tag="{Binding Info}" Click="mnuPin_Click" />
-                                <!--
-                                <toolkit:MenuItem Header="{Binding Path=Strings.MainPage_Rename, Source={StaticResource UiStrings}}"
-                                                  Tag="{Binding Info}" Click="mnuRename_Click" />
-                                -->
                                 <toolkit:MenuItem Header="{Binding Path=Strings.MainPage_Delete, Source={StaticResource UiStrings}}"
                                                   Tag="{Binding Info}" Click="mnuDelete_Click" />
-                                <!--
-                                <toolkit:MenuItem Header="{Binding Path=Strings.MainPage_ClearPassword, Source={StaticResource UiStrings}}"
-                                                  Tag="{Binding Info}" IsEnabled="{Binding HasPassword}" Click="mnuClear_Click" />
-                                <toolkit:MenuItem Header="{Binding Path=Strings.MainPage_DownloadKeyfile, Source={StaticResource UiStrings}}"
-                                                  Tag="{Binding Info}" Click="mnuKeyFile_Click" />
-                                <toolkit:MenuItem Header="{Binding Path=Strings.MainPage_ClearKeyfile, Source={StaticResource UiStrings}}"
-                                                  Tag="{Binding Info}" IsEnabled="{Binding HasKeyFile}" Click="mnuClearKeyFile_Click" />
-                                -->
                                 <toolkit:MenuItem Header="{Binding Path=Strings.MainPage_DBInfo, Source={StaticResource UiStrings}}"
                                                           Tag="{Binding Info}" Click="mnuDispDBInfo" />
                             </toolkit:ContextMenu>
