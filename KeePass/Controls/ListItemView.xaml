@@ -5,31 +5,38 @@
     xmlns:keepass="clr-namespace:KeePass.Utils"
     Style="{StaticResource ControlDefaults}">
 
-    <StackPanel Orientation="Horizontal"
-                keepass:EaseEffect.IsEnabled="True">
+    <StackPanel Orientation="Horizontal" keepass:EaseEffect.IsEnabled="True">
 
-        <Grid Visibility="{Binding IconState}" MaxHeight="65" MinHeight="1">
+        <Grid Visibility="{Binding IconState}">
+            <!-- Zeilen definieren -->
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" MaxHeight="23" MinHeight="1" />
+                <RowDefinition Height="50" />
+                <RowDefinition />
             </Grid.RowDefinitions>
 
+            <!-- Spalten definieren -->
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="50"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
+
+            <Grid.Resources>
+                <keepass:LengthConverter x:Key="KLengthConverter"/>
+            </Grid.Resources>
             
-            <Image Source="{Binding Overlay}" 
-                   Stretch="None"
-                   Grid.Column="0" Grid.RowSpan="2"/>
+            <Image Source="{Binding Icon}" Stretch="None"
+                   VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                   Grid.Column="0" Grid.Row="0"/>
+            <Image Source="{Binding Overlay}" Stretch="None"
+                   VerticalAlignment="Bottom" HorizontalAlignment="Stretch"
+                   Grid.Column="0" Grid.Row="0"/>
             <TextBlock Text="{Binding Title}"
                        Style="{StaticResource PhoneTextLargeStyle}"
-                       Grid.Column="1" />
+                       Grid.Column="1" Grid.Row="0" VerticalAlignment="Bottom" />            
             <TextBlock Text="{Binding Notes}"
                        Style="{StaticResource PhoneTextSubtleStyle}"
-                       Grid.Column="1"
-                       Grid.Row="1"
-                       MaxHeight="23" MinHeight="1" />
+                       Grid.Column="1" Grid.Row="1" 
+                       Visibility="{Binding Notes, Converter={StaticResource KLengthConverter}}" />            
         </Grid>
     </StackPanel>
 </UserControl>
