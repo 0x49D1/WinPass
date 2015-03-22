@@ -30,7 +30,6 @@ namespace KeePass
         private ObservableCollection<FieldBinding> _fields;
 
         private EntryBinding _binding;
-        //private EntryBinding _entryf;
 
         private Entry _entry;
 
@@ -42,7 +41,6 @@ namespace KeePass
             _cmdReset = AppButton(3);
 
             AppMenu(0).Text = Strings.EntryDetails_GeneratePassword;
-            //AppMenu(1).Text = Strings.EntryDetails_Fields;
             AppMenu(1).Text = Strings.App_Databases;
             AppMenu(2).Text = Strings.App_About;
 
@@ -124,7 +122,8 @@ namespace KeePass
 
                 UpdateNotes();
                 UpdateFieldsCount(_entry);
-                txtPassword.Text = _binding.Password;
+                if (!String.IsNullOrEmpty(_binding.Password))
+                    txtPassword.Text = _binding.Password;
 
                 return;
             }
@@ -155,7 +154,8 @@ namespace KeePass
                     _ => Cache.AddRecent(id));
 
                 // Notes
-                txtNotes.Text = entry.Notes;
+                if (!String.IsNullOrEmpty(entry.Notes))
+                    txtNotes.Text = entry.Notes;
 
                 // Fields
                 _fields = new ObservableCollection
@@ -389,11 +389,6 @@ namespace KeePass
             Save();
         }
 
-        private void lnkNotes_Click(object sender, RoutedEventArgs e)
-        {
-            this.NavigateTo<EntryNotes>();
-        }
-
         private void lnkUrl_Click(object sender, RoutedEventArgs e)
         {
             var settings = AppSettings.Instance;
@@ -402,17 +397,12 @@ namespace KeePass
 
         private void mnuAbout_Click(object sender, EventArgs e)
         {
-            this.NavigateTo<Settings>();
+            this.NavigateTo<Settings>("page=1");
         }
 
         private void mnuBrowser_Click(object sender, RoutedEventArgs e)
         {
             OpenUrl(false);
-        }
-
-        private void mnuFields_Click(object sender, EventArgs e)
-        {
-            this.NavigateTo<EntryFields>();
         }
 
         private void mnuIntegrated_Click(object sender, RoutedEventArgs e)

@@ -38,7 +38,6 @@
                                         <toolkit:MenuItem Header="{Binding Path=Strings.GroupDetails_Rename, Source={StaticResource UiStrings}}"
                                                           Tag="{Binding Data}" Click="mnuRename_Click"
                                                           Visibility="{Binding IsGroup, Converter={StaticResource BoolConverter}}" />
-
                                         <toolkit:MenuItem Header="{Binding Path=Strings.GroupDetails_Move, Source={StaticResource UiStrings}}"
                                                           Tag="{Binding Data}" Click="mnuMove_Click" />
                                         <toolkit:MenuItem Header="{Binding Path=Strings.GroupDetails_Delete, Source={StaticResource UiStrings}}" Tag="{Binding Data}"
@@ -66,25 +65,25 @@
 				IconUri="/Images/folder.dark.png"
 				Text="[New Group]" Click="cmdNewGroup_Click" />
             <shell:ApplicationBarIconButton
-				IconUri="/Images/search.png"
-				Text="[Search]" Click="mnuSearch_Click" />
+				IconUri="/Images/refresh.png"
+				Text="[Sync]" Click="mnuSync_Click" />
             <shell:ApplicationBarIconButton
-				IconUri="/Images/settings.png"
-				Text="[Settings]" Click="mnuSettings_Click" />
+				IconUri="/Images/search.png"
+				Text="[Search]" Click="mnuSearch_Click" />            
             <shell:ApplicationBar.MenuItems>
                 <shell:ApplicationBarMenuItem
 					Text="[Select DB]"
 					Click="mnuRoot_Click" />
                 <shell:ApplicationBarMenuItem
 					Text="[Clear History List]"
-					Click="mnuHistory_Click" />
-                <shell:ApplicationBarMenuItem
-					Text="[Sync]" Click="mnuSync_Click" />                
+					Click="mnuHistory_Click" />              
                 <shell:ApplicationBarMenuItem
 					Text="[PIN]"
 					Click="mnuPin_Click" />
                 <shell:ApplicationBarMenuItem
 					Text="[Properties]" Click="mnuDispDBInfo" />
+                <shell:ApplicationBarMenuItem
+					Text="[Settings]" Click="mnuSettings_Click" />
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>

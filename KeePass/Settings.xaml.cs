@@ -11,6 +11,8 @@ namespace KeePass
 {
     public partial class Settings
     {
+        string page = string.Empty;
+
         public Settings()
         {
             InitializeComponent();
@@ -21,8 +23,7 @@ namespace KeePass
             var version = PhoneHelper
                 .GetAppAttribute("Version");
 
-            lblVersion.Text = string.Format(
-                lblVersion.Text, version);
+            lblVersion.Text = string.Format(lblVersion.Text, version);            
         }
 
         protected override void OnNavigatedTo(
@@ -49,6 +50,13 @@ namespace KeePass
             }
             else
                 lstAutoSyncSettings.SelectedIndex = 0;
+
+            if (NavigationContext.QueryString.TryGetValue("page", out page))
+            {
+                page = NavigationContext.QueryString["page"];
+                Pivot.SelectedIndex = Convert.ToInt32(page);
+                NavigationContext.QueryString.Remove("page");
+            }
         }
 
         private void chkBrowser_CheckedChanged(

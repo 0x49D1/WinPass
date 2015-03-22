@@ -162,13 +162,11 @@
                 IconUri="/Images/save.png" IsEnabled="False"
                 Text="[Save Entry]" Click="cmdSave_Click" />
             <shell:ApplicationBarIconButton
-                IconUri="/Images/refresh.png"  IsEnabled="False"
+                IconUri="/Images/undo.png"  IsEnabled="False"
                 Text="[Reset Entry]" Click="cmdReset_Click"/>
             <shell:ApplicationBar.MenuItems>
                 <shell:ApplicationBarMenuItem
                     Text="[Generate Password]" Click="cmdPassGen_Click" />
-                <!--<shell:ApplicationBarMenuItem
-                    Text="[Fields]" Click="mnuFields_Click" />-->
                 <shell:ApplicationBarMenuItem
                     Text="[Select DB]" Click="mnuRoot_Click" />
                 <shell:ApplicationBarMenuItem

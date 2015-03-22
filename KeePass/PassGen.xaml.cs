@@ -100,7 +100,7 @@ namespace KeePass
 
         private void cmdAbout_Click(object sender, EventArgs e)
         {
-            this.NavigateTo<Settings>();
+            this.NavigateTo<Settings>("page=1");
         }
 
         private void cmdGenerate_Click(object sender, EventArgs e)

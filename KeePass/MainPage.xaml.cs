@@ -303,7 +303,7 @@ namespace KeePass
 
         private void mnuAbout_Click(object sender, EventArgs e)
         {
-            this.NavigateTo<Settings>();
+            this.NavigateTo<Settings>("page=1");
         }
 
         private void mnuClearKeyFile_Click(
@@ -389,7 +389,7 @@ namespace KeePass
 
         private void mnuSettings_Click(object sender, EventArgs e)
         {
-            this.NavigateTo<Settings>();
+            this.NavigateTo<Settings>("page=0");
         }
 
         private void mnuUpdateAll_Click(object sender, EventArgs e)

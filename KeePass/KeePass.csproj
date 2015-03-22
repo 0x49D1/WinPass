@@ -181,12 +181,6 @@
     <Compile Include="DBDetails.xaml.cs">
       <DependentUpon>DBDetails.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EntryFields.xaml.cs">
-      <DependentUpon>EntryFields.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EntryNotes.xaml.cs">
-      <DependentUpon>EntryNotes.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Generator\BracketSet.cs" />
     <Compile Include="Generator\CharacterSetCheckBox.cs" />
     <Compile Include="Generator\CharacterSets.cs" />
@@ -406,18 +400,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="EntryFields.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="EntryNotes.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="GlobalPass.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -582,6 +564,7 @@
     <Content Include="Images\parent.light.png" />
     <Content Include="Images\save.png" />
     <Content Include="Images\search.action.png" />
+    <Content Include="Images\undo.png" />
     <Content Include="Images\up.dark.png" />
     <Content Include="Images\up.light.png" />
     <Content Include="Images\uploaded.dark.png" />
@@ -600,7 +583,9 @@
     <None Include="Resources\AuthUrl.txt" />
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\AppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
     </None>

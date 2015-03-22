@@ -33,14 +33,14 @@ namespace KeePass
 
             AppMenu(0).Text = Strings.App_Databases;
             AppMenu(1).Text = Strings.GroupDetails_ClearHistory;
-            AppMenu(2).Text = Strings.Refresh;
-            AppMenu(3).Text = Strings.MainPage_Pin;
-            AppMenu(4).Text = Strings.MainPage_DBInfo;            
+            AppMenu(2).Text = Strings.MainPage_Pin;
+            AppMenu(3).Text = Strings.MainPage_DBInfo;
+            AppMenu(4).Text = Strings.MainPage_Settings; 
             
             AppButton(0).Text = Strings.GroupDetails_NewEntry;
             AppButton(1).Text = Strings.GroupDetails_NewGroup;
-            AppButton(2).Text = Strings.GroupDetails_Search;
-            AppButton(3).Text = Strings.MainPage_Settings;
+            AppButton(2).Text = Strings.Refresh;
+            AppButton(3).Text = Strings.GroupDetails_Search;
 
             mnuSync = ApplicationBar.MenuItems[2] as ApplicationBarMenuItem;
         }
@@ -414,7 +414,7 @@ namespace KeePass
 
         private void mnuAbout_Click(object sender, EventArgs e)
         {
-            this.NavigateTo<Settings>();
+            this.NavigateTo<Settings>("page=1");
         }
 
         private void mnuDelete_Click(object sender, RoutedEventArgs e)
@@ -486,7 +486,7 @@ namespace KeePass
 
         private void mnuSettings_Click(object sender, EventArgs e)
         {
-            this.NavigateTo<Settings>();
+            this.NavigateTo<Settings>("page=0");
         }
 
         private void mnuDispDBInfo(object sender, EventArgs e)

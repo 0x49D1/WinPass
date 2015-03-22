@@ -8,8 +8,7 @@
     Style="{StaticResource KeePassPage}" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="800" d:DesignWidth="480">
 
   <Grid x:Name="LayoutRoot" Background="Transparent">
-        <controls:Pivot Title="{StaticResource AppName}">
-            <!--Pivotelement eins-->
+        <controls:Pivot x:Name="Pivot" Title="{StaticResource AppName}">
             <controls:PivotItem Header="{Binding Path=Strings.Settings_PageTitle, Source={StaticResource UiStrings}}">
                 <ScrollViewer Grid.Row="1">
                     <StackPanel>
@@ -35,7 +34,6 @@
                 </ScrollViewer>
             </controls:PivotItem>
 
-            <!--Pivotelement zwei-->
             <controls:PivotItem Header="{Binding Path=Strings.About_PageTitle, Source={StaticResource UiStrings}}">
                 <ScrollViewer Grid.Row="1" Margin="12,0,12,0">
                     <StackPanel Grid.Row="1" Margin="12,0,12,0">
@@ -46,10 +44,10 @@
                                      Click="lnkReview_Click" />
                         </StackPanel>                       
 
-                        <TextBlock Text="{Binding Path=Strings.About_Source_Code, Source={StaticResource UiStrings}}"
-                           HorizontalAlignment="Center" />
-                        <HyperlinkButton Content="github.com/bilbob74/8Pass-WP8" TargetName="_blank"
-                                 NavigateUri="https://github.com/bilbob74/8Pass-WP8" />
+                        <TextBlock Text="{Binding Path=Strings.About_Source_Code, Source={StaticResource UiStrings}}" HorizontalAlignment="Center" />
+                        <HyperlinkButton Content="github.com/bilbob74/8Pass" TargetName="_blank" NavigateUri="https://github.com/bilbob74/8Pass" />
+                        <TextBlock Text=" "/>
+                        <HyperlinkButton Content="This App is based upon 7Pass" TargetName="_blank" NavigateUri="https://github.com/7Pass/7Pass" />
                         <TextBlock Text=" " />
                         <TextBlock Text="Contributors:" HorizontalAlignment="Center" />
                         <HyperlinkButton Content="Sebastian Pfohl" TargetName="_blank" NavigateUri="https://github.com/frostieDE" />
