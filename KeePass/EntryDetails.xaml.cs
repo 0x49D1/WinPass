@@ -121,9 +121,14 @@ namespace KeePass
                 _binding.Save();
 
                 UpdateNotes();
-                UpdateFieldsCount(_entry);
                 if (!String.IsNullOrEmpty(_binding.Password))
-                    txtPassword.Text = _binding.Password;
+                {
+                    Encoding utf8 = Encoding.UTF8;
+                    var pwlength = _binding.Password.Length + 1;
+                    byte[] bytes = utf8.GetBytes(_binding.Password + "\0");
+                    string content = utf8.GetString(bytes, 0, bytes.Length);
+                    txtPassword.Text = content;
+                }
 
                 return;
             }
@@ -186,13 +191,8 @@ namespace KeePass
             }
 
             DisplayEntry(entry);
-            UpdateFieldsCount(entry);
         }
 
-        /// <summary>
-        /// Checks if 7Pass can navigate away from this page.
-        /// </summary>
-        /// <returns></returns>
         private bool ConfirmNavigateAway()
         {
             if (!_binding.HasChanges)
@@ -233,14 +233,6 @@ namespace KeePass
 
             UpdateNotes();
             DataContext = _binding;
-        }
-
-        private void UpdateFieldsCount(Entry entry)
-        {
-            //var mnuFields = AppMenu(1);
-            //mnuFields.Text = string.Format(
-            //    Properties.Resources.FieldsMenuItem,
-            //    entry.CustomFields.Count);
         }
 
         private string GetUrl()
@@ -381,7 +373,6 @@ namespace KeePass
             DataContext = _binding;
 
             UpdateNotes();
-            UpdateFieldsCount(_entry);
         }
 
         private void cmdSave_Click(object sender, EventArgs e)
@@ -532,11 +523,6 @@ namespace KeePass
 
             _binding.HasChanges = true;
             _entry.Notes = txtNotes.Text;
-        }
-
-        private void txtNotes_Loaded(object sender, RoutedEventArgs e)
-        {
-            //txtNotes.Focus();
         }
 
         private void cmdAdd_Click(object sender, EventArgs e)
