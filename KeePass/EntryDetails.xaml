@@ -145,7 +145,7 @@
             		<toolkit:PhoneTextBox x:Name="txtNotes" TextWrapping="Wrap"
             			TextChanged="txtNotes_Changed"
             			AcceptsReturn="True"
-            			Loaded="txtNotes_Loaded" FontSize="20" />
+            			FontSize="20" />
             	</ScrollViewer>
             </controls:PivotItem>
         </controls:Pivot>
