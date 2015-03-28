@@ -121,13 +121,10 @@ namespace KeePass
                 _binding.Save();
 
                 UpdateNotes();
+                
                 if (!String.IsNullOrEmpty(_binding.Password))
                 {
-                    Encoding utf8 = Encoding.UTF8;
-                    var pwlength = _binding.Password.Length + 1;
-                    byte[] bytes = utf8.GetBytes(_binding.Password + "\0");
-                    string content = utf8.GetString(bytes, 0, bytes.Length);
-                    txtPassword.Text = content;
+                    txtPassword.Text = _binding.Password;
                 }
 
                 return;
@@ -428,7 +425,9 @@ namespace KeePass
 
             var protect = sender as ProtectedTextBox;
             if (protect != null)
+            { 
                 protect.SelectAll();
+            }
         }
 
         private void UNCopy_Click(object sender, EventArgs e)
