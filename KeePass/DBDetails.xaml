@@ -6,7 +6,7 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:keepass="clr-namespace:KeePass.Utils"
     xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
-    
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
@@ -25,85 +25,64 @@
 
         <!--TitlePanel enthält den Namen der Anwendung und den Seitentitel-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="ApplicationTitle" Text="{StaticResource AppName}" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="ApplicationTitle" Text="{StaticResource AppName}" Style="{StaticResource PageHeader}"/>
             <TextBlock x:Name="PageTitle" Text="{Binding Path=Strings.DBDetail_PageTitle, Source={StaticResource UiStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - zusätzliche Inhalte hier platzieren-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <ScrollViewer>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="60"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
-                <TextBlock Grid.Row="0" 
-                           Style="{StaticResource PhoneTextNormalStyle}" 
-                           Name="lblSource" 
-                           Text="{Binding Path=Strings.DBDetail_Source, Source={StaticResource UiStrings}}" 
-                           TextWrapping="Wrap" />
-                <!--
-                <TextBlock Grid.Row="1" 
-                           Style="{StaticResource PhoneTextNormalStyle}" 
-                           Name="lblModified" 
-                           Text="{Binding Path=Strings.DBDetail_Modified, Source={StaticResource UiStrings}}" />
-                -->
-                <!-- Lokaler Datenbank Name -->
-                <TextBlock Grid.Row="2" 
-                           Style="{StaticResource PhoneTextSubtleStyle}" 
-                           Name="lblDBName"                            
-                           Text="{Binding Path=Strings.DBDetail_Name, Source={StaticResource UiStrings}}" />
-                <TextBox Grid.Row="3"                          
-                         Name="txtName" 
-                         TextChanged="lklName_ch" />
+                    <TextBlock Grid.Row="0" 
+                               Style="{StaticResource PhoneTextNormalStyle}" 
+                               Name="lblSource" 
+                               Text="{Binding Path=Strings.DBDetail_Source, Source={StaticResource UiStrings}}" 
+                               TextWrapping="Wrap" />
+                    <!--
+                    <TextBlock Grid.Row="1" 
+                               Style="{StaticResource PhoneTextNormalStyle}" 
+                               Name="lblModified" 
+                               Text="{Binding Path=Strings.DBDetail_Modified, Source={StaticResource UiStrings}}" />
+                    -->
+                    <!-- Lokaler Datenbank Name -->
+                    <toolkit:PhoneTextBox Grid.Row="2"                          
+                                          Name="txtName"
+                                          Header="{Binding Path=Strings.DBDetail_Name, Source={StaticResource UiStrings}}"
+                                          TextChanged="lklName_ch" />
+                
+                    <!-- URL -->
+                    <toolkit:PhoneTextBox Grid.Row="3"  
+                                          Header="{Binding Path=Strings.DBDetail_URL, Source={StaticResource UiStrings}}"
+                                          Name="txtURL"
+                                          InputScope="Url"
+                                          TextChanged="url_ch" />
 
-                <!-- URL -->
-                <TextBlock Grid.Row="4" 
-                           Style="{StaticResource PhoneTextSubtleStyle}" 
-                           Name="lblDBURL" 
-                           Text="{Binding Path=Strings.DBDetail_URL, Source={StaticResource UiStrings}}" />
-                <TextBox Grid.Row="5"                          
-                         Name="txtURL" 
-                         Text="URL" 
-                         InputScope="Url"
-                         TextChanged="url_ch" />
+                    <!-- Username -->
+                    <toolkit:PhoneTextBox Grid.Row="4" 
+                                          Header="{Binding Path=Strings.WebDavDownload_Username, Source={StaticResource UiStrings}}"
+                                          Name="txtURLUser" 
+                                          TextChanged="user_ch" />
 
-                <!-- Username -->
-                <TextBlock Grid.Row="6" 
-                           Style="{StaticResource PhoneTextSubtleStyle}" 
-                           Name="lblURLUser" 
-                           Text="{Binding Path=Strings.WebDavDownload_Username, Source={StaticResource UiStrings}}" />
-                <TextBox Grid.Row="7"                          
-                         Name="txtURLUser" 
-                         Text="User" TextChanged="user_ch" />
-
-                <!-- Passwort -->
-                <TextBlock Grid.Row="8" 
-                           Style="{StaticResource PhoneTextSubtleStyle}" 
-                           Name="lblURLPW" 
-                           Text="{Binding Path=Strings.WebDavDownload_Password, Source={StaticResource UiStrings}}" />
-                    <PasswordBox Name="txtURLPW"
-                                 Grid.Row="9" PasswordChanged="pw_ch" />
+                    <!-- Passwort -->
+                    <toolkit:PhonePasswordBox Name="txtURLPW"
+                                              Header="{Binding Path=Strings.WebDavDownload_Password, Source={StaticResource UiStrings}}"
+                                              AllowShowPassword="True"
+                                              Grid.Row="5" PasswordChanged="pw_ch" />
 
                     <!-- Domain -->
-                    <TextBlock Grid.Row="10" 
-                           Style="{StaticResource PhoneTextSubtleStyle}" 
-                           Name="lblDomain" 
-                           Text="{Binding Path=Strings.WebAuth_Domain, Source={StaticResource UiStrings}}" />
-                    <TextBox Grid.Row="11"                          
-                         Name="txtDomain" TextChanged="domain_ch" />
+                    <toolkit:PhoneTextBox Grid.Row="6"                  
+                                          Header="{Binding Path=Strings.WebAuth_Domain, Source={StaticResource UiStrings}}"
+                                          Name="txtDomain" TextChanged="domain_ch" />
 
                 </Grid>
             </ScrollViewer>

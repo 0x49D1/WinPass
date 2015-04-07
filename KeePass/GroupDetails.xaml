@@ -22,14 +22,17 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock x:Name="ApplicationTitle" Grid.Row="0"
-			Text="{StaticResource AppName}"
-			Style="{StaticResource PhoneTextSubtleStyle}"/>
+        
 
-        <controls:Pivot Grid.Row="1" Margin="12,0,12,0">
+        <controls:Pivot Grid.Row="1">
+            <controls:Pivot.Title>
+                <TextBlock Text="{StaticResource AppName}"
+                           x:Name="ApplicationTitle" />
+            </controls:Pivot.Title>
             <controls:PivotItem Name="pivotGroup">
                 <uc:KeePassListBase x:Name="lstGroup" Navigation="lstGroup_Navigation"
-                                    toolkit:TiltEffect.IsTiltEnabled="True">
+                                    toolkit:TiltEffect.IsTiltEnabled="True"
+                                    Margin="12,0">
                     <uc:KeePassListBase.ItemTemplate>
                         <DataTemplate>
                             <uc:ListItemView>
@@ -51,7 +54,8 @@
             </controls:PivotItem>
 
             <controls:PivotItem Header="{Binding Path=Strings.GroupDetails_History, Source={StaticResource UiStrings}}">
-                <uc:KeePassList SelectionChanged="lstHistory_SelectionChanged" x:Name="lstHistory" />
+                <uc:KeePassList SelectionChanged="lstHistory_SelectionChanged" x:Name="lstHistory"
+                                Margin="12,0"/>
             </controls:PivotItem>
         </controls:Pivot>
     </Grid>

@@ -18,14 +18,15 @@
 
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock x:Name="ApplicationTitle" Text="{StaticResource AppName}"
-                       Style="{StaticResource PhoneTextNormalStyle}"/>
+                       Style="{StaticResource PageHeader}"/>
             <TextBlock x:Name="PageTitle" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"
                        Text="{Binding Path=Strings.MoveTarget_PageTitle, Source={StaticResource UiStrings}}" />
         </StackPanel>
 
         <TextBlock x:Name="lblTarget" Grid.Row="1"
+                   Margin="24,0"
                    Text="{StaticResource AppName}" TextWrapping="Wrap"
-                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                   Style="{StaticResource NormalTextStyle}"/>
 
         <uc:KeePassList x:Name="lstGroup" Grid.Row="2" Margin="12,0,12,0"
                         SelectionChanged="lst_SelectionChanged"
