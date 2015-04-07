@@ -13,6 +13,6 @@
                  c4f:TextBinding.UpdateSourceOnChange="True" />
 
         <toolkit:PhonePasswordBox Name="txtMask" Password="{Binding Text}"
-                     IsHitTestVisible="False" />
+                                  IsHitTestVisible="False" />
     </Grid>
 </UserControl>
