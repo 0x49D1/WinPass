@@ -65,7 +65,8 @@
                                               Grid.Row="4"
                 			                  TextChanged="txtUrl_Changed" VerticalAlignment="Bottom" />
                         <HyperlinkButton x:Name="lnkUrl" Click="lnkUrl_Click"
-                			             HorizontalContentAlignment="Left"
+                                         Content="{Binding Url}"
+                                         HorizontalContentAlignment="Left"
                                          Grid.Row="5"
                 			             Style="{StaticResource HyperlinkButtonWrappingStyle}" VerticalAlignment="Bottom">
                             <toolkit:ContextMenuService.ContextMenu>
