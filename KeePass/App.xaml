@@ -4,12 +4,25 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:system="clr-namespace:System;assembly=mscorlib"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
-    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone">
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:converter="clr-namespace:KeePass.Converters">
 
     <Application.Resources>
         <system:String x:Key="AppName">8PASS</system:String>
         <i18n:UiStrings xmlns:i18n="clr-namespace:KeePass.I18n" x:Key="UiStrings" />
+
+        <converter:ToUppercaseConverter x:Key="ToUppercaseConverter" />
         
+        <Style x:Key="PageHeader" TargetType="TextBlock" BasedOn="{StaticResource PhoneTextNormalStyle}">
+            <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilySemiBold}" />
+            <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeMedium}" />
+        </Style>
+
+        <Style x:Key="NormalTextStyle" TargetType="TextBlock" BasedOn="{StaticResource PhoneTextNormalStyle}">
+            <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeMedium}" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+        </Style>
+
         <Style x:Key="KeePassPage" TargetType="controls:PhoneApplicationPage">
             <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilyNormal}" />
             <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeNormal}" />

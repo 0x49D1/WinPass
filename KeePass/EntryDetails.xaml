@@ -18,64 +18,77 @@
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <controls:Pivot SelectionChanged="Pivot_SelectionChanged">
             <controls:Pivot.Title>
-                <TextBlock x:Name="ApplicationTitle" Text="{StaticResource AppName}" 
-                           Style="{StaticResource PhoneTextSubtleStyle}" 
-                           Margin="-15,-12,12,0" />
+                <TextBlock x:Name="ApplicationTitle"
+                           Text="{StaticResource AppName}" />
             </controls:Pivot.Title>
             <controls:PivotItem Header="{Binding Path=Strings.EntryDetails_PageTitle, Source={StaticResource UiStrings}}">
-            <Grid Grid.Row="1" Margin="12,0,12,0">                
-<!-- Entry details -->
-                		<TextBlock Text="{Binding Strings.EntryDetails_Title, Source={StaticResource UiStrings}}"
-                			Style="{StaticResource PhoneTextNormalStyle}" VerticalAlignment="Top" />
-                		<uc:ProtectedTextBox x:Name="txtTitle" GotFocus="txt_GotFocus"
-                			Text="{Binding Title, Mode=TwoWay}"
-                			c4f:TextBinding.UpdateSourceOnChange="True" Margin="0,27,0,0" VerticalAlignment="Top" />
+                <Grid>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
 
-                		<TextBlock Text="{Binding Strings.EntryDetails_Username, Source={StaticResource UiStrings}}"
-                			Style="{StaticResource PhoneTextNormalStyle}" Margin="12,99,12,0" VerticalAlignment="Top" />
-                		<uc:ProtectedTextBox x:Name="txtUsername" GotFocus="txt_GotFocus"
-                			Text="{Binding UserName, Mode=TwoWay}"
-                			c4f:TextBinding.UpdateSourceOnChange="True" Margin="0,126,0,0" VerticalAlignment="Top" />
+                        <uc:ProtectedTextBox x:Name="txtTitle" GotFocus="txt_GotFocus"
+                                             Header="{Binding Strings.EntryDetails_Title, Source={StaticResource UiStrings}}"
+                			                 Text="{Binding Title, Mode=TwoWay}"
+                                             Grid.Row="0"
+                			                 c4f:TextBinding.UpdateSourceOnChange="True" VerticalAlignment="Top" />
 
-                		<TextBlock Text="{Binding Strings.EntryDetails_Password, Source={StaticResource UiStrings}}"
-                			Style="{StaticResource PhoneTextNormalStyle}" Margin="12,198,12,0" VerticalAlignment="Top" />
-                		<uc:ProtectedTextBox x:Name="txtPassword"
-                			GotFocus="txt_GotFocus" MonoSpaced="True"
-                			Text="{Binding Password, Mode=TwoWay}"
-                			c4f:TextBinding.UpdateSourceOnChange="True" Margin="0,225,0,238" d:LayoutOverrides="Height" />
-                    
-                		<uc:QualityProgressBar Password="{Binding Password}" Margin="0,0,0,234" VerticalAlignment="Bottom" />
+                        <uc:ProtectedTextBox x:Name="txtUsername" GotFocus="txt_GotFocus"
+                                             Header="{Binding Strings.EntryDetails_Username, Source={StaticResource UiStrings}}"
+                			                 Text="{Binding UserName, Mode=TwoWay}"
+                                             Grid.Row="1"
+                			                 c4f:TextBinding.UpdateSourceOnChange="True" VerticalAlignment="Top" />
+
+                        <uc:ProtectedTextBox x:Name="txtPassword"
+                                             Header="{Binding Strings.EntryDetails_Password, Source={StaticResource UiStrings}}"
+                			                 GotFocus="txt_GotFocus" MonoSpaced="True"
+                			                 Text="{Binding Password, Mode=TwoWay}"
+                                             Grid.Row="2"
+                			                 c4f:TextBinding.UpdateSourceOnChange="True" />
+
+                        <uc:QualityProgressBar Password="{Binding Password}" VerticalAlignment="Bottom"
+                                               Grid.Row="3"
+                                               Margin="0,0,0,20"/>
 
                         <!-- URL -->
-                		<TextBlock Text=" " Margin="0,0,0,207" VerticalAlignment="Bottom" />
-                
-                		<TextBlock Text="{Binding Strings.EntryDetails_Url, Source={StaticResource UiStrings}}"
-                			Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0,12,180" VerticalAlignment="Bottom" />
-                		<TextBox x:Name="txtUrl" Text="{Binding Url, Mode=TwoWay}"
-                			c4f:TextBinding.UpdateSourceOnChange="True"
-                			InputScope="Url" GotFocus="txt_GotFocus"
-                			TextChanged="txtUrl_Changed" Margin="0,0,0,108" VerticalAlignment="Bottom" />
-                		<HyperlinkButton x:Name="lnkUrl" Click="lnkUrl_Click"
-                			HorizontalContentAlignment="Left"
-                			Style="{StaticResource HyperlinkButtonWrappingStyle}" Margin="0,0,0,77" VerticalAlignment="Bottom">
-                			<toolkit:ContextMenuService.ContextMenu>
-                				<toolkit:ContextMenu>
-                					<toolkit:MenuItem Header="{Binding Strings.EntryDetails_ExternalBrowser, Source={StaticResource UiStrings}}"
-                						Click="mnuBrowser_Click" />
-                					<toolkit:MenuItem Header="{Binding Strings.EntryDetails_IntegratedBrowser, Source={StaticResource UiStrings}}"
-                						Click="mnuIntegrated_Click" />
-                				</toolkit:ContextMenu>
-                			</toolkit:ContextMenuService.ContextMenu>
-                		</HyperlinkButton>             	
-                <uc:ProgressOverlay x:Name="progBusy" />
-            </Grid>
+                        <toolkit:PhoneTextBox x:Name="txtUrl" Text="{Binding Url, Mode=TwoWay}"
+                                              Header="{Binding Strings.EntryDetails_Url, Source={StaticResource UiStrings}}"
+                			                  c4f:TextBinding.UpdateSourceOnChange="True"
+                			                  InputScope="Url" GotFocus="txt_GotFocus"
+                                              Grid.Row="4"
+                			                  TextChanged="txtUrl_Changed" VerticalAlignment="Bottom" />
+                        <HyperlinkButton x:Name="lnkUrl" Click="lnkUrl_Click"
+                                         Content="{Binding Url}"
+                                         HorizontalContentAlignment="Left"
+                                         Grid.Row="5"
+                			             Style="{StaticResource HyperlinkButtonWrappingStyle}" VerticalAlignment="Bottom">
+                            <toolkit:ContextMenuService.ContextMenu>
+                                <toolkit:ContextMenu>
+                                    <toolkit:MenuItem Header="{Binding Strings.EntryDetails_ExternalBrowser, Source={StaticResource UiStrings}}"
+                					                  Click="mnuBrowser_Click" />
+                                    <toolkit:MenuItem Header="{Binding Strings.EntryDetails_IntegratedBrowser, Source={StaticResource UiStrings}}"
+                					                  Click="mnuIntegrated_Click" />
+                                </toolkit:ContextMenu>
+                            </toolkit:ContextMenuService.ContextMenu>
+                        </HyperlinkButton>
+
+                    </Grid>
+                    <uc:ProgressOverlay x:Name="progBusy" />
+                </Grid>
             </controls:PivotItem>
             
             <controls:PivotItem Header="{Binding Path=Strings.EntryFields_PageTitle, Source={StaticResource UiStrings}}">
                 <Grid>
             		<ListBox x:Name="lstFields"
-            			HorizontalAlignment="Stretch"
-            			toolkit:TiltEffect.SuppressTilt="True">
+            			     HorizontalAlignment="Stretch"
+            			     toolkit:TiltEffect.SuppressTilt="True">
             			<ListBox.ItemContainerStyle>
             				<Style TargetType="ListBoxItem">
             					<Setter Property="Template">

@@ -17,7 +17,10 @@ namespace KeePass.Controls
                 new PropertyMetadata(false, OnMonoSpacedChanged));
 
         public static DependencyProperty TextProperty = DependencyProperty
-            .Register("Text", typeof(string), typeof(ProtectedTextBox), null);
+            .Register("Text", typeof(string), typeof(ProtectedTextBox), new PropertyMetadata(null, OnTextChanged));
+
+        public static DependencyProperty HeaderProperty = DependencyProperty
+            .Register("Header", typeof(string), typeof(ProtectedTextBox), new PropertyMetadata(null, OnHeaderChanged));
 
         /// <summary>
         /// Occurs when value of <see cref="Text"/> has changed.
@@ -34,6 +37,12 @@ namespace KeePass.Controls
         {
             get { return (bool)GetValue(MonoSpacedProperty); }
             set { SetValue(MonoSpacedProperty, value); }
+        }
+
+        public string Header
+        {
+            get { return (string)GetValue(HeaderProperty); }
+            set { SetValue(HeaderProperty, value); }
         }
 
         /// <summary>
@@ -89,6 +98,28 @@ namespace KeePass.Controls
             {
                 protect.txtPassword.FontFamily =
                     new FontFamily("Courier New");
+            }
+        }
+
+        private static void OnHeaderChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            var protect = d as ProtectedTextBox;
+
+            if (protect != null)
+            {
+                protect.txtMask.Header = e.NewValue as string;
+                protect.txtPassword.Header = e.NewValue as string;
+            }
+        }
+
+        private static void OnTextChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            var protect = d as ProtectedTextBox;
+
+            if (protect != null)
+            {
+                protect.txtMask.Password = e.NewValue as string;
+                protect.txtPassword.Text = e.NewValue as string;
             }
         }
 

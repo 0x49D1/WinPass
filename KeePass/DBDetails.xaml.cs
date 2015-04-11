@@ -82,11 +82,6 @@ namespace KeePass
                 case "Demo":                    
                     lblSource.Text = _database.Details.Source + locCH;
 
-                    lblDBURL.Visibility = Visibility.Collapsed;
-                    lblURLUser.Visibility = Visibility.Collapsed;
-                    lblURLPW.Visibility = Visibility.Collapsed;
-                    lblDomain.Visibility = Visibility.Collapsed;
-
                     txtURL.Visibility = Visibility.Collapsed;
                     txtURLUser.Visibility = Visibility.Collapsed;
                     txtURLPW.Visibility = Visibility.Collapsed;
@@ -113,7 +108,6 @@ namespace KeePass
                     else
                     {
                         txtURLUser.Visibility = Visibility.Collapsed;
-                        lblURLUser.Visibility = Visibility.Collapsed;
                     }
 
                     if (pwd.Length > 1)
@@ -124,7 +118,6 @@ namespace KeePass
                     else
                     {
                         txtURLPW.Visibility = Visibility.Collapsed;
-                        lblURLPW.Visibility = Visibility.Collapsed;
                     }
 
                     if (domain.Length > 1)
@@ -135,7 +128,6 @@ namespace KeePass
                     else
                     {
                         txtDomain.Visibility = Visibility.Collapsed;
-                        lblDomain.Visibility = Visibility.Collapsed;
                     }
                     break;
                 case "DropBox":
@@ -144,10 +136,6 @@ namespace KeePass
                     txtURL.Text = _database.Details.Url;
                     _originalURL = _database.Details.Url;
 
-                    lblURLUser.Visibility = Visibility.Collapsed;
-                    lblURLPW.Visibility = Visibility.Collapsed;
-                    lblDomain.Visibility = Visibility.Collapsed;
-
                     txtURLUser.Visibility = Visibility.Collapsed;
                     txtURLPW.Visibility = Visibility.Collapsed;
                     txtDomain.Visibility = Visibility.Collapsed;
@@ -155,11 +143,6 @@ namespace KeePass
                 case "SkyDrive":
                     convertedDate = DateTime.Parse(_database.Details.Modified);
                     lblSource.Text = _database.Details.Source + ", " + convertedDate.ToLocalTime() + locCH;
-                    
-                    lblDBURL.Visibility = Visibility.Collapsed;
-                    lblURLUser.Visibility = Visibility.Collapsed;
-                    lblURLPW.Visibility = Visibility.Collapsed;
-                    lblDomain.Visibility = Visibility.Collapsed;
 
                     txtURL.Visibility = Visibility.Collapsed;
                     txtURLUser.Visibility = Visibility.Collapsed;
@@ -182,16 +165,10 @@ namespace KeePass
                         txtURLPW.Password = urlarr2[2];
                         _originalPW = txtURLPW.Password;
                     }
-                    lblDomain.Visibility = Visibility.Collapsed;
                     txtDomain.Visibility = Visibility.Collapsed;
                     break;
                 default:
                     lblSource.Text = Strings.Download_LocalFile + locCH;
-
-                    lblDBURL.Visibility = Visibility.Collapsed;
-                    lblURLUser.Visibility = Visibility.Collapsed;
-                    lblURLPW.Visibility = Visibility.Collapsed;
-                    lblDomain.Visibility = Visibility.Collapsed;
 
                     txtURL.Visibility = Visibility.Collapsed;
                     txtURLUser.Visibility = Visibility.Collapsed;
