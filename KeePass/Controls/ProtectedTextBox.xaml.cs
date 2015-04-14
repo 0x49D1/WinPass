@@ -147,6 +147,11 @@ namespace KeePass.Controls
             UpdateProtectState();
         }
 
+        private void TxtPassword_OnDoubleTap(object sender, GestureEventArgs e)
+        {
+            SelectAll();
+        }
+
         private void txtPassword_LostFocus(object sender, RoutedEventArgs e)
         {
             if (IsProtected)
