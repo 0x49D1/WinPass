@@ -100,9 +100,9 @@ namespace KeePass.Sources.SkyDrive
         {
             var data = string.Format(
                 Resources.AuthTokenData,
-                ApiKeys.SKYDRIVE_CLIENT_ID,
-                ApiKeys.SKYDRIVE_REDIRECT,
-                ApiKeys.SKYDRIVE_SECRET, code);
+                ApiKeys.ONEDRIVE_CLIENT_ID,
+                ApiKeys.ONEDRIVE_REDIRECT,
+                ApiKeys.ONEDRIVE_SECRET, code);
 
             var client = new WebClient();
             client.Headers[HttpRequestHeader.ContentType] =
@@ -191,9 +191,9 @@ namespace KeePass.Sources.SkyDrive
         {
             var data = string.Format(
                 Resources.TokenRefreshData,
-                ApiKeys.SKYDRIVE_CLIENT_ID,
-                ApiKeys.SKYDRIVE_SECRET,
-                ApiKeys.SKYDRIVE_REDIRECT,
+                ApiKeys.ONEDRIVE_CLIENT_ID,
+                ApiKeys.ONEDRIVE_SECRET,
+                ApiKeys.ONEDRIVE_REDIRECT,
                 _token.refresh_token);
 
             var client = new WebClient();

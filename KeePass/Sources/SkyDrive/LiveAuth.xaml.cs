@@ -43,8 +43,8 @@ namespace KeePass.Sources.SkyDrive
 
             var url = string.Format(
                 SkyDrive.Resources.AuthUrl,
-                ApiKeys.SKYDRIVE_CLIENT_ID,
-                ApiKeys.SKYDRIVE_REDIRECT, theme);
+                ApiKeys.ONEDRIVE_CLIENT_ID,
+                ApiKeys.ONEDRIVE_REDIRECT, theme);
 
             browser.Navigate(new Uri(url));
         }
@@ -70,7 +70,7 @@ namespace KeePass.Sources.SkyDrive
             {
                 var uri = e.Uri;
                 if (uri.ToString().StartsWith(
-                    ApiKeys.SKYDRIVE_REDIRECT))
+                    ApiKeys.ONEDRIVE_REDIRECT))
                 {
                     CheckToken(uri);
                     return;
