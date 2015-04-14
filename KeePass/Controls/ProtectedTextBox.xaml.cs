@@ -144,6 +144,9 @@ namespace KeePass.Controls
         {
             txtPassword.Opacity = 1;
             UpdateProtectState();
+            // In case the protected state was already removed - lets prepare it for copy right away
+            if (!IsProtected)
+                this.SelectAll();
         }
 
         private void txtPassword_LostFocus(object sender, RoutedEventArgs e)
