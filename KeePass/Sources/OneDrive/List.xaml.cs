@@ -9,11 +9,11 @@ using KeePass.IO.Data;
 using KeePass.Storage;
 using KeePass.Utils;
 
-namespace KeePass.Sources.SkyDrive
+namespace KeePass.Sources.OneDrive
 {
     public partial class List
     {
-        private SkyDriveClient _client;
+        private OneDriveClient _client;
         private string _current;
         private string _folder;
 
@@ -33,7 +33,7 @@ namespace KeePass.Sources.SkyDrive
                 .QueryString;
 
             _folder = pars["folder"];
-            _client = new SkyDriveClient(pars["token"]);
+            _client = new OneDriveClient(pars["token"]);
 
             RefreshList(null);
         }
@@ -61,7 +61,7 @@ namespace KeePass.Sources.SkyDrive
                             Name = name,
                             Modified = item.Modified,
                             Type = SourceTypes.Synchronizable,
-                            Source = DatabaseUpdater.SKYDRIVE_UPDATER,
+                            Source = DatabaseUpdater.ONEDRIVE_UPDATER,
                         });
                     }
                     else

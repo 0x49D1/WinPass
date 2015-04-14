@@ -1,6 +1,6 @@
 ﻿using System;
 using KeePass.Sources.DropBox;
-using KeePass.Sources.SkyDrive;
+using KeePass.Sources.OneDrive;
 using KeePass.Sources.Web;
 using KeePass.Sources.WebDav;
 using KeePass.Storage;
@@ -12,7 +12,7 @@ namespace KeePass.Sources
         public const string DROPBOX_UPDATER = "DropBox";
         public const string WEBDAV_UPDATER = "WebDAV";
         public const string WEB_UPDATER = "Web";
-        public const string SKYDRIVE_UPDATER = "SkyDrive";
+        public const string ONEDRIVE_UPDATER = "SkyDrive";
 
         public static void Update(this DatabaseInfo info,
             Func<DatabaseInfo, bool> queryUpdate,
@@ -34,11 +34,11 @@ namespace KeePass.Sources
                     webdav.Synchronize(report);
                     break;
 
-                case SKYDRIVE_UPDATER:
-                    var skyDrive = new Synchronizer(info,
-                        new SkyDriveAdapter(), queryUpdate);
+                case ONEDRIVE_UPDATER:
+                    var oneDrive = new Synchronizer(info,
+                        new OneDriveAdapter(), queryUpdate);
 
-                    skyDrive.Synchronize(report);
+                    oneDrive.Synchronize(report);
                     break;
 
                 case WEB_UPDATER:

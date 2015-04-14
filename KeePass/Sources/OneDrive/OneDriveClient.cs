@@ -2,21 +2,22 @@ using System;
 using System.Linq;
 using System.Net;
 using System.Threading;
+using KeePass.Sources.OneDrive;
 using KeePass.Utils;
 using Newtonsoft.Json;
 using RestSharp;
 
-namespace KeePass.Sources.SkyDrive
+namespace KeePass.Sources.OneDrive
 {
-    internal class SkyDriveClient
+    internal class OneDriveClient
     {
         private readonly RestClient _client;
         private AccessTokenData _token;
 
-        public SkyDriveClient(string tokenData)
+        public OneDriveClient(string tokenData)
             : this(Parse(tokenData)) {}
 
-        private SkyDriveClient(AccessTokenData token)
+        private OneDriveClient(AccessTokenData token)
         {
             if (token == null)
                 throw new ArgumentNullException("token");
@@ -177,14 +178,14 @@ namespace KeePass.Sources.SkyDrive
             });
         }
 
-        public static SkyDriveClient ParsePath(
+        public static OneDriveClient ParsePath(
             string url, out string id)
         {
             var data = JsonConvert
                 .DeserializeObject<PathData>(url);
 
             id = data.ID;
-            return new SkyDriveClient(data.Token);
+            return new OneDriveClient(data.Token);
         }
 
         public void RefreshToken(Action completed)

@@ -2,7 +2,7 @@ using System;
 using KeePass.Data;
 using KeePass.Utils;
 
-namespace KeePass.Sources.SkyDrive
+namespace KeePass.Sources.OneDrive
 {
     internal class ParentItem : ListItemInfo
     {

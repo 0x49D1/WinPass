@@ -137,7 +137,7 @@ namespace KeePass.Sources
 
         private void lnkSkyDrive_Click(object sender, RoutedEventArgs e)
         {
-            Navigate<SkyDrive.LiveAuth>();
+            Navigate<OneDrive.LiveAuth>();
         }
 
         private void lnkWebDav_Click(object sender, RoutedEventArgs e)

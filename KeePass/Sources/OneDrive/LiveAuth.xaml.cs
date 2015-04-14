@@ -3,7 +3,7 @@ using KeePass.Utils;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 
-namespace KeePass.Sources.SkyDrive
+namespace KeePass.Sources.OneDrive
 {
     public partial class LiveAuth
     {
@@ -25,7 +25,7 @@ namespace KeePass.Sources.SkyDrive
                 return;
 
             var code = query.Substring(prefix.Length);
-            SkyDriveClient.GetToken(code, token =>
+            OneDriveClient.GetToken(code, token =>
             {
                 var folder = NavigationContext
                     .QueryString["folder"];
@@ -42,7 +42,7 @@ namespace KeePass.Sources.SkyDrive
                 ? "Dark" : "Light";
 
             var url = string.Format(
-                SkyDrive.Resources.AuthUrl,
+                OneDrive.Resources.AuthUrl,
                 ApiKeys.ONEDRIVE_CLIENT_ID,
                 ApiKeys.ONEDRIVE_REDIRECT, theme);
 

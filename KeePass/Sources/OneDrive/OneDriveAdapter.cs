@@ -3,11 +3,11 @@ using System.IO;
 using KeePass.IO.Utils;
 using KeePass.Storage;
 
-namespace KeePass.Sources.SkyDrive
+namespace KeePass.Sources.OneDrive
 {
-    internal class SkyDriveAdapter : ServiceAdapterBase
+    internal class OneDriveAdapter : ServiceAdapterBase
     {
-        private SkyDriveClient _client;
+        private OneDriveClient _client;
         private SyncInfo _info;
 
         public override void Conflict(ListItem item,
@@ -46,7 +46,7 @@ namespace KeePass.Sources.SkyDrive
             var details = info.Details;
 
             string id;
-            _client = SkyDriveClient
+            _client = OneDriveClient
                 .ParsePath(details.Url, out id);
 
             _info = new SyncInfo
