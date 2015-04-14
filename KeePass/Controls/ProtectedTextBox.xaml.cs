@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using Microsoft.Devices;
 
 namespace KeePass.Controls
 {
@@ -144,9 +145,6 @@ namespace KeePass.Controls
         {
             txtPassword.Opacity = 1;
             UpdateProtectState();
-            // In case the protected state was already removed - lets prepare it for copy right away
-            if (!IsProtected)
-                this.SelectAll();
         }
 
         private void txtPassword_LostFocus(object sender, RoutedEventArgs e)
@@ -161,6 +159,15 @@ namespace KeePass.Controls
             object sender, TextChangedEventArgs e)
         {
             OnTextChanged(e);
+        }
+
+        private void TxtPassword_OnActionIconTapped(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtPassword.Text))
+            {
+                Clipboard.SetText(txtPassword.Text);
+                VibrateController.Default.Start(TimeSpan.FromMilliseconds(30));
+            }
         }
     }
 }

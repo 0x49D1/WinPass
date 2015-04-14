@@ -19,6 +19,8 @@ using Microsoft.Phone.Tasks;
 using Microsoft.Phone.Controls;
 using System.Collections.ObjectModel;
 using System.Linq;
+using Microsoft.Devices;
+using Environment = System.Environment;
 
 namespace KeePass
 {
@@ -454,6 +456,7 @@ namespace KeePass
             byte[] bytes = utf8.GetBytes(txtPassword.Text + "\0");
             string content = utf8.GetString(bytes, 0, bytes.Length);
             Clipboard.SetText(content);
+            VibrateController.Default.Start(TimeSpan.FromMilliseconds(30));
         }
 
         private void txtName_Changed(object sender, TextChangedEventArgs e)

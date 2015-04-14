@@ -555,6 +555,7 @@
     <Content Include="Assets\SquareTile71x71.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\WideLogo.png" />
+    <Content Include="Images\appbar.page.copy.png" />
     <Content Include="Images\box.png" />
     <Content Include="Images\check.action.png" />
     <Content Include="Images\deletedb.png" />
