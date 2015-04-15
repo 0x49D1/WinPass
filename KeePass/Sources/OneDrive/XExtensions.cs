@@ -1,7 +1,7 @@
 using System;
 using System.Xml.Linq;
 
-namespace KeePass.Sources.SkyDrive
+namespace KeePass.Sources.OneDrive
 {
     internal static class XExtensions
     {

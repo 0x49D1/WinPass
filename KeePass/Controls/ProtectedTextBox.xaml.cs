@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using Microsoft.Devices;
 
 namespace KeePass.Controls
 {
@@ -146,6 +147,11 @@ namespace KeePass.Controls
             UpdateProtectState();
         }
 
+        private void TxtPassword_OnDoubleTap(object sender, GestureEventArgs e)
+        {
+            SelectAll();
+        }
+
         private void txtPassword_LostFocus(object sender, RoutedEventArgs e)
         {
             if (IsProtected)
@@ -158,6 +164,15 @@ namespace KeePass.Controls
             object sender, TextChangedEventArgs e)
         {
             OnTextChanged(e);
+        }
+
+        private void TxtPassword_OnActionIconTapped(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtPassword.Text))
+            {
+                Clipboard.SetText(txtPassword.Text);
+                VibrateController.Default.Start(TimeSpan.FromMilliseconds(30));
+            }
         }
     }
 }

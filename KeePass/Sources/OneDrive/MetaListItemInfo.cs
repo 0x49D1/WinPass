@@ -4,7 +4,7 @@ using System.Xml.Linq;
 using KeePass.Data;
 using KeePass.Utils;
 
-namespace KeePass.Sources.SkyDrive
+namespace KeePass.Sources.OneDrive
 {
     internal class MetaListItemInfo : ListItemInfo
     {
@@ -47,13 +47,19 @@ namespace KeePass.Sources.SkyDrive
             _path = node.GetValue("id");
             _parent = node.GetValue("parent_id");
             _modified = node.GetValue("updated_time");
-            _isDir = node.GetValue("type") == "folder";
+            _isDir = "folder|album".Contains(node.GetValue("type")); // Show folder icon in case of folder/album
             int.TryParse(node.GetValue("size"), out _size);
 
             Title = node.GetValue("name");
             Notes = GetRelativeTime(_modified);
-            Icon = ThemeData.GetImage(_isDir
-                ? "folder" : "entry");
+            string iconStr = "";
+            iconStr = Title.EndsWith(".kdbx") // If its keepass database
+                ? "keepasslogo"
+                : (_isDir
+                    ? "folder"
+                    : "entry");
+
+            Icon = ThemeData.GetImage(iconStr);
         }
 
         public MetaListItemInfo AsParent()

@@ -268,24 +268,24 @@
     <Compile Include="Sources\IServiceAdapter.cs" />
     <Compile Include="Sources\ListItem.cs" />
     <Compile Include="Sources\ServiceAdapterBase.cs" />
-    <Compile Include="Sources\SkyDrive\AccessTokenData.cs" />
-    <Compile Include="Sources\SkyDrive\List.xaml.cs">
+    <Compile Include="Sources\OneDrive\AccessTokenData.cs" />
+    <Compile Include="Sources\OneDrive\List.xaml.cs">
       <DependentUpon>List.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Sources\SkyDrive\LiveAuth.xaml.cs">
+    <Compile Include="Sources\OneDrive\LiveAuth.xaml.cs">
       <DependentUpon>LiveAuth.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Sources\SkyDrive\MetaListItemInfo.cs" />
-    <Compile Include="Sources\SkyDrive\ParentItem.cs" />
-    <Compile Include="Sources\SkyDrive\PathData.cs" />
-    <Compile Include="Sources\SkyDrive\Resources.Designer.cs">
+    <Compile Include="Sources\OneDrive\MetaListItemInfo.cs" />
+    <Compile Include="Sources\OneDrive\ParentItem.cs" />
+    <Compile Include="Sources\OneDrive\PathData.cs" />
+    <Compile Include="Sources\OneDrive\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Sources\SkyDrive\SkyDriveClient.cs" />
-    <Compile Include="Sources\SkyDrive\SkyDriveAdapter.cs" />
-    <Compile Include="Sources\SkyDrive\XExtensions.cs" />
+    <Compile Include="Sources\OneDrive\OneDriveClient.cs" />
+    <Compile Include="Sources\OneDrive\OneDriveAdapter.cs" />
+    <Compile Include="Sources\OneDrive\XExtensions.cs" />
     <Compile Include="Sources\SourceCapabilityUpdater.cs" />
     <Compile Include="Sources\SynchronizeErrorEventArgs.cs" />
     <Compile Include="Sources\SynchronizeErrorEventHandler.cs" />
@@ -498,13 +498,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Sources\SkyDrive\List.xaml">
+    <Page Include="Sources\OneDrive\List.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Sources\SkyDrive\LiveAuth.xaml">
+    <Page Include="Sources\OneDrive\LiveAuth.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <Generator>MSBuild:Compile</Generator>
@@ -555,12 +555,15 @@
     <Content Include="Assets\SquareTile71x71.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\WideLogo.png" />
+    <Content Include="Images\appbar.page.copy.png" />
     <Content Include="Images\box.png" />
     <Content Include="Images\check.action.png" />
     <Content Include="Images\deletedb.png" />
     <Content Include="Images\edit.dark.png" />
     <Content Include="Images\edit.light.png" />
     <Content Include="Images\eintrag.png" />
+    <Content Include="Images\keepasslogo.dark.png" />
+    <Content Include="Images\keepasslogo.light.png" />
     <Content Include="Images\ordner.png" />
     <Content Include="Images\parent.dark.png" />
     <Content Include="Images\parent.light.png" />
@@ -811,7 +814,7 @@
     <EmbeddedResource Include="Sources\DropBox\DropBoxResources.ru.resx">
       <DependentUpon>DropBoxResources.resx</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sources\SkyDrive\Resources.resx">
+    <EmbeddedResource Include="Sources\OneDrive\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>

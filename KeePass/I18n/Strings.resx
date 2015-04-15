@@ -549,10 +549,10 @@ Do you want 7Pass to append ".doc" to your database name and then download it?</
     <value>Auto Update with WiFi only</value>
   </data>
   <data name="Settings_AutoUpdateActive" xml:space="preserve">
-    <value>Activ</value>
+    <value>Active</value>
   </data>
   <data name="Settings_AutoUpdateInactive" xml:space="preserve">
-    <value>Inactiv</value>
+    <value>Inactive</value>
   </data>
   <data name="Settings_AutoUpdateSWLAN" xml:space="preserve">
     <value>Active with WLAN</value>
@@ -613,5 +613,9 @@ Do you want 7Pass to append ".doc" to your database name and then download it?</
   </data>
   <data name="Download_OpenDB" xml:space="preserve">
     <value>Open database file</value>
+  </data>
+  <data name="EntryDetails_ShowAllMasked" xml:space="preserve">
+    <value>Reveal all masked fields</value>
+    <comment>Opens protected text on all the controls in view</comment>
   </data>
 </root>

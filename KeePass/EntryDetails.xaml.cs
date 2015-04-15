@@ -19,6 +19,8 @@ using Microsoft.Phone.Tasks;
 using Microsoft.Phone.Controls;
 using System.Collections.ObjectModel;
 using System.Linq;
+using Microsoft.Devices;
+using Environment = System.Environment;
 
 namespace KeePass
 {
@@ -42,7 +44,8 @@ namespace KeePass
 
             AppMenu(0).Text = Strings.EntryDetails_GeneratePassword;
             AppMenu(1).Text = Strings.App_Databases;
-            AppMenu(2).Text = Strings.App_About;
+            AppMenu(2).Text = Strings.EntryDetails_ShowAllMasked;
+            AppMenu(3).Text = Strings.App_About;
 
             AppButton(0).Text = Strings.App_UNCopy;
             AppButton(1).Text = Strings.App_PWCopy;
@@ -121,7 +124,7 @@ namespace KeePass
                 _binding.Save();
 
                 UpdateNotes();
-                
+
                 if (!String.IsNullOrEmpty(_binding.Password))
                 {
                     txtPassword.Text = _binding.Password;
@@ -383,6 +386,17 @@ namespace KeePass
             OpenUrl(settings.UseIntBrowser);
         }
 
+        private void mnuShowMasked_Click(object sender, EventArgs e)
+        {
+            // Get all the items that have isProtected property and remove the protection
+            var protectedControls = this.GetLogicalChildrenByType<ProtectedTextBox>(false);
+            if (protectedControls != null)
+                foreach (var protectedControl in protectedControls)
+                {
+                    protectedControl.IsProtected = false;
+                }
+        }
+
         private void mnuAbout_Click(object sender, EventArgs e)
         {
             this.NavigateTo<Settings>("page=1");
@@ -425,7 +439,7 @@ namespace KeePass
 
             var protect = sender as ProtectedTextBox;
             if (protect != null)
-            { 
+            {
                 protect.SelectAll();
             }
         }
@@ -442,6 +456,7 @@ namespace KeePass
             byte[] bytes = utf8.GetBytes(txtPassword.Text + "\0");
             string content = utf8.GetString(bytes, 0, bytes.Length);
             Clipboard.SetText(content);
+            VibrateController.Default.Start(TimeSpan.FromMilliseconds(30));
         }
 
         private void txtName_Changed(object sender, TextChangedEventArgs e)

@@ -1,6 +1,6 @@
 using System;
 
-namespace KeePass.Sources.SkyDrive
+namespace KeePass.Sources.OneDrive
 {
     public class PathData
     {

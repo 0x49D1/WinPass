@@ -2,21 +2,22 @@ using System;
 using System.Linq;
 using System.Net;
 using System.Threading;
+using KeePass.Sources.OneDrive;
 using KeePass.Utils;
 using Newtonsoft.Json;
 using RestSharp;
 
-namespace KeePass.Sources.SkyDrive
+namespace KeePass.Sources.OneDrive
 {
-    internal class SkyDriveClient
+    internal class OneDriveClient
     {
         private readonly RestClient _client;
         private AccessTokenData _token;
 
-        public SkyDriveClient(string tokenData)
+        public OneDriveClient(string tokenData)
             : this(Parse(tokenData)) {}
 
-        private SkyDriveClient(AccessTokenData token)
+        private OneDriveClient(AccessTokenData token)
         {
             if (token == null)
                 throw new ArgumentNullException("token");
@@ -100,9 +101,9 @@ namespace KeePass.Sources.SkyDrive
         {
             var data = string.Format(
                 Resources.AuthTokenData,
-                ApiKeys.SKYDRIVE_CLIENT_ID,
-                ApiKeys.SKYDRIVE_REDIRECT,
-                ApiKeys.SKYDRIVE_SECRET, code);
+                ApiKeys.ONEDRIVE_CLIENT_ID,
+                ApiKeys.ONEDRIVE_REDIRECT,
+                ApiKeys.ONEDRIVE_SECRET, code);
 
             var client = new WebClient();
             client.Headers[HttpRequestHeader.ContentType] =
@@ -177,23 +178,23 @@ namespace KeePass.Sources.SkyDrive
             });
         }
 
-        public static SkyDriveClient ParsePath(
+        public static OneDriveClient ParsePath(
             string url, out string id)
         {
             var data = JsonConvert
                 .DeserializeObject<PathData>(url);
 
             id = data.ID;
-            return new SkyDriveClient(data.Token);
+            return new OneDriveClient(data.Token);
         }
 
         public void RefreshToken(Action completed)
         {
             var data = string.Format(
                 Resources.TokenRefreshData,
-                ApiKeys.SKYDRIVE_CLIENT_ID,
-                ApiKeys.SKYDRIVE_SECRET,
-                ApiKeys.SKYDRIVE_REDIRECT,
+                ApiKeys.ONEDRIVE_CLIENT_ID,
+                ApiKeys.ONEDRIVE_SECRET,
+                ApiKeys.ONEDRIVE_REDIRECT,
                 _token.refresh_token);
 
             var client = new WebClient();

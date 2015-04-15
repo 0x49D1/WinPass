@@ -13,7 +13,7 @@ namespace KeePass.Utils
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
             string text = (string)value;
-            return text.Length > 0 ? Visibility.Visible : Visibility.Collapsed;
+            return (!string.IsNullOrEmpty(text) && text.Length > 0) ? Visibility.Visible : Visibility.Collapsed;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
