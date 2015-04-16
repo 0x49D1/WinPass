@@ -131,8 +131,7 @@ Libraries used/referenced:</value>
     <value>om</value>
   </data>
   <data name="About_Purchase" xml:space="preserve">
-    <value>Purchase</value>
-    <comment>Purchase link caption</comment>
+    <value>Köp</value>
   </data>
   <data name="About_Review" xml:space="preserve">
     <value>Review</value>
