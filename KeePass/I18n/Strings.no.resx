@@ -119,73 +119,73 @@
   </resheader>
   <data name="About_Blog" xml:space="preserve">
     <value>
-Information angående App (Nyheter &amp; Feedback):</value>
+Informasjon om Appen (Nyheter &amp; Feedback):</value>
   </data>
   <data name="About_Libraries" xml:space="preserve">
-    <value>Bibliotek används / refereras:</value>
+    <value>Bibliotek som brukes / har referens til:</value>
   </data>
   <data name="About_PageTitle" xml:space="preserve">
     <value>om</value>
   </data>
   <data name="About_Purchase" xml:space="preserve">
-    <value>Köp</value>
+    <value>Kjøp</value>
   </data>
   <data name="About_Review" xml:space="preserve">
-    <value>Recension</value>
+    <value>Gjenomgang</value>
   </data>
   <data name="About_Source_Code" xml:space="preserve">
     <value>
-Källkod:</value>
+Kildekode:</value>
   </data>
   <data name="About_Version" xml:space="preserve">
-    <value>8Pass Version: {0}</value>
+    <value>8Pass Versjon: {0}</value>
   </data>
   <data name="AnalyticsSettings_Allow" xml:space="preserve">
-    <value>Tillåt</value>
+    <value>tillate</value>
   </data>
   <data name="AnalyticsSettings_Disable" xml:space="preserve">
-    <value>Inaktivera</value>
+    <value>Deaktivere</value>
   </data>
   <data name="AnalyticsSettings_PageTitle" xml:space="preserve">
     <value>analytics</value>
   </data>
   <data name="AnalyticsSettings_Policy" xml:space="preserve">
-    <value>8Pass samlar in användningsinformation för att kontinuerligt förbättra användarupplevelsen.
+    <value>8Pass samler bruksinformasjon for å kontinuerlig forbedre brukeropplevelsen.
 
-Den insamlade information kommer aldrig att ta din databasinformation, eller någon information som direkt kan identifiera dig. Dock:
-- 7Pass samlar in ditt installations-ID för att länka information som skickas från enheten tillsammans. Detta ändras varje gång 7Pass installeras.
-- Insamlingen använder mycket lite nätverkstrafik, men extra datatrafik förekommer.
+Den innsamlede informasjonen vil aldri ta databaseinformasjon, eller informasjon som kan direkte identifisere deg. Men:
+- 7Pass samler inn installasjonen ID for å koble informasjon sendt fra enheten sammen. Dette endres hver gang 7Pass installert.
+- Innsamlingen bruker svært lite nettverkstrafikk, men ytterligere datatrafikk forekommer.
 
-Den insamlade informationen kommer att vara mycket användbart för utveckling av 7Pass.
+Den innsamlede informasjonen vil være svært nyttig for utviklingen av 7Pass.
 
-Din installation ID som kommer att samlas in är:</value>
+Installasjons ID som vil bli samlet inn er:</value>
   </data>
   <data name="App_About" xml:space="preserve">
     <value>Om</value>
   </data>
   <data name="App_Databases" xml:space="preserve">
-    <value>Välj DB</value>
+    <value>Velg DB</value>
   </data>
   <data name="App_Home" xml:space="preserve">
-    <value>Hem</value>
+    <value>Hjem</value>
   </data>
   <data name="App_PWCopy" xml:space="preserve">
-    <value>Kopiera Lösenord</value>
+    <value>Kopiere Passord</value>
   </data>
   <data name="App_UNCopy" xml:space="preserve">
-    <value>Kopiera Användarnamn</value>
+    <value>Kopiere Brukernavn</value>
   </data>
   <data name="Clear" xml:space="preserve">
-    <value>Rensa</value>
+    <value>Rense</value>
   </data>
   <data name="DBDetail_LocalCH" xml:space="preserve">
-    <value>Lokala förändringar tillgängliga</value>
+    <value>Lokale forandringer er tilgjenglig</value>
   </data>
   <data name="DBDetail_Modified" xml:space="preserve">
     <value />
   </data>
   <data name="DBDetail_Name" xml:space="preserve">
-    <value>Databas Namn</value>
+    <value>Database Navn</value>
   </data>
   <data name="DBDetail_PageTitle" xml:space="preserve">
     <value>Egenskaper</value>
@@ -194,10 +194,10 @@ Din installation ID som kommer att samlas in är:</value>
     <value>Source: </value>
   </data>
   <data name="DBDetail_Type" xml:space="preserve">
-    <value>Typ: </value>
+    <value>Type: </value>
   </data>
   <data name="DBDetail_Updated" xml:space="preserve">
-    <value>Sista Updatering</value>
+    <value>Sist Updateringer</value>
   </data>
   <data name="DBDetail_URL" xml:space="preserve">
     <value>Databas URL</value>
@@ -209,13 +209,13 @@ Din installation ID som kommer att samlas in är:</value>
     <value>Lokal Database</value>
   </data>
   <data name="Download_OpenConfirm" xml:space="preserve">
-    <value>Bekräfta öppnande av databasfilen '</value>
+    <value>Bekreft åpning av databasefilen '</value>
   </data>
   <data name="Download_OpenDB" xml:space="preserve">
-    <value>Öppna databas filen</value>
+    <value>Åpne databasfilen</value>
   </data>
   <data name="Download_PageTitle" xml:space="preserve">
-    <value>Lägg till databas</value>
+    <value>Legg til en databas</value>
   </data>
   <data name="Download_Web" xml:space="preserve">
     <value>Web Server</value>
@@ -227,19 +227,19 @@ Din installation ID som kommer att samlas in är:</value>
     <value>Login</value>
   </data>
   <data name="DropBox_Password" xml:space="preserve">
-    <value>Lösenord</value>
+    <value>Passord</value>
   </data>
   <data name="EntryDetails_ExternalBrowser" xml:space="preserve">
-    <value>Använd Telefonens Webläsare</value>
+    <value>Bruk Telefonens Nettleser</value>
   </data>
   <data name="EntryDetails_Fields" xml:space="preserve">
-    <value>Fält</value>
+    <value>Felt</value>
   </data>
   <data name="EntryDetails_GeneratePassword" xml:space="preserve">
-    <value>Generera Lösenord</value>
+    <value>Generere Passord</value>
   </data>
   <data name="EntryDetails_IntegratedBrowser" xml:space="preserve">
-    <value>Använd integrerad Webläsare</value>
+    <value>Bruk den integrerte Nettleseren</value>
   </data>
   <data name="EntryDetails_Notes" xml:space="preserve">
     <value>Notater</value>
@@ -248,34 +248,34 @@ Din installation ID som kommer att samlas in är:</value>
     <value>Entry</value>
   </data>
   <data name="EntryDetails_Password" xml:space="preserve">
-    <value>Lösenord</value>
+    <value>Passord</value>
   </data>
   <data name="EntryDetails_ResetEntry" xml:space="preserve">
-    <value>Återställ Entry</value>
+    <value>Tilbakestill Entry</value>
   </data>
   <data name="EntryDetails_SaveEntry" xml:space="preserve">
-    <value>Spara</value>
+    <value>Spare</value>
   </data>
   <data name="EntryDetails_ShowAllMasked" xml:space="preserve">
-    <value>Visa alla maskerade fält</value>
+    <value>Vis alle maskerte felt</value>
   </data>
   <data name="EntryDetails_Title" xml:space="preserve">
-    <value>Titel</value>
+    <value>Tittel</value>
   </data>
   <data name="EntryDetails_Url" xml:space="preserve">
     <value>URL</value>
   </data>
   <data name="EntryDetails_Username" xml:space="preserve">
-    <value>Användarnamn</value>
+    <value>Brukernavn</value>
   </data>
   <data name="EntryFields_Add" xml:space="preserve">
-    <value>Lägg till</value>
+    <value>Legg til</value>
   </data>
   <data name="EntryFields_PageTitle" xml:space="preserve">
-    <value>Fält</value>
+    <value>Felt</value>
   </data>
   <data name="EntryNotes_ClearAll" xml:space="preserve">
-    <value>Rensa alla</value>
+    <value>Rens alt</value>
   </data>
   <data name="EntryNotes_PageTitle" xml:space="preserve">
     <value>Notater</value>
@@ -284,25 +284,25 @@ Din installation ID som kommer att samlas in är:</value>
     <value>OK</value>
   </data>
   <data name="GlobalPassVerify_PageTitle" xml:space="preserve">
-    <value>Globalt lösenord</value>
+    <value>Globalt passord</value>
   </data>
   <data name="GlobalPassVerify_Prompt" xml:space="preserve">
-    <value>Ange ditt lösenord för att låsa upp 8Pass</value>
+    <value>Skriv in passordet ditt for å låse opp 8Pass</value>
   </data>
   <data name="GlobalPass_Confirm" xml:space="preserve">
-    <value>Bekräfta lösenord</value>
+    <value>Bekreft passordet</value>
   </data>
   <data name="GlobalPass_PageTitle" xml:space="preserve">
-    <value>Globalt lösenord</value>
+    <value>Globalt passord</value>
   </data>
   <data name="GlobalPass_Password" xml:space="preserve">
-    <value>Globalt lösenord</value>
+    <value>Globalt passord</value>
   </data>
   <data name="GlobalPass_Set" xml:space="preserve">
     <value>Set</value>
   </data>
   <data name="GroupDetails_ClearHistory" xml:space="preserve">
-    <value>Rensa Historie Listan</value>
+    <value>Rens Historie Listen</value>
   </data>
   <data name="GroupDetails_Delete" xml:space="preserve">
     <value>Delete</value>
@@ -317,25 +317,25 @@ Din installation ID som kommer att samlas in är:</value>
     <value>Ny Entry</value>
   </data>
   <data name="GroupDetails_NewGroup" xml:space="preserve">
-    <value>Ny Group</value>
+    <value>Ny Gruppe</value>
   </data>
   <data name="GroupDetails_Rename" xml:space="preserve">
-    <value>döpa om</value>
+    <value>gi nytt navn</value>
   </data>
   <data name="GroupDetails_Search" xml:space="preserve">
-    <value>Sök</value>
+    <value>Søk</value>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Loading</value>
+    <value>Laster</value>
   </data>
   <data name="MainPage_AddNew" xml:space="preserve">
-    <value>Lägg till Ny</value>
+    <value>Legg til Ny</value>
   </data>
   <data name="MainPage_ClearKeyfile" xml:space="preserve">
-    <value>rensa keyfile</value>
+    <value>rense nøkkelfil</value>
   </data>
   <data name="MainPage_ClearPassword" xml:space="preserve">
-    <value>rensa lösenord</value>
+    <value>rense passord</value>
   </data>
   <data name="MainPage_DBInfo" xml:space="preserve">
     <value>Egenskaper</value>
@@ -344,73 +344,73 @@ Din installation ID som kommer att samlas in är:</value>
     <value>delete</value>
   </data>
   <data name="MainPage_DownloadKeyfile" xml:space="preserve">
-    <value>Ladda när keyfile</value>
+    <value>Last ned nøkkelfil</value>
   </data>
   <data name="MainPage_PageTitle" xml:space="preserve">
     <value>databaser</value>
   </data>
   <data name="MainPage_Pin" xml:space="preserve">
-    <value>pin databas</value>
+    <value>pin database</value>
   </data>
   <data name="MainPage_Rename" xml:space="preserve">
-    <value>döpa om</value>
+    <value>gi nytt navn</value>
   </data>
   <data name="MainPage_Settings" xml:space="preserve">
-    <value>inställningar</value>
+    <value>innstillinger</value>
   </data>
   <data name="MainPage_SyncAll" xml:space="preserve">
-    <value>synkronisera / uppdatera alla</value>
+    <value>sync / oppdater alle</value>
   </data>
   <data name="MoveTarget_MoveHere" xml:space="preserve">
-    <value>Flytt Hit</value>
+    <value>Flytte Hit</value>
   </data>
   <data name="MoveTarget_PageTitle" xml:space="preserve">
-    <value>flytta till</value>
+    <value>flytte til</value>
   </data>
   <data name="PassGen_Generate" xml:space="preserve">
-    <value>generera</value>
+    <value>generere</value>
   </data>
   <data name="PassGen_Length" xml:space="preserve">
-    <value>Längd på det genererad lösenordet</value>
+    <value>Lengden på den genererte passord</value>
   </data>
   <data name="PassGen_PageTitle" xml:space="preserve">
-    <value>lösenord</value>
+    <value>passord</value>
   </data>
   <data name="PassGen_Results" xml:space="preserve">
     <value>resultat</value>
   </data>
   <data name="PassGen_Settings" xml:space="preserve">
-    <value>inställningar</value>
+    <value>innstillinger</value>
   </data>
   <data name="Password_Open" xml:space="preserve">
-    <value>Öppna</value>
+    <value>Åpne</value>
   </data>
   <data name="Password_PageTitle" xml:space="preserve">
     <value>master key</value>
   </data>
   <data name="Password_Password" xml:space="preserve">
-    <value>Master lösenord</value>
+    <value>Master passord</value>
   </data>
   <data name="Password_Remember" xml:space="preserve">
-    <value>Kom ihåg mitt lösenord</value>
+    <value>Husk passordet mitt</value>
   </data>
   <data name="Refresh" xml:space="preserve">
     <value>Refresh</value>
   </data>
   <data name="Rename_PageTitle" xml:space="preserve">
-    <value>döpa om</value>
+    <value>gi nytt navn</value>
   </data>
   <data name="Rename_Prompt" xml:space="preserve">
-    <value>Ange nytt namn för {0}:</value>
+    <value>Skriv inn det nye navnet for {0}:</value>
   </data>
   <data name="Rename_Rename" xml:space="preserve">
-    <value>Döpa om</value>
+    <value>Gi nytt navn</value>
   </data>
   <data name="Search_PageTitle" xml:space="preserve">
-    <value>sök</value>
+    <value>søk</value>
   </data>
   <data name="Settings_Analytics" xml:space="preserve">
-    <value>Använd Datainsamling</value>
+    <value>Bruk datainnsamling</value>
   </data>
   <data name="Settings_AutoUpdate" xml:space="preserve">
     <value>AutoSync</value>
@@ -425,91 +425,91 @@ Din installation ID som kommer att samlas in är:</value>
     <value>Aktiv med WLAN</value>
   </data>
   <data name="Settings_AutoUpdateWLAN" xml:space="preserve">
-    <value>Endast Auto Update med WiFi</value>
+    <value>Kun Auto Update med WiFi</value>
   </data>
   <data name="Settings_ClearPassword" xml:space="preserve">
-    <value>Återställ Lösenord</value>
+    <value>Tillbakestill passord</value>
   </data>
   <data name="Settings_GlobalPass" xml:space="preserve">
-    <value>Kräver lösenord</value>
+    <value>Krever passord</value>
   </data>
   <data name="Settings_HideRecycleBin" xml:space="preserve">
-    <value>Göm papperskorgen</value>
+    <value>Skjul papirkurven</value>
   </data>
   <data name="Settings_IntegratedBrwoser" xml:space="preserve">
-    <value>Använd den inbyggda webläsaren</value>
+    <value>Bruk den innebyggde nettleseren</value>
   </data>
   <data name="Settings_PageTitle" xml:space="preserve">
-    <value>inställningar</value>
+    <value>innstillinger</value>
   </data>
   <data name="Settings_PWSearch" xml:space="preserve">
-    <value>Sök i Lösenord</value>
+    <value>Søk i passord</value>
   </data>
   <data name="Settings_SyncToast" xml:space="preserve">
-    <value>Vis Toast meddelande efter Sync</value>
+    <value>Vis Toast melding etter Sync</value>
   </data>
   <data name="SkyDrive_Unsupported" xml:space="preserve">
-    <value>På grund av SkyDrive begränsning, måste din databas döpas till ".doc".
-Vill du att 7Pass lägger till ".doc" till din databasnamn och sedan hämta den?</value>
+    <value>Grunnet SkyDrive begrensning, må din database døpes om til ".doc".
+Vil du at 7Pass legge til ".doc" til din databasenavn og deretter laste den ned igjen?</value>
   </data>
   <data name="Sync_MessDownSucc" xml:space="preserve">
-    <value>Nedladdning av databasen lyckades</value>
+    <value>Nedlasting av databasen var vellykket</value>
   </data>
   <data name="Sync_MessNoChange" xml:space="preserve">
-    <value>Ingen förändring är Databasen</value>
+    <value>Ingen endring i databasen</value>
   </data>
   <data name="Sync_MessUpSucc" xml:space="preserve">
-    <value>Ladda om Databasen lyckades</value>
+    <value>Omlasting av Databasen var vellykket</value>
   </data>
   <data name="Sync_Title" xml:space="preserve">
     <value>Synkronisering</value>
   </data>
   <data name="WebAuth_Authentication" xml:space="preserve">
-    <value>Servern kräver autentisering</value>
+    <value>Server krever godkjenning</value>
   </data>
   <data name="WebAuth_Domain" xml:space="preserve">
-    <value>Domän</value>
+    <value>Domene</value>
   </data>
   <data name="WebAuth_Password" xml:space="preserve">
-    <value>Lösenord</value>
+    <value>Passord</value>
   </data>
   <data name="WebAuth_User" xml:space="preserve">
-    <value>Användare</value>
+    <value>Brukere</value>
   </data>
   <data name="WebBrowse_PageTitle" xml:space="preserve">
-    <value>detektera länkar</value>
+    <value>oppdage lenker</value>
   </data>
   <data name="WebDavDownload_Open" xml:space="preserve">
-    <value>Öppna</value>
+    <value>Åpne</value>
   </data>
   <data name="WebDavDownload_PageTitle" xml:space="preserve">
     <value>download</value>
   </data>
   <data name="WebDavDownload_Password" xml:space="preserve">
-    <value>Lösenord</value>
+    <value>passord</value>
   </data>
   <data name="WebDavDownload_Url" xml:space="preserve">
-    <value>Databas URL</value>
+    <value>Database URL</value>
   </data>
   <data name="WebDavDownload_Username" xml:space="preserve">
-    <value>Användarnamn</value>
+    <value>Brukernavn</value>
   </data>
   <data name="WebDownload_Open" xml:space="preserve">
-    <value>Öppna</value>
+    <value>Åpne</value>
   </data>
   <data name="WebDownload_PageTitle" xml:space="preserve">
     <value>download</value>
   </data>
   <data name="WebDownload_Url" xml:space="preserve">
-    <value>Databas URL</value>
+    <value>Database URL</value>
   </data>
   <data name="WebView_GoBack" xml:space="preserve">
-    <value>Gå tillbaks</value>
+    <value>Gå tilbake</value>
   </data>
   <data name="WebView_Password" xml:space="preserve">
-    <value>Lösenord</value>
+    <value>Passord</value>
   </data>
   <data name="WebView_Username" xml:space="preserve">
-    <value>Användarnamn</value>
+    <value>Brukernavn</value>
   </data>
 </root>
