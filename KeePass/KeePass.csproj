@@ -746,6 +746,9 @@
     <EmbeddedResource Include="I18n\Strings.nl.resx">
       <DependentUpon>Strings.resx</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="I18n\Strings.no.resx">
+      <DependentUpon>Strings.resx</DependentUpon>
+	</EmbeddedResource>
     <EmbeddedResource Include="I18n\Strings.pl.resx">
       <DependentUpon>Strings.resx</DependentUpon>
     </EmbeddedResource>
@@ -759,7 +762,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="I18n\Strings.sv.resx">
       <DependentUpon>Strings.resx</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.de.resx">
       <DependentUpon>Resources.resx</DependentUpon>
     </EmbeddedResource>
