@@ -119,13 +119,10 @@
   </resheader>
   <data name="About_Blog" xml:space="preserve">
     <value>
-Infos regarding App (News &amp; Feedback):</value>
-    <comment>Description for link to 7Pass blog</comment>
+Information angående App (Nyheter &amp; Feedback):</value>
   </data>
   <data name="About_Libraries" xml:space="preserve">
-    <value>
-Libraries used/referenced:</value>
-    <comment>Description for links to used/referenced</comment>
+    <value>Bibliotek används / refereras:</value>
   </data>
   <data name="About_PageTitle" xml:space="preserve">
     <value>om</value>
@@ -134,486 +131,385 @@ Libraries used/referenced:</value>
     <value>Köp</value>
   </data>
   <data name="About_Review" xml:space="preserve">
-    <value>Review</value>
-    <comment>Review link caption</comment>
+    <value>Recension</value>
   </data>
   <data name="About_Source_Code" xml:space="preserve">
     <value>
-Source Code:</value>
-    <comment>Description for link to source code</comment>
+Källkod:</value>
   </data>
   <data name="About_Version" xml:space="preserve">
     <value>8Pass Version: {0}</value>
-    <comment>Format string for 7Pass version text
-      0: version number</comment>
   </data>
   <data name="AnalyticsSettings_Allow" xml:space="preserve">
-    <value>Allow</value>
-    <comment>Allow analytics data sending button caption</comment>
+    <value>Tillåt</value>
   </data>
   <data name="AnalyticsSettings_Disable" xml:space="preserve">
-    <value>Disable</value>
-    <comment>Disable analytics data sending button caption</comment>
+    <value>Inaktivera</value>
   </data>
   <data name="AnalyticsSettings_PageTitle" xml:space="preserve">
     <value>analytics</value>
-    <comment>Analytics page title</comment>
   </data>
   <data name="AnalyticsSettings_Policy" xml:space="preserve">
-    <value>8Pass collects usage information in order to continuously enhance user experience.
+    <value>8Pass samlar in användningsinformation för att kontinuerligt förbättra användarupplevelsen.
 
-The collection information will never have your database information, or any information that can directly identify you. However:
-- 7Pass does collect your installation ID to link information sent from your device together. This changes everytime 7Pass is installed.
-- Usage collection uses very little network traffic, but the cost to your bill may add up if you're on a capped plan.
+Den insamlade information kommer aldrig att ta din databasinformation, eller någon information som direkt kan identifiera dig. Dock:
+- 7Pass samlar in ditt installations-ID för att länka information som skickas från enheten tillsammans. Detta ändras varje gång 7Pass installeras.
+- Insamlingen använder mycket lite nätverkstrafik, men extra datatrafik förekommer.
 
-The collected information will be very useful for development of 7Pass.
+Den insamlade informationen kommer att vara mycket användbart för utveckling av 7Pass.
 
-Your installation ID that will be collected is:</value>
-    <comment>Analytics policy</comment>
+Din installation ID som kommer att samlas in är:</value>
   </data>
   <data name="App_About" xml:space="preserve">
-    <value>About</value>
-    <comment>Link to About page</comment>
+    <value>Om</value>
   </data>
   <data name="App_Databases" xml:space="preserve">
-    <value>Select DB</value>
-    <comment>Link to Databases select page</comment>
+    <value>Välj DB</value>
   </data>
   <data name="App_Home" xml:space="preserve">
-    <value>Home</value>
-    <comment>Link to Root group page</comment>
+    <value>Hem</value>
   </data>
   <data name="App_PWCopy" xml:space="preserve">
-    <value>Copy Password</value>
+    <value>Kopiera Lösenord</value>
   </data>
   <data name="App_UNCopy" xml:space="preserve">
-    <value>Copy Username</value>
+    <value>Kopiera Användarnamn</value>
   </data>
   <data name="Clear" xml:space="preserve">
-    <value>Clear</value>
-    <comment>Generic Clear button caption</comment>
+    <value>Rensa</value>
   </data>
   <data name="DBDetail_LocalCH" xml:space="preserve">
-    <value>Local Changes available</value>
+    <value>Lokala förändringar tillgängliga</value>
   </data>
   <data name="DBDetail_Modified" xml:space="preserve">
     <value />
   </data>
   <data name="DBDetail_Name" xml:space="preserve">
-    <value>Database Name</value>
+    <value>Databas Namn</value>
   </data>
   <data name="DBDetail_PageTitle" xml:space="preserve">
-    <value>Properties</value>
+    <value>Egenskaper</value>
   </data>
   <data name="DBDetail_Source" xml:space="preserve">
     <value>Source: </value>
   </data>
   <data name="DBDetail_Type" xml:space="preserve">
-    <value>Type: </value>
+    <value>Typ: </value>
   </data>
   <data name="DBDetail_Updated" xml:space="preserve">
-    <value>Last Update</value>
+    <value>Sista Updatering</value>
   </data>
   <data name="DBDetail_URL" xml:space="preserve">
-    <value>Database URL</value>
+    <value>Databas URL</value>
   </data>
   <data name="Download_Demo" xml:space="preserve">
     <value>Demo Database</value>
-    <comment>Demo database link text</comment>
   </data>
   <data name="Download_LocalFile" xml:space="preserve">
-    <value>Local Database</value>
+    <value>Lokal Database</value>
   </data>
   <data name="Download_OpenConfirm" xml:space="preserve">
-    <value>Please confirm opening database file '</value>
+    <value>Bekräfta öppnande av databasfilen '</value>
   </data>
   <data name="Download_OpenDB" xml:space="preserve">
-    <value>Open database file</value>
+    <value>Öppna databas filen</value>
   </data>
   <data name="Download_PageTitle" xml:space="preserve">
-    <value>Add database</value>
-    <comment>Add new database page title</comment>
+    <value>Lägg till databas</value>
   </data>
   <data name="Download_Web" xml:space="preserve">
     <value>Web Server</value>
-    <comment>Web server source link text</comment>
   </data>
   <data name="DropBox_Email" xml:space="preserve">
-    <value>Email</value>
-    <comment>Email field caption</comment>
+    <value>Epost</value>
   </data>
   <data name="DropBox_Login" xml:space="preserve">
     <value>Login</value>
-    <comment>Login button caption</comment>
   </data>
   <data name="DropBox_Password" xml:space="preserve">
-    <value>Password</value>
-    <comment>Password field caption</comment>
+    <value>Lösenord</value>
   </data>
   <data name="EntryDetails_ExternalBrowser" xml:space="preserve">
-    <value>Use Phone Browser</value>
-    <comment>Popup menu item to use OS' browser to browse parsed URL</comment>
+    <value>Använd Telefonens Webläsare</value>
   </data>
   <data name="EntryDetails_Fields" xml:space="preserve">
-    <value>Fields</value>
-    <comment>Link to Fields page</comment>
+    <value>Fält</value>
   </data>
   <data name="EntryDetails_GeneratePassword" xml:space="preserve">
-    <value>Generate Password</value>
-    <comment>Generate password button caption</comment>
+    <value>Generera Lösenord</value>
   </data>
   <data name="EntryDetails_IntegratedBrowser" xml:space="preserve">
-    <value>Use integrated Browser</value>
-    <comment>Popup menu item to use integrated browser to browse parsed URL</comment>
+    <value>Använd integrerad Webläsare</value>
   </data>
   <data name="EntryDetails_Notes" xml:space="preserve">
-    <value>Notes</value>
-    <comment>Notes field caption</comment>
+    <value>Notater</value>
   </data>
   <data name="EntryDetails_PageTitle" xml:space="preserve">
     <value>Entry</value>
-    <comment>Entry page title</comment>
   </data>
   <data name="EntryDetails_Password" xml:space="preserve">
-    <value>Password</value>
-    <comment>Password field caption</comment>
+    <value>Lösenord</value>
   </data>
   <data name="EntryDetails_ResetEntry" xml:space="preserve">
-    <value>Reset Entry</value>
-    <comment>Reset entry button caption</comment>
+    <value>Återställ Entry</value>
   </data>
   <data name="EntryDetails_SaveEntry" xml:space="preserve">
-    <value>Save</value>
-    <comment>Save entry button caption</comment>
+    <value>Spara</value>
   </data>
   <data name="EntryDetails_ShowAllMasked" xml:space="preserve">
-    <value>Reveal all masked fields</value>
-    <comment>Opens protected text on all the controls in view</comment>
+    <value>Visa alla maskerade fält</value>
   </data>
   <data name="EntryDetails_Title" xml:space="preserve">
-    <value>Title</value>
-    <comment>Entry title field caption</comment>
+    <value>Titel</value>
   </data>
   <data name="EntryDetails_Url" xml:space="preserve">
     <value>URL</value>
-    <comment>Url field caption</comment>
   </data>
   <data name="EntryDetails_Username" xml:space="preserve">
-    <value>User name</value>
-    <comment>User name field caption</comment>
+    <value>Användarnamn</value>
   </data>
   <data name="EntryFields_Add" xml:space="preserve">
-    <value>Add</value>
-    <comment>Add new field button caption</comment>
+    <value>Lägg till</value>
   </data>
   <data name="EntryFields_PageTitle" xml:space="preserve">
-    <value>Fields</value>
-    <comment>Entry fields page title</comment>
+    <value>Fält</value>
   </data>
   <data name="EntryNotes_ClearAll" xml:space="preserve">
-    <value>Clear All</value>
-    <comment>Clear all notes button caption</comment>
+    <value>Rensa alla</value>
   </data>
   <data name="EntryNotes_PageTitle" xml:space="preserve">
-    <value>Notes</value>
-    <comment>Entry notes page title</comment>
+    <value>Notater</value>
   </data>
   <data name="GlobalPassVerify_OK" xml:space="preserve">
     <value>OK</value>
-    <comment>Verifies global password button caption</comment>
   </data>
   <data name="GlobalPassVerify_PageTitle" xml:space="preserve">
-    <value>Global password</value>
-    <comment>Global pass verify page title</comment>
+    <value>Globalt lösenord</value>
   </data>
   <data name="GlobalPassVerify_Prompt" xml:space="preserve">
-    <value>Please enter your password to unlock 8Pass</value>
-    <comment>Prompt to ask user to enter global password</comment>
+    <value>Ange ditt lösenord för att låsa upp 8Pass</value>
   </data>
   <data name="GlobalPass_Confirm" xml:space="preserve">
-    <value>Confirm your password</value>
-    <comment>Password confirm field caption</comment>
+    <value>Bekräfta lösenord</value>
   </data>
   <data name="GlobalPass_PageTitle" xml:space="preserve">
-    <value>Global password</value>
-    <comment>Set global password page title</comment>
+    <value>Globalt lösenord</value>
   </data>
   <data name="GlobalPass_Password" xml:space="preserve">
-    <value>Global password</value>
-    <comment>Password field caption</comment>
+    <value>Globalt lösenord</value>
   </data>
   <data name="GlobalPass_Set" xml:space="preserve">
     <value>Set</value>
-    <comment>Sets global password button caption</comment>
   </data>
   <data name="GroupDetails_ClearHistory" xml:space="preserve">
-    <value>Clear History List</value>
-    <comment>Clear history list button caption</comment>
+    <value>Rensa Historie Listan</value>
   </data>
   <data name="GroupDetails_Delete" xml:space="preserve">
     <value>Delete</value>
-    <comment>Pop up menu item to delete entry/group text</comment>
   </data>
   <data name="GroupDetails_History" xml:space="preserve">
-    <value>History</value>
-    <comment>Pivot title for recently viewed entries</comment>
+    <value>Historie</value>
   </data>
   <data name="GroupDetails_Move" xml:space="preserve">
-    <value>move</value>
-    <comment>Pop up menu item to move entry/group text</comment>
+    <value>flytt</value>
   </data>
   <data name="GroupDetails_NewEntry" xml:space="preserve">
-    <value>New Entry</value>
-    <comment>Add new entry button caption</comment>
+    <value>Ny Entry</value>
   </data>
   <data name="GroupDetails_NewGroup" xml:space="preserve">
-    <value>New Group</value>
-    <comment>Add new group button caption</comment>
+    <value>Ny Group</value>
   </data>
   <data name="GroupDetails_Rename" xml:space="preserve">
-    <value>rename</value>
-    <comment>Pop up menu item to rename entry/group text</comment>
+    <value>döpa om</value>
   </data>
   <data name="GroupDetails_Search" xml:space="preserve">
-    <value>Search</value>
-    <comment>Link to Search page</comment>
+    <value>Sök</value>
   </data>
   <data name="Loading" xml:space="preserve">
     <value>Loading</value>
-    <comment>Loading generic text</comment>
   </data>
   <data name="MainPage_AddNew" xml:space="preserve">
-    <value>Add New</value>
-    <comment>Add new database button caption</comment>
+    <value>Lägg till Ny</value>
   </data>
   <data name="MainPage_ClearKeyfile" xml:space="preserve">
-    <value>clear keyfile</value>
-    <comment>Pop up menu item to clear keyfile text</comment>
+    <value>rensa keyfile</value>
   </data>
   <data name="MainPage_ClearPassword" xml:space="preserve">
-    <value>clear password</value>
-    <comment>Pop up menu item to clear remembered password text</comment>
+    <value>rensa lösenord</value>
   </data>
   <data name="MainPage_DBInfo" xml:space="preserve">
-    <value>Properties</value>
-    <comment>Shows Details about selected DB</comment>
+    <value>Egenskaper</value>
   </data>
   <data name="MainPage_Delete" xml:space="preserve">
     <value>delete</value>
-    <comment>Pop up menu item to delete database text</comment>
   </data>
   <data name="MainPage_DownloadKeyfile" xml:space="preserve">
-    <value>download keyfile</value>
-    <comment>Pop up menu item to download keyfile text</comment>
+    <value>Ladda när keyfile</value>
   </data>
   <data name="MainPage_PageTitle" xml:space="preserve">
-    <value>databases</value>
-    <comment>Database select page title</comment>
+    <value>databaser</value>
   </data>
   <data name="MainPage_Pin" xml:space="preserve">
-    <value>pin database</value>
-    <comment>Pop up menu item to pin database to phone's Start screen</comment>
+    <value>pin databas</value>
   </data>
   <data name="MainPage_Rename" xml:space="preserve">
-    <value>rename</value>
-    <comment>Pop up menu item to rename database text</comment>
+    <value>döpa om</value>
   </data>
   <data name="MainPage_Settings" xml:space="preserve">
-    <value>settings</value>
-    <comment>Link to Settings page</comment>
+    <value>inställningar</value>
   </data>
   <data name="MainPage_SyncAll" xml:space="preserve">
-    <value>synchronize / update all</value>
-    <comment>Synchronize (or update if sync is not available) all databases caption button</comment>
+    <value>synkronisera / uppdatera alla</value>
   </data>
   <data name="MoveTarget_MoveHere" xml:space="preserve">
-    <value>Move Here</value>
-    <comment>Perform entry/group move button caption</comment>
+    <value>Flytt Hit</value>
   </data>
   <data name="MoveTarget_PageTitle" xml:space="preserve">
-    <value>move to</value>
-    <comment>Move target select page title</comment>
+    <value>flytta till</value>
   </data>
   <data name="PassGen_Generate" xml:space="preserve">
-    <value>generate</value>
-    <comment>Gernerate password button caption</comment>
+    <value>generera</value>
   </data>
   <data name="PassGen_Length" xml:space="preserve">
-    <value>Length of generated password</value>
-    <comment>Password generation length slider caption</comment>
+    <value>Längd på det genererad lösenordet</value>
   </data>
   <data name="PassGen_PageTitle" xml:space="preserve">
-    <value>password</value>
-    <comment>Password generation page title</comment>
+    <value>lösenord</value>
   </data>
   <data name="PassGen_Results" xml:space="preserve">
-    <value>results</value>
-    <comment>Pivot title for generated passwords list</comment>
+    <value>resultat</value>
   </data>
   <data name="PassGen_Settings" xml:space="preserve">
-    <value>settings</value>
-    <comment>Pivot title for password generation settings</comment>
+    <value>inställningar</value>
   </data>
   <data name="Password_Open" xml:space="preserve">
-    <value>Open</value>
-    <comment>Open the database button caption</comment>
+    <value>Öppna</value>
   </data>
   <data name="Password_PageTitle" xml:space="preserve">
     <value>master key</value>
-    <comment>Master password to open database page title</comment>
   </data>
   <data name="Password_Password" xml:space="preserve">
-    <value>Master password</value>
-    <comment>Password field caption</comment>
+    <value>Master lösenord</value>
   </data>
   <data name="Password_Remember" xml:space="preserve">
-    <value>Remember my password</value>
-    <comment>Remember password toggle caption</comment>
+    <value>Kom ihåg mitt lösenord</value>
   </data>
   <data name="Refresh" xml:space="preserve">
     <value>Refresh</value>
-    <comment>Generic Refresh button caption</comment>
   </data>
   <data name="Rename_PageTitle" xml:space="preserve">
-    <value>rename</value>
-    <comment>Entry/group rename page title</comment>
+    <value>döpa om</value>
   </data>
   <data name="Rename_Prompt" xml:space="preserve">
-    <value>Please enter new name for {0}:</value>
-    <comment>Prompt to enter new entry/group name</comment>
+    <value>Ange nytt namn för {0}:</value>
   </data>
   <data name="Rename_Rename" xml:space="preserve">
-    <value>Rename</value>
-    <comment>Perform rename button caption</comment>
+    <value>Döpa om</value>
   </data>
   <data name="Search_PageTitle" xml:space="preserve">
-    <value>search</value>
-    <comment>Search page title</comment>
+    <value>sök</value>
   </data>
   <data name="Settings_Analytics" xml:space="preserve">
-    <value>Usage Data Collection</value>
-    <comment>Link to Analytics settings caption</comment>
+    <value>Använd Datainsamling</value>
   </data>
   <data name="Settings_AutoUpdate" xml:space="preserve">
     <value>AutoSync</value>
-    <comment>Check Database changes Online</comment>
   </data>
   <data name="Settings_AutoUpdateActive" xml:space="preserve">
-    <value>Active</value>
+    <value>Aktiv</value>
   </data>
   <data name="Settings_AutoUpdateInactive" xml:space="preserve">
-    <value>Inactive</value>
+    <value>Inaktiv</value>
   </data>
   <data name="Settings_AutoUpdateSWLAN" xml:space="preserve">
-    <value>Active with WLAN</value>
+    <value>Aktiv med WLAN</value>
   </data>
   <data name="Settings_AutoUpdateWLAN" xml:space="preserve">
-    <value>Auto Update with WiFi only</value>
+    <value>Endast Auto Update med WiFi</value>
   </data>
   <data name="Settings_ClearPassword" xml:space="preserve">
-    <value>Reset Password</value>
+    <value>Återställ Lösenord</value>
   </data>
   <data name="Settings_GlobalPass" xml:space="preserve">
-    <value>Requires password</value>
-    <comment>Global pass toggle caption</comment>
+    <value>Kräver lösenord</value>
   </data>
   <data name="Settings_HideRecycleBin" xml:space="preserve">
-    <value>Hide recycle bin</value>
-    <comment>Hide Recycle Bin toggle caption</comment>
+    <value>Göm papperskorgen</value>
   </data>
   <data name="Settings_IntegratedBrwoser" xml:space="preserve">
-    <value>Use integrated browser</value>
-    <comment>Integrated browser toggle caption</comment>
+    <value>Använd den inbyggda webläsaren</value>
   </data>
   <data name="Settings_PageTitle" xml:space="preserve">
-    <value>settings</value>
-    <comment>Settings page title</comment>
+    <value>inställningar</value>
   </data>
   <data name="Settings_PWSearch" xml:space="preserve">
-    <value>Search in Passwords</value>
-    <comment>Search in Passwords</comment>
+    <value>Sök i Lösenord</value>
   </data>
   <data name="Settings_SyncToast" xml:space="preserve">
-    <value>Display Toast after Sync</value>
+    <value>Vis Toast meddelande efter Sync</value>
   </data>
   <data name="SkyDrive_Unsupported" xml:space="preserve">
-    <value>Due to SkyDrive limitation, your database has to be renamed to ".doc" extension.
-Do you want 7Pass to append ".doc" to your database name and then download it?</value>
+    <value>På grund av SkyDrive begränsning, måste din databas döpas till ".doc".
+Vill du att 7Pass lägger till ".doc" till din databasnamn och sedan hämta den?</value>
   </data>
   <data name="Sync_MessDownSucc" xml:space="preserve">
-    <value>Download of Database was successful</value>
+    <value>Nedladdning av databasen lyckades</value>
   </data>
   <data name="Sync_MessNoChange" xml:space="preserve">
-    <value>No Change, DB is already actual</value>
+    <value>Ingen förändring är Databasen</value>
   </data>
   <data name="Sync_MessUpSucc" xml:space="preserve">
-    <value>Upload of Database was successful</value>
+    <value>Ladda om Databasen lyckades</value>
   </data>
   <data name="Sync_Title" xml:space="preserve">
-    <value>Synchronization</value>
+    <value>Synkronisering</value>
   </data>
   <data name="WebAuth_Authentication" xml:space="preserve">
-    <value>Server requires authentication</value>
-    <comment>Check box to enable/disable authentication caption</comment>
+    <value>Servern kräver autentisering</value>
   </data>
   <data name="WebAuth_Domain" xml:space="preserve">
-    <value>Domain</value>
-    <comment>Domain field caption</comment>
+    <value>Domän</value>
   </data>
   <data name="WebAuth_Password" xml:space="preserve">
-    <value>Password</value>
-    <comment>Password field caption</comment>
+    <value>Lösenord</value>
   </data>
   <data name="WebAuth_User" xml:space="preserve">
-    <value>User</value>
-    <comment>Username field caption</comment>
+    <value>Användare</value>
   </data>
   <data name="WebBrowse_PageTitle" xml:space="preserve">
-    <value>detected links</value>
-    <comment>Web links list page title</comment>
+    <value>detektera länkar</value>
   </data>
   <data name="WebDavDownload_Open" xml:space="preserve">
-    <value>Open</value>
-    <comment>WebDAV server connect button caption</comment>
+    <value>Öppna</value>
   </data>
   <data name="WebDavDownload_PageTitle" xml:space="preserve">
     <value>download</value>
-    <comment>WebDAV authentication page title</comment>
   </data>
   <data name="WebDavDownload_Password" xml:space="preserve">
-    <value>Password</value>
-    <comment>Password field caption</comment>
+    <value>Lösenord</value>
   </data>
   <data name="WebDavDownload_Url" xml:space="preserve">
-    <value>Database URL</value>
-    <comment>URL to database field caption</comment>
+    <value>Databas URL</value>
   </data>
   <data name="WebDavDownload_Username" xml:space="preserve">
-    <value>Username</value>
-    <comment>Username field caption</comment>
+    <value>Användarnamn</value>
   </data>
   <data name="WebDownload_Open" xml:space="preserve">
-    <value>Open</value>
-    <comment>Download database button caption</comment>
+    <value>Öppna</value>
   </data>
   <data name="WebDownload_PageTitle" xml:space="preserve">
     <value>download</value>
-    <comment>Web link download page title</comment>
   </data>
   <data name="WebDownload_Url" xml:space="preserve">
-    <value>Database URL</value>
-    <comment>URL to database field caption</comment>
+    <value>Databas URL</value>
   </data>
   <data name="WebView_GoBack" xml:space="preserve">
-    <value>Go Back</value>
-    <comment>Nagivates backward button caption</comment>
+    <value>Gå tillbaks</value>
   </data>
   <data name="WebView_Password" xml:space="preserve">
-    <value>Password</value>
-    <comment>Auto-type password button caption</comment>
+    <value>Lösenord</value>
   </data>
   <data name="WebView_Username" xml:space="preserve">
-    <value>Username</value>
-    <comment>Auto-type username button caption</comment>
+    <value>Användarnamn</value>
   </data>
 </root>
