@@ -757,6 +757,9 @@
     <EmbeddedResource Include="I18n\Strings.ru.resx">
       <DependentUpon>Strings.resx</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="I18n\Strings.sv.resx">
+      <DependentUpon>Strings.resx</DependentUpon>
+	</EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.de.resx">
       <DependentUpon>Resources.resx</DependentUpon>
     </EmbeddedResource>
