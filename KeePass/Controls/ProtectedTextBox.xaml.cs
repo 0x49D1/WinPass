@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -170,7 +171,13 @@ namespace KeePass.Controls
         {
             if (!string.IsNullOrEmpty(txtPassword.Text))
             {
-                Clipboard.SetText(txtPassword.Text);
+                //Clipboard.SetText(txtPassword.Text);
+
+                Encoding utf8 = Encoding.UTF8;
+                var pwlength = txtPassword.Text.Length + 1;
+                byte[] bytes = utf8.GetBytes(txtPassword.Text + "\0");
+                string content = utf8.GetString(bytes, 0, bytes.Length);
+                Clipboard.SetText(content);
                 VibrateController.Default.Start(TimeSpan.FromMilliseconds(30));
             }
         }

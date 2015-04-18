@@ -35,7 +35,6 @@ namespace KeePass
             _cmdSearch = AppButton(0);
             _cmdSearch.Text = Strings.App_Home;
             AppButton(1).Text = Strings.App_Databases;
-            //AppButton(2).Text = Strings.MainPage_Settings;
 
             _items = new ObservableCollection<GroupItem>();
             lstItems.ItemsSource = _items;
@@ -188,7 +187,7 @@ namespace KeePass
                     new GroupItem(entry, dispatcher)
                     {
                         //Notes = sb.ToString(),
-                        Notes = entry.UserName + " (" + sb.ToString() + ")",
+                        Notes = entry.UserName// + " (" + sb.ToString() + ")",
                     });
 
                 Thread.Sleep(50);

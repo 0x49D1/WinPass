@@ -45,7 +45,8 @@ namespace KeePass
             AppMenu(0).Text = Strings.EntryDetails_GeneratePassword;
             AppMenu(1).Text = Strings.App_Databases;
             AppMenu(2).Text = Strings.EntryDetails_ShowAllMasked;
-            AppMenu(3).Text = Strings.App_About;
+            AppMenu(3).Text = Strings.MainPage_Settings;
+            AppMenu(4).Text = Strings.App_About;
 
             AppButton(0).Text = Strings.App_UNCopy;
             AppButton(1).Text = Strings.App_PWCopy;
@@ -557,6 +558,11 @@ namespace KeePass
         private void cmdUNCopy_Click(object sender, EventArgs e)
         {
             Clipboard.SetText(txtUsername.Text);
+        }
+
+        private void mnuSettings_Click(object sender, EventArgs e)
+        {
+            this.NavigateTo<Settings>("page=0");
         }
     }
 }

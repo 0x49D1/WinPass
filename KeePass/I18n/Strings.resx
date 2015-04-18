@@ -138,17 +138,17 @@
     <comment>Link to Analytics settings caption</comment>
   </data>
   <data name="About_PageTitle" xml:space="preserve">
-    <value>about</value>
+    <value>About</value>
     <comment>About page title</comment>
   </data>
   <data name="About_Blog" xml:space="preserve">
     <value>
 Infos regarding App (News &amp; Feedback):</value>
-    <comment>Description for link to 7Pass blog</comment>
+    <comment>Description for link to 8Pass blog</comment>
   </data>
   <data name="About_Version" xml:space="preserve">
     <value>8Pass Version: {0}</value>
-    <comment>Format string for 7Pass version text
+    <comment>Format string for 8Pass version text
       0: version number</comment>
   </data>
   <data name="About_Purchase" xml:space="preserve">
@@ -177,10 +177,10 @@ Libraries used/referenced:</value>
     <value>8Pass collects usage information in order to continuously enhance user experience.
 
 The collection information will never have your database information, or any information that can directly identify you. However:
-- 7Pass does collect your installation ID to link information sent from your device together. This changes everytime 7Pass is installed.
+- 8Pass does collect your installation ID to link information sent from your device together. This changes everytime 8Pass is installed.
 - Usage collection uses very little network traffic, but the cost to your bill may add up if you're on a capped plan.
 
-The collected information will be very useful for development of 7Pass.
+The collected information will be very useful for development of 8Pass.
 
 Your installation ID that will be collected is:</value>
     <comment>Analytics policy</comment>
@@ -254,31 +254,31 @@ Your installation ID that will be collected is:</value>
     <comment>Pop up menu item to delete entry/group text</comment>
   </data>
   <data name="GroupDetails_Move" xml:space="preserve">
-    <value>move</value>
+    <value>Move</value>
     <comment>Pop up menu item to move entry/group text</comment>
   </data>
   <data name="GroupDetails_Rename" xml:space="preserve">
-    <value>rename</value>
+    <value>Rename</value>
     <comment>Pop up menu item to rename entry/group text</comment>
   </data>
   <data name="MainPage_PageTitle" xml:space="preserve">
-    <value>databases</value>
+    <value>Databases</value>
     <comment>Database select page title</comment>
   </data>
   <data name="MainPage_ClearKeyfile" xml:space="preserve">
-    <value>clear keyfile</value>
+    <value>Clear keyfile</value>
     <comment>Pop up menu item to clear keyfile text</comment>
   </data>
   <data name="MainPage_DownloadKeyfile" xml:space="preserve">
-    <value>download keyfile</value>
+    <value>Download keyfile</value>
     <comment>Pop up menu item to download keyfile text</comment>
   </data>
   <data name="MainPage_ClearPassword" xml:space="preserve">
-    <value>clear password</value>
+    <value>Clear password</value>
     <comment>Pop up menu item to clear remembered password text</comment>
   </data>
   <data name="MainPage_Delete" xml:space="preserve">
-    <value>delete</value>
+    <value>Delete</value>
     <comment>Pop up menu item to delete database text</comment>
   </data>
   <data name="MainPage_Rename" xml:space="preserve">

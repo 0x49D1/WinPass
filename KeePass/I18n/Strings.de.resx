@@ -160,15 +160,15 @@ Benutzte Bibliotheken/Referenzen:</value>
     <value>Analytik</value>
   </data>
   <data name="AnalyticsSettings_Policy" xml:space="preserve">
-    <value>8Pass sammelt Informationen zur Verwendung von 7Pass, um die Benutzerfreundlichkeit erhöhen zu können.
+    <value>8Pass sammelt Informationen zur Verwendung von 8Pass, um die Benutzerfreundlichkeit erhöhen zu können.
 
 Diese Informationen werden niemals Datenbankinformationen enthalten oder Informationen um User identifizieren zu können.
 
-- 7Pass sammelt die Installations-ID um die Informationen mit dem jeweiligen Gerät verknüpfen zu können. Diese Information ändert sich bei jeder Installation.
+- 8Pass sammelt die Installations-ID um die Informationen mit dem jeweiligen Gerät verknüpfen zu können. Diese Information ändert sich bei jeder Installation.
 
 - Die Sammlung hat einen sehr geringen Datenverbrauch. Dennoch wirkt sich jeder Datenvebrauch natürlich auf die Abrechnung der Daten ihres jeweiligen Tarifes aus.
 
-Diese gesammelten Informationen sind für die weitere Entwicklung von 7 Pass enorm wichtig. 
+Diese gesammelten Informationen sind für die weitere Entwicklung von 8Pass enorm wichtig. 
 
 Die aktuelle Installations-ID lautet:</value>
   </data>
@@ -508,5 +508,8 @@ Die aktuelle Installations-ID lautet:</value>
   </data>
   <data name="Download_OpenDB" xml:space="preserve">
     <value>Datenbank öffnen</value>
+  </data>
+  <data name="EntryDetails_ShowAllMasked" xml:space="preserve">
+    <value>Maskierte Felder anzeigen</value>
   </data>
 </root>
