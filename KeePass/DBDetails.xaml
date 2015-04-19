@@ -48,12 +48,7 @@
                                Name="lblSource" 
                                Text="{Binding Path=Strings.DBDetail_Source, Source={StaticResource UiStrings}}" 
                                TextWrapping="Wrap" />
-                    <!--
-                    <TextBlock Grid.Row="1" 
-                               Style="{StaticResource PhoneTextNormalStyle}" 
-                               Name="lblModified" 
-                               Text="{Binding Path=Strings.DBDetail_Modified, Source={StaticResource UiStrings}}" />
-                    -->
+                    
                     <!-- Lokaler Datenbank Name -->
                     <toolkit:PhoneTextBox Grid.Row="2"                          
                                           Name="txtName"

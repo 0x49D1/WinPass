@@ -21,6 +21,8 @@ namespace KeePass
         private readonly ApplicationBarIconButton _RefreshButton;
         string syncdb = string.Empty;
 
+        private static bool _fAppLoaded;
+
         private bool _moved;
 
         public MainPage()
@@ -54,6 +56,7 @@ namespace KeePass
 
             if (NavigationContext.QueryString.TryGetValue("sync", out syncdb))
             {
+                _fAppLoaded = true;
                 syncdb = NavigationContext.QueryString["db"];
                 NavigationContext.QueryString.Remove("sync");
             }            
@@ -176,33 +179,36 @@ namespace KeePass
                 .Where(x => x.CanUpdate);
 
             // AutoUpdate
-            dispatcher.BeginInvoke(() =>
+            if (!_fAppLoaded)
             {
-                if (hasUpdatables)
+                _fAppLoaded = true;
+                dispatcher.BeginInvoke(() =>
                 {
-                    _RefreshButton.IsEnabled = true;
-
-                    if (AppSettings.Instance.AutoUpdate)
+                    if (hasUpdatables)
                     {
-                        if (AppSettings.Instance.AutoUpdateWLAN)
+                        _RefreshButton.IsEnabled = true;
+
+                        if (AppSettings.Instance.AutoUpdate)
                         {
-                            if (DeviceNetworkInformation.IsWiFiEnabled)
+                            if (AppSettings.Instance.AutoUpdateWLAN)
+                            {
+                                if (DeviceNetworkInformation.IsWiFiEnabled)
+                                {
+                                    foreach (var uDB in UpdateAbleDBs)
+                                        Update(uDB);
+                                }
+                            }
+                            else
                             {
                                 foreach (var uDB in UpdateAbleDBs)
                                     Update(uDB);
                             }
                         }
-                        else
-                        {
-                            foreach (var uDB in UpdateAbleDBs)
-                                Update(uDB);
-                        }
                     }
-                }
-                else
-                    _RefreshButton.IsEnabled = false;
-            });
-  
+                    else
+                        _RefreshButton.IsEnabled = false;
+                });
+            }          
         }
 
         private void Open(DatabaseInfo database,
