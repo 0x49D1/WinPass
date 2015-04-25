@@ -49,9 +49,9 @@ namespace KeePass
             btnClose.Text = Strings.EntryDetails_ResetEntry;
             btnDelete.Text = Strings.GroupDetails_Delete;
 
-            mnuDlKeyFile = ApplicationBar.MenuItems[0] as ApplicationBarMenuItem;
-            mnuDelKeyFile = ApplicationBar.MenuItems[1] as ApplicationBarMenuItem;
-            mnuClearPW = ApplicationBar.MenuItems[2] as ApplicationBarMenuItem;
+            mnuClearPW = ApplicationBar.MenuItems[0] as ApplicationBarMenuItem;
+            mnuDlKeyFile = ApplicationBar.MenuItems[1] as ApplicationBarMenuItem;
+            mnuDelKeyFile = ApplicationBar.MenuItems[2] as ApplicationBarMenuItem;
             mnuDlKeyFile.Text = Strings.MainPage_DownloadKeyfile;
             mnuDelKeyFile.Text = Strings.MainPage_ClearKeyfile;
             mnuClearPW.Text = Strings.MainPage_ClearPassword;
