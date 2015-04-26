@@ -66,7 +66,7 @@ namespace KeePass
             var database = Cache.Database;
 
             DateTime convertedDate;
-            if (Cache.DbInfo.Details.Modified != null)
+            if ((Cache.DbInfo != null) && (Cache.DbInfo.Details.Modified != null))
             {
                 convertedDate = DateTime.Parse(Cache.DbInfo.Details.Modified);
                 ApplicationTitle.Text = "8Pass - " + Cache.DbInfo.Details.Name + " (" + convertedDate + ")"; 
