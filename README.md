@@ -1,3 +1,12 @@
+<table bgcolor="#FF5050" border=1>
+<tr bgcolor="#FF5050">
+<td bgcolor="#FF5050"><i>
+<strong>Attention!!!</strong></br>
+<small>This Fork of 8Pass is not being updated anymore. Since i moved to Android Plattform, i didn't need this App. However, if someone is interested in this App, feel free to clone and develop your own Version.
+</td>
+</tr>
+</table>
+
 A unofficial KeePass password manager client, compatible with KeePass 2.x for desktop.
 
 Support Info:
