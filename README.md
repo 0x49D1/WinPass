@@ -1,4 +1,4 @@
-A unofficial KeePass password manager client, compatible with KeePass 2.x for desktop.
+A unofficial KeePass password manager client for Windows Mobile, compatible with KeePass 2.x for desktop.
 
 Support Info:
  - This repository is a continuation fork of the project: https://github.com/bilbob74/8pass
