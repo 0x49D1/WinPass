@@ -47,6 +47,8 @@
                                                   Visibility="{Binding UpdateVisibility}" Click="mnuUpdate_Click" />
                                 <toolkit:MenuItem Header="{Binding Path=Strings.MainPage_Pin, Source={StaticResource UiStrings}}"
                                                   Tag="{Binding Info}" Click="mnuPin_Click" />
+                                <toolkit:MenuItem Header="{Binding Path=Strings.MainPage_ClearPassword, Source={StaticResource UiStrings}}"
+                                                          Tag="{Binding Info}" Click="mnuClear_Click" />
                                 <toolkit:MenuItem Header="{Binding Path=Strings.MainPage_Delete, Source={StaticResource UiStrings}}"
                                                   Tag="{Binding Info}" Click="mnuDelete_Click" />
                                 <toolkit:MenuItem Header="{Binding Path=Strings.MainPage_DBInfo, Source={StaticResource UiStrings}}"

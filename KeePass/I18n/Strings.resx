@@ -286,7 +286,7 @@ Your installation ID that will be collected is:</value>
     <comment>Pop up menu item to rename database text</comment>
   </data>
   <data name="MainPage_Pin" xml:space="preserve">
-    <value>pin database</value>
+    <value>Pin database</value>
     <comment>Pop up menu item to pin database to phone's Start screen</comment>
   </data>
   <data name="MoveTarget_PageTitle" xml:space="preserve">

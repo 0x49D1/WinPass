@@ -148,7 +148,8 @@ namespace KeePass.Storage
         }
 
         public DatabaseInfo()
-            : this(Guid.NewGuid().ToString("N")) {}
+            : this(Guid.NewGuid().ToString("N"))
+        { }
 
         /// <summary>
         /// Clears the saved password.
@@ -319,7 +320,10 @@ namespace KeePass.Storage
                 if (!store.DirectoryExists(Folder))
                     store.CreateDirectory(Folder);
 
-                ClearPassword(store);
+                // Clear password if it was not marked as "save"
+                var p = GetSavedPassword(store);
+                if (p.MasterKey == null || p.MasterKey.Length == 0)
+                    ClearPassword(store);
 
                 Details = details;
                 SaveDetails(store);

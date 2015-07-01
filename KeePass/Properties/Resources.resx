@@ -290,10 +290,10 @@ Click this notification to Review/Purchase 8Pass.</value>
     <value>(\w+)="([^"]+)"</value>
   </data>
   <data name="Update_Download" xml:space="preserve">
-    <value>update</value>
+    <value>Update</value>
   </data>
   <data name="Update_Sync" xml:space="preserve">
-    <value>synchronize</value>
+    <value>Synchronize</value>
   </data>
   <data name="UriCensors" xml:space="preserve">
     <value>(?&lt;=pass(?:word)?=)([^&amp;]+)
