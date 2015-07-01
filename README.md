@@ -9,6 +9,13 @@ Support Info:
 <img src="https://cloud.githubusercontent.com/assets/1022399/6726609/aa6f0626-ce19-11e4-996e-d3166d292d70.png" width="200">
 <img src="https://cloud.githubusercontent.com/assets/1022399/6726605/aa679de6-ce19-11e4-8a7d-aa44df0de0e0.png" width="200">
 <img src="https://cloud.githubusercontent.com/assets/1022399/6726607/aa6c9f08-ce19-11e4-9d4a-f5b71a3dc6dc.png" width="200">
+Version 4.3
+Bugfixes:
+<ul>
+<li> Fixed the way password cleaning was done after the database synchronization</li>
+</ul>
+
+Also naming changes from 8Pass to WinPass
 
 Version 4.2
 Bugfixes:
