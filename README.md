@@ -1,14 +1,7 @@
-<table bgcolor="#FF5050" border=1>
-<tr bgcolor="#FF5050">
-<td bgcolor="#FF5050"><i>
-</td>
-</tr>
-</table>
-
 A unofficial KeePass password manager client, compatible with KeePass 2.x for desktop.
 
 Support Info:
- - Source code: https://github.com/bilbob74/8pass
+ - This repository is a continuation fork of the project: https://github.com/bilbob74/8pass
 
 <img src="https://cloud.githubusercontent.com/assets/1022399/6726606/aa68b186-ce19-11e4-9f1d-1a278ac82c2b.png" width="200">
 <img src="https://cloud.githubusercontent.com/assets/1022399/6726604/aa64d714-ce19-11e4-923c-66d46377ccc0.png" width="200">
