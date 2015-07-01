@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConfirmDeleteDb" xml:space="preserve">
+    <value>Czy chcesz skasować bazę danych {0}?
+
+Spowoduje to usunięcie {0} z twego telefonu, wersja źródłowa na serwerze nie będzie usuwana.</value>
+  </data>
+  <data name="CorruptedFile" xml:space="preserve">
+    <value>Plik danych jest uszkodzony!</value>
+  </data>
+  <data name="DeleteDbTitle" xml:space="preserve">
+    <value>Usuń bazę danych</value>
+  </data>
+  <data name="DemoDbText" xml:space="preserve">
+    <value>Hasło testowej bazy danych to "demo", bez cudzysłowów.</value>
+  </data>
+  <data name="DemoDbTitle" xml:space="preserve">
+    <value>Hasło bazy danych</value>
+  </data>
+  <data name="DownloadError" xml:space="preserve">
+    <value>Błąd pobierania bazy danych.
+Upewnij się, czy adres url jest prawidłowy.
+
+</value>
+  </data>
+  <data name="DownloadTitle" xml:space="preserve">
+    <value>Pobierz bazy danych</value>
+  </data>
+  <data name="IncorrectPassword" xml:space="preserve">
+    <value>Podałeś nieprawidłowe hasło.
+
+Zauważ, że WinPass nie wspiera kont Windows, ani niestandardowych dostawców haseł dla hasła głównego.</value>
+  </data>
+  <data name="InvalidCertificate" xml:space="preserve">
+    <value>
+
+Prawdopodobnie certyfikat SSL serwera nie jest dodany do zaufanych w Twoim telefonie.
+Czy chcesz dowiedzieć się czegoś więcej na ten temat?</value>
+  </data>
+  <data name="InvalidCertificateUrl" xml:space="preserve">
+    <value>http://7pass.wordpress.com/2011/01/09/faq-updated-why-7pass-says-my-database-signature-is-invalid/</value>
+  </data>
+  <data name="NoNetwork" xml:space="preserve">
+    <value>Połączenie internetowe jest niedostępne.
+Proszę spróbować później.</value>
+  </data>
+  <data name="ParseError" xml:space="preserve">
+    <value>Twoje hasło jest poprawne i baza danych wydaje się być prawidłowa.
+niestety WinPass napotkał na błąd podczas czytania bazy.
+
+Czy chcesz przesłać autorowi raport, aby mógł poprawić ten błąd w kolejnej wersji?</value>
+  </data>
+  <data name="PasswordTitle" xml:space="preserve">
+    <value>Klucz główny</value>
+  </data>
+  <data name="UpdateFailure" xml:space="preserve">
+    <value>Uaktualnianie bazy danych {0} nieudane:
+{1}</value>
+  </data>
+  <data name="UpdateTitle" xml:space="preserve">
+    <value>Aktualizuj bazę danych</value>
+  </data>
+  <data name="WarningStorePassword" xml:space="preserve">
+    <value>Upewnij się, że ekran startowy Twojego telefonu jest zabezpieczony hasłem.
+
+Zapisywanie hasła do bazy danych bez włączonego blokowania ekranu pozwoli obcym na poznanie Twoich haseł.
+
+Aby ustawić hasło blokady ekranu powitalnego przejdź do Ustawień Telefonu\zabezpieczenia i tapety.</value>
+  </data>
+  <data name="LinkRegex" xml:space="preserve">
+    <value>&lt;a\s+[^&gt;]?href\s?=\s?(['"])([^'"]+)</value>
+  </data>
+  <data name="InvalidKeyFile" xml:space="preserve">
+    <value>Wybrałeś nieprawidłowy/uszkodzona plik kluczy.</value>
+  </data>
+  <data name="KeyFileTitle" xml:space="preserve">
+    <value>Pobierz plik kluczy</value>
+  </data>
+  <data name="GlobalPassPrompt" xml:space="preserve">
+    <value>Wprowadź hasło główne!</value>
+  </data>
+  <data name="GlobalPassTitle" xml:space="preserve">
+    <value>Hasło główne WinPass</value>
+  </data>
+  <data name="UnhandledExPrompt" xml:space="preserve">
+    <value>WinPass napotkał błąd. WinPass zostanie zamknięte.
+
+Czy mogę utworzyć e-maila, którego wyślesz do mnie w celu naprawy błędu?</value>
+  </data>
+  <data name="UnhandledExTitle" xml:space="preserve">
+    <value>Ojojojojoj</value>
+  </data>
+  <data name="InvalidUrlPrompt" xml:space="preserve">
+    <value>Nie można wyświetlić wybranego adresu URL. Jeśli adres URL jest zbyt długi (&gt; 500 znaków), spróbuj przenieść swoje zasoby do innej lokalizacji, gdzie adres URL jest krótszy.</value>
+  </data>
+  <data name="InvalidUrlTitle" xml:space="preserve">
+    <value>Nieprawidłowy adres URL</value>
+  </data>
+  <data name="SavedCaption" xml:space="preserve">
+    <value>Wpis został pomyślnie zapisany!</value>
+  </data>
+  <data name="SavedTitle" xml:space="preserve">
+    <value>Zapisz wpis</value>
+  </data>
+  <data name="Conflict" xml:space="preserve">
+    <value>WinPass wykrył konflikt wersji bazy danych.
+Twoja lokalna baza danych została przesłana na:
+[{0}]
+
+Jeżeli chcesz użyć innej bazy danych, ściągnij ją oddzielnie.</value>
+  </data>
+  <data name="ConflictTitle" xml:space="preserve">
+    <value>Konflikt bazy danych</value>
+  </data>
+  <data name="AddNotes" xml:space="preserve">
+    <value>«Dodawaj notatki»</value>
+  </data>
+  <data name="UnsavedChange" xml:space="preserve">
+    <value>Masz niezapisane zmiany.
+Czy na pewno chcesz je zignorować?</value>
+  </data>
+  <data name="UnsavedChangeTitle" xml:space="preserve">
+    <value>Niezapisane zmiany</value>
+  </data>
+  <data name="DeletePernamentPrompt" xml:space="preserve">
+    <value>Czy jesteś pewien, że chcesz nieodwracalnie skasować wybrane {0}{1}?
+
+Podane {0} zostanie na zawsze skasowane i nie będzie możliwe jego odzyskanie.</value>
+  </data>
+  <data name="DeletePrompt" xml:space="preserve">
+    <value>Jesteś pewien, że chcesz usunąć zaznaczone {0} {1}?</value>
+  </data>
+  <data name="DeleteTitle" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="Entry" xml:space="preserve">
+    <value>wpis</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>grupa</value>
+  </data>
+  <data name="NewGroupTitle" xml:space="preserve">
+    <value>Nowa grupa</value>
+  </data>
+  <data name="PromptName" xml:space="preserve">
+    <value>Wprowadź nazwę grupy</value>
+  </data>
+  <data name="RenameTitle" xml:space="preserve">
+    <value>Zmień nazwę grupy</value>
+  </data>
+  <data name="RecycleBin" xml:space="preserve">
+    <value>Kosz</value>
+  </data>
+  <data name="LargeTransforms" xml:space="preserve">
+    <value>Wybrana baza danych używa wielu stopni zabezpieczeń.
+
+To może spowodować, że WinPass będzie otwierał ją znacznie wolniej niż zwykle.</value>
+  </data>
+  <data name="LargeTransformsTitle" xml:space="preserve">
+    <value>Szyfrowanie bazy danych</value>
+  </data>
+  <data name="ToastFree" xml:space="preserve">
+    <value>To jest w pełni działająca darmowa wersja WinPass.
+Możesz wesprzeć jej autora zaznaczając
+tę wiadomość by kupić płatną wersję</value>
+  </data>
+  <data name="ToastTrial" xml:space="preserve">
+    <value>Dziękuję za wypróbowanie WinPass.
+To jest w pełni działająca wersja próbna WinPass.
+Zaznacz tę wiadomość żeby Ocenić/Kupić WinPass.</value>
+  </data>
+  <data name="DigestRegex" xml:space="preserve">
+    <value>(\w+)="([^"]+)"</value>
+  </data>
+  <data name="Update_Download" xml:space="preserve">
+    <value>aktualizacja</value>
+  </data>
+  <data name="Update_Sync" xml:space="preserve">
+    <value>synchronizuj</value>
+  </data>
+  <data name="UriCensors" xml:space="preserve">
+    <value>(?&lt;=pass(?:word)?=)([^&amp;]+)
+(?&lt;=secret=)([^&amp;]+)</value>
+  </data>
+  <data name="AlreadyPinned" xml:space="preserve">
+    <value>Wybrana baza danych nie jest już przypięta do głównego ekranu.</value>
+  </data>
+  <data name="PinDatabase" xml:space="preserve">
+    <value>Przypnij bazę danych</value>
+  </data>
+  <data name="FieldsMenuItem" xml:space="preserve">
+    <value>Wyświetl/Edytuj pola ({0})</value>
+  </data>
+  <data name="Field_Protected" xml:space="preserve">
+    <value>Rozwij do wyświetlenia/edycji.</value>
+  </data>
+  <data name="EmptyField" xml:space="preserve">
+    <value>Nowe pole</value>
+  </data>
+</root>

@@ -1,0 +1,57 @@
+<keepass:KeePassPage 
+    x:Class="KeePass.Sources.Web.WebDownload"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:keepass="clr-namespace:KeePass.Utils"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:uc="clr-namespace:KeePass.Controls"
+    xmlns:web="clr-namespace:KeePass.Sources.Web"
+	Style="{StaticResource KeePassPage}">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="{StaticResource AppName}"
+                       Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"
+                       Text="{Binding Path=Strings.WebDownload_PageTitle, Source={StaticResource UiStrings}}" />
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="{Binding Path=Strings.WebDownload_Url, Source={StaticResource UiStrings}}"
+                           Grid.Row="0" Style="{StaticResource PhoneTextNormalStyle}" />
+                <TextBox Name="txtUrl" Text="http://" Grid.Row="1" InputScope="Url"
+                         Loaded="txtUrl_Loaded" KeyDown="txtUrl_KeyDown" TextChanged="txtUrl_TextChanged" />
+            
+                <web:WebAuth x:Name="ucAuth" Grid.Row="2"
+                             Completed="ucAuth_Completed" />
+            </Grid>
+            
+            <uc:ProgressOverlay x:Name="prgBusy" />
+        </Grid>
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True">
+            <shell:ApplicationBarIconButton
+                IconUri="/Images/check.png"
+                Text="[Open]" IsEnabled="False"
+                Click="cmdDownload_Click" />
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</keepass:KeePassPage>

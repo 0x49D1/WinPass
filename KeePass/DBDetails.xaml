@@ -1,0 +1,101 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="KeePass.DBDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:keepass="clr-namespace:KeePass.Utils"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"    
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot ist das Stammraster, in dem alle anderen Seiteninhalte platziert werden-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel enthält den Namen der Anwendung und den Seitentitel-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="{StaticResource AppName}" Style="{StaticResource PageHeader}"/>
+            <TextBlock x:Name="PageTitle" Text="{Binding Path=Strings.DBDetail_PageTitle, Source={StaticResource UiStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - zusätzliche Inhalte hier platzieren-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" 
+                               Style="{StaticResource PhoneTextNormalStyle}" 
+                               Name="lblSource" 
+                               Text="{Binding Path=Strings.DBDetail_Source, Source={StaticResource UiStrings}}" 
+                               TextWrapping="Wrap" />
+                    
+                    <!-- Lokaler Datenbank Name -->
+                    <toolkit:PhoneTextBox Grid.Row="2"                          
+                                          Name="txtName"
+                                          Header="{Binding Path=Strings.DBDetail_Name, Source={StaticResource UiStrings}}"
+                                          TextChanged="lklName_ch" />
+                
+                    <!-- URL -->
+                    <toolkit:PhoneTextBox Grid.Row="3"  
+                                          Header="{Binding Path=Strings.DBDetail_URL, Source={StaticResource UiStrings}}"
+                                          Name="txtURL"
+                                          InputScope="Url"
+                                          TextChanged="url_ch" />
+
+                    <!-- Username -->
+                    <toolkit:PhoneTextBox Grid.Row="4" 
+                                          Header="{Binding Path=Strings.WebDavDownload_Username, Source={StaticResource UiStrings}}"
+                                          Name="txtURLUser" 
+                                          TextChanged="user_ch" />
+
+                    <!-- Passwort -->
+                    <toolkit:PhonePasswordBox Name="txtURLPW"
+                                              Header="{Binding Path=Strings.WebDavDownload_Password, Source={StaticResource UiStrings}}"
+                                              AllowShowPassword="True"
+                                              Grid.Row="5" PasswordChanged="pw_ch" />
+
+                    <!-- Domain -->
+                    <toolkit:PhoneTextBox Grid.Row="6"                  
+                                          Header="{Binding Path=Strings.WebAuth_Domain, Source={StaticResource UiStrings}}"
+                                          Name="txtDomain" TextChanged="domain_ch" />
+
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+    </Grid> 
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/save.png" Text="Save" IsEnabled="False" Click="cmdSave_Click" />
+            <shell:ApplicationBarIconButton IconUri="/Images/undo.png" Text="Clear" Click="cmdClear_Click" IsEnabled="False" />
+            <shell:ApplicationBarIconButton IconUri="/Images/deletedb.png" Text="Delete" IsEnabled="True" Click="cmdDelete_Click" />
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem
+                    Text="[Clear Password]" Click="mnuClear_Click" />
+                <shell:ApplicationBarMenuItem
+                    Text="[Load KeyFile]" Click="mnuKeyFile_Click" />
+                <shell:ApplicationBarMenuItem
+                    Text="[Remove KeyFile]" Click="mnuClearKeyFile_Click" />
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+</phone:PhoneApplicationPage>
