@@ -93,7 +93,7 @@ namespace KeePass.Utils
         }
 
         /// <summary>
-        /// Gets the 7Pass installation ID.
+        /// Gets the 8Pass installation ID.
         /// </summary>
         public string InstanceID
         {
@@ -125,10 +125,10 @@ namespace KeePass.Utils
         }
 
         /// <summary>
-        /// Gets or sets the password to open 7Pass.
+        /// Gets or sets the password to open 8Pass.
         /// </summary>
         /// <value>
-        /// The password to open 7Pass.
+        /// The password to open 8Pass.
         /// </value>
         public string Password
         {

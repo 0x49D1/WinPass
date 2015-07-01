@@ -122,7 +122,7 @@
 Próbálkozzon újra!</value>
   </data>
   <data name="HtmlDetected" xml:space="preserve">
-    <value>A szerver HTML lapot adott vissza a 7Pass WebDAV kérésére.
+    <value>A szerver HTML lapot adott vissza a 8Pass WebDAV kérésére.
 Akarja a szervert inkább WEB szerverként kezelni?</value>
   </data>
   <data name="HtmlDetectedTitle" xml:space="preserve">

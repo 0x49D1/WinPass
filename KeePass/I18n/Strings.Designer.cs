@@ -1034,7 +1034,7 @@ namespace KeePass.I18n {
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Due to SkyDrive limitation, your database has to be renamed to &quot;.doc&quot; extension.
-        ///Do you want 7Pass to append &quot;.doc&quot; to your database name and then download it? ähnelt.
+        ///Do you want 8Pass to append &quot;.doc&quot; to your database name and then download it? ähnelt.
         /// </summary>
         public static string SkyDrive_Unsupported {
             get {

@@ -122,7 +122,7 @@
 Bitte versuchen Sie es später erneut.</value>
   </data>
   <data name="HtmlDetected" xml:space="preserve">
-    <value>Der Server hat auf die 7Pass Anfrage  mit 'WebDAV Anfrage mit HTML Seite' reagiert.
+    <value>Der Server hat auf die 8Pass Anfrage  mit 'WebDAV Anfrage mit HTML Seite' reagiert.
 Möchten Sie den Server als HTML Seite anzeigen lassen?</value>
   </data>
   <data name="HtmlDetectedTitle" xml:space="preserve">

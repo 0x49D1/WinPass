@@ -27,7 +27,7 @@ namespace KeePass.Sources.WebDav.Api
 
             var method = action.Method;
             request.Method = method;
-            request.UserAgent = "7Pass";
+            request.UserAgent = "8Pass";
 
             var token = authenticator
                 .GetToken(uri, method);

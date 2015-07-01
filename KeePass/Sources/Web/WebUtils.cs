@@ -30,7 +30,7 @@ namespace KeePass.Sources.Web
             Action<HttpWebRequest, Func<HttpWebResponse>> report)
         {
             var request = WebRequest.CreateHttp(url);
-            request.UserAgent = "7Pass";
+            request.UserAgent = "8Pass";
 
             if (credentials != null)
                 request.Credentials = credentials;

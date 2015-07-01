@@ -122,7 +122,7 @@
 Please try again later.</value>
   </data>
   <data name="HtmlDetected" xml:space="preserve">
-    <value>The server replied 7Pass' WebDAV request with an html page.
+    <value>The server replied 8Pass' WebDAV request with an html page.
 Do you want to explore the server as HTML pages instead?</value>
   </data>
   <data name="HtmlDetectedTitle" xml:space="preserve">

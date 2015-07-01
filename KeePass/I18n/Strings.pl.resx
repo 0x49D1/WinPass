@@ -140,7 +140,7 @@
 Blog Autora (Wiadomości i Kontakt)</value>
   </data>
   <data name="About_Version" xml:space="preserve">
-    <value>Wersja 7Pass : {0}</value>
+    <value>Wersja 8Pass : {0}</value>
   </data>
   <data name="About_Purchase" xml:space="preserve">
     <value>Kup</value>
@@ -160,13 +160,13 @@ Użyte bliblioteki/referencje:</value>
     <value>Analizy</value>
   </data>
   <data name="AnalyticsSettings_Policy" xml:space="preserve">
-    <value>7Pass zbiera informacje o użyciu aby nieustannie poprawiać doświadczenia użytkowników.
+    <value>8Pass zbiera informacje o użyciu aby nieustannie poprawiać doświadczenia użytkowników.
 
 Zebrane informacje nigny nie zawierają informacji o Twojej bazie danych, ani żadnych informacji mogących zostać użyte w celu Twojej identyfikacji. Jednakże:
-- 7Pass zawiera informację o Twoim identyfikatorze instalacji aby powiązać wysyłane informacje z Twojego telefonu. Ten numer zmienia się po każdorazowej instalacji 7Pass.
+- 8Pass zawiera informację o Twoim identyfikatorze instalacji aby powiązać wysyłane informacje z Twojego telefonu. Ten numer zmienia się po każdorazowej instalacji 8Pass.
 - Dane użycia zużywają niewielką ilość łącza, ale rachunek za zsumowane pakiety może okazać się znaczący, jeżeli masz limitowany pakiet danych.
 
-Pobrane informacje będą bardzo przydatne przy tworzeniu 7Pass.
+Pobrane informacje będą bardzo przydatne przy tworzeniu 8Pass.
 
 Twój identyfikator instalacji to:</value>
   </data>
@@ -213,7 +213,7 @@ Twój identyfikator instalacji to:</value>
     <value>Główne hasło</value>
   </data>
   <data name="GlobalPassVerify_Prompt" xml:space="preserve">
-    <value>Wprowadź hasło do odblokowania 7Pass</value>
+    <value>Wprowadź hasło do odblokowania 8Pass</value>
   </data>
   <data name="GroupDetails_History" xml:space="preserve">
     <value>Historia</value>

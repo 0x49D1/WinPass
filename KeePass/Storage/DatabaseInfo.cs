@@ -573,14 +573,14 @@ namespace KeePass.Storage
             using (var fs = store.OpenFile("Database.kdbx", FileMode.Open))
             {
                 var source = string.IsNullOrEmpty(url)
-                    ? "7Pass" : DatabaseUpdater.WEB_UPDATER;
+                    ? "8Pass" : DatabaseUpdater.WEB_UPDATER;
 
                 var details = new DatabaseDetails
                 {
                     Url = url,
                     Source = source,
                     Type = SourceTypes.OneTime,
-                    Name = "7Pass 1.x database",
+                    Name = "8Pass 1.x database",
                 };
 
                 info.SetDatabase(fs, details);

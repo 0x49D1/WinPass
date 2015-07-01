@@ -146,7 +146,7 @@ Upewnij się, czy adres url jest prawidłowy.
   <data name="IncorrectPassword" xml:space="preserve">
     <value>Podałeś nieprawidłowe hasło.
 
-Zauważ, że 7Pass nie wspiera kont Windows, ani niestandardowych dostawców haseł dla hasła głównego.</value>
+Zauważ, że 8Pass nie wspiera kont Windows, ani niestandardowych dostawców haseł dla hasła głównego.</value>
   </data>
   <data name="InvalidCertificate" xml:space="preserve">
     <value>
@@ -163,7 +163,7 @@ Proszę spróbować później.</value>
   </data>
   <data name="ParseError" xml:space="preserve">
     <value>Twoje hasło jest poprawne i baza danych wydaje się być prawidłowa.
-niestety 7Pass napotkał na błąd podczas czytania bazy.
+niestety 8Pass napotkał na błąd podczas czytania bazy.
 
 Czy chcesz przesłać autorowi raport, aby mógł poprawić ten błąd w kolejnej wersji?</value>
   </data>
@@ -197,10 +197,10 @@ Aby ustawić hasło blokady ekranu powitalnego przejdź do Ustawień Telefonu\za
     <value>Wprowadź hasło główne!</value>
   </data>
   <data name="GlobalPassTitle" xml:space="preserve">
-    <value>Hasło główne 7Pass</value>
+    <value>Hasło główne 8Pass</value>
   </data>
   <data name="UnhandledExPrompt" xml:space="preserve">
-    <value>7Pass napotkał błąd. 7Pass zostanie zamknięte.
+    <value>8Pass napotkał błąd. 8Pass zostanie zamknięte.
 
 Czy mogę utworzyć e-maila, którego wyślesz do mnie w celu naprawy błędu?</value>
   </data>
@@ -220,7 +220,7 @@ Czy mogę utworzyć e-maila, którego wyślesz do mnie w celu naprawy błędu?</
     <value>Zapisz wpis</value>
   </data>
   <data name="Conflict" xml:space="preserve">
-    <value>7Pass wykrył konflikt wersji bazy danych.
+    <value>8Pass wykrył konflikt wersji bazy danych.
 Twoja lokalna baza danych została przesłana na:
 [{0}]
 
@@ -271,20 +271,20 @@ Podane {0} zostanie na zawsze skasowane i nie będzie możliwe jego odzyskanie.<
   <data name="LargeTransforms" xml:space="preserve">
     <value>Wybrana baza danych używa wielu stopni zabezpieczeń.
 
-To może spowodować, że 7Pass będzie otwierał ją znacznie wolniej niż zwykle.</value>
+To może spowodować, że 8Pass będzie otwierał ją znacznie wolniej niż zwykle.</value>
   </data>
   <data name="LargeTransformsTitle" xml:space="preserve">
     <value>Szyfrowanie bazy danych</value>
   </data>
   <data name="ToastFree" xml:space="preserve">
-    <value>To jest w pełni działająca darmowa wersja 7Pass.
+    <value>To jest w pełni działająca darmowa wersja 8Pass.
 Możesz wesprzeć jej autora zaznaczając
 tę wiadomość by kupić płatną wersję</value>
   </data>
   <data name="ToastTrial" xml:space="preserve">
-    <value>Dziękuję za wypróbowanie 7Pass.
-To jest w pełni działająca wersja próbna 7Pass.
-Zaznacz tę wiadomość żeby Ocenić/Kupić 7Pass.</value>
+    <value>Dziękuję za wypróbowanie 8Pass.
+To jest w pełni działająca wersja próbna 8Pass.
+Zaznacz tę wiadomość żeby Ocenić/Kupić 8Pass.</value>
   </data>
   <data name="DigestRegex" xml:space="preserve">
     <value>(\w+)="([^"]+)"</value>

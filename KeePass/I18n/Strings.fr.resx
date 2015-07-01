@@ -140,7 +140,7 @@
 Blog développeur (News et support)</value>
   </data>
   <data name="About_Version" xml:space="preserve">
-    <value>7Pass Version: {0}</value>
+    <value>8Pass Version: {0}</value>
   </data>
   <data name="About_Purchase" xml:space="preserve">
     <value>Acheter</value>
@@ -160,13 +160,13 @@ Bibliothèques utilisées/réf.:</value>
     <value>Données d'analyse</value>
   </data>
   <data name="AnalyticsSettings_Policy" xml:space="preserve">
-    <value>7Pass récupère des données d'utilisation pour améliorer l'expérience de l'utilisateur.
+    <value>8Pass récupère des données d'utilisation pour améliorer l'expérience de l'utilisateur.
 
 Cette collecte d'informations ne comportera jamais votre base de données ni aucune autre information pouvant vous identifier. Cependant:
-- 7Pass récupère votre ID d'installation liée à votre matériel spécifiquement. Cette ID change à chaque installation.
+- 8Pass récupère votre ID d'installation liée à votre matériel spécifiquement. Cette ID change à chaque installation.
 - L'envoi des infos collectées utilise très peu de trafic réseau, mais les coûts peuvent s'ajouter à votre plan "Données/Data".
 
-Les infos collectées seront très utiles pour les développemetn de 7Pass.
+Les infos collectées seront très utiles pour les développemetn de 8Pass.
 
 Votre ID d'installation collectée sera:</value>
   </data>
@@ -213,7 +213,7 @@ Votre ID d'installation collectée sera:</value>
     <value>Mot de passe général</value>
   </data>
   <data name="GlobalPassVerify_Prompt" xml:space="preserve">
-    <value>Entrez mot de passe pour déverrouiller 7Pass</value>
+    <value>Entrez mot de passe pour déverrouiller 8Pass</value>
   </data>
   <data name="GroupDetails_History" xml:space="preserve">
     <value>Historique</value>

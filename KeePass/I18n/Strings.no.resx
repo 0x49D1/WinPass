@@ -153,10 +153,10 @@ Kildekode:</value>
     <value>8Pass samler bruksinformasjon for å kontinuerlig forbedre brukeropplevelsen.
 
 Den innsamlede informasjonen vil aldri ta databaseinformasjon, eller informasjon som kan direkte identifisere deg. Men:
-- 7Pass samler inn installasjonen ID for å koble informasjon sendt fra enheten sammen. Dette endres hver gang 7Pass installert.
+- 8Pass samler inn installasjonen ID for å koble informasjon sendt fra enheten sammen. Dette endres hver gang 8Pass installert.
 - Innsamlingen bruker svært lite nettverkstrafikk, men ytterligere datatrafikk forekommer.
 
-Den innsamlede informasjonen vil være svært nyttig for utviklingen av 7Pass.
+Den innsamlede informasjonen vil være svært nyttig for utviklingen av 8Pass.
 
 Installasjons ID som vil bli samlet inn er:</value>
   </data>
@@ -450,7 +450,7 @@ Installasjons ID som vil bli samlet inn er:</value>
   </data>
   <data name="SkyDrive_Unsupported" xml:space="preserve">
     <value>Grunnet SkyDrive begrensning, må din database døpes om til ".doc".
-Vil du at 7Pass legge til ".doc" til din databasenavn og deretter laste den ned igjen?</value>
+Vil du at 8Pass legge til ".doc" til din databasenavn og deretter laste den ned igjen?</value>
   </data>
   <data name="Sync_MessDownSucc" xml:space="preserve">
     <value>Nedlasting av databasen var vellykket</value>

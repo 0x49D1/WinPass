@@ -71,7 +71,7 @@ namespace KeePass.Sources.WebDav {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die The server replied 7Pass&apos; WebDAV request with an html page.
+        ///   Sucht eine lokalisierte Zeichenfolge, die The server replied 8Pass&apos; WebDAV request with an html page.
         ///Do you want to explore the server as HTML pages instead? ähnelt.
         /// </summary>
         internal static string HtmlDetected {

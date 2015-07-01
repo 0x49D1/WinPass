@@ -146,7 +146,7 @@ Vérifiez que l'URL soit correcte.
   <data name="IncorrectPassword" xml:space="preserve">
     <value>Mot de passe précisé incorrect.
 
-Attention: 7Pass ne supporte pas les fournisseurs de mots de passe de compte Windows ni ceux personnalisés pour le mot de passe maître.</value>
+Attention: 8Pass ne supporte pas les fournisseurs de mots de passe de compte Windows ni ceux personnalisés pour le mot de passe maître.</value>
   </data>
   <data name="InvalidCertificate" xml:space="preserve">
     <value>
@@ -162,7 +162,7 @@ Essayez encore plus tard.</value>
   </data>
   <data name="ParseError" xml:space="preserve">
     <value>Votre mot de passe est correct et la BD valide.
-Malheureusement 7Pass a rencontré une erreur lors de la lecture de la BD.
+Malheureusement 8Pass a rencontré une erreur lors de la lecture de la BD.
 
 Envoyer un rapport à l'auteur pour corriger ce bug dans une prochaine version?</value>
   </data>
@@ -196,10 +196,10 @@ Pour mettre un mot de passe sur l'écran de verrouillage, allez dans les Paramè
     <value>Entrez votre mot de passe général !</value>
   </data>
   <data name="GlobalPassTitle" xml:space="preserve">
-    <value>Mot de passe Général de 7Pass</value>
+    <value>Mot de passe Général de 8Pass</value>
   </data>
   <data name="UnhandledExPrompt" xml:space="preserve">
-    <value>7Pass a rencontré une erreur inattendue. 7Pass va maintenant quitter.
+    <value>8Pass a rencontré une erreur inattendue. 8Pass va maintenant quitter.
 
 Puis-je créer un e-mail pour me l'envoyer pour régler le problème?</value>
   </data>
@@ -219,7 +219,7 @@ Puis-je créer un e-mail pour me l'envoyer pour régler le problème?</value>
     <value>Enregistrer l'entrée</value>
   </data>
   <data name="Conflict" xml:space="preserve">
-    <value>7Pass a détecté un conflit de version de la BD.
+    <value>8Pass a détecté un conflit de version de la BD.
 Votre BD locale est maintenant téléchargée vers:
 [{0}]
 
@@ -270,20 +270,20 @@ Voulez-vous renoncer à ces changements ?</value>
   <data name="LargeTransforms" xml:space="preserve">
     <value>BD sélectionnée utilise un grand nombre de cycles de cryptage.
 
-7Pass mettra plus de temps pour ouvrir la base de données.</value>
+8Pass mettra plus de temps pour ouvrir la base de données.</value>
   </data>
   <data name="LargeTransformsTitle" xml:space="preserve">
     <value>Cryptage de la base de données</value>
   </data>
   <data name="ToastFree" xml:space="preserve">
-    <value>Il s'agit de la version gratuite totalement fonctionnelle de 7Pass.
+    <value>Il s'agit de la version gratuite totalement fonctionnelle de 8Pass.
 Vous pouvez soutenir l'auteur en tapant cette
 notification pour acheter la version payante.</value>
   </data>
   <data name="ToastTrial" xml:space="preserve">
-    <value>Merci pour votre essai de 7Pass.
-Il s'agit de la version d'essai totalement fonctionnelle de 7Pass.
-Cliquez sur cette notification pour Noter/Acheter 7Pass.</value>
+    <value>Merci pour votre essai de 8Pass.
+Il s'agit de la version d'essai totalement fonctionnelle de 8Pass.
+Cliquez sur cette notification pour Noter/Acheter 8Pass.</value>
   </data>
   <data name="DigestRegex" xml:space="preserve">
     <value>(\w+)="([^"]+)"</value>

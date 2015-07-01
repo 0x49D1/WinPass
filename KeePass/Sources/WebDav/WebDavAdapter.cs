@@ -82,7 +82,7 @@ namespace KeePass.Sources.WebDav
             var fileName = Path.GetFileNameWithoutExtension(local);
 
             fileName = string.Concat(fileName,
-                " (7Pass' conflicted copy ",
+                " (8Pass' conflicted copy ",
                 DateTime.Today.ToString("yyyy-MM-dd"),
                 ")", extension);
 

@@ -140,7 +140,7 @@
 Fejlesztői blog (hírek és visszajelzés)</value>
   </data>
   <data name="About_Version" xml:space="preserve">
-    <value>7Pass Verzió: {0}</value>
+    <value>8Pass Verzió: {0}</value>
   </data>
   <data name="About_Purchase" xml:space="preserve">
     <value>Vásárlás</value>
@@ -160,13 +160,13 @@ Felhasznált/hivatkozott könyvtárak:</value>
     <value>Gyűjtött adatok elemzése</value>
   </data>
   <data name="AnalyticsSettings_Policy" xml:space="preserve">
-    <value>A felhasználói élmény javításának érdekében a 7Pass bizonyos információkat gyűjta a felhasználás körülményeivel kapcsolatosan.
+    <value>A felhasználói élmény javításának érdekében a 8Pass bizonyos információkat gyűjta a felhasználás körülményeivel kapcsolatosan.
 
 Az összegyűjtött információ semmilyen körülmények között nem tartalmazza az Ön adatbázisainak tartalmát, vagy semmilyen egyéb információt, ami alapján Önt közvetlenül azonosítani lehetne. Azonban:
-- 7Pass megjegyzi az Ön installációs azonosítóját azért, hogy összeköthesse az Ön telefonjáról küldött információkat. Az installációs azonosító minden egyes 7Pass installáció után megváltozik.
+- 8Pass megjegyzi az Ön installációs azonosítóját azért, hogy összeköthesse az Ön telefonjáról küldött információkat. Az installációs azonosító minden egyes 8Pass installáció után megváltozik.
 - Usage collection uses very little network traffic, but the cost to your bill may add up if you're on a capped plan.
 
-The collected information will be very useful for development of 7Pass.
+The collected information will be very useful for development of 8Pass.
 
 Your installation ID that will be collected is:</value>
   </data>
@@ -213,7 +213,7 @@ Your installation ID that will be collected is:</value>
     <value>Globális jelszó</value>
   </data>
   <data name="GlobalPassVerify_Prompt" xml:space="preserve">
-    <value>Adja meg a jelszavát a 7Pass kinyitásához</value>
+    <value>Adja meg a jelszavát a 8Pass kinyitásához</value>
   </data>
   <data name="GroupDetails_History" xml:space="preserve">
     <value>Előzmények</value>

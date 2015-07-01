@@ -215,7 +215,7 @@ Die aktuelle Installations-ID lautet:</value>
     <value>Globales Passwort</value>
   </data>
   <data name="GlobalPassVerify_Prompt" xml:space="preserve">
-    <value>Bitte Passwort zum Entsperren von 7Pass eingeben.</value>
+    <value>Bitte Passwort zum Entsperren von 8Pass eingeben.</value>
   </data>
   <data name="GroupDetails_History" xml:space="preserve">
     <value>Verlauf</value>

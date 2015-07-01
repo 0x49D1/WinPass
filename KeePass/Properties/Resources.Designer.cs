@@ -90,7 +90,7 @@ namespace KeePass.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die 7Pass has detected a conflict version of the database.
+        ///   Sucht eine lokalisierte Zeichenfolge, die 8Pass has detected a conflict version of the database.
         ///Your local database is now uploaded at:
         ///[{0}]
         ///
@@ -261,7 +261,7 @@ namespace KeePass.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die 7Pass Global password ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die 8Pass Global password ähnelt.
         /// </summary>
         internal static string GlobalPassTitle {
             get {
@@ -281,7 +281,7 @@ namespace KeePass.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die You&apos;ve specified an incorrect password.
         ///
-        ///Please note that 7Pass doesn&apos;t support using Windows account or custom password providers for the master password. ähnelt.
+        ///Please note that 8Pass doesn&apos;t support using Windows account or custom password providers for the master password. ähnelt.
         /// </summary>
         internal static string IncorrectPassword {
             get {
@@ -349,7 +349,7 @@ namespace KeePass.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die The selected database uses a large number of encryption transformation rounds.
         ///
-        ///This will cause 7Pass to open the database much slower than normal. ähnelt.
+        ///This will cause 8Pass to open the database much slower than normal. ähnelt.
         /// </summary>
         internal static string LargeTransforms {
             get {
@@ -396,7 +396,7 @@ namespace KeePass.Properties {
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Your password is correct and the database seems valid.
-        ///Unfortunately, 7Pass encountered an error while reading the database.
+        ///Unfortunately, 8Pass encountered an error while reading the database.
         ///
         ///Do you want to send the author a report so that this bug can be fixed in next version? ähnelt.
         /// </summary>
@@ -470,7 +470,7 @@ namespace KeePass.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die This is the fully functional free version of 7Pass.
+        ///   Sucht eine lokalisierte Zeichenfolge, die This is the fully functional free version of 8Pass.
         ///You can support the author by tapping this
         ///notification to purchase the paid version. ähnelt.
         /// </summary>
@@ -481,9 +481,9 @@ namespace KeePass.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Thank you for trying 7Pass.
-        ///This is the fully functional trial version of 7Pass.
-        ///Click this notification to Review/Purchase 7Pass. ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Thank you for trying 8Pass.
+        ///This is the fully functional trial version of 8Pass.
+        ///Click this notification to Review/Purchase 8Pass. ähnelt.
         /// </summary>
         internal static string ToastTrial {
             get {
@@ -492,7 +492,7 @@ namespace KeePass.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die 7Pass has encountered an unexpected error. 7Pass will now exit.
+        ///   Sucht eine lokalisierte Zeichenfolge, die 8Pass has encountered an unexpected error. 8Pass will now exit.
         ///
         ///Is it ok if I create an email so that you can send to me to fix this problem? ähnelt.
         /// </summary>
