@@ -51,7 +51,7 @@ Version 3.5:
  - Fixed SkyDrive synchronization
  
 Version 3.4:
- - Added SkyDrive support.
+ - Added OneDrive support.
  - Removed usage of device ID.
 
 Version 3.3:
@@ -61,4 +61,4 @@ Version 3.3:
  - Fixed protected field textbox display in light theme.
 
 Keywords:
-KeePass password dropbox encrypt 7Pass encryption privacy webdav synchronize
+KeePass password dropbox encrypt 7Pass encryption privacy webdav synchronize WinPass
