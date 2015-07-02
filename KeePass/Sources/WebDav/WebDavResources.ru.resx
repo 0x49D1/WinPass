@@ -122,7 +122,7 @@
 Попробуйте позже.</value>
   </data>
   <data name="HtmlDetected" xml:space="preserve">
-    <value>Сервер ответил на запрос 8Pass из WebDAV html страницей. 
+    <value>Сервер ответил на запрос WinPass из WebDAV html страницей. 
 Желаете просмотреть эту страницу?</value>
   </data>
   <data name="HtmlDetectedTitle" xml:space="preserve">

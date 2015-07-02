@@ -146,7 +146,7 @@ Bitte stell sicher, dass der URL korrekt ist.
   <data name="IncorrectPassword" xml:space="preserve">
     <value>Sie haben ein falsches Passwort angegeben.
 
-Achtung: 8Pass unterstützt keine Windows-Anmeldung oder eigene Passwort-Anbieter für das Hauptpasswort.</value>
+Achtung: WinPass unterstützt keine Windows-Anmeldung oder eigene Passwort-Anbieter für das Hauptpasswort.</value>
   </data>
   <data name="InvalidCertificate" xml:space="preserve">
     <value>
@@ -195,10 +195,10 @@ Das Speichern des Passworts ohne Schutz des Startbildschirmes, erlaubt jeder bel
     <value>Bitte geben Sie Ihr globales Passwort an!</value>
   </data>
   <data name="GlobalPassTitle" xml:space="preserve">
-    <value>8Pass Globales Passwort</value>
+    <value>WinPass Globales Passwort</value>
   </data>
   <data name="UnhandledExPrompt" xml:space="preserve">
-    <value>In 8Pass ist ein unerwarteter Fehler aufgetreten. 8Pass wird nun beendet.
+    <value>In WinPass ist ein unerwarteter Fehler aufgetreten. WinPass wird nun beendet.
 
 Ist es in Ordnung, wenn eine E-Mail erstellt und der Fehler an den Entwickler übermittelt wird, um ihn schnellstmöglich zu beheben?</value>
   </data>
@@ -218,7 +218,7 @@ Ist es in Ordnung, wenn eine E-Mail erstellt und der Fehler an den Entwickler ü
     <value>Eintrag wird gespeichert</value>
   </data>
   <data name="Conflict" xml:space="preserve">
-    <value>8Pass hat einen Datenbank-Konflikt entdeckt.
+    <value>WinPass hat einen Datenbank-Konflikt entdeckt.
 Die lokale Datenbank ist nun hochgeladen nach:
 [{0}]
 
@@ -269,19 +269,19 @@ Wollen Sie diese Änderungen wirklich ignorieren?</value>
   <data name="LargeTransforms" xml:space="preserve">
     <value>Sie ausgewählte Datenbank verwendet eine sehr große Anzahl an Verschlüsselungstransformationen.
 
-Dies führt dazu, das 8Pass die Datenbank nur sehr langsam öffnen kann.</value>
+Dies führt dazu, das WinPass die Datenbank nur sehr langsam öffnen kann.</value>
   </data>
   <data name="LargeTransformsTitle" xml:space="preserve">
     <value>Datenbank-Verschlüsselung</value>
   </data>
   <data name="ToastFree" xml:space="preserve">
-    <value>Dies ist die voll funktionsfähige freie Version von 8Pass.
+    <value>Dies ist die voll funktionsfähige freie Version von WinPass.
 Sie können den Entwickler unterstützen, wenn Sie auf diese Benachrichtigung klicken, um die Vollversion zu kaufen.</value>
   </data>
   <data name="ToastTrial" xml:space="preserve">
-    <value>Danke für das Testen von 8Pass.
-Dies ist die voll funktionsfähige freie Version von 8Pass.
-Klicken Sie auf diese Benachrichtigung, um 8Pass zu beurteilen/kaufen.</value>
+    <value>Danke für das Testen von WinPass.
+Dies ist die voll funktionsfähige freie Version von WinPass.
+Klicken Sie auf diese Benachrichtigung, um WinPass zu beurteilen/kaufen.</value>
   </data>
   <data name="DigestRegex" xml:space="preserve">
     <value>(\w+)="([^"]+)"</value>

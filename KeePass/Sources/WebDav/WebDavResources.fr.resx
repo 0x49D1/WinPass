@@ -122,7 +122,7 @@
 Essayez de nouveau plus tard.</value>
   </data>
   <data name="HtmlDetected" xml:space="preserve">
-    <value>Le serveur a répondu avec une page HTML à la requête WebDAV de 8Pass.
+    <value>Le serveur a répondu avec une page HTML à la requête WebDAV de WinPass.
 Voulez-vous explorer le serveur comme des pages HTML à la place?</value>
   </data>
   <data name="HtmlDetectedTitle" xml:space="preserve">

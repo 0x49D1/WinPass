@@ -88,7 +88,7 @@ namespace KeePass.Sources.DropBox
             var fileName = Path.GetFileNameWithoutExtension(path);
 
             fileName = string.Concat(fileName,
-                " (8Pass' conflicted copy ",
+                " (WinPass' conflicted copy ",
                 DateTime.Today.ToString("yyyy-MM-dd"),
                 ")", extension);
 

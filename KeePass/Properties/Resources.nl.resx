@@ -146,7 +146,7 @@ Controleer of de url klopt.
   <data name="IncorrectPassword" xml:space="preserve">
     <value>U heeft een verkeerd wachtwoord ingevoerd.
 
-Let op dat 8Pass Windows account of eigen wachtwoord leveranciers voor het hoofdwachtwoord niet ondersteund.</value>
+Let op dat WinPass Windows account of eigen wachtwoord leveranciers voor het hoofdwachtwoord niet ondersteund.</value>
   </data>
   <data name="InvalidCertificate" xml:space="preserve">
     <value>
@@ -197,10 +197,10 @@ Ga naar Telefoon Instellingen&#xB;ergrendelingsscherm om het wachtwoord van het 
     <value>Voer uw globale wachtwoord in!</value>
   </data>
   <data name="GlobalPassTitle" xml:space="preserve">
-    <value>8Pass Globaal wachtwoord</value>
+    <value>WinPass Globaal wachtwoord</value>
   </data>
   <data name="UnhandledExPrompt" xml:space="preserve">
-    <value>Er heeft een onverwachte fout opgetreden. 8Pass zal nu afsluiten.
+    <value>Er heeft een onverwachte fout opgetreden. WinPass zal nu afsluiten.
 
 Is het goed als ik een e-mail maak die u naar mij kan versturen zodat het probleem kan worden opgelost?</value>
   </data>
@@ -220,7 +220,7 @@ Is het goed als ik een e-mail maak die u naar mij kan versturen zodat het proble
     <value>Invoer Opslaan</value>
   </data>
   <data name="Conflict" xml:space="preserve">
-    <value>8Pass heeft een versieconflict tussen de databases ontdekt.
+    <value>WinPass heeft een versieconflict tussen de databases ontdekt.
 De lokale database is nu geupload naar:
 [{0}]
 
@@ -271,20 +271,20 @@ De {0} zal voor altijd worden verwijderd en kan niet worden hersteld.</value>
   <data name="LargeTransforms" xml:space="preserve">
     <value>De geselecteerde database gebruikt een groot aantal encryptie transformatie rondes.
 
-Het openen van de database door 8Pass zal veel langer duren dan normaal.</value>
+Het openen van de database door WinPass zal veel langer duren dan normaal.</value>
   </data>
   <data name="LargeTransformsTitle" xml:space="preserve">
     <value>Database Encryptie</value>
   </data>
   <data name="ToastFree" xml:space="preserve">
-    <value>Dit is de volledig functionele gratis versie van 8Pass.
+    <value>Dit is de volledig functionele gratis versie van WinPass.
 U kunt de ontwikkelaar ondersteunen door via deze 
 notificatie de betaalde versie aan te schaffen.</value>
   </data>
   <data name="ToastTrial" xml:space="preserve">
-    <value>Bedankt dat u 8Pass geprobeerd heeft.
-Dit is de volledig functionele probeerversie van 8Pass.
-Klik deze notificatie om 8Pass te Beoordelen/Kopen.</value>
+    <value>Bedankt dat u WinPass geprobeerd heeft.
+Dit is de volledig functionele probeerversie van WinPass.
+Klik deze notificatie om WinPass te Beoordelen/Kopen.</value>
   </data>
   <data name="DigestRegex" xml:space="preserve">
     <value>(\w+)="([^"]+)"</value>

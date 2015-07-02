@@ -138,7 +138,7 @@ namespace KeePass
             if ((Cache.DbInfo != null) && (Cache.DbInfo.Details.Modified != null))
             {
                 convertedDate = DateTime.Parse(Cache.DbInfo.Details.Modified);
-                ApplicationTitle.Text = "8Pass - " + Cache.DbInfo.Details.Name + " (" + convertedDate + ")";
+                ApplicationTitle.Text = "WinPass - " + Cache.DbInfo.Details.Name + " (" + convertedDate + ")";
             }
 
             var database = Cache.Database;

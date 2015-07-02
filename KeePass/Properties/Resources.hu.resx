@@ -146,7 +146,7 @@ Ellenőrizze, hogy a megadott URL helyes-e.
   <data name="IncorrectPassword" xml:space="preserve">
     <value>Rossz jelszót adott meg!
 
-8Pass nem támogatja a Windows felhasználói fiókok vagy más jelszó ellenőrzési rendszerek használatát a mesterjelszó ellenőrzésére.</value>
+WinPass nem támogatja a Windows felhasználói fiókok vagy más jelszó ellenőrzési rendszerek használatát a mesterjelszó ellenőrzésére.</value>
   </data>
   <data name="InvalidCertificate" xml:space="preserve">
     <value>
@@ -163,7 +163,7 @@ Próbálja meg később!</value>
   </data>
   <data name="ParseError" xml:space="preserve">
     <value>Az Ön jelszava helyes és az adabázis is érvényesnek tűnik.
-Sajnos a 8Pass mégsem tudta betölteni az adatbázist. .
+Sajnos a WinPass mégsem tudta betölteni az adatbázist. .
 
 Küldene egy hibajelentést a fejlesztőnek, hogy a következő verzióban ki tudja javítani ezt a hibát?</value>
   </data>

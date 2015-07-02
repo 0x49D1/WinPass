@@ -24,7 +24,7 @@ namespace KeePass.Sources.OneDrive
 
             _client = new RestClient
             {
-                UserAgent = "8Pass",
+                UserAgent = "WinPass",
                 BaseUrl = "https://apis.live.net/v5.0/",
             };
 

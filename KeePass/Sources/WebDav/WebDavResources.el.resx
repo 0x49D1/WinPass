@@ -122,7 +122,7 @@
 Παρακαλώ δοκιμάστε ξανά αργότερα.</value>
   </data>
   <data name="HtmlDetected" xml:space="preserve">
-    <value>Ο διακομιστής WebDAV απάντησε στην αίτηση του 8Pass με μια σελίδα HTML.
+    <value>Ο διακομιστής WebDAV απάντησε στην αίτηση του WinPass με μια σελίδα HTML.
 Θέλετε να εξερευνήσετε το διακομιστή ως σελίδες HTML αντ 'αυτού;</value>
   </data>
   <data name="HtmlDetectedTitle" xml:space="preserve">

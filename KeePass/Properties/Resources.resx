@@ -146,7 +146,7 @@ Please make sure that the url is correct.
   <data name="IncorrectPassword" xml:space="preserve">
     <value>You've specified an incorrect password.
 
-Please note that 8Pass doesn't support using Windows account or custom password providers for the master password.</value>
+Please note that WinPass doesn't support using Windows account or custom password providers for the master password.</value>
   </data>
   <data name="InvalidCertificate" xml:space="preserve">
     <value>
@@ -163,7 +163,7 @@ Please try again later..</value>
   </data>
   <data name="ParseError" xml:space="preserve">
     <value>Your password is correct and the database seems valid.
-Unfortunately, 8Pass encountered an error while reading the database.
+Unfortunately, WinPass encountered an error while reading the database.
 
 Do you want to send the author a report so that this bug can be fixed in next version?</value>
   </data>
@@ -197,10 +197,10 @@ To set lock screen password, please go to Phone's Settings\lock &amp; wallpaper.
     <value>Please enter your global password!</value>
   </data>
   <data name="GlobalPassTitle" xml:space="preserve">
-    <value>8Pass Global password</value>
+    <value>WinPass Global password</value>
   </data>
   <data name="UnhandledExPrompt" xml:space="preserve">
-    <value>8Pass has encountered an unexpected error. 8Pass will now exit.
+    <value>WinPass has encountered an unexpected error. WinPass will now exit.
 
 Is it ok if I create an email so that you can send to me to fix this problem?</value>
   </data>
@@ -220,7 +220,7 @@ Is it ok if I create an email so that you can send to me to fix this problem?</v
     <value>Save Entry</value>
   </data>
   <data name="Conflict" xml:space="preserve">
-    <value>8Pass has detected a conflict version of the database.
+    <value>WinPass has detected a conflict version of the database.
 Your local database is now uploaded at:
 [{0}]
 
@@ -271,20 +271,20 @@ This {0} will be deleted forever and cannot be recovered.</value>
   <data name="LargeTransforms" xml:space="preserve">
     <value>The selected database uses a large number of encryption transformation rounds.
 
-This will cause 8Pass to open the database much slower than normal.</value>
+This will cause WinPass to open the database much slower than normal.</value>
   </data>
   <data name="LargeTransformsTitle" xml:space="preserve">
     <value>Database Encryption</value>
   </data>
   <data name="ToastFree" xml:space="preserve">
-    <value>This is the fully functional free version of 8Pass.
+    <value>This is the fully functional free version of WinPass.
 You can support the author by tapping this
 notification to purchase the paid version.</value>
   </data>
   <data name="ToastTrial" xml:space="preserve">
-    <value>Thank you for trying 8Pass.
-This is the fully functional trial version of 8Pass.
-Click this notification to Review/Purchase 8Pass.</value>
+    <value>Thank you for trying WinPass.
+This is the fully functional trial version of WinPass.
+Click this notification to Review/Purchase WinPass.</value>
   </data>
   <data name="DigestRegex" xml:space="preserve">
     <value>(\w+)="([^"]+)"</value>

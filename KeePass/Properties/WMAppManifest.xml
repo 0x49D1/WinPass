@@ -10,7 +10,7 @@
     <Language code="pl" />
     <Language code="ru" />
   </Languages>
-  <App xmlns="" ProductID="{607307a5-bd5a-4d39-9150-5e016c231373}" Title="8Pass" RuntimeType="Silverlight" Version="4.2.1.0" Genre="apps.normal" Author="Sebastian Pfohl" Description="KeePass for Windows Phone" Publisher="Sebastian Pfohl" PublisherID="{717c216b-d9a0-4b1c-9e9a-cd2e14391571}">
+  <App xmlns="" ProductID="{607307a5-bd5a-4d39-9150-5e016c231373}" Title="WinPass" RuntimeType="Silverlight" Version="4.2.1.0" Genre="apps.normal" Author="Sebastian Pfohl" Description="KeePass for Windows Phone" Publisher="Sebastian Pfohl" PublisherID="{717c216b-d9a0-4b1c-9e9a-cd2e14391571}">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
@@ -26,7 +26,7 @@
           <SmallImageURI IsResource="false" IsRelative="true">Background.png</SmallImageURI>
           <Count>0</Count>
           <BackgroundImageURI IsResource="false" IsRelative="true">Background.png</BackgroundImageURI>
-          <Title>8Pass</Title>
+          <Title>WinPass</Title>
           <BackContent>
           </BackContent>
           <BackBackgroundImageURI>

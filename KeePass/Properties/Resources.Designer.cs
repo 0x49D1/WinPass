@@ -90,7 +90,7 @@ namespace KeePass.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 8Pass has detected a conflict version of the database.
+        ///   Looks up a localized string similar to WinPass has detected a conflict version of the database.
         ///Your local database is now uploaded at:
         ///[{0}]
         ///
@@ -261,7 +261,7 @@ namespace KeePass.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 8Pass Global password.
+        ///   Looks up a localized string similar to WinPass Global password.
         /// </summary>
         internal static string GlobalPassTitle {
             get {
@@ -281,7 +281,7 @@ namespace KeePass.Properties {
         /// <summary>
         ///   Looks up a localized string similar to You&apos;ve specified an incorrect password.
         ///
-        ///Please note that 8Pass doesn&apos;t support using Windows account or custom password providers for the master password..
+        ///Please note that WinPass doesn&apos;t support using Windows account or custom password providers for the master password..
         /// </summary>
         internal static string IncorrectPassword {
             get {
@@ -349,7 +349,7 @@ namespace KeePass.Properties {
         /// <summary>
         ///   Looks up a localized string similar to The selected database uses a large number of encryption transformation rounds.
         ///
-        ///This will cause 8Pass to open the database much slower than normal..
+        ///This will cause WinPass to open the database much slower than normal..
         /// </summary>
         internal static string LargeTransforms {
             get {
@@ -396,7 +396,7 @@ namespace KeePass.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to Your password is correct and the database seems valid.
-        ///Unfortunately, 8Pass encountered an error while reading the database.
+        ///Unfortunately, WinPass encountered an error while reading the database.
         ///
         ///Do you want to send the author a report so that this bug can be fixed in next version?.
         /// </summary>
@@ -470,7 +470,7 @@ namespace KeePass.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This is the fully functional free version of 8Pass.
+        ///   Looks up a localized string similar to This is the fully functional free version of WinPass.
         ///You can support the author by tapping this
         ///notification to purchase the paid version..
         /// </summary>
@@ -481,9 +481,9 @@ namespace KeePass.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Thank you for trying 8Pass.
-        ///This is the fully functional trial version of 8Pass.
-        ///Click this notification to Review/Purchase 8Pass..
+        ///   Looks up a localized string similar to Thank you for trying WinPass.
+        ///This is the fully functional trial version of WinPass.
+        ///Click this notification to Review/Purchase WinPass..
         /// </summary>
         internal static string ToastTrial {
             get {
@@ -492,7 +492,7 @@ namespace KeePass.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 8Pass has encountered an unexpected error. 8Pass will now exit.
+        ///   Looks up a localized string similar to WinPass has encountered an unexpected error. WinPass will now exit.
         ///
         ///Is it ok if I create an email so that you can send to me to fix this problem?.
         /// </summary>

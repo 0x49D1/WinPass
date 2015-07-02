@@ -142,7 +142,7 @@ Blog de los desarrolladores (Noticias &amp; Retroalimentación)</value>
   <data name="About_Version" xml:space="preserve">
     <value>
 
-Versión de 8Pass: {0}</value>
+Versión de WinPass: {0}</value>
   </data>
   <data name="About_Purchase" xml:space="preserve">
     <value>Comprar</value>
@@ -162,19 +162,19 @@ Librerías usadas/referenciadas:</value>
     <value>Análisis</value>
   </data>
   <data name="AnalyticsSettings_Policy" xml:space="preserve">
-    <value>8Pass recolecta información de uso a fin de mejorar permanentemente la experiencia al usuario.
+    <value>WinPass recolecta información de uso a fin de mejorar permanentemente la experiencia al usuario.
 
 
 
 La información recolectada ni información que lo pueda identificar  así como su información guardada en la base de datos. Sin embargo:
 
-- 8Pass recolecta su ID de instalación para poder enlazar información enviada desde su dispositivo. Esto cambia cada vez que 8Pass es instalada.
+- WinPass recolecta su ID de instalación para poder enlazar información enviada desde su dispositivo. Esto cambia cada vez que WinPass es instalada.
 
 - La recolección de uso utiliza muy poco tráfico, pero este costo se podrá ver reflejado en su factura telefónica o agregará costos si está en un plan de uso limitado.
 
 
 
-La información recolectada será de gran ayuda en el desarrollo de 8Pass.
+La información recolectada será de gran ayuda en el desarrollo de WinPass.
 
 
 
@@ -223,7 +223,7 @@ Su ID de instalación que será recolectado es:</value>
     <value>Contraseña Global</value>
   </data>
   <data name="GlobalPassVerify_Prompt" xml:space="preserve">
-    <value>Por favor inserte su contraseña para desbloquear 8Pass</value>
+    <value>Por favor inserte su contraseña para desbloquear WinPass</value>
   </data>
   <data name="GroupDetails_History" xml:space="preserve">
     <value>Historia</value>

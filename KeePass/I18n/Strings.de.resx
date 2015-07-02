@@ -140,7 +140,7 @@
 Infos zur App (News &amp; Feedback):</value>
   </data>
   <data name="About_Version" xml:space="preserve">
-    <value>8Pass Version: {0}</value>
+    <value>WinPass Version: {0}</value>
   </data>
   <data name="About_Purchase" xml:space="preserve">
     <value>Kaufen</value>
@@ -160,15 +160,15 @@ Benutzte Bibliotheken/Referenzen:</value>
     <value>Analytik</value>
   </data>
   <data name="AnalyticsSettings_Policy" xml:space="preserve">
-    <value>8Pass sammelt Informationen zur Verwendung von 8Pass, um die Benutzerfreundlichkeit erhöhen zu können.
+    <value>WinPass sammelt Informationen zur Verwendung von WinPass, um die Benutzerfreundlichkeit erhöhen zu können.
 
 Diese Informationen werden niemals Datenbankinformationen enthalten oder Informationen um User identifizieren zu können.
 
-- 8Pass sammelt die Installations-ID um die Informationen mit dem jeweiligen Gerät verknüpfen zu können. Diese Information ändert sich bei jeder Installation.
+- WinPass sammelt die Installations-ID um die Informationen mit dem jeweiligen Gerät verknüpfen zu können. Diese Information ändert sich bei jeder Installation.
 
 - Die Sammlung hat einen sehr geringen Datenverbrauch. Dennoch wirkt sich jeder Datenvebrauch natürlich auf die Abrechnung der Daten ihres jeweiligen Tarifes aus.
 
-Diese gesammelten Informationen sind für die weitere Entwicklung von 8Pass enorm wichtig. 
+Diese gesammelten Informationen sind für die weitere Entwicklung von WinPass enorm wichtig. 
 
 Die aktuelle Installations-ID lautet:</value>
   </data>
@@ -215,7 +215,7 @@ Die aktuelle Installations-ID lautet:</value>
     <value>Globales Passwort</value>
   </data>
   <data name="GlobalPassVerify_Prompt" xml:space="preserve">
-    <value>Bitte Passwort zum Entsperren von 8Pass eingeben.</value>
+    <value>Bitte Passwort zum Entsperren von WinPass eingeben.</value>
   </data>
   <data name="GroupDetails_History" xml:space="preserve">
     <value>Verlauf</value>

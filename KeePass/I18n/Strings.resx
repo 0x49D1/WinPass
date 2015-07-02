@@ -144,11 +144,11 @@
   <data name="About_Blog" xml:space="preserve">
     <value>
 Infos regarding App (News &amp; Feedback):</value>
-    <comment>Description for link to 8Pass blog</comment>
+    <comment>Description for link to WinPass blog</comment>
   </data>
   <data name="About_Version" xml:space="preserve">
-    <value>8Pass Version: {0}</value>
-    <comment>Format string for 8Pass version text
+    <value>WinPass Version: {0}</value>
+    <comment>Format string for WinPass version text
       0: version number</comment>
   </data>
   <data name="About_Purchase" xml:space="preserve">
@@ -174,13 +174,13 @@ Libraries used/referenced:</value>
     <comment>Analytics page title</comment>
   </data>
   <data name="AnalyticsSettings_Policy" xml:space="preserve">
-    <value>8Pass collects usage information in order to continuously enhance user experience.
+    <value>WinPass collects usage information in order to continuously enhance user experience.
 
 The collection information will never have your database information, or any information that can directly identify you. However:
-- 8Pass does collect your installation ID to link information sent from your device together. This changes everytime 8Pass is installed.
+- WinPass does collect your installation ID to link information sent from your device together. This changes everytime WinPass is installed.
 - Usage collection uses very little network traffic, but the cost to your bill may add up if you're on a capped plan.
 
-The collected information will be very useful for development of 8Pass.
+The collected information will be very useful for development of WinPass.
 
 Your installation ID that will be collected is:</value>
     <comment>Analytics policy</comment>
@@ -242,7 +242,7 @@ Your installation ID that will be collected is:</value>
     <comment>Global pass verify page title</comment>
   </data>
   <data name="GlobalPassVerify_Prompt" xml:space="preserve">
-    <value>Please enter your password to unlock 8Pass</value>
+    <value>Please enter your password to unlock WinPass</value>
     <comment>Prompt to ask user to enter global password</comment>
   </data>
   <data name="GroupDetails_History" xml:space="preserve">
@@ -531,7 +531,7 @@ Your installation ID that will be collected is:</value>
   </data>
   <data name="SkyDrive_Unsupported" xml:space="preserve">
     <value>Due to SkyDrive limitation, your database has to be renamed to ".doc" extension.
-Do you want 8Pass to append ".doc" to your database name and then download it?</value>
+Do you want WinPass to append ".doc" to your database name and then download it?</value>
   </data>
   <data name="Settings_PWSearch" xml:space="preserve">
     <value>Search in Passwords</value>

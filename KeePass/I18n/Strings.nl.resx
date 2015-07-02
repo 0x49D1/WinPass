@@ -140,7 +140,7 @@
 Ontwikkelaars' Blog (Nieuws &amp; Terugkoppeling):</value>
   </data>
   <data name="About_Version" xml:space="preserve">
-    <value>8Pass Versie: {0}</value>
+    <value>WinPass Versie: {0}</value>
   </data>
   <data name="About_Purchase" xml:space="preserve">
     <value>Kopen</value>
@@ -163,10 +163,10 @@ Gebruikte/gerefereerde bibliotheken:</value>
     <value>Om de gebruikerservaring steeds te kunen verbeteren verzameld 7 Pass gebruiksgegevens.
 
 De verzamelde informatie bevat nooit uw databasegegevens of enige andere informatie waarmee u direct geïdentificeerd kan worden. Echter:
-- 8Pass geeft uw installatie ID door om gegevens die van uw telefoon verstuurd zijn te relateren. Dit ID is iedere keer dat 8Pass geïnstalleerd wordt anders.
+- WinPass geeft uw installatie ID door om gegevens die van uw telefoon verstuurd zijn te relateren. Dit ID is iedere keer dat WinPass geïnstalleerd wordt anders.
 - Het verzamelen van gebruiksgegevens kost niet veel netwerkverkeer, maar de kosten kunnen oplopen als u een beperkt data-abonnement heeft.
 
-De verzamelde informatie is heel nuttig voor het ontwikkelen van 8Pass.
+De verzamelde informatie is heel nuttig voor het ontwikkelen van WinPass.
 
 Het installatie ID dat doorgegeven wordt is:</value>
   </data>
@@ -213,7 +213,7 @@ Het installatie ID dat doorgegeven wordt is:</value>
     <value>Globaal Wachtwoord</value>
   </data>
   <data name="GlobalPassVerify_Prompt" xml:space="preserve">
-    <value>Voer uw wachtwoord in om 8Pass te ontgrendelen</value>
+    <value>Voer uw wachtwoord in om WinPass te ontgrendelen</value>
   </data>
   <data name="GroupDetails_History" xml:space="preserve">
     <value>Geschiedenis</value>

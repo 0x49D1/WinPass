@@ -148,7 +148,7 @@ Asegúrese que la URL es correcta.
   <data name="IncorrectPassword" xml:space="preserve">
     <value>Usted especificó una contraseña incorrecta.
 
-Note que 8Pass no soporta el usar una cuenta de Windows o una contraseña para terceros para la contraseña maestra.</value>
+Note que WinPass no soporta el usar una cuenta de Windows o una contraseña para terceros para la contraseña maestra.</value>
   </data>
   <data name="InvalidCertificate" xml:space="preserve">
     <value>
@@ -165,7 +165,7 @@ Intente de nuevo más tarde..</value>
   </data>
   <data name="ParseError" xml:space="preserve">
     <value>Su contraseña es correct y la Base de Datos parece válida.
-Desafortunadamente, 8Pass encontró un error mientras se leía la Base de Datos.
+Desafortunadamente, WinPass encontró un error mientras se leía la Base de Datos.
 
 ¿Desea enviar al autor un reporte a fin que el error sea corregido en la siguiente versión?</value>
   </data>
@@ -199,10 +199,10 @@ Coloque una contraseña de pantalla a su teléfono a través de &gt; configuraci
     <value>Por favor inserte su contraseña global!</value>
   </data>
   <data name="GlobalPassTitle" xml:space="preserve">
-    <value>Contraseña Global de 8Pass</value>
+    <value>Contraseña Global de WinPass</value>
   </data>
   <data name="UnhandledExPrompt" xml:space="preserve">
-    <value>8Pass ha encontrado un error inesperado. 8Pass saldrá ahora.
+    <value>WinPass ha encontrado un error inesperado. WinPass saldrá ahora.
 
 ¿Desea crear un correo electrónico para que el problema sea resuelto?</value>
   </data>
@@ -222,7 +222,7 @@ Coloque una contraseña de pantalla a su teléfono a través de &gt; configuraci
     <value>Guardar Entrada</value>
   </data>
   <data name="Conflict" xml:space="preserve">
-    <value>8Pass ha detectado un conflicto en la versión de la base de datos.
+    <value>WinPass ha detectado un conflicto en la versión de la base de datos.
 Su base de datos local ha sido cargada a:
 [{0}]
 
@@ -273,19 +273,19 @@ Esto hará que {0} sea borrado definitivamente y no pueda ser recuperado.</value
   <data name="LargeTransforms" xml:space="preserve">
     <value>La base de datos seleccionada utiliza un número mayor rondas de transformación de ciframiento.
 
-Esto hará que 8Pass tome más tiempo que el normal al abrir la base de datos.</value>
+Esto hará que WinPass tome más tiempo que el normal al abrir la base de datos.</value>
   </data>
   <data name="LargeTransformsTitle" xml:space="preserve">
     <value>Cifrado de la base de datos</value>
   </data>
   <data name="ToastFree" xml:space="preserve">
-    <value>Esta es la versión completa de 8Pass.
+    <value>Esta es la versión completa de WinPass.
 Usted puede soportar al autor de la aplicación siguiendo el enlace y comprar la versión completa de la aplicación.</value>
   </data>
   <data name="ToastTrial" xml:space="preserve">
-    <value>Gracias por probar 8Pass.
-Esta es la versión completa de 8Pass.
-Siga esta notificación para Calificar/Comprar 8Pass.</value>
+    <value>Gracias por probar WinPass.
+Esta es la versión completa de WinPass.
+Siga esta notificación para Calificar/Comprar WinPass.</value>
   </data>
   <data name="DigestRegex" xml:space="preserve">
     <value>(\w+)="([^"]+)"</value>

@@ -33,7 +33,7 @@ namespace KeePass.Utils
 
         private static void AddAppInfo(StringBuilder sb)
         {
-            sb.AppendLine("8Pass info:");
+            sb.AppendLine("WinPass info:");
 
             sb.Append("Version: ");
             sb.AppendLine(PhoneHelper.GetAppAttribute("Version"));

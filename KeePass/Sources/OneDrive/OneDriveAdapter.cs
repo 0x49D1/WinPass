@@ -26,7 +26,7 @@ namespace KeePass.Sources.OneDrive
             var fileName = Path.GetFileNameWithoutExtension(name);
 
             return string.Concat(fileName,
-                " (8Pass' conflicted copy ",
+                " (WinPass' conflicted copy ",
                 DateTime.Today.ToString("yyyy-MM-dd"),
                 ")", extension);
         }

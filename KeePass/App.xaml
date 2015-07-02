@@ -8,7 +8,7 @@
     xmlns:converter="clr-namespace:KeePass.Converters">
 
     <Application.Resources>
-        <system:String x:Key="AppName">8PASS</system:String>
+        <system:String x:Key="AppName">WINPASS</system:String>
         <i18n:UiStrings xmlns:i18n="clr-namespace:KeePass.I18n" x:Key="UiStrings" />
 
         <converter:ToUppercaseConverter x:Key="ToUppercaseConverter" />

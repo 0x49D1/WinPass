@@ -138,7 +138,7 @@ Information angående App (Nyheter &amp; Feedback):</value>
 Källkod:</value>
   </data>
   <data name="About_Version" xml:space="preserve">
-    <value>8Pass Version: {0}</value>
+    <value>WinPass Version: {0}</value>
   </data>
   <data name="AnalyticsSettings_Allow" xml:space="preserve">
     <value>Tillåt</value>
@@ -150,13 +150,13 @@ Källkod:</value>
     <value>analytics</value>
   </data>
   <data name="AnalyticsSettings_Policy" xml:space="preserve">
-    <value>8Pass samlar in användningsinformation för att kontinuerligt förbättra användarupplevelsen.
+    <value>WinPass samlar in användningsinformation för att kontinuerligt förbättra användarupplevelsen.
 
 Den insamlade information kommer aldrig att ta din databasinformation, eller någon information som direkt kan identifiera dig. Dock:
-- 8Pass samlar in ditt installations-ID för att länka information som skickas från enheten tillsammans. Detta ändras varje gång 8Pass installeras.
+- WinPass samlar in ditt installations-ID för att länka information som skickas från enheten tillsammans. Detta ändras varje gång WinPass installeras.
 - Insamlingen använder mycket lite nätverkstrafik, men extra datatrafik förekommer.
 
-Den insamlade informationen kommer att vara mycket användbart för utveckling av 8Pass.
+Den insamlade informationen kommer att vara mycket användbart för utveckling av WinPass.
 
 Din installation ID som kommer att samlas in är:</value>
   </data>
@@ -287,7 +287,7 @@ Din installation ID som kommer att samlas in är:</value>
     <value>Globalt lösenord</value>
   </data>
   <data name="GlobalPassVerify_Prompt" xml:space="preserve">
-    <value>Ange ditt lösenord för att låsa upp 8Pass</value>
+    <value>Ange ditt lösenord för att låsa upp WinPass</value>
   </data>
   <data name="GlobalPass_Confirm" xml:space="preserve">
     <value>Bekräfta lösenord</value>
@@ -450,7 +450,7 @@ Din installation ID som kommer att samlas in är:</value>
   </data>
   <data name="SkyDrive_Unsupported" xml:space="preserve">
     <value>På grund av SkyDrive begränsning, måste din databas döpas till ".doc".
-Vill du att 8Pass lägger till ".doc" till din databasnamn och sedan hämta den?</value>
+Vill du att WinPass lägger till ".doc" till din databasnamn och sedan hämta den?</value>
   </data>
   <data name="Sync_MessDownSucc" xml:space="preserve">
     <value>Nedladdning av databasen lyckades</value>

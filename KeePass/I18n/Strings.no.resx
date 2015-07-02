@@ -138,7 +138,7 @@ Informasjon om Appen (Nyheter &amp; Feedback):</value>
 Kildekode:</value>
   </data>
   <data name="About_Version" xml:space="preserve">
-    <value>8Pass Versjon: {0}</value>
+    <value>WinPass Versjon: {0}</value>
   </data>
   <data name="AnalyticsSettings_Allow" xml:space="preserve">
     <value>tillate</value>
@@ -150,13 +150,13 @@ Kildekode:</value>
     <value>analytics</value>
   </data>
   <data name="AnalyticsSettings_Policy" xml:space="preserve">
-    <value>8Pass samler bruksinformasjon for å kontinuerlig forbedre brukeropplevelsen.
+    <value>WinPass samler bruksinformasjon for å kontinuerlig forbedre brukeropplevelsen.
 
 Den innsamlede informasjonen vil aldri ta databaseinformasjon, eller informasjon som kan direkte identifisere deg. Men:
-- 8Pass samler inn installasjonen ID for å koble informasjon sendt fra enheten sammen. Dette endres hver gang 8Pass installert.
+- WinPass samler inn installasjonen ID for å koble informasjon sendt fra enheten sammen. Dette endres hver gang WinPass installert.
 - Innsamlingen bruker svært lite nettverkstrafikk, men ytterligere datatrafikk forekommer.
 
-Den innsamlede informasjonen vil være svært nyttig for utviklingen av 8Pass.
+Den innsamlede informasjonen vil være svært nyttig for utviklingen av WinPass.
 
 Installasjons ID som vil bli samlet inn er:</value>
   </data>
@@ -287,7 +287,7 @@ Installasjons ID som vil bli samlet inn er:</value>
     <value>Globalt passord</value>
   </data>
   <data name="GlobalPassVerify_Prompt" xml:space="preserve">
-    <value>Skriv in passordet ditt for å låse opp 8Pass</value>
+    <value>Skriv in passordet ditt for å låse opp WinPass</value>
   </data>
   <data name="GlobalPass_Confirm" xml:space="preserve">
     <value>Bekreft passordet</value>
@@ -450,7 +450,7 @@ Installasjons ID som vil bli samlet inn er:</value>
   </data>
   <data name="SkyDrive_Unsupported" xml:space="preserve">
     <value>Grunnet SkyDrive begrensning, må din database døpes om til ".doc".
-Vil du at 8Pass legge til ".doc" til din databasenavn og deretter laste den ned igjen?</value>
+Vil du at WinPass legge til ".doc" til din databasenavn og deretter laste den ned igjen?</value>
   </data>
   <data name="Sync_MessDownSucc" xml:space="preserve">
     <value>Nedlasting av databasen var vellykket</value>

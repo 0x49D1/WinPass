@@ -45,10 +45,10 @@
                         </StackPanel>                       
 
                         <TextBlock Text="{Binding Path=Strings.About_Source_Code, Source={StaticResource UiStrings}}" HorizontalAlignment="Center" />
-                        <HyperlinkButton Content="github.com/bilbob74/8Pass" TargetName="_blank" NavigateUri="https://github.com/bilbob74/8Pass" />
+                        <HyperlinkButton Content="github.com/bilbob74/WinPass" TargetName="_blank" NavigateUri="https://github.com/bilbob74/WinPass" />
                         <TextBlock Text=" " />
                         <TextBlock HorizontalAlignment="Center">This App is based on:</TextBlock>
-                        <HyperlinkButton Content="8Pass" TargetName="_blank" NavigateUri="https://github.com/8Pass/8Pass" />
+                        <HyperlinkButton Content="WinPass" TargetName="_blank" NavigateUri="https://github.com/WinPass/WinPass" />
 
                         <TextBlock Text=" " />
                         <TextBlock Text="Desktop Client:" HorizontalAlignment="Center" />

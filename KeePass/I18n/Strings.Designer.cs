@@ -118,7 +118,7 @@ namespace KeePass.I18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 8Pass Version: {0}.
+        ///   Looks up a localized string similar to WinPass Version: {0}.
         /// </summary>
         public static string About_Version {
             get {
@@ -154,10 +154,10 @@ namespace KeePass.I18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 8Pass collects usage information in order to continuously enhance user experience.
+        ///   Looks up a localized string similar to WinPass collects usage information in order to continuously enhance user experience.
         ///
         ///The collection information will never have your database information, or any information that can directly identify you. However:
-        ///- 8Pass does collect your installation ID to link information sent from your device together. This changes everytime 8Pass is installed.
+        ///- WinPass does collect your installation ID to link information sent from your device together. This changes everytime WinPass is installed.
         ///- Usage collection uses very little network traffic, but the cost to your bill may add up if you&apos;re on a capped plan.
         ///
         ///The collected information will be ve [rest of string was truncated]&quot;;.
@@ -583,7 +583,7 @@ namespace KeePass.I18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please enter your password to unlock 8Pass.
+        ///   Looks up a localized string similar to Please enter your password to unlock WinPass.
         /// </summary>
         public static string GlobalPassVerify_Prompt {
             get {
@@ -1034,7 +1034,7 @@ namespace KeePass.I18n {
         
         /// <summary>
         ///   Looks up a localized string similar to Due to SkyDrive limitation, your database has to be renamed to &quot;.doc&quot; extension.
-        ///Do you want 8Pass to append &quot;.doc&quot; to your database name and then download it?.
+        ///Do you want WinPass to append &quot;.doc&quot; to your database name and then download it?.
         /// </summary>
         public static string SkyDrive_Unsupported {
             get {

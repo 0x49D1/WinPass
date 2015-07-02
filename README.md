@@ -1,16 +1,7 @@
-<table bgcolor="#FF5050" border=1>
-<tr bgcolor="#FF5050">
-<td bgcolor="#FF5050"><i>
-<strong>Attention!!!</strong></br>
-<small>This Fork of 8Pass is not being updated anymore. Since i moved to Android Plattform, i didn't need this App. However, if someone is interested in this App, feel free to clone and develop your own Version.
-</td>
-</tr>
-</table>
-
-A unofficial KeePass password manager client, compatible with KeePass 2.x for desktop.
+A unofficial KeePass password manager client for Windows Mobile, compatible with KeePass 2.x for desktop.
 
 Support Info:
- - Source code: https://github.com/bilbob74/8pass
+ - This repository is a continuation fork of the project: https://github.com/bilbob74/8pass
 
 <img src="https://cloud.githubusercontent.com/assets/1022399/6726606/aa68b186-ce19-11e4-9f1d-1a278ac82c2b.png" width="200">
 <img src="https://cloud.githubusercontent.com/assets/1022399/6726604/aa64d714-ce19-11e4-923c-66d46377ccc0.png" width="200">
@@ -18,6 +9,15 @@ Support Info:
 <img src="https://cloud.githubusercontent.com/assets/1022399/6726609/aa6f0626-ce19-11e4-996e-d3166d292d70.png" width="200">
 <img src="https://cloud.githubusercontent.com/assets/1022399/6726605/aa679de6-ce19-11e4-8a7d-aa44df0de0e0.png" width="200">
 <img src="https://cloud.githubusercontent.com/assets/1022399/6726607/aa6c9f08-ce19-11e4-9d4a-f5b71a3dc6dc.png" width="200">
+
+
+Version 4.3
+Bugfixes:
+<ul>
+<li> Fixed the way password cleaning was done after the database synchronization</li>
+</ul>
+
+Also naming changes from 8Pass to WinPass
 
 Version 4.2
 Bugfixes:

@@ -9,9 +9,9 @@ namespace KeePass.Utils
         private bool _globalPassEntered;
 
         /// <summary>
-        /// Gets a value indicating whether 8Pass is password protected.
+        /// Gets a value indicating whether WinPass is password protected.
         /// </summary>
-        /// <value><c>true</c> 8Pass is password
+        /// <value><c>true</c> WinPass is password
         /// protected; otherwise, <c>false</c>.
         /// </value>
         public bool HasGlobalPass
