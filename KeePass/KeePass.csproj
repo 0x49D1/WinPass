@@ -740,7 +740,10 @@
     <EmbeddedResource Include="I18n\Strings.fr.resx">
       <DependentUpon>Strings.resx</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="I18n\Strings.hu.resx">
+	<EmbeddedResource Include="I18n\Strings.ka.resx">
+		<DependentUpon>Strings.resx</DependentUpon>
+	</EmbeddedResource>
+	<EmbeddedResource Include="I18n\Strings.hu.resx">
       <DependentUpon>Strings.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="I18n\Strings.nl.resx">
