@@ -91,7 +91,7 @@ namespace KeePass.Sources
         {
             var info = new DatabaseInfo();
             var demoDb = Application.GetResourceStream(
-                new Uri("Sources/Demo7Pass.kdbx", UriKind.Relative));
+                new Uri("Sources/DemokeepPass.kdbx", UriKind.Relative));
 
             info.SetDatabase(demoDb.Stream, new DatabaseDetails
             {
