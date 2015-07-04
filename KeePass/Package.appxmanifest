@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="fc098588-1c54-44fa-818a-69193487d5c9" Publisher="CN=bilbo" Version="1.0.0.0" />
+  <Identity Name="fc098588-1c54-44fa-818a-69193487d5c9" Publisher="CN=bilbo" Version="1.1.0.3" />
   <mp:PhoneIdentity PhoneProductId="607307a5-bd5a-4d39-9150-5e016c231373" PhonePublisherId="717c216b-d9a0-4b1c-9e9a-cd2e14391571" />
   <Properties>
     <DisplayName>KeePass</DisplayName>
@@ -30,10 +30,6 @@
       </Extensions>
     </Application>
   </Applications>
-  <Capabilities>
-    <Capability Name="internetClientServer" />
-    <m3:Capability Name="appointments" />
-  </Capabilities>
   <Extensions>
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>

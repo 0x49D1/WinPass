@@ -77,10 +77,12 @@ namespace KeePass
             {
                 Duration = TimeSpan.FromSeconds(0.6)
             };
-
+            if (AppSettings.Instance.Language == null)
+                AppSettings.Instance.Language = Thread.CurrentThread.CurrentCulture.Name;
             CultureInfo newCulture = new CultureInfo(AppSettings.Instance.Language);
             Thread.CurrentThread.CurrentCulture = newCulture;
             Thread.CurrentThread.CurrentUICulture = newCulture;
+
             RootFrame.Navigated += CompleteInitializePhoneApplication;
             RootFrame.UriMapper = new AssociationUriMapper();
             RootFrame.NavigationFailed += RootFrame_NavigationFailed;
@@ -90,7 +92,7 @@ namespace KeePass
             _initialized = true;
         }
 
-       
+
 
         private void Application_Activated(
             object sender, ActivatedEventArgs e)

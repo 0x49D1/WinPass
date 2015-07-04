@@ -454,15 +454,15 @@ namespace KeePass.Storage
             string parsedXmlPath, string masterPassPath)
         {
             var result = new DbPersistentData();
-            if (!File.Exists(protectPath))
+            if (!store.FileExists(protectPath))
             {
                 throw new FileNotFoundException(protectPath);
             }
-            if (!File.Exists(parsedXmlPath))
+            if (!store.FileExists(parsedXmlPath))
             {
                 throw new FileNotFoundException(parsedXmlPath);
             }
-            if (!File.Exists(masterPassPath))
+            if (!store.FileExists(masterPassPath))
             {
                 throw new FileNotFoundException(masterPassPath);
             }
@@ -538,7 +538,6 @@ namespace KeePass.Storage
                 var protect = xml.Protection;
                 fs.Write(protect, 0, protect.Length);
             }
-
             using (var fs = store.CreateFile(ParsedXmlPath))
             using (var buffer = new MemoryStream(xml.Xml))
                 BufferEx.CopyStream(buffer, fs);
