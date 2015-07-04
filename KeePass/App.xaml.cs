@@ -8,7 +8,8 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using KeePass.Sources;
 using Windows.ApplicationModel.Activation;
-
+using System.Threading;
+using System.Globalization;
 namespace KeePass
 {
     public partial class App
@@ -77,6 +78,8 @@ namespace KeePass
                 Duration = TimeSpan.FromSeconds(0.6)
             };
 
+            SetCulture(AppSettings.Instance.Language);
+
             RootFrame.Navigated += CompleteInitializePhoneApplication;
             RootFrame.UriMapper = new AssociationUriMapper();
             RootFrame.NavigationFailed += RootFrame_NavigationFailed;
@@ -86,6 +89,13 @@ namespace KeePass
             _initialized = true;
         }
 
+        public static void SetCulture(string culture)
+        {
+            if (string.IsNullOrEmpty(culture))
+                return;
+            Thread.CurrentThread.CurrentCulture = new CultureInfo(culture);
+            Thread.CurrentThread.CurrentUICulture = Thread.CurrentThread.CurrentCulture;
+        }
         private void Application_Activated(
             object sender, ActivatedEventArgs e)
         {
@@ -110,10 +120,10 @@ namespace KeePass
         }
 
         private void Application_Closing(
-            object sender, ClosingEventArgs e) {}
+            object sender, ClosingEventArgs e) { }
 
         private void Application_Deactivated(
-            object sender, DeactivatedEventArgs e) {}
+            object sender, DeactivatedEventArgs e) { }
 
         private void Application_Launching(
             object sender, LaunchingEventArgs e)

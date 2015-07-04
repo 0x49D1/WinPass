@@ -512,4 +512,7 @@ Die aktuelle Installations-ID lautet:</value>
   <data name="EntryDetails_ShowAllMasked" xml:space="preserve">
     <value>Maskierte Felder anzeigen</value>
   </data>
+  <data name="Language" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
 </root>

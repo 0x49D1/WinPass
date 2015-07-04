@@ -618,4 +618,7 @@ Do you want WinPass to append ".doc" to your database name and then download it?
     <value>Reveal all masked fields</value>
     <comment>Opens protected text on all the controls in view</comment>
   </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
 </root>

@@ -512,4 +512,7 @@ Vill du att WinPass lägger till ".doc" till din databasnamn och sedan hämta de
   <data name="WebView_Username" xml:space="preserve">
     <value>Användarnamn</value>
   </data>
+  <data name="Language" xml:space="preserve">
+    <value>språk</value>
+  </data>
 </root>

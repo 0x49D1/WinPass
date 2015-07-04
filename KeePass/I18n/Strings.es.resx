@@ -441,4 +441,7 @@ Su ID de instalación que será recolectado es:</value>
   <data name="Settings_PWSearch" xml:space="preserve">
     <value>Search in Passwords</value>
   </data>
+  <data name="Language" xml:space="preserve">
+    <value>idioma</value>
+  </data>
 </root>

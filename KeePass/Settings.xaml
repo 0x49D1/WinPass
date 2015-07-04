@@ -12,6 +12,9 @@
             <controls:PivotItem Header="{Binding Path=Strings.Settings_PageTitle, Source={StaticResource UiStrings}}">
                 <ScrollViewer Grid.Row="1">
                     <StackPanel>
+                        <toolkit:ListPicker Name="listpickerLanguage" Header="{Binding Path=Strings.Language, Source={StaticResource UiStrings}}" SelectionChanged="ListPicker_SelectionChanged" >
+
+                        </toolkit:ListPicker>
                         <toolkit:ToggleSwitch
                     Name="chkRecycleBin" Checked="chkRecycleBin_CheckedChanged" Unchecked="chkRecycleBin_CheckedChanged"
                     Header="{Binding Path=Strings.Settings_HideRecycleBin, Source={StaticResource UiStrings}}" />
@@ -30,6 +33,7 @@
                         <toolkit:ToggleSwitch
                     Name="chkSyncToast" 
                     Header="{Binding Path=Strings.Settings_SyncToast, Source={StaticResource UiStrings}}" Unchecked="chkSyncToast_CheckedChanged" Checked="chkSyncToast_CheckedChanged" />
+
                     </StackPanel>
                 </ScrollViewer>
             </controls:PivotItem>

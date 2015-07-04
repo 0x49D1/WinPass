@@ -431,4 +431,7 @@ Twój identyfikator instalacji to:</value>
   <data name="Settings_PWSearch" xml:space="preserve">
     <value>Search in Passwords</value>
   </data>
+  <data name="Language" xml:space="preserve">
+    <value>język</value>
+  </data>
 </root>

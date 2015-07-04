@@ -16,6 +16,8 @@ namespace KeePass.Utils
         private const string KEY_SYNC_TOAST = "SyncToast";
         private const string KEY_AUTOUPDATE = "AutoUpdate";
         private const string KEY_AUWLAN = "AutoUpdateWLAN";
+        private const string KEY_LANGUAGE = "Language";
+
 
         private static AppSettings _instance;
         private readonly GlobalPassHandler _globalPass;
@@ -210,6 +212,12 @@ namespace KeePass.Utils
         {
             get { return "1" == this[KEY_AUWLAN]; }
             set { this[KEY_AUWLAN] = value ? "1" : "0"; }
+        }
+
+        public string Language
+        {
+            set { this[KEY_LANGUAGE] = value; }
+            get { return this[KEY_LANGUAGE]; }
         }
 
         public AppSettings(IsolatedStorageSettings settings)

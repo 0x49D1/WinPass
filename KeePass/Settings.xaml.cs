@@ -6,13 +6,25 @@ using KeePass.I18n;
 
 using Coding4Fun.Phone.Controls.Data;
 using Microsoft.Phone.Tasks;
+using System.Collections.Generic;
+using System.Threading;
+using System.Globalization;
 
 namespace KeePass
 {
+    class LanguageProxy : CultureInfo
+    {
+        public LanguageProxy(string culture) : base(culture) { }
+        public override string ToString()
+        {
+            return base.Parent.DisplayName;
+        }
+
+    }
     public partial class Settings
     {
         string page = string.Empty;
-
+        string[] cultures = new[] { "en-US", "ka-GE", "de-DE", "ru-RU", "el-GR", "es-ES", "fr-FR", "hu-HU", "nl-NL", "pl-PL", };
         public Settings()
         {
             InitializeComponent();
@@ -23,7 +35,15 @@ namespace KeePass
             var version = PhoneHelper
                 .GetAppAttribute("Version");
 
-            lblVersion.Text = string.Format(lblVersion.Text, version);            
+            lblVersion.Text = string.Format(lblVersion.Text, version);
+
+            Array.ForEach(cultures, item =>
+            {
+                var lang = new LanguageProxy(item);
+                listpickerLanguage.Items.Add(lang);
+                if (lang.Name == Thread.CurrentThread.CurrentCulture.Name)
+                    listpickerLanguage.SelectedItem = lang;
+            });
         }
 
         protected override void OnNavigatedTo(
@@ -126,6 +146,14 @@ namespace KeePass
         private void lnkReview_Click(object sender, RoutedEventArgs e)
         {
             new MarketplaceReviewTask().Show();
+        }
+
+        private void ListPicker_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            var si = listpickerLanguage.SelectedItem as LanguageProxy;
+            AppSettings.Instance.Language = si.Name;
+            App.SetCulture(si.Name);
+            this.UpdateLayout();
         }
     }
 }

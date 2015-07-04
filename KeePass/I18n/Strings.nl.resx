@@ -431,4 +431,7 @@ Het installatie ID dat doorgegeven wordt is:</value>
   <data name="Settings_PWSearch" xml:space="preserve">
     <value>Search in Passwords</value>
   </data>
+  <data name="Language" xml:space="preserve">
+    <value>taal</value>
+  </data>
 </root>
