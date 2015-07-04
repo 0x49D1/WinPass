@@ -318,4 +318,7 @@ Click this notification to Review/Purchase WinPass.</value>
     <value>The specified time is too large (&gt; 10MB)!</value>
     <comment>Prompt message when the selected file is too large (&gt;10MB).</comment>
   </data>
+  <data name="LanguageChangeWorrying" xml:space="preserve">
+    <value>This action requires reload application.</value>
+  </data>
 </root>

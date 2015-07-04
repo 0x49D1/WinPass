@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ConfirmDeleteDb" xml:space="preserve">
     <value>Tényleg ki akarja törölni az adatokat {0}?
@@ -293,5 +293,8 @@ Küldene egy hibajelentést a fejlesztőnek, hogy a következő verzióban ki tu
   </data>
   <data name="EmptyField" xml:space="preserve">
     <value />
+  </data>
+  <data name="LanguageChangeWorrying" xml:space="preserve">
+    <value>Ehhez a művelethez reload alkalmazás.</value>
   </data>
 </root>

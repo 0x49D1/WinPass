@@ -59,11 +59,27 @@ namespace KeePass
                 _fAppLoaded = true;
                 syncdb = NavigationContext.QueryString["db"];
                 NavigationContext.QueryString.Remove("sync");
-            }            
+            }
+            string param;
+            if (NavigationContext.QueryString.TryGetValue("languageChange", out param))
+            {
+                bool langChange;
+                if (bool.TryParse(param, out langChange))
+                {
+                    if (langChange)
+                    {
+                        while (NavigationService.CanGoBack)
+                        {
+                            NavigationService.RemoveBackEntry();
+                        }
+                    }
+                    NavigationContext.QueryString.Remove("languageChange");
+                }
+            }
 
             var checkTileOpen = e.NavigationMode !=
                 NavigationMode.Back;
-            RefreshDbList(checkTileOpen, syncdb);       
+            RefreshDbList(checkTileOpen, syncdb);
         }
 
         private void DatabaseUpdated(DatabaseInfo info,
@@ -73,7 +89,7 @@ namespace KeePass
                 x => x.Info == info);
             if (listItem == null)
                 return;
-            
+
             var dispatcher = Dispatcher;
             dispatcher.BeginInvoke(() =>
                 listItem.IsUpdating = false);
@@ -208,7 +224,7 @@ namespace KeePass
                     else
                         _RefreshButton.IsEnabled = false;
                 });
-            }          
+            }
         }
 
         private void Open(DatabaseInfo database,

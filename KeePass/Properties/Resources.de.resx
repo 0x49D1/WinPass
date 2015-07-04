@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ConfirmDeleteDb" xml:space="preserve">
     <value>Soll die Datenbank {0} gelöscht werden?
@@ -310,5 +310,8 @@ Klicken Sie auf diese Benachrichtigung, um WinPass zu beurteilen/kaufen.</value>
   </data>
   <data name="EmptyField" xml:space="preserve">
     <value>Neues Feld</value>
+  </data>
+  <data name="LanguageChangeWorrying" xml:space="preserve">
+    <value>Die Aktion verlangt reload Anwendung.</value>
   </data>
 </root>

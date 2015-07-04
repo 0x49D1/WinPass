@@ -9,6 +9,8 @@ using Microsoft.Phone.Tasks;
 using System.Collections.Generic;
 using System.Threading;
 using System.Globalization;
+using System.Resources;
+using System.Windows.Media;
 
 namespace KeePass
 {
@@ -17,7 +19,7 @@ namespace KeePass
         public LanguageProxy(string culture) : base(culture) { }
         public override string ToString()
         {
-            return base.Parent.DisplayName;
+            return base.Parent.NativeName;
         }
 
     }
@@ -74,9 +76,18 @@ namespace KeePass
             if (NavigationContext.QueryString.TryGetValue("page", out page))
             {
                 page = NavigationContext.QueryString["page"];
-                Pivot.SelectedIndex = Convert.ToInt32(page);
+                int pageid = 0;
+                if (int.TryParse(page, out pageid))
+                    Pivot.SelectedIndex = pageid;
                 NavigationContext.QueryString.Remove("page");
             }
+            //if (NavigationContext.QueryString.TryGetValue("langugaeupdate", out page)) { 
+            //    bool refresh = false;
+            //    if (bool.TryParse(page,out refresh))
+            //    {
+            //       NavigationService.
+            //    }
+            //}
         }
 
         private void chkBrowser_CheckedChanged(
@@ -152,16 +163,23 @@ namespace KeePass
         {
             var si = listpickerLanguage.SelectedItem as LanguageProxy;
             SetUILanguage(si.Name);
-          
+            if (AppSettings.Instance.Language != si.Name && MessageBox.Show(Properties.Resources.LanguageChangeWorrying, "", MessageBoxButton.OKCancel) == MessageBoxResult.OK)
+                SetUILanguage(si.Name,true);
+            else
+                SetUILanguage(AppSettings.Instance.Language);
+
         }
-        public static void SetUILanguage(string locale)
+        private void SetUILanguage(string locale, bool change = false)
         {
-            AppSettings.Instance.Language = locale;
-          
-            CultureInfo newCulture = new CultureInfo(AppSettings.Instance.Language);
+
+            CultureInfo newCulture = new CultureInfo(locale);
             Thread.CurrentThread.CurrentCulture = newCulture;
             Thread.CurrentThread.CurrentUICulture = newCulture;
-
+            //   NavigationService.Navigate(new Uri(NavigationService.Source + "?langugaeupdate=true", UriKind.Relative));
+            if (!change)
+                return;
+            AppSettings.Instance.Language = locale;
+            this.NavigationService.Navigate(new Uri("/MainPage.xaml?languageChange=true", UriKind.Relative));
         }
     }
 }

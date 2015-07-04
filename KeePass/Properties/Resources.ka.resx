@@ -307,4 +307,7 @@ This will cause WinPass to open the database much slower than normal.</value>
     <value>ფაილის ზომა დიდია ვიდრე (&gt; 10MB)!</value>
     <comment>Prompt message when the selected file is too large (&gt;10MB).</comment>
   </data>
+  <data name="LanguageChangeWorrying" xml:space="preserve">
+    <value>ეს ცვლილება საჭიროებს აპლიკაციის გადატვირთვას.</value>
+  </data>
 </root>
