@@ -320,11 +320,19 @@ namespace KeePass.Storage
                 if (!store.DirectoryExists(Folder))
                     store.CreateDirectory(Folder);
 
-                // Clear password if it was not marked as "save"
-                var p = GetSavedPassword(store);
-                if (p.MasterKey == null || p.MasterKey.Length == 0)
-                    ClearPassword(store);
 
+
+                try
+                {
+                    // Clear password if it was not marked as "save"
+                    var p = GetSavedPassword(store);
+                    if (p.MasterKey == null || p.MasterKey.Length == 0)
+                        ClearPassword(store);
+                }
+                catch (FileNotFoundException ex)
+                {
+                    ClearPassword(store);
+                }
                 Details = details;
                 SaveDetails(store);
 
@@ -446,7 +454,18 @@ namespace KeePass.Storage
             string parsedXmlPath, string masterPassPath)
         {
             var result = new DbPersistentData();
-
+            if (!File.Exists(protectPath))
+            {
+                throw new FileNotFoundException(protectPath);
+            }
+            if (!File.Exists(parsedXmlPath))
+            {
+                throw new FileNotFoundException(parsedXmlPath);
+            }
+            if (!File.Exists(masterPassPath))
+            {
+                throw new FileNotFoundException(masterPassPath);
+            }
             using (var fs = store.OpenFile(protectPath, FileMode.Open))
             using (var buffer = new MemoryStream((int)fs.Length))
             {
