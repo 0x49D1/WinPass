@@ -603,7 +603,9 @@
     <Content Include="Images\updated.dark.png" />
     <Content Include="Images\updated.light.png" />
     <Content Include="Images\username.png" />
-    <Content Include="Sources\DemokeepPass.kdbx" />
+    <Content Include="Sources\DemokeepPass.kdbx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ApplicationIcon.png">
@@ -778,6 +780,10 @@
     <EmbeddedResource Include="Properties\Resources.es.resx">
       <DependentUpon>Resources.resx</DependentUpon>
     </EmbeddedResource>
+<EmbeddedResource Include="Properties\Resources.ka.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    	
     <EmbeddedResource Include="Properties\Resources.fr.resx">
       <DependentUpon>Resources.resx</DependentUpon>
     </EmbeddedResource>
