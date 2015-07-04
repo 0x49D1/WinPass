@@ -603,7 +603,7 @@
     <Content Include="Images\updated.dark.png" />
     <Content Include="Images\updated.light.png" />
     <Content Include="Images\username.png" />
-    <Content Include="Sources\Demo7Pass.kdbx" />
+    <Content Include="Sources\DemokeepPass.kdbx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ApplicationIcon.png">
@@ -716,10 +716,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Generator\Resources.nl.resx">
       <DependentUpon>Resources.resx</DependentUpon>
-  </EmbeddedResource>
-  <EmbeddedResource Include="Generator\Resources.ka.resx">
-	  <DependentUpon>Resources.resx</DependentUpon>
-  </EmbeddedResource>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generator\Resources.ka.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Generator\Resources.pl.resx">
       <DependentUpon>Resources.resx</DependentUpon>
     </EmbeddedResource>
@@ -743,10 +743,10 @@
     <EmbeddedResource Include="I18n\Strings.fr.resx">
       <DependentUpon>Strings.resx</DependentUpon>
     </EmbeddedResource>
-	<EmbeddedResource Include="I18n\Strings.ka.resx">
-		<DependentUpon>Strings.resx</DependentUpon>
-	</EmbeddedResource>
-	<EmbeddedResource Include="I18n\Strings.hu.resx">
+    <EmbeddedResource Include="I18n\Strings.ka.resx">
+      <DependentUpon>Strings.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I18n\Strings.hu.resx">
       <DependentUpon>Strings.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="I18n\Strings.nl.resx">
@@ -754,7 +754,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="I18n\Strings.no.resx">
       <DependentUpon>Strings.resx</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="I18n\Strings.pl.resx">
       <DependentUpon>Strings.resx</DependentUpon>
     </EmbeddedResource>
@@ -799,6 +799,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sources\DropBox\DropBoxResources.de.resx">
+      <DependentUpon>DropBoxResources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sources\DropBox\DropBoxResources.ka.resx">
       <DependentUpon>DropBoxResources.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sources\DropBox\DropBoxResources.el.resx">
@@ -858,11 +861,10 @@
     <EmbeddedResource Include="Sources\WebDav\WebDavResources.ru.resx">
       <DependentUpon>WebDavResources.resx</DependentUpon>
     </EmbeddedResource>
-<EmbeddedResource Include="Storage\Resources.ka.resx">
+    <EmbeddedResource Include="Storage\Resources.ka.resx">
       <DependentUpon>Resources.resx</DependentUpon>
     </EmbeddedResource>
-	   
-	<EmbeddedResource Include="Storage\Resources.el.resx">
+    <EmbeddedResource Include="Storage\Resources.el.resx">
       <DependentUpon>Resources.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Storage\Resources.es.resx">
