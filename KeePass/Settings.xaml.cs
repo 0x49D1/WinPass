@@ -151,9 +151,17 @@ namespace KeePass
         private void ListPicker_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             var si = listpickerLanguage.SelectedItem as LanguageProxy;
-            AppSettings.Instance.Language = si.Name;
-            App.SetCulture(si.Name);
-            this.UpdateLayout();
+            SetUILanguage(si.Name);
+          
+        }
+        public static void SetUILanguage(string locale)
+        {
+            AppSettings.Instance.Language = locale;
+          
+            CultureInfo newCulture = new CultureInfo(AppSettings.Instance.Language);
+            Thread.CurrentThread.CurrentCulture = newCulture;
+            Thread.CurrentThread.CurrentUICulture = newCulture;
+
         }
     }
 }

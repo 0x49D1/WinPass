@@ -78,8 +78,9 @@ namespace KeePass
                 Duration = TimeSpan.FromSeconds(0.6)
             };
 
-            SetCulture(AppSettings.Instance.Language);
-
+            CultureInfo newCulture = new CultureInfo(AppSettings.Instance.Language);
+            Thread.CurrentThread.CurrentCulture = newCulture;
+            Thread.CurrentThread.CurrentUICulture = newCulture;
             RootFrame.Navigated += CompleteInitializePhoneApplication;
             RootFrame.UriMapper = new AssociationUriMapper();
             RootFrame.NavigationFailed += RootFrame_NavigationFailed;
@@ -89,13 +90,8 @@ namespace KeePass
             _initialized = true;
         }
 
-        public static void SetCulture(string culture)
-        {
-            if (string.IsNullOrEmpty(culture))
-                return;
-            Thread.CurrentThread.CurrentCulture = new CultureInfo(culture);
-            Thread.CurrentThread.CurrentUICulture = Thread.CurrentThread.CurrentCulture;
-        }
+       
+
         private void Application_Activated(
             object sender, ActivatedEventArgs e)
         {
