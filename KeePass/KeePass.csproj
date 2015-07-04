@@ -716,7 +716,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Generator\Resources.nl.resx">
       <DependentUpon>Resources.resx</DependentUpon>
-    </EmbeddedResource>
+  </EmbeddedResource>
+  <EmbeddedResource Include="Generator\Resources.ka.resx">
+	  <DependentUpon>Resources.resx</DependentUpon>
+  </EmbeddedResource>
     <EmbeddedResource Include="Generator\Resources.pl.resx">
       <DependentUpon>Resources.resx</DependentUpon>
     </EmbeddedResource>
@@ -855,10 +858,11 @@
     <EmbeddedResource Include="Sources\WebDav\WebDavResources.ru.resx">
       <DependentUpon>WebDavResources.resx</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Storage\Resources.de.resx">
+<EmbeddedResource Include="Storage\Resources.ka.resx">
       <DependentUpon>Resources.resx</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Storage\Resources.el.resx">
+	   
+	<EmbeddedResource Include="Storage\Resources.el.resx">
       <DependentUpon>Resources.resx</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Storage\Resources.es.resx">

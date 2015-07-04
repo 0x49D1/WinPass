@@ -118,317 +118,504 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Settings_PageTitle" xml:space="preserve">
-    <value>Paramètres</value>
+    <value>პარამეტრები</value>
+    <comment>Settings page title</comment>
   </data>
   <data name="Settings_HideRecycleBin" xml:space="preserve">
-    <value>Masquer corbeille</value>
+    <value>დამალე სანაგვე ყითი</value>
+    <comment>Hide Recycle Bin toggle caption</comment>
   </data>
   <data name="Settings_IntegratedBrwoser" xml:space="preserve">
-    <value>Utiliser navigateur intégré</value>
+    <value>გამოიყენე ინტეგრირებული ბრაუზერი</value>
+    <comment>Integrated browser toggle caption</comment>
   </data>
   <data name="Settings_GlobalPass" xml:space="preserve">
-    <value>Nécessite mot de passe</value>
+    <value>პაროლი აუცილებელია</value>
+    <comment>Global pass toggle caption</comment>
   </data>
   <data name="Settings_Analytics" xml:space="preserve">
-    <value>Utilisation des données recueillies</value>
+    <value>გამოყენებული მონაცემები</value>
+    <comment>Link to Analytics settings caption</comment>
   </data>
   <data name="About_PageTitle" xml:space="preserve">
-    <value>A propos</value>
+    <value>შესახებ</value>
+    <comment>About page title</comment>
   </data>
   <data name="About_Blog" xml:space="preserve">
-    <value>
-Blog développeur (News et support)</value>
+    <value>ავტორების ბლოგი (სიახლეები და დახმარება)</value>
+    <comment>Description for link to WinPass blog</comment>
   </data>
   <data name="About_Version" xml:space="preserve">
-    <value>WinPass Version: {0}</value>
+    <value>WinPass ვერსია: {0}</value>
+    <comment>Format string for WinPass version text
+      0: version number</comment>
   </data>
   <data name="About_Purchase" xml:space="preserve">
-    <value>Acheter</value>
+    <value>შესყიდვა</value>
+    <comment>Purchase link caption</comment>
   </data>
   <data name="About_Review" xml:space="preserve">
-    <value>Noter</value>
+    <value>მიმოხილვა</value>
+    <comment>Review link caption</comment>
   </data>
   <data name="About_Source_Code" xml:space="preserve">
     <value>
-Code source :</value>
+კოდი:</value>
+    <comment>Description for link to source code</comment>
   </data>
   <data name="About_Libraries" xml:space="preserve">
-    <value>
-Bibliothèques utilisées/réf.:</value>
+    <value>გამოყენებული ბიბლიოთეკები</value>
+    <comment>Description for links to used/referenced</comment>
   </data>
   <data name="AnalyticsSettings_PageTitle" xml:space="preserve">
-    <value>Données d'analyse</value>
+    <value>ანალიტიკა</value>
+    <comment>Analytics page title</comment>
   </data>
   <data name="AnalyticsSettings_Policy" xml:space="preserve">
-    <value>WinPass récupère des données d'utilisation pour améliorer l'expérience de l'utilisateur.
+    <value>WinPass შეაგროვებს თქვენს ინფორმაცია რათა გახდეს უფრო მოქნილი მომხმარებლისთვის.
 
-Cette collecte d'informations ne comportera jamais votre base de données ni aucune autre information pouvant vous identifier. Cependant:
-- WinPass récupère votre ID d'installation liée à votre matériel spécifiquement. Cette ID change à chaque installation.
-- L'envoi des infos collectées utilise très peu de trafic réseau, mais les coûts peuvent s'ajouter à votre plan "Données/Data".
+შეგროვებული ინფორმაცია არ შეიცავდეს იქნება თქვენს პაროლებს ან რაიმე სხვა ტიპის ინფორმაციას რომლითაც თქვენი იდენტიფიცირება იქნება შესაძლებელი.
 
-Les infos collectées seront très utiles pour les développemetn de WinPass.
+WinPass შეინახავს ინსტალაციის ID-ს რომელიც კავშირს ქმნის თქვენს მოწყობილობასთან. ეს იდენთიფიკატორი განახლდება ყოველი ინსტალაციისას.
 
-Votre ID d'installation collectée sera:</value>
+მიუხედავად იმისა რომ თქვენ მიერ მოწოდებული ინფორმაცია ძალიან მცირედია ის მაინც ზრდით ქსელურ ტრაფიკს რომელიც შეიძლება გახდეს მიზეზი თქვენი სატარიფო გეგმის ზრდის.
+
+შეგროვებული ინფორმაცია ძალიან გამოსადეგი იქნება მომავალში WinPass ის განვითარებისთვის.
+
+თქვენი მოწყობილების იდენტიფიკატორი:</value>
+    <comment>Analytics policy</comment>
   </data>
   <data name="EntryDetails_PageTitle" xml:space="preserve">
-    <value>Entrée</value>
+    <value>ჩანაწერი</value>
+    <comment>Entry page title</comment>
   </data>
   <data name="EntryDetails_Title" xml:space="preserve">
-    <value>Titre</value>
+    <value>სათაური</value>
+    <comment>Entry title field caption</comment>
   </data>
   <data name="EntryDetails_Username" xml:space="preserve">
-    <value>Nom utilisateur</value>
+    <value>მომხმარებლის სახელი</value>
+    <comment>User name field caption</comment>
   </data>
   <data name="EntryDetails_Password" xml:space="preserve">
-    <value>Mot de passe</value>
+    <value>პაროლი</value>
+    <comment>Password field caption</comment>
   </data>
   <data name="EntryDetails_Url" xml:space="preserve">
-    <value>URL</value>
+    <value>მისამართი</value>
+    <comment>Url field caption</comment>
   </data>
   <data name="EntryDetails_ExternalBrowser" xml:space="preserve">
-    <value>Utiliser navigateur du téléphone</value>
+    <value>გამოიყენე მობილური ბრაუზერი</value>
+    <comment>Popup menu item to use OS' browser to browse parsed URL</comment>
   </data>
   <data name="EntryDetails_IntegratedBrowser" xml:space="preserve">
-    <value>Utiliser navigateur intégré</value>
+    <value>გამოიყენე ინტეგრირებული ბრაუზერი</value>
+    <comment>Popup menu item to use integrated browser to browse parsed URL</comment>
   </data>
   <data name="EntryDetails_Notes" xml:space="preserve">
-    <value>Notes</value>
+    <value>აღვნიშნები</value>
+    <comment>Notes field caption</comment>
   </data>
   <data name="EntryFields_PageTitle" xml:space="preserve">
-    <value>Champs</value>
+    <value>ველები</value>
+    <comment>Entry fields page title</comment>
   </data>
   <data name="EntryNotes_PageTitle" xml:space="preserve">
-    <value>Notes</value>
+    <value>აღვნიშვნები</value>
+    <comment>Entry notes page title</comment>
   </data>
   <data name="GlobalPass_PageTitle" xml:space="preserve">
-    <value>Mot de passe général</value>
+    <value>გლობალური პაროლი</value>
+    <comment>Set global password page title</comment>
   </data>
   <data name="GlobalPass_Password" xml:space="preserve">
-    <value>Mot de passe général</value>
+    <value>გლობალური პაროლი</value>
+    <comment>Password field caption</comment>
   </data>
   <data name="GlobalPass_Confirm" xml:space="preserve">
-    <value>Confirmez mot de passe</value>
+    <value>დაადასტურეთ პაროლი</value>
+    <comment>Password confirm field caption</comment>
   </data>
   <data name="GlobalPassVerify_PageTitle" xml:space="preserve">
-    <value>Mot de passe général</value>
+    <value>გლობალური პაროლი</value>
+    <comment>Global pass verify page title</comment>
   </data>
   <data name="GlobalPassVerify_Prompt" xml:space="preserve">
-    <value>Entrez mot de passe pour déverrouiller WinPass</value>
+    <value>გთხოვთ შეიყვანოთ პაროლი WinPass-ის განსაბლოკად.</value>
+    <comment>Prompt to ask user to enter global password</comment>
   </data>
   <data name="GroupDetails_History" xml:space="preserve">
-    <value>Historique</value>
+    <value>ისტორია</value>
+    <comment>Pivot title for recently viewed entries</comment>
   </data>
   <data name="GroupDetails_Delete" xml:space="preserve">
-    <value>supprimer</value>
+    <value>წაშლა</value>
+    <comment>Pop up menu item to delete entry/group text</comment>
   </data>
   <data name="GroupDetails_Move" xml:space="preserve">
-    <value>déplacer</value>
+    <value>გადატანა</value>
+    <comment>Pop up menu item to move entry/group text</comment>
   </data>
   <data name="GroupDetails_Rename" xml:space="preserve">
-    <value>renommer</value>
+    <value>გადარქმევა</value>
+    <comment>Pop up menu item to rename entry/group text</comment>
   </data>
   <data name="MainPage_PageTitle" xml:space="preserve">
-    <value>Bases de données</value>
+    <value>მონაცემთა ბაზა </value>
+    <comment>Database select page title</comment>
   </data>
   <data name="MainPage_ClearKeyfile" xml:space="preserve">
-    <value>effacer fichier-clé</value>
+    <value>გასუფთავება გასაღები ფაილი</value>
+    <comment>Pop up menu item to clear keyfile text</comment>
   </data>
   <data name="MainPage_DownloadKeyfile" xml:space="preserve">
-    <value>télécharger fichier-clé</value>
+    <value>გადმოწერა გასაღებების ფაილის</value>
+    <comment>Pop up menu item to download keyfile text</comment>
   </data>
   <data name="MainPage_ClearPassword" xml:space="preserve">
-    <value>effacer mot de passe</value>
+    <value>პაროლის გასუფთავება</value>
+    <comment>Pop up menu item to clear remembered password text</comment>
   </data>
   <data name="MainPage_Delete" xml:space="preserve">
-    <value>supprimer</value>
+    <value>წაშლა</value>
+    <comment>Pop up menu item to delete database text</comment>
   </data>
   <data name="MainPage_Rename" xml:space="preserve">
-    <value>renommer</value>
+    <value>გადარქმევა</value>
+    <comment>Pop up menu item to rename database text</comment>
   </data>
   <data name="MainPage_Pin" xml:space="preserve">
-    <value>épingler base de données</value>
+    <value>ბაზის გატანა მთავარ ეკრანზე</value>
+    <comment>Pop up menu item to pin database to phone's Start screen</comment>
   </data>
   <data name="MoveTarget_PageTitle" xml:space="preserve">
-    <value>Déplacer vers</value>
+    <value>გადატანა </value>
+    <comment>Move target select page title</comment>
   </data>
   <data name="PassGen_Settings" xml:space="preserve">
-    <value>Paramètres</value>
+    <value>პარამეტრები</value>
+    <comment>Pivot title for password generation settings</comment>
   </data>
   <data name="PassGen_PageTitle" xml:space="preserve">
-    <value>Mot de passe</value>
+    <value>პაროლი</value>
+    <comment>Password generation page title</comment>
   </data>
   <data name="PassGen_Length" xml:space="preserve">
-    <value>Longueur mot de passe généré</value>
+    <value>გენერირებული პაროლის სიგრძე</value>
+    <comment>Password generation length slider caption</comment>
   </data>
   <data name="PassGen_Results" xml:space="preserve">
-    <value>Résultats</value>
+    <value>შედეგი</value>
+    <comment>Pivot title for generated passwords list</comment>
   </data>
   <data name="Password_PageTitle" xml:space="preserve">
-    <value>Clé principale</value>
+    <value>მთავარი გასაღები</value>
+    <comment>Master password to open database page title</comment>
   </data>
   <data name="Password_Password" xml:space="preserve">
-    <value>Mot de passe principal</value>
+    <value>მთავარი გასაღები</value>
+    <comment>Password field caption</comment>
   </data>
   <data name="Password_Remember" xml:space="preserve">
-    <value>Mémoriser mot de passe</value>
+    <value>დაიმახსოვრე პაროლი</value>
+    <comment>Remember password toggle caption</comment>
   </data>
   <data name="Loading" xml:space="preserve">
-    <value>Chargement</value>
+    <value>ჩატვირთვა</value>
+    <comment>Loading generic text</comment>
   </data>
   <data name="Rename_PageTitle" xml:space="preserve">
-    <value>Renommer</value>
+    <value>გადარქმევა</value>
+    <comment>Entry/group rename page title</comment>
   </data>
   <data name="Rename_Prompt" xml:space="preserve">
-    <value>Entrez nouveau nom pour {0} :</value>
+    <value>გთხოვთ შეიყვანოთ ახალი სახელი {0}სთვის:</value>
+    <comment>Prompt to enter new entry/group name</comment>
   </data>
   <data name="Search_PageTitle" xml:space="preserve">
-    <value>Chercher</value>
+    <value>ძებნა</value>
+    <comment>Search page title</comment>
   </data>
   <data name="Download_PageTitle" xml:space="preserve">
-    <value>Ajouter base de données</value>
+    <value>ბაზის დამატება</value>
+    <comment>Add new database page title</comment>
   </data>
   <data name="Download_Web" xml:space="preserve">
-    <value>Serveur Web</value>
+    <value>ვებ სერვერი</value>
+    <comment>Web server source link text</comment>
   </data>
   <data name="Download_Demo" xml:space="preserve">
-    <value>Base de données de démo</value>
+    <value>სადემონსტრაციო ბაზა</value>
+    <comment>Demo database link text</comment>
   </data>
   <data name="WebDavDownload_PageTitle" xml:space="preserve">
-    <value>Télécharger</value>
+    <value>ჩამოტვირთვა</value>
+    <comment>WebDAV authentication page title</comment>
   </data>
   <data name="WebDavDownload_Url" xml:space="preserve">
-    <value>URL de la base de données</value>
+    <value>ბაზის მისამართი</value>
+    <comment>URL to database field caption</comment>
   </data>
   <data name="WebDavDownload_Username" xml:space="preserve">
-    <value>Nom utilisateur</value>
+    <value>მომხმარებელი</value>
+    <comment>Username field caption</comment>
   </data>
   <data name="WebDavDownload_Password" xml:space="preserve">
-    <value>Mot de passe</value>
+    <value>პაროლი</value>
+    <comment>Password field caption</comment>
   </data>
   <data name="WebAuth_Authentication" xml:space="preserve">
-    <value>Serveur nécessite authentification</value>
+    <value>სერვერს ჭირდება აუთენთიფიკაცია</value>
+    <comment>Check box to enable/disable authentication caption</comment>
   </data>
   <data name="WebAuth_User" xml:space="preserve">
-    <value>Utilisateur</value>
+    <value>მომხმარებელი</value>
+    <comment>Username field caption</comment>
   </data>
   <data name="WebAuth_Password" xml:space="preserve">
-    <value>Mot de passe</value>
+    <value>პაროლი</value>
+    <comment>Password field caption</comment>
   </data>
   <data name="WebAuth_Domain" xml:space="preserve">
-    <value>Domaine</value>
+    <value>დომენი</value>
+    <comment>Domain field caption</comment>
   </data>
   <data name="WebBrowse_PageTitle" xml:space="preserve">
-    <value>Liens détectés</value>
+    <value>ნაპოვნი ლინკი</value>
+    <comment>Web links list page title</comment>
   </data>
   <data name="WebDownload_PageTitle" xml:space="preserve">
-    <value>Télécharger</value>
+    <value>ჩამოტვირთვა</value>
+    <comment>Web link download page title</comment>
   </data>
   <data name="WebDownload_Url" xml:space="preserve">
-    <value>URL base de données</value>
+    <value>ბაზის მისამართი</value>
+    <comment>URL to database field caption</comment>
   </data>
   <data name="DropBox_Email" xml:space="preserve">
-    <value>Courrier électronique</value>
+    <value>ელ-მეილი</value>
+    <comment>Email field caption</comment>
   </data>
   <data name="DropBox_Password" xml:space="preserve">
-    <value>Mot de passe</value>
+    <value>პაროლი</value>
+    <comment>Password field caption</comment>
   </data>
   <data name="AnalyticsSettings_Allow" xml:space="preserve">
-    <value>Autoriser</value>
+    <value>ნებას რთავთ</value>
+    <comment>Allow analytics data sending button caption</comment>
   </data>
   <data name="AnalyticsSettings_Disable" xml:space="preserve">
-    <value>Désactiver</value>
+    <value>შეზღუდვა</value>
+    <comment>Disable analytics data sending button caption</comment>
   </data>
   <data name="EntryDetails_Fields" xml:space="preserve">
-    <value>Champs</value>
+    <value>ველები</value>
+    <comment>Link to Fields page</comment>
   </data>
   <data name="App_Databases" xml:space="preserve">
-    <value>Sélectionnez BD</value>
+    <value>მონიშნეთ ბაზა</value>
+    <comment>Link to Databases select page</comment>
   </data>
   <data name="App_About" xml:space="preserve">
-    <value>A propos</value>
+    <value>შესახებ</value>
+    <comment>Link to About page</comment>
   </data>
   <data name="App_Home" xml:space="preserve">
-    <value>Accueil</value>
+    <value>მთავარი</value>
+    <comment>Link to Root group page</comment>
   </data>
   <data name="EntryDetails_GeneratePassword" xml:space="preserve">
-    <value>Générer mot de passe</value>
+    <value>პაროლის გენერაცია</value>
+    <comment>Generate password button caption</comment>
   </data>
   <data name="EntryDetails_SaveEntry" xml:space="preserve">
-    <value>Enregistrer l'entrée</value>
+    <value>შენახვა</value>
+    <comment>Save entry button caption</comment>
   </data>
   <data name="EntryDetails_ResetEntry" xml:space="preserve">
-    <value>RàZ l'entrée</value>
+    <value>ჩანაწერის გასუფთავება</value>
+    <comment>Reset entry button caption</comment>
   </data>
   <data name="EntryFields_Add" xml:space="preserve">
-    <value>Ajouter</value>
+    <value>დამატება</value>
+    <comment>Add new field button caption</comment>
   </data>
   <data name="EntryNotes_ClearAll" xml:space="preserve">
-    <value>Tout effacer</value>
+    <value>ყველაფრის გასუფთავება</value>
+    <comment>Clear all notes button caption</comment>
   </data>
   <data name="GlobalPass_Set" xml:space="preserve">
-    <value>Définir</value>
+    <value>დაყენება</value>
+    <comment>Sets global password button caption</comment>
   </data>
   <data name="GlobalPassVerify_OK" xml:space="preserve">
     <value>OK</value>
+    <comment>Verifies global password button caption</comment>
   </data>
   <data name="GroupDetails_ClearHistory" xml:space="preserve">
-    <value>Effacer Historique</value>
+    <value>ისტორიის გასუფთავება</value>
+    <comment>Clear history list button caption</comment>
   </data>
   <data name="GroupDetails_NewEntry" xml:space="preserve">
-    <value>Nouvelle entrée</value>
+    <value>ახალი თავსართი</value>
+    <comment>Add new entry button caption</comment>
   </data>
   <data name="GroupDetails_NewGroup" xml:space="preserve">
-    <value>Nouveau groupe</value>
+    <value>ახალი ჯგუფი</value>
+    <comment>Add new group button caption</comment>
   </data>
   <data name="GroupDetails_Search" xml:space="preserve">
-    <value>Chercher</value>
+    <value>ძებნა</value>
+    <comment>Link to Search page</comment>
   </data>
   <data name="MainPage_SyncAll" xml:space="preserve">
-    <value>Tout synchroniser/MàJ</value>
+    <value>სინქრონიზაცია / განახლება ყველაფრის</value>
+    <comment>Synchronize (or update if sync is not available) all databases caption button</comment>
   </data>
   <data name="MainPage_AddNew" xml:space="preserve">
-    <value>Ajouter nouveau</value>
+    <value>ახლის დამატება</value>
+    <comment>Add new database button caption</comment>
   </data>
   <data name="MainPage_Settings" xml:space="preserve">
-    <value>Paramètres</value>
+    <value>პარამეტრები</value>
+    <comment>Link to Settings page</comment>
   </data>
   <data name="MoveTarget_MoveHere" xml:space="preserve">
-    <value>Déplacer ici</value>
+    <value>გადატანა აქ</value>
+    <comment>Perform entry/group move button caption</comment>
   </data>
   <data name="PassGen_Generate" xml:space="preserve">
-    <value>Générer</value>
+    <value>გენერაცია</value>
+    <comment>Gernerate password button caption</comment>
   </data>
   <data name="Password_Open" xml:space="preserve">
-    <value>Ouvrir</value>
+    <value>გახსნა</value>
+    <comment>Open the database button caption</comment>
   </data>
   <data name="Rename_Rename" xml:space="preserve">
-    <value>Renommer</value>
+    <value>გადარქმევა</value>
+    <comment>Perform rename button caption</comment>
   </data>
   <data name="WebView_GoBack" xml:space="preserve">
-    <value>Retour</value>
+    <value>უკან დაბრუნება</value>
+    <comment>Nagivates backward button caption</comment>
   </data>
   <data name="WebView_Username" xml:space="preserve">
-    <value>Nom utilisateur</value>
+    <value>მომხარებელი</value>
+    <comment>Auto-type username button caption</comment>
   </data>
   <data name="WebView_Password" xml:space="preserve">
-    <value>Mot de passe</value>
+    <value>პაროლი</value>
+    <comment>Auto-type password button caption</comment>
   </data>
   <data name="WebDavDownload_Open" xml:space="preserve">
-    <value>Ouvrir</value>
+    <value>გახსნა</value>
+    <comment>WebDAV server connect button caption</comment>
   </data>
   <data name="WebDownload_Open" xml:space="preserve">
-    <value>Ouvrir</value>
+    <value>გახსნა</value>
+    <comment>Download database button caption</comment>
   </data>
   <data name="DropBox_Login" xml:space="preserve">
-    <value>Identifier</value>
+    <value>შესვლა</value>
+    <comment>Login button caption</comment>
   </data>
   <data name="Clear" xml:space="preserve">
-    <value>Effacer</value>
+    <value>გასუფთავება</value>
+    <comment>Generic Clear button caption</comment>
   </data>
   <data name="Refresh" xml:space="preserve">
-    <value>Actualiser</value>
+    <value>განახლება</value>
+    <comment>Generic Refresh button caption</comment>
+  </data>
+  <data name="SkyDrive_Unsupported" xml:space="preserve">
+    <value>Due to SkyDrive limitation, your database has to be renamed to ".doc" extension.
+Do you want WinPass to append ".doc" to your database name and then download it?</value>
   </data>
   <data name="Settings_PWSearch" xml:space="preserve">
-    <value>Search in Passwords</value>
+    <value>ძებნა პაროლებში</value>
+    <comment>Search in Passwords</comment>
+  </data>
+  <data name="MainPage_DBInfo" xml:space="preserve">
+    <value>თვისებები</value>
+    <comment>Shows Details about selected DB</comment>
+  </data>
+  <data name="Settings_AutoUpdate" xml:space="preserve">
+    <value>ავტომატური სინქრონიზაცია</value>
+    <comment>Check Database changes Online</comment>
+  </data>
+  <data name="Settings_AutoUpdateWLAN" xml:space="preserve">
+    <value>ავტომატური განახლება მხოლოდ WiFi-იდ</value>
+  </data>
+  <data name="Settings_AutoUpdateActive" xml:space="preserve">
+    <value>მოქმედება</value>
+  </data>
+  <data name="Settings_AutoUpdateInactive" xml:space="preserve">
+    <value>არა აქტიური</value>
+  </data>
+  <data name="Settings_AutoUpdateSWLAN" xml:space="preserve">
+    <value>აქტიური მხოლოდ WLAN</value>
+  </data>
+  <data name="App_PWCopy" xml:space="preserve">
+    <value>პაროლის კოპირება</value>
+  </data>
+  <data name="App_UNCopy" xml:space="preserve">
+    <value>სახელის კოპირება</value>
+  </data>
+  <data name="DBDetail_PageTitle" xml:space="preserve">
+    <value>თვისებები</value>
+  </data>
+  <data name="DBDetail_LocalCH" xml:space="preserve">
+    <value>ადგილობრივი ცვლილებები ხელმისაწვდომია</value>
+  </data>
+  <data name="DBDetail_Modified" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DBDetail_Name" xml:space="preserve">
+    <value>ბაზის სახელი</value>
+  </data>
+  <data name="DBDetail_Source" xml:space="preserve">
+    <value>წყარო: </value>
+  </data>
+  <data name="DBDetail_Type" xml:space="preserve">
+    <value>ტიპი: </value>
+  </data>
+  <data name="DBDetail_URL" xml:space="preserve">
+    <value>ბაზის მისამართი</value>
+  </data>
+  <data name="DBDetail_Updated" xml:space="preserve">
+    <value>უკანასკნელი განახლება</value>
+  </data>
+  <data name="Settings_SyncToast" xml:space="preserve">
+    <value>ვაჩვენო მესიძი სინქრონიზაციის მერე</value>
+  </data>
+  <data name="Sync_MessDownSucc" xml:space="preserve">
+    <value>ჩამოტვირთვა იყო წარმატებული</value>
+  </data>
+  <data name="Sync_MessUpSucc" xml:space="preserve">
+    <value>ბაზის განახლება წარმატებით დასრულდა</value>
+  </data>
+  <data name="Sync_Title" xml:space="preserve">
+    <value>სინქრონიზაცია</value>
+  </data>
+  <data name="Settings_ClearPassword" xml:space="preserve">
+    <value>პაროლის გასუფთავება</value>
+  </data>
+  <data name="Sync_MessNoChange" xml:space="preserve">
+    <value>არ იყო ცვლილებები შეტანილი ბაზაში. ბაზა ატიურია</value>
+  </data>
+  <data name="Download_LocalFile" xml:space="preserve">
+    <value>ლოკალური ბაზა</value>
+  </data>
+  <data name="Download_OpenConfirm" xml:space="preserve">
+    <value>გთხოვთ დაადასტუროთ ლოკალური ბაზის გახსნა '</value>
+  </data>
+  <data name="Download_OpenDB" xml:space="preserve">
+    <value>გახნა ლოკლაური ბაზის ფაილის</value>
+  </data>
+  <data name="EntryDetails_ShowAllMasked" xml:space="preserve">
+    <value>გამოაჩინე ყველა და დამალული ჩანაწერი</value>
+    <comment>Opens protected text on all the controls in view</comment>
   </data>
 </root>
