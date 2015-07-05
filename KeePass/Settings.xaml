@@ -39,7 +39,7 @@
                     Header="{Binding Path=Strings.Settings_AutoUpdate, Source={StaticResource UiStrings}}" Unloaded="setWLAN" />
                         <toolkit:ListPicker 
                     Name="viewMode" 
-                    Header="{Binding Path=Strings.Settings_AutoUpdate, Source={StaticResource UiStrings}}" SelectionChanged="ViewMode_OnSelectionChanged" />
+                    Header="{Binding Path=Strings.Settings_VewMode, Source={StaticResource UiStrings}}" SelectionChanged="ViewMode_OnSelectionChanged" />
                         <toolkit:ToggleSwitch
                     Name="chkSyncToast" 
                     Header="{Binding Path=Strings.Settings_SyncToast, Source={StaticResource UiStrings}}" Unchecked="chkSyncToast_CheckedChanged" Checked="chkSyncToast_CheckedChanged" />
@@ -49,8 +49,8 @@
             </controls:PivotItem>
 
             <controls:PivotItem Header="{Binding Path=Strings.About_PageTitle, Source={StaticResource UiStrings}}">
-                <ScrollViewer Grid.Row="1" Margin="12,0,12,0">
-                    <StackPanel Grid.Row="1" Margin="12,0,12,0">
+                <ScrollViewer  Margin="12,0,12,0">
+                    <StackPanel Margin="12,0,12,0">
                         <TextBlock Name="lblVersion" HorizontalAlignment="Center"
                            Text="{Binding Path=Strings.About_Version, Source={StaticResource UiStrings}}" />
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
@@ -83,6 +83,8 @@
                              NavigateUri="http://www.icsharpcode.net/opensource/sharpziplib/" />
                         <HyperlinkButton Content="Json.NET" TargetName="_blank"
                              NavigateUri="http://json.codeplex.com/" />
+                        <HyperlinkButton Content="Graphic Resources, S.L. ('FreePik')"  TargetName="_blank"
+                                         NavigateUri="http://www.freepik.com/privacy_policy"></HyperlinkButton>
                     </StackPanel>
                 </ScrollViewer>
             </controls:PivotItem>
