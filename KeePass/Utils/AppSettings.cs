@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Globalization;
 using System.IO.IsolatedStorage;
+using KeePass.Storage;
 
 namespace KeePass.Utils
 {
@@ -213,6 +214,7 @@ namespace KeePass.Utils
             get { return "1" == this[KEY_AUWLAN]; }
             set { this[KEY_AUWLAN] = value ? "1" : "0"; }
         }
+
 
         public string Language
         {

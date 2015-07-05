@@ -33,7 +33,7 @@ namespace KeePass
                 Host.Settings.EnableFrameRateCounter = true;
 
             InitializeComponent();
-
+     
             InitializePhoneApplication();
 
             // Show graphics profiling information while debugging.
@@ -90,6 +90,7 @@ namespace KeePass
 
             PhoneApplicationService.Current.ContractActivated += Application_ContractActivated;
 
+            Cache.Initialize();
             _initialized = true;
         }
 

@@ -12,6 +12,7 @@ using System.Globalization;
 using System.Resources;
 using System.Windows.Controls;
 using System.Windows.Media;
+using KeePass.Storage;
 
 namespace KeePass
 {
@@ -29,12 +30,19 @@ namespace KeePass
 
         string page = string.Empty;
         string[] cultures = new[] { "en-US", "ka-GE", "de-DE", "ru-RU", "el-GR", "es-ES", "fr-FR", "hu-HU", "nl-NL", "pl-PL", };
+
         public Settings()
         {
             InitializeComponent();
             lstAutoSyncSettings.Items.Add(Strings.Settings_AutoUpdateInactive);
             lstAutoSyncSettings.Items.Add(Strings.Settings_AutoUpdateActive);
             lstAutoSyncSettings.Items.Add(Strings.Settings_AutoUpdateSWLAN);
+
+            viewMode.Items.Add(Strings.Settings_ModeClassic);
+            viewMode.Items.Add(Strings.Settings_ModeModern);
+            viewMode.SelectedItem = Cache.InClassicStyle()
+                ? Strings.Settings_ModeClassic
+                : Strings.Settings_ModeModern;
 
             var version = PhoneHelper
                 .GetAppAttribute("Version");
@@ -48,6 +56,7 @@ namespace KeePass
                 if (lang.Name == Thread.CurrentThread.CurrentCulture.Name)
                     listpickerLanguage.SelectedItem = lang;
             });
+
         }
 
         protected override void OnNavigatedTo(
@@ -61,6 +70,7 @@ namespace KeePass
             chkRecycleBin.IsChecked = settings.HideRecycleBin;
             chkPWSearch.IsChecked = settings.SearchInPW;
             chkSyncToast.IsChecked = settings.SyncToast;
+
 
             chkPassword.IsChecked = !string
                 .IsNullOrEmpty(settings.Password);
@@ -166,7 +176,7 @@ namespace KeePass
             var si = listpickerLanguage.SelectedItem as LanguageProxy;
             SetUILanguage(si.Name);
             if (AppSettings.Instance.Language != si.Name && MessageBox.Show(Properties.Resources.LanguageChangeWorrying, "", MessageBoxButton.OKCancel) == MessageBoxResult.OK)
-                SetUILanguage(si.Name,true);
+                SetUILanguage(si.Name, true);
             else
                 SetUILanguage(AppSettings.Instance.Language);
 
@@ -184,11 +194,16 @@ namespace KeePass
             this.NavigationService.Navigate(new Uri("/MainPage.xaml?languageChange=true", UriKind.Relative));
         }
 
-      
+
 
         private void ViewMode_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+            var item = viewMode.SelectedItem as string;
+            if (item != null)
+            {
+                if (item.Equals(Strings.Settings_ModeClassic) && !Cache.InClassicStyle() || !item.Equals(Strings.Settings_ModeClassic) && Cache.InClassicStyle())
+                    Cache.InvertStyle();
+            }
         }
     }
 }

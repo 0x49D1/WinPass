@@ -3,22 +3,40 @@ using System.Collections.Generic;
 using System.IO.IsolatedStorage;
 using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Threading;
 using KeePass.IO.Data;
+using Microsoft.Phone.Wallet;
 
 namespace KeePass.Storage
 {
     internal static class Cache
     {
         private const string KEY_DATABASE = "Database";
-
+        public const string KEY_IMAGESTYLE_IN_Classic = "ImageStyle";
+        private const string ClassicImagePath = "/Images/KeePass/Classic/{0:00}.png";
+        private const string ModernImagePaht = "/Images/KeePass/Modern/{1}/{0:00}.png";
         private static readonly IsolatedStorageSettings _appSettings;
         private static readonly object _lckStandards;
         private static readonly Dictionary<int, ImageSource> _standards;
+        private static readonly string _theamPrefix;
+        private static string _imagePath;
         private static DatabaseInfo _info;
 
+        public static bool InClassicStyle()
+        {
+            return _imagePath == ClassicImagePath;
+        }
+        public static void InvertStyle()
+        {
+
+            _imagePath = InClassicStyle() ? ModernImagePaht : ClassicImagePath;
+            _appSettings[KEY_IMAGESTYLE_IN_Classic] = InClassicStyle();
+            ResetCache();
+        }
         /// <summary>
         /// Gets the database.
         /// </summary>
@@ -41,8 +59,24 @@ namespace KeePass.Storage
             _appSettings = IsolatedStorageSettings
                 .ApplicationSettings;
             _standards = new Dictionary<int, ImageSource>();
+
+            var v = (Visibility)Application.Current
+                   .Resources["PhoneLightThemeVisibility"];
+            _theamPrefix = v != Visibility.Visible ? "dark" : "light";
+
         }
 
+        public static void Initialize()
+        {
+            if (!_appSettings.Contains(KEY_IMAGESTYLE_IN_Classic))
+            {
+                _appSettings[KEY_IMAGESTYLE_IN_Classic] = true;
+            }
+            var res = (_appSettings[KEY_IMAGESTYLE_IN_Classic] as bool?);
+            if (res.HasValue)
+                ResetCache();
+
+        }
         /// <summary>
         /// Adds the specified entry id to the recently viewed entries list.
         /// </summary>
@@ -102,8 +136,8 @@ namespace KeePass.Storage
         {
             if (icon == null)
                 throw new ArgumentNullException("icon");
-
             ImageSource source;
+
             if (!string.IsNullOrEmpty(icon.Custom) &&
                 Database.Icons.TryGetValue(icon.Custom, out source))
                 return source;
@@ -111,16 +145,18 @@ namespace KeePass.Storage
             var id = icon.Standard;
             if (!_standards.TryGetValue(id, out source))
             {
+
                 lock (_lckStandards)
                 {
                     if (!_standards.TryGetValue(id, out source))
                     {
                         var wait = new ManualResetEvent(false);
 
+
                         dispatcher.BeginInvoke(() =>
                         {
-                            var uri = string.Format(
-                                "/Images/KeePass/classic/{0:00}.png", id);
+                            //  "/Images/KeePass/classic/{0:00}.png", id);
+                            var uri = string.Format(_imagePath, id, _theamPrefix);
                             source = new BitmapImage(new Uri(
                                 uri, UriKind.Relative));
                             _standards.Add(id, source);
@@ -134,6 +170,14 @@ namespace KeePass.Storage
             }
 
             return source;
+        }
+
+        public static void ResetCache()
+        {
+            var item = (_appSettings[KEY_IMAGESTYLE_IN_Classic] as bool?) ?? false;
+            _imagePath = item ? ClassicImagePath : ModernImagePaht;
+            if (_standards != null)
+                _standards.Clear();
         }
 
         /// <summary>

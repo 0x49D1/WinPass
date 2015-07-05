@@ -23,11 +23,11 @@
             <Grid.Resources>
                 <keepass:LengthConverter x:Key="KLengthConverter"/>
             </Grid.Resources>
-            
-            <Image Source="{Binding Icon}" Stretch="None"
+
+            <Image Source="{Binding Icon}" Stretch="Uniform" Width="32" Height="32"
                    VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
                    Grid.Column="0" Grid.Row="0"/>
-            <Image Source="{Binding Overlay}" Stretch="None"
+            <Image Source="{Binding Overlay}" Stretch="Uniform" Width="32" Height="32" 
                    VerticalAlignment="Bottom" HorizontalAlignment="Stretch"
                    Grid.Column="0" Grid.Row="0"/>
             <TextBlock Text="{Binding Title}"
