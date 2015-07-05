@@ -51,9 +51,9 @@ namespace KeePass.Sources
             }
 
             var app = App.Current as App;
-            if (app.FilePickerContinuationArgs != null)
+            if (app.QueueFileOpenPickerArgs.Count != 0)
             {
-                this.ContinueFileOpenPicker(app.FilePickerContinuationArgs);
+                this.ContinueFileOpenPicker(app.QueueFileOpenPickerArgs.Dequeue());
             }
         }
 
@@ -75,7 +75,6 @@ namespace KeePass.Sources
                         Name = file.Name.RemoveKdbx(),
                         Type = SourceTypes.OneTime,
                     });
-
                     this.NavigateTo<MainPage>();
                 }
             }

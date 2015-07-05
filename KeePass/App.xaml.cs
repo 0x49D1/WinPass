@@ -10,6 +10,7 @@ using KeePass.Sources;
 using Windows.ApplicationModel.Activation;
 using System.Threading;
 using System.Globalization;
+using System.Collections.Generic;
 namespace KeePass
 {
     public partial class App
@@ -22,12 +23,12 @@ namespace KeePass
         }
 
         public PhoneApplicationFrame RootFrame { get; private set; }
-        public FileOpenPickerContinuationEventArgs FilePickerContinuationArgs { get; set; }
+        public Queue<FileOpenPickerContinuationEventArgs> QueueFileOpenPickerArgs { get; set; }
 
         public App()
         {
             UnhandledException += Application_UnhandledException;
-
+            QueueFileOpenPickerArgs = new Queue<FileOpenPickerContinuationEventArgs>();
             if (Debugger.IsAttached)
                 Host.Settings.EnableFrameRateCounter = true;
 
@@ -64,7 +65,7 @@ namespace KeePass
             var filePickerContinuationArgs = e as FileOpenPickerContinuationEventArgs;
             if (filePickerContinuationArgs != null)
             {
-                this.FilePickerContinuationArgs = filePickerContinuationArgs;
+                QueueFileOpenPickerArgs.Enqueue(filePickerContinuationArgs);
             }
         }
 
