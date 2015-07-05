@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
+	<!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,107 +59,107 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <data name="Settings_PageTitle" xml:space="preserve">
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Settings_PageTitle" xml:space="preserve">
     <value>Instellingen</value>
   </data>
-  <data name="Settings_HideRecycleBin" xml:space="preserve">
+	<data name="Settings_HideRecycleBin" xml:space="preserve">
     <value>Prullenbak Verbergen</value>
   </data>
-  <data name="Settings_IntegratedBrwoser" xml:space="preserve">
+	<data name="Settings_IntegratedBrwoser" xml:space="preserve">
     <value>Gebruik geïntegreerde browser</value>
   </data>
-  <data name="Settings_GlobalPass" xml:space="preserve">
+	<data name="Settings_GlobalPass" xml:space="preserve">
     <value>Wachtwoord Vereist</value>
   </data>
-  <data name="Settings_Analytics" xml:space="preserve">
+	<data name="Settings_Analytics" xml:space="preserve">
     <value>Gebruik gegevensverzameling</value>
   </data>
-  <data name="About_PageTitle" xml:space="preserve">
+	<data name="About_PageTitle" xml:space="preserve">
     <value>Over</value>
   </data>
-  <data name="About_Blog" xml:space="preserve">
+	<data name="About_Blog" xml:space="preserve">
     <value>
 Ontwikkelaars' Blog (Nieuws &amp; Terugkoppeling):</value>
   </data>
-  <data name="About_Version" xml:space="preserve">
+	<data name="About_Version" xml:space="preserve">
     <value>WinPass Versie: {0}</value>
   </data>
-  <data name="About_Purchase" xml:space="preserve">
+	<data name="About_Purchase" xml:space="preserve">
     <value>Kopen</value>
   </data>
-  <data name="About_Review" xml:space="preserve">
+	<data name="About_Review" xml:space="preserve">
     <value>Beoordeling</value>
   </data>
-  <data name="About_Source_Code" xml:space="preserve">
+	<data name="About_Source_Code" xml:space="preserve">
     <value>
 Broncode:</value>
   </data>
-  <data name="About_Libraries" xml:space="preserve">
+	<data name="About_Libraries" xml:space="preserve">
     <value>
 Gebruikte/gerefereerde bibliotheken:</value>
   </data>
-  <data name="AnalyticsSettings_PageTitle" xml:space="preserve">
+	<data name="AnalyticsSettings_PageTitle" xml:space="preserve">
     <value>Analytics</value>
   </data>
-  <data name="AnalyticsSettings_Policy" xml:space="preserve">
+	<data name="AnalyticsSettings_Policy" xml:space="preserve">
     <value>Om de gebruikerservaring steeds te kunen verbeteren verzameld 7 Pass gebruiksgegevens.
 
 De verzamelde informatie bevat nooit uw databasegegevens of enige andere informatie waarmee u direct geïdentificeerd kan worden. Echter:
@@ -170,268 +170,277 @@ De verzamelde informatie is heel nuttig voor het ontwikkelen van WinPass.
 
 Het installatie ID dat doorgegeven wordt is:</value>
   </data>
-  <data name="EntryDetails_PageTitle" xml:space="preserve">
+	<data name="EntryDetails_PageTitle" xml:space="preserve">
     <value>Invoer</value>
   </data>
-  <data name="EntryDetails_Title" xml:space="preserve">
+	<data name="EntryDetails_Title" xml:space="preserve">
     <value>Titel</value>
   </data>
-  <data name="EntryDetails_Username" xml:space="preserve">
+	<data name="EntryDetails_Username" xml:space="preserve">
     <value>Gebruikersnaam</value>
   </data>
-  <data name="EntryDetails_Password" xml:space="preserve">
+	<data name="EntryDetails_Password" xml:space="preserve">
     <value>Wachtwoord</value>
   </data>
-  <data name="EntryDetails_Url" xml:space="preserve">
+	<data name="EntryDetails_Url" xml:space="preserve">
     <value>URL</value>
   </data>
-  <data name="EntryDetails_ExternalBrowser" xml:space="preserve">
+	<data name="EntryDetails_ExternalBrowser" xml:space="preserve">
     <value>telefoonbrowser gebruiken</value>
   </data>
-  <data name="EntryDetails_IntegratedBrowser" xml:space="preserve">
+	<data name="EntryDetails_IntegratedBrowser" xml:space="preserve">
     <value>geïntegreerde browser gebruiken</value>
   </data>
-  <data name="EntryDetails_Notes" xml:space="preserve">
+	<data name="EntryDetails_Notes" xml:space="preserve">
     <value>Notities</value>
   </data>
-  <data name="EntryFields_PageTitle" xml:space="preserve">
+	<data name="EntryFields_PageTitle" xml:space="preserve">
     <value>Velden</value>
   </data>
-  <data name="EntryNotes_PageTitle" xml:space="preserve">
+	<data name="EntryNotes_PageTitle" xml:space="preserve">
     <value>Notities</value>
   </data>
-  <data name="GlobalPass_PageTitle" xml:space="preserve">
+	<data name="GlobalPass_PageTitle" xml:space="preserve">
     <value>Globaal Wachtwoord</value>
   </data>
-  <data name="GlobalPass_Password" xml:space="preserve">
+	<data name="GlobalPass_Password" xml:space="preserve">
     <value>Globaal Wachtwoord</value>
   </data>
-  <data name="GlobalPass_Confirm" xml:space="preserve">
+	<data name="GlobalPass_Confirm" xml:space="preserve">
     <value>Bevestig uw wachtwoord</value>
   </data>
-  <data name="GlobalPassVerify_PageTitle" xml:space="preserve">
+	<data name="GlobalPassVerify_PageTitle" xml:space="preserve">
     <value>Globaal Wachtwoord</value>
   </data>
-  <data name="GlobalPassVerify_Prompt" xml:space="preserve">
+	<data name="GlobalPassVerify_Prompt" xml:space="preserve">
     <value>Voer uw wachtwoord in om WinPass te ontgrendelen</value>
   </data>
-  <data name="GroupDetails_History" xml:space="preserve">
+	<data name="GroupDetails_History" xml:space="preserve">
     <value>Geschiedenis</value>
   </data>
-  <data name="GroupDetails_Delete" xml:space="preserve">
+	<data name="GroupDetails_Delete" xml:space="preserve">
     <value>verwijderen</value>
   </data>
-  <data name="GroupDetails_Move" xml:space="preserve">
+	<data name="GroupDetails_Move" xml:space="preserve">
     <value>verplaatsen</value>
   </data>
-  <data name="GroupDetails_Rename" xml:space="preserve">
+	<data name="GroupDetails_Rename" xml:space="preserve">
     <value>naam wijzigen</value>
   </data>
-  <data name="MainPage_PageTitle" xml:space="preserve">
+	<data name="MainPage_PageTitle" xml:space="preserve">
     <value>Databases</value>
   </data>
-  <data name="MainPage_ClearKeyfile" xml:space="preserve">
+	<data name="MainPage_ClearKeyfile" xml:space="preserve">
     <value>sleutelbestand wissen</value>
   </data>
-  <data name="MainPage_DownloadKeyfile" xml:space="preserve">
+	<data name="MainPage_DownloadKeyfile" xml:space="preserve">
     <value>sleutelbestand downloaden</value>
   </data>
-  <data name="MainPage_ClearPassword" xml:space="preserve">
+	<data name="MainPage_ClearPassword" xml:space="preserve">
     <value>wachtwoord wissen</value>
   </data>
-  <data name="MainPage_Delete" xml:space="preserve">
+	<data name="MainPage_Delete" xml:space="preserve">
     <value>verwijderen</value>
   </data>
-  <data name="MainPage_Rename" xml:space="preserve">
+	<data name="MainPage_Rename" xml:space="preserve">
     <value>naam wijzigen</value>
   </data>
-  <data name="MainPage_Pin" xml:space="preserve">
+	<data name="MainPage_Pin" xml:space="preserve">
     <value>aan startscherm vastmaken</value>
   </data>
-  <data name="MoveTarget_PageTitle" xml:space="preserve">
+	<data name="MoveTarget_PageTitle" xml:space="preserve">
     <value>Verpl. Naar</value>
   </data>
-  <data name="PassGen_Settings" xml:space="preserve">
+	<data name="PassGen_Settings" xml:space="preserve">
     <value>Instellingen</value>
   </data>
-  <data name="PassGen_PageTitle" xml:space="preserve">
+	<data name="PassGen_PageTitle" xml:space="preserve">
     <value>Wachtwoord</value>
   </data>
-  <data name="PassGen_Length" xml:space="preserve">
+	<data name="PassGen_Length" xml:space="preserve">
     <value>Lengte van gegenereerde wachtwoord</value>
   </data>
-  <data name="PassGen_Results" xml:space="preserve">
+	<data name="PassGen_Results" xml:space="preserve">
     <value>Resultaten</value>
   </data>
-  <data name="Password_PageTitle" xml:space="preserve">
+	<data name="Password_PageTitle" xml:space="preserve">
     <value>Hoofdsleutel</value>
   </data>
-  <data name="Password_Password" xml:space="preserve">
+	<data name="Password_Password" xml:space="preserve">
     <value>Hoofdwachtwoord</value>
   </data>
-  <data name="Password_Remember" xml:space="preserve">
+	<data name="Password_Remember" xml:space="preserve">
     <value>Onthoud mijn wachtwoord</value>
   </data>
-  <data name="Loading" xml:space="preserve">
+	<data name="Loading" xml:space="preserve">
     <value>Laden</value>
   </data>
-  <data name="Rename_PageTitle" xml:space="preserve">
+	<data name="Rename_PageTitle" xml:space="preserve">
     <value>Naam wijzigen</value>
   </data>
-  <data name="Rename_Prompt" xml:space="preserve">
+	<data name="Rename_Prompt" xml:space="preserve">
     <value>Voer nieuwe naam in voor {0}:</value>
   </data>
-  <data name="Search_PageTitle" xml:space="preserve">
+	<data name="Search_PageTitle" xml:space="preserve">
     <value>Zoek</value>
   </data>
-  <data name="Download_PageTitle" xml:space="preserve">
+	<data name="Download_PageTitle" xml:space="preserve">
     <value>Database Toevoegen</value>
   </data>
-  <data name="Download_Web" xml:space="preserve">
+	<data name="Download_Web" xml:space="preserve">
     <value>Webserver</value>
   </data>
-  <data name="Download_Demo" xml:space="preserve">
+	<data name="Download_Demo" xml:space="preserve">
     <value>Voorbeelddatabase</value>
   </data>
-  <data name="WebDavDownload_PageTitle" xml:space="preserve">
+	<data name="WebDavDownload_PageTitle" xml:space="preserve">
     <value>Downloaden</value>
   </data>
-  <data name="WebDavDownload_Url" xml:space="preserve">
+	<data name="WebDavDownload_Url" xml:space="preserve">
     <value>Database URL</value>
   </data>
-  <data name="WebDavDownload_Username" xml:space="preserve">
+	<data name="WebDavDownload_Username" xml:space="preserve">
     <value>Gebruikersnaam</value>
   </data>
-  <data name="WebDavDownload_Password" xml:space="preserve">
+	<data name="WebDavDownload_Password" xml:space="preserve">
     <value>Wachtwoord</value>
   </data>
-  <data name="WebAuth_Authentication" xml:space="preserve">
+	<data name="WebAuth_Authentication" xml:space="preserve">
     <value>Server authenticatie is vereist</value>
   </data>
-  <data name="WebAuth_User" xml:space="preserve">
+	<data name="WebAuth_User" xml:space="preserve">
     <value>Gebruiker</value>
   </data>
-  <data name="WebAuth_Password" xml:space="preserve">
+	<data name="WebAuth_Password" xml:space="preserve">
     <value>Wachtwoord</value>
   </data>
-  <data name="WebAuth_Domain" xml:space="preserve">
+	<data name="WebAuth_Domain" xml:space="preserve">
     <value>Domein</value>
   </data>
-  <data name="WebBrowse_PageTitle" xml:space="preserve">
+	<data name="WebBrowse_PageTitle" xml:space="preserve">
     <value>Gedetecteerde Links</value>
   </data>
-  <data name="WebDownload_PageTitle" xml:space="preserve">
+	<data name="WebDownload_PageTitle" xml:space="preserve">
     <value>Downloaden</value>
   </data>
-  <data name="WebDownload_Url" xml:space="preserve">
+	<data name="WebDownload_Url" xml:space="preserve">
     <value>Database URL</value>
   </data>
-  <data name="DropBox_Email" xml:space="preserve">
+	<data name="DropBox_Email" xml:space="preserve">
     <value>E-mail</value>
   </data>
-  <data name="DropBox_Password" xml:space="preserve">
+	<data name="DropBox_Password" xml:space="preserve">
     <value>Wachtwoord</value>
   </data>
-  <data name="AnalyticsSettings_Allow" xml:space="preserve">
+	<data name="AnalyticsSettings_Allow" xml:space="preserve">
     <value>Toestaan</value>
   </data>
-  <data name="AnalyticsSettings_Disable" xml:space="preserve">
+	<data name="AnalyticsSettings_Disable" xml:space="preserve">
     <value>Uitschakelen</value>
   </data>
-  <data name="EntryDetails_Fields" xml:space="preserve">
+	<data name="EntryDetails_Fields" xml:space="preserve">
     <value>Velden</value>
   </data>
-  <data name="App_Databases" xml:space="preserve">
+	<data name="App_Databases" xml:space="preserve">
     <value>Selecteer DB</value>
   </data>
-  <data name="App_About" xml:space="preserve">
+	<data name="App_About" xml:space="preserve">
     <value>Over</value>
   </data>
-  <data name="App_Home" xml:space="preserve">
+	<data name="App_Home" xml:space="preserve">
     <value>Home</value>
   </data>
-  <data name="EntryDetails_GeneratePassword" xml:space="preserve">
+	<data name="EntryDetails_GeneratePassword" xml:space="preserve">
     <value>Wachtwoord Genereren</value>
   </data>
-  <data name="EntryDetails_SaveEntry" xml:space="preserve">
+	<data name="EntryDetails_SaveEntry" xml:space="preserve">
     <value>Invoer Opslaan</value>
   </data>
-  <data name="EntryDetails_ResetEntry" xml:space="preserve">
+	<data name="EntryDetails_ResetEntry" xml:space="preserve">
     <value>Invoer Herstellen</value>
   </data>
-  <data name="EntryFields_Add" xml:space="preserve">
+	<data name="EntryFields_Add" xml:space="preserve">
     <value>Toevoegen</value>
   </data>
-  <data name="EntryNotes_ClearAll" xml:space="preserve">
+	<data name="EntryNotes_ClearAll" xml:space="preserve">
     <value>Alles Wissen</value>
   </data>
-  <data name="GlobalPass_Set" xml:space="preserve">
+	<data name="GlobalPass_Set" xml:space="preserve">
     <value>Instellen</value>
   </data>
-  <data name="GlobalPassVerify_OK" xml:space="preserve">
+	<data name="GlobalPassVerify_OK" xml:space="preserve">
     <value>OK</value>
   </data>
-  <data name="GroupDetails_ClearHistory" xml:space="preserve">
+	<data name="GroupDetails_ClearHistory" xml:space="preserve">
     <value>Geschiedenis Wissen</value>
   </data>
-  <data name="GroupDetails_NewEntry" xml:space="preserve">
+	<data name="GroupDetails_NewEntry" xml:space="preserve">
     <value>Nieuwe Invoer</value>
   </data>
-  <data name="GroupDetails_NewGroup" xml:space="preserve">
+	<data name="GroupDetails_NewGroup" xml:space="preserve">
     <value>Nieuwe Groep</value>
   </data>
-  <data name="GroupDetails_Search" xml:space="preserve">
+	<data name="GroupDetails_Search" xml:space="preserve">
     <value>Zoek</value>
   </data>
-  <data name="MainPage_SyncAll" xml:space="preserve">
+	<data name="MainPage_SyncAll" xml:space="preserve">
     <value>Alles Synchroniseren/Bijwerken</value>
   </data>
-  <data name="MainPage_AddNew" xml:space="preserve">
+	<data name="MainPage_AddNew" xml:space="preserve">
     <value>Nieuwe Toevoegen</value>
   </data>
-  <data name="MainPage_Settings" xml:space="preserve">
+	<data name="MainPage_Settings" xml:space="preserve">
     <value>Instellingen</value>
   </data>
-  <data name="MoveTarget_MoveHere" xml:space="preserve">
+	<data name="MoveTarget_MoveHere" xml:space="preserve">
     <value>Hier Verplaatsen</value>
   </data>
-  <data name="PassGen_Generate" xml:space="preserve">
+	<data name="PassGen_Generate" xml:space="preserve">
     <value>Genereren</value>
   </data>
-  <data name="Password_Open" xml:space="preserve">
+	<data name="Password_Open" xml:space="preserve">
     <value>Open</value>
   </data>
-  <data name="Rename_Rename" xml:space="preserve">
+	<data name="Rename_Rename" xml:space="preserve">
     <value>Naam wijzigen</value>
   </data>
-  <data name="WebView_GoBack" xml:space="preserve">
+	<data name="WebView_GoBack" xml:space="preserve">
     <value>Ga Terug</value>
   </data>
-  <data name="WebView_Username" xml:space="preserve">
+	<data name="WebView_Username" xml:space="preserve">
     <value>Gebruikersnaam</value>
   </data>
-  <data name="WebView_Password" xml:space="preserve">
+	<data name="WebView_Password" xml:space="preserve">
     <value>Wachtwoord</value>
   </data>
-  <data name="WebDavDownload_Open" xml:space="preserve">
+	<data name="WebDavDownload_Open" xml:space="preserve">
     <value>Open</value>
   </data>
-  <data name="WebDownload_Open" xml:space="preserve">
+	<data name="WebDownload_Open" xml:space="preserve">
     <value>Open</value>
   </data>
-  <data name="DropBox_Login" xml:space="preserve">
+	<data name="DropBox_Login" xml:space="preserve">
     <value>Login</value>
   </data>
-  <data name="Clear" xml:space="preserve">
+	<data name="Clear" xml:space="preserve">
     <value>Wissen</value>
   </data>
-  <data name="Refresh" xml:space="preserve">
+	<data name="Refresh" xml:space="preserve">
     <value>Vernieuwen</value>
   </data>
-  <data name="Settings_PWSearch" xml:space="preserve">
+	<data name="Settings_PWSearch" xml:space="preserve">
     <value>Search in Passwords</value>
   </data>
-  <data name="Language" xml:space="preserve">
+	<data name="Language" xml:space="preserve">
     <value>taal</value>
   </data>
+	<data name="Settings_VewMode" xml:space="preserve">
+		<value>Afbeelding weergavemodus</value>
+	</data>
+	<data name="Settings_ModeClassic" xml:space="preserve">
+		<value>klassiek</value>
+	</data>
+	<data name="Settings_ModeModern" xml:space="preserve">
+		<value>modern</value>
+	</data>
 </root>

@@ -232,15 +232,6 @@ namespace KeePass.I18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        public static string DBDetail_Modified {
-            get {
-                return ResourceManager.GetString("DBDetail_Modified", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Database Name.
         /// </summary>
         public static string DBDetail_Name {
@@ -1015,6 +1006,24 @@ namespace KeePass.I18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Classic.
+        /// </summary>
+        public static string Settings_ModeClassic {
+            get {
+                return ResourceManager.GetString("Settings_ModeClassic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Modern.
+        /// </summary>
+        public static string Settings_ModeModern {
+            get {
+                return ResourceManager.GetString("Settings_ModeModern", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to settings.
         /// </summary>
         public static string Settings_PageTitle {
@@ -1038,6 +1047,15 @@ namespace KeePass.I18n {
         public static string Settings_SyncToast {
             get {
                 return ResourceManager.GetString("Settings_SyncToast", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image display mode.
+        /// </summary>
+        public static string Settings_VewMode {
+            get {
+                return ResourceManager.GetString("Settings_VewMode", resourceCulture);
             }
         }
         
