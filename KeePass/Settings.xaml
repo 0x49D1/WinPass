@@ -3,15 +3,22 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:keepass="clr-namespace:KeePass.Utils"
+     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
     xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
-    Style="{StaticResource KeePassPage}" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="800" d:DesignWidth="480">
+    Style="{StaticResource KeePassPage}" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+   >
 
-  <Grid x:Name="LayoutRoot" Background="Transparent">
-        <controls:Pivot x:Name="Pivot" Title="{StaticResource AppName}">
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <controls:Pivot x:Name="Pivot" Grid.Row="0" Title="{StaticResource AppName}">
             <controls:PivotItem Header="{Binding Path=Strings.Settings_PageTitle, Source={StaticResource UiStrings}}">
-                <ScrollViewer Grid.Row="1">
-                    <StackPanel>
+                <ScrollViewer >
+                    <StackPanel Margin="5,5,5,5">
                         <toolkit:ListPicker Name="listpickerLanguage" Header="{Binding Path=Strings.Language, Source={StaticResource UiStrings}}" SelectionChanged="ListPicker_SelectionChanged" >
 
                         </toolkit:ListPicker>
@@ -44,9 +51,9 @@
                         <TextBlock Name="lblVersion" HorizontalAlignment="Center"
                            Text="{Binding Path=Strings.About_Version, Source={StaticResource UiStrings}}" />
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                           <HyperlinkButton Content="{Binding Path=Strings.About_Review, Source={StaticResource UiStrings}}"
+                            <HyperlinkButton Content="{Binding Path=Strings.About_Review, Source={StaticResource UiStrings}}"
                                      Click="lnkReview_Click" />
-                        </StackPanel>                       
+                        </StackPanel>
 
                         <TextBlock Text="{Binding Path=Strings.About_Source_Code, Source={StaticResource UiStrings}}" HorizontalAlignment="Center" />
                         <HyperlinkButton Content="github.com/bilbob74/WinPass" TargetName="_blank" NavigateUri="https://github.com/bilbob74/WinPass" />
@@ -77,12 +84,10 @@
                 </ScrollViewer>
             </controls:PivotItem>
         </controls:Pivot>
-      
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-
-                
+        <StackPanel Grid.Row="1" Margin="2,2,2,2"></StackPanel>
     </Grid>
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
 </keepass:KeePassPage>
