@@ -122,7 +122,7 @@
     <comment>Settings page title</comment>
   </data>
   <data name="Settings_HideRecycleBin" xml:space="preserve">
-    <value>სანაგვე ყუთის დამალვა</value>
+    <value>სანაგვე ყუთის</value>
     <comment>Hide Recycle Bin toggle caption</comment>
   </data>
   <data name="Settings_IntegratedBrwoser" xml:space="preserve">
@@ -130,7 +130,7 @@
     <comment>Integrated browser toggle caption</comment>
   </data>
   <data name="Settings_GlobalPass" xml:space="preserve">
-    <value>პაროლი აუცილებელია</value>
+    <value>პაროლის მოთხოვნა</value>
     <comment>Global pass toggle caption</comment>
   </data>
   <data name="Settings_Analytics" xml:space="preserve">
@@ -226,15 +226,15 @@ WinPass შეინახავს ინსტალაციის ID-ს რ
     <comment>Entry notes page title</comment>
   </data>
   <data name="GlobalPass_PageTitle" xml:space="preserve">
-    <value>გლობალური პაროლი</value>
+    <value>აპლიკაციის პაროლი</value>
     <comment>Set global password page title</comment>
   </data>
   <data name="GlobalPass_Password" xml:space="preserve">
-    <value>გლობალური პაროლი</value>
+    <value>პაროლი</value>
     <comment>Password field caption</comment>
   </data>
   <data name="GlobalPass_Confirm" xml:space="preserve">
-    <value>დაადასტურეთ პაროლი</value>
+    <value>გაიმეორე პაროლი</value>
     <comment>Password confirm field caption</comment>
   </data>
   <data name="GlobalPassVerify_PageTitle" xml:space="preserve">
@@ -262,7 +262,7 @@ WinPass შეინახავს ინსტალაციის ID-ს რ
     <comment>Pop up menu item to rename entry/group text</comment>
   </data>
   <data name="MainPage_PageTitle" xml:space="preserve">
-    <value>მონაცემთა ბაზა </value>
+    <value>ბაზები</value>
     <comment>Database select page title</comment>
   </data>
   <data name="MainPage_ClearKeyfile" xml:space="preserve">
@@ -588,7 +588,7 @@ Do you want WinPass to append ".doc" to your database name and then download it?
     <value>უკანასკნელი განახლება</value>
   </data>
   <data name="Settings_SyncToast" xml:space="preserve">
-    <value>ვაჩვენო მესიჯი სინქრონიზაციის შემდგომ</value>
+    <value>შეტყობინება სინქრონიზაციისას</value>
   </data>
   <data name="Sync_MessDownSucc" xml:space="preserve">
     <value>ჩამოტვირთვა იყო წარმატებული</value>
