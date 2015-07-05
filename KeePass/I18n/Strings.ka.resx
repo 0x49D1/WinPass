@@ -346,7 +346,7 @@ WinPass შეინახავს ინსტალაციის ID-ს რ
     <comment>Web server source link text</comment>
   </data>
   <data name="Download_Demo" xml:space="preserve">
-    <value>სადემონსტრაციო ბაზა</value>
+    <value>დემო ბაზა</value>
     <comment>Demo database link text</comment>
   </data>
   <data name="WebDavDownload_PageTitle" xml:space="preserve">
