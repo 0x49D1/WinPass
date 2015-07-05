@@ -37,10 +37,13 @@
                         <toolkit:ListPicker 
                     Name="lstAutoSyncSettings" 
                     Header="{Binding Path=Strings.Settings_AutoUpdate, Source={StaticResource UiStrings}}" Unloaded="setWLAN" />
+                        <toolkit:ListPicker 
+                    Name="viewMode" 
+                    Header="{Binding Path=Strings.Settings_AutoUpdate, Source={StaticResource UiStrings}}" SelectionChanged="ViewMode_OnSelectionChanged" />
                         <toolkit:ToggleSwitch
                     Name="chkSyncToast" 
                     Header="{Binding Path=Strings.Settings_SyncToast, Source={StaticResource UiStrings}}" Unchecked="chkSyncToast_CheckedChanged" Checked="chkSyncToast_CheckedChanged" />
-
+                        
                     </StackPanel>
                 </ScrollViewer>
             </controls:PivotItem>

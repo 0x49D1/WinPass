@@ -7,7 +7,7 @@
 
     <StackPanel Orientation="Horizontal" keepass:EaseEffect.IsEnabled="True">
 
-        <Grid Visibility="{Binding IconState}">
+        <Grid Visibility="{Binding IconState}" >
             <!-- Zeilen definieren -->
             <Grid.RowDefinitions>
                 <RowDefinition Height="50" />

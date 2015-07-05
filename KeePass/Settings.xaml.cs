@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Globalization;
 using System.Resources;
+using System.Windows.Controls;
 using System.Windows.Media;
 
 namespace KeePass
@@ -25,6 +26,7 @@ namespace KeePass
     }
     public partial class Settings
     {
+
         string page = string.Empty;
         string[] cultures = new[] { "en-US", "ka-GE", "de-DE", "ru-RU", "el-GR", "es-ES", "fr-FR", "hu-HU", "nl-NL", "pl-PL", };
         public Settings()
@@ -180,6 +182,13 @@ namespace KeePass
                 return;
             AppSettings.Instance.Language = locale;
             this.NavigationService.Navigate(new Uri("/MainPage.xaml?languageChange=true", UriKind.Relative));
+        }
+
+      
+
+        private void ViewMode_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
         }
     }
 }

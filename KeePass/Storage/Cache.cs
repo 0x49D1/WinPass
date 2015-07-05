@@ -120,7 +120,7 @@ namespace KeePass.Storage
                         dispatcher.BeginInvoke(() =>
                         {
                             var uri = string.Format(
-                                "/Images/KeePass/{0:00}.png", id);
+                                "/Images/KeePass/classic/{0:00}.png", id);
                             source = new BitmapImage(new Uri(
                                 uri, UriKind.Relative));
                             _standards.Add(id, source);
