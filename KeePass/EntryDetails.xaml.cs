@@ -150,7 +150,7 @@ namespace KeePass
 
             string id;
             var queries = NavigationContext.QueryString;
-
+            _fields = new ObservableCollection<FieldBinding>();
             Entry entry;
             if (queries.TryGetValue("id", out id))
             {
@@ -168,7 +168,7 @@ namespace KeePass
                     <FieldBinding>(entry.CustomFields
                         .Select(x => new FieldBinding(x)));
 
-                lstFields.ItemsSource = _fields;
+
             }
             else
             {
@@ -190,7 +190,7 @@ namespace KeePass
                 txtTitle.Loaded += (sender, e1) =>
                     txtTitle.Focus();
             }
-
+            lstFields.ItemsSource = _fields;
             DisplayEntry(entry);
         }
 
@@ -280,7 +280,11 @@ namespace KeePass
 
                 info.OpenDatabaseFile(x => writer
                     .LoadExisting(x, info.Data.MasterKey));
-
+                _entry.CustomFields.Clear();
+                foreach (var fild in _fields)
+                {
+                    _entry.Add(new Field() { Name = fild.Name, Value = fild.Value, Protected = fild.Protected });
+                }
                 if (_entry.ID != null)
                 {
                     _binding.Save();
@@ -546,7 +550,6 @@ namespace KeePass
 
             var field = _binding.AddField();
             var binding = new FieldBinding(field);
-
             _fields.Add(binding);
             lstFields.UpdateLayout();
             lstFields.ScrollIntoView(binding);

@@ -312,7 +312,7 @@ namespace KeePass.IO.Write
                     new XElement("UsageCount", 0),
                     new XElement("LocationChanged", timeValue)));
 
-            SetFields(element, entry.GetAllFields());
+           
 
             element.Add(
                 new XElement("AutoType",
@@ -323,6 +323,8 @@ namespace KeePass.IO.Write
                         new XElement("KeystrokeSequence",
                             "{USERNAME}{TAB}{PASSWORD}{TAB}{ENTER}"))),
                 new XElement("History"));
+
+            SetFields(element, entry.GetAllFields());
 
             var group = _groups[entry.Group.ID];
             group.Add(element);

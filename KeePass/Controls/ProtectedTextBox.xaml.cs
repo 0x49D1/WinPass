@@ -120,8 +120,9 @@ namespace KeePass.Controls
 
             if (protect != null)
             {
-                protect.txtMask.Password = e.NewValue as string;
-                protect.txtPassword.Text = e.NewValue as string;
+
+                protect.txtMask.Password = (e.NewValue ?? e.OldValue) as string;
+                protect.txtPassword.Text = (e.NewValue ?? e.OldValue) as string;
             }
         }
 
