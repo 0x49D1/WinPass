@@ -523,18 +523,6 @@ namespace KeePass
             txtField.SelectAll();
         }
 
-        private void txtField_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            var txtField = (ProtectedTextBox)sender;
-            var field = (FieldBinding)txtField.Tag;
-
-            if (field.Value == txtField.Text)
-                return;
-
-            _binding.HasChanges = true;
-            field.Value = txtField.Text;
-        }
-
         private void txtNotes_Changed(object sender, TextChangedEventArgs e)
         {
             if (txtNotes.Text == _binding.Notes)
@@ -566,6 +554,18 @@ namespace KeePass
         private void mnuSettings_Click(object sender, EventArgs e)
         {
             this.NavigateTo<Settings>("page=0");
+        }
+
+        private void txtField_TextChanged(object arg1, string arg2)
+        {
+            var txtField = (ProtectedTextBox)arg1;
+            var field = (FieldBinding)txtField.Tag;
+
+            if (field == null || field.Value == txtField.Text)
+                return;
+
+            _binding.HasChanges = true;
+            field.Value = txtField.Text;
         }
     }
 }

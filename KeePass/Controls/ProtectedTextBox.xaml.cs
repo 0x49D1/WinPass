@@ -25,9 +25,9 @@ namespace KeePass.Controls
             .Register("Header", typeof(string), typeof(ProtectedTextBox), new PropertyMetadata(null, OnHeaderChanged));
 
         /// <summary>
-        /// Occurs when value of <see cref="Text"/> has changed.
+        /// 
         /// </summary>
-        public event TextChangedEventHandler TextChanged;
+        public event Action<object, string> TextValueUpdated;
 
         public bool IsProtected
         {
@@ -65,8 +65,15 @@ namespace KeePass.Controls
             UpdateProtectState();
 
             txtMask.DataContext = this;
+            DependencyPropertyChangedEventArgs p = new DependencyPropertyChangedEventArgs();
             txtPassword.DataContext = this;
         }
+
+        //public virtual void OnTextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        //{
+
+        //    TextChanged(this, e);
+        //}
 
         public void SelectAll()
         {
@@ -80,8 +87,10 @@ namespace KeePass.Controls
         /// instance containing the event data.</param>
         protected virtual void OnTextChanged(TextChangedEventArgs e)
         {
-            if (TextChanged != null)
-                TextChanged(this, e);
+            if (TextValueUpdated != null)
+            {
+                TextValueUpdated(this, txtPassword.Text);
+            }
         }
 
         private static void OnIsProtectedChanged(DependencyObject d,
@@ -120,9 +129,10 @@ namespace KeePass.Controls
 
             if (protect != null)
             {
-
                 protect.txtMask.Password = (e.NewValue ?? e.OldValue) as string;
                 protect.txtPassword.Text = (e.NewValue ?? e.OldValue) as string;
+                if (protect.TextValueUpdated != null)
+                    protect.TextValueUpdated.Invoke(protect, e.NewValue as string);
             }
         }
 
@@ -182,5 +192,7 @@ namespace KeePass.Controls
                 VibrateController.Default.Start(TimeSpan.FromMilliseconds(30));
             }
         }
+
     }
+
 }

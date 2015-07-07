@@ -15,7 +15,7 @@
                  c4f:TextBinding.UpdateSourceOnChange="True" ActionIcon="/Images/appbar.page.copy.png" />
 
         <toolkit:PhonePasswordBox Name="txtMask" Password="{Binding Text}"
-                                  IsHitTestVisible="False" />
+                                  IsHitTestVisible="False"  />
 
     </Grid>
 </UserControl>

@@ -145,7 +145,7 @@
             							Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
             							IsProtected="{Binding Protected}"
             							GotFocus="txtField_GotFocus"
-            							TextChanged="txtField_TextChanged" />
+            							TextValueUpdated="txtField_TextChanged" />
             					</Grid>
             				</DataTemplate>
             			</ListBox.ItemTemplate>
