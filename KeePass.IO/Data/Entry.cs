@@ -171,6 +171,8 @@ namespace KeePass.IO.Data
         {
             if (field == null)
                 throw new ArgumentNullException("field");
+            if (_fields.Values.Count(p => p.Equals(field)) > 1)
+                throw new ArgumentException("Duplicate Exception", string.Format("duplicate found for {0}", field.Name));
             if (!_fields.Values.Contains(field))
                 _fields.AddOrSet(field.Name, field);
         }
