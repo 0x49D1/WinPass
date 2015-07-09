@@ -16,5 +16,10 @@ namespace KeePass.IO.Data
         {
             return (Field)MemberwiseClone();
         }
+        public override bool Equals(object obj)
+        {
+            var eq = obj as Field;
+            return eq != null ? eq.Name.Equals(Name) : base.Equals(obj);
+        }
     }
 }

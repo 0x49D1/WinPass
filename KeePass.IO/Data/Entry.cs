@@ -165,14 +165,14 @@ namespace KeePass.IO.Data
         }
 
         public Entry()
-            : this(new Field[0]) {}
+            : this(new Field[0]) { }
 
         public void Add(Field field)
         {
             if (field == null)
                 throw new ArgumentNullException("field");
-
-            _fields.AddOrSet(field.Name, field);
+            if (!_fields.Values.Contains(field))
+                _fields.AddOrSet(field.Name, field);
         }
 
         /// <summary>
