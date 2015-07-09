@@ -627,4 +627,7 @@ Do you want WinPass to append ".doc" to your database name and then download it?
 	<data name="Settings_ModeModern" xml:space="preserve">
     <value>Modern</value>
   </data>
+	<data name="EntryDetails_NameDuplicate" xml:space="preserve">
+    <value>The entered name '{0}' exists already and cannot be used.</value>
+  </data>
 </root>

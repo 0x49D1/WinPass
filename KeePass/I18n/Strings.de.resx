@@ -521,4 +521,7 @@ Die aktuelle Installations-ID lautet:</value>
 	<data name="Settings_ModeModern" xml:space="preserve">
 		<value>moderne</value>
 	</data>
+	<data name="EntryDetails_NameDuplicate" xml:space="preserve">
+		<value>Der eingegebene Name '{0}' ist bereits vorhanden und kann nicht verwendet werden.</value>
+	</data>
 </root>

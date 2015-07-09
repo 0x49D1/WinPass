@@ -443,4 +443,7 @@ Het installatie ID dat doorgegeven wordt is:</value>
 	<data name="Settings_ModeModern" xml:space="preserve">
 		<value>modern</value>
 	</data>
+	<data name="EntryDetails_NameDuplicate" xml:space="preserve">
+		<value>De ingevoerde naam '{0}' bestaat al en kan niet worden gebruikt.</value>
+	</data>
 </root>

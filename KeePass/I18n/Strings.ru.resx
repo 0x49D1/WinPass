@@ -443,4 +443,7 @@
 	<data name="Settings_ModeModern" xml:space="preserve">
 		<value>современный</value>
 	</data>
+	<data name="EntryDetails_NameDuplicate" xml:space="preserve">
+		<value>Введенное имя '{0}' уже существует и не может быть использован.</value>
+	</data>
 </root>

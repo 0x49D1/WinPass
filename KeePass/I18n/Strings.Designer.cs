@@ -403,6 +403,15 @@ namespace KeePass.I18n {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The entered name &apos;{0}&apos; exists already and connot be used..
+        /// </summary>
+        public static string EntryDetails_NameDuplicate {
+            get {
+                return ResourceManager.GetString("EntryDetails_NameDuplicate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Notes.
         /// </summary>
         public static string EntryDetails_Notes {

@@ -240,7 +240,10 @@ namespace KeePass
         {
             return _entry.GetNavigateUrl(txtUrl.Text);
         }
-
+        private FieldBinding GetAnyDuplicateField()
+        {
+            return _fields.GroupBy(p => p.Name).SelectMany(f => f.Skip(1)).FirstOrDefault();
+        }
         private void OpenUrl(bool useIntegreatedBrowser)
         {
             var url = GetUrl();
@@ -271,57 +274,64 @@ namespace KeePass
             {
                 groupId = null;
             }
-
-            ThreadPool.QueueUserWorkItem(_ =>
+            var duplicate = GetAnyDuplicateField();
+            if (duplicate != null)
             {
-                var info = Cache.DbInfo;
-                var database = Cache.Database;
-                var writer = new DatabaseWriter();
-
-                info.OpenDatabaseFile(x => writer
-                    .LoadExisting(x, info.Data.MasterKey));
-                _entry.CustomFields.Clear();
-                foreach (var fild in _fields)
+                MessageBox.Show(string.Format(Strings.EntryDetails_NameDuplicate, duplicate.Name), "Warning", MessageBoxButton.OK);
+                progBusy.IsBusy = false;
+                return;
+            }
+            else
+                ThreadPool.QueueUserWorkItem(_ =>
                 {
-                    _entry.Add(new Field() { Name = fild.Name, Value = fild.Value, Protected = fild.Protected });
-                }
-                if (_entry.ID != null)
-                {
-                    _binding.Save();
-                    writer.Details(_entry);
-                }
-                else
-                {
-                    database.AddNew(
-                        _entry, groupId);
+                    var info = Cache.DbInfo;
+                    var database = Cache.Database;
+                    var writer = new DatabaseWriter();
 
-                    writer.New(_entry);
-                }
-
-                info.SetDatabase(x => writer.Save(
-                    x, database.RecycleBin));
-
-                Dispatcher.BeginInvoke(() =>
-                {
-                    UpdateNotes();
-                    progBusy.IsBusy = false;
-                    _binding.HasChanges = false;
-
-                    if (!info.NotifyIfNotSyncable())
+                    info.OpenDatabaseFile(x => writer
+                        .LoadExisting(x, info.Data.MasterKey));
+                    _entry.CustomFields.Clear();
+                    foreach (var fild in _fields)
                     {
-                        new ToastPrompt
-                        {
-                            Title = Properties.Resources.SavedTitle,
-                            Message = Properties.Resources.SavedCaption,
-                            TextOrientation = System.Windows.Controls
-                                .Orientation.Vertical,
-                        }.Show();
+                        _entry.Add(new Field() { Name = fild.Name, Value = fild.Value, Protected = fild.Protected });
                     }
-                });
+                    if (_entry.ID != null)
+                    {
+                        _binding.Save();
+                        writer.Details(_entry);
+                    }
+                    else
+                    {
+                        database.AddNew(
+                            _entry, groupId);
 
-                ThreadPool.QueueUserWorkItem(
-                    __ => Cache.AddRecent(_entry.ID));
-            });
+                        writer.New(_entry);
+                    }
+
+                    info.SetDatabase(x => writer.Save(
+                        x, database.RecycleBin));
+
+                    Dispatcher.BeginInvoke(() =>
+                    {
+                        UpdateNotes();
+                        progBusy.IsBusy = false;
+                        _binding.HasChanges = false;
+
+                        if (!info.NotifyIfNotSyncable())
+                        {
+                            new ToastPrompt
+                            {
+                                Title = Properties.Resources.SavedTitle,
+                                Message = Properties.Resources.SavedCaption,
+                                TextOrientation = System.Windows.Controls
+                                    .Orientation.Vertical,
+                            }.Show();
+                        }
+                    });
+
+                    ThreadPool.QueueUserWorkItem(
+                        __ => Cache.AddRecent(_entry.ID));
+                });
         }
 
         private void UpdateNotes()

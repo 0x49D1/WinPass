@@ -443,4 +443,7 @@ Your installation ID that will be collected is:</value>
 	<data name="Settings_ModeModern" xml:space="preserve">
 		<value>modern</value>
 	</data>
+	<data name="EntryDetails_NameDuplicate" xml:space="preserve">
+		<value>A megadott név '{0}' már létezik, és nem lehet használni.</value>
+	</data>
 </root>

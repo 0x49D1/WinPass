@@ -518,4 +518,7 @@ Vil du at WinPass legge til ".doc" til din databasenavn og deretter laste den ne
 	<data name="Settings_ModeClassic" xml:space="preserve">
 		<value>classic</value>
 	</data>
+	<data name="EntryDetails_NameDuplicate" xml:space="preserve">
+		<value>Det angitte navnet {0} finnes allerede og kan ikke brukes.</value>
+	</data>
 </root>
