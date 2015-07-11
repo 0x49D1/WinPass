@@ -257,7 +257,7 @@ namespace KeePass.IO.Write
                 new XElement("UUID", group.ID),
                 new XElement("Name", group.Name),
                 new XElement("Notes"),
-                new XElement("IconID", 0),
+                new XElement("IconID", group.Icon.Standard),
                 new XElement("Times",
                     new XElement("LastModificationTime", timeValue),
                     new XElement("CreationTime", timeValue),
