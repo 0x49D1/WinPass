@@ -109,7 +109,7 @@ namespace KeePass
             return confirm == MessageBoxResult.OK;
         }
 
-        private void Delete(Entry entry)
+        private bool Delete(Entry entry)
         {
             var database = Cache.Database;
             var pernament = IsPernamentDelete();
@@ -118,7 +118,7 @@ namespace KeePass
                 Properties.Resources.Entry,
                 entry.Title))
             {
-                return;
+                return false;
             }
 
             if (!pernament)
@@ -141,11 +141,11 @@ namespace KeePass
                 });
             }
 
-
+            return true;
 
         }
 
-        private void Delete(Group group)
+        private bool Delete(Group group)
         {
             var database = Cache.Database;
             var pernament = IsPernamentDelete();
@@ -154,7 +154,7 @@ namespace KeePass
                 Properties.Resources.Group,
                 group.Name))
             {
-                return;
+                return false;
             }
 
             if (!pernament)
@@ -178,6 +178,7 @@ namespace KeePass
                     database.Remove(group);
                 });
             }
+            return true;
         }
 
         private Group GetGroup(Database database)
@@ -295,15 +296,9 @@ namespace KeePass
                     database.RecycleBin = recycleBin;
                     x.New(recycleBin);
                 }
-                //try
-                //{
+
                 action(x, recycleBin);
-                //}
-                //catch (KeyNotFoundException ex)
-                //{
-                //    database.RecycleBin = null;
-                //    MoveToRecycleBin(action);
-                //}
+
             });
         }
 
@@ -439,13 +434,13 @@ namespace KeePass
 
             if (entry != null)
             {
-                Delete(entry);
-                lstGroup.RemoveItem(new GroupItem(entry, Dispatcher));
+                if (Delete(entry))
+                    lstGroup.RemoveItem(new GroupItem(entry, Dispatcher));
                 return;
             }
             var group = (Group)mnuDelete.Tag;
-            Delete(group);
-            lstGroup.RemoveItem(new GroupItem(group,Dispatcher));
+            if (Delete(group))
+                lstGroup.RemoveItem(new GroupItem(group, Dispatcher));
         }
 
         private void mnuHistory_Click(object sender, EventArgs e)
