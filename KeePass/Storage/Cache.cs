@@ -25,6 +25,17 @@ namespace KeePass.Storage
         private static readonly string _theamPrefix;
         private static string _imagePath;
         private static DatabaseInfo _info;
+        private static Queue<object> _lastMovedItems { set; get; }
+
+        public static Queue<object> LastMovedItems
+        {
+            get
+            {
+                if (_lastMovedItems == null)
+                    _lastMovedItems = new Queue<object>();
+                return _lastMovedItems;
+            }
+        }
 
         public static bool InClassicStyle()
         {
@@ -55,6 +66,7 @@ namespace KeePass.Storage
 
         static Cache()
         {
+           
             _lckStandards = new object();
             _appSettings = IsolatedStorageSettings
                 .ApplicationSettings;
@@ -63,9 +75,8 @@ namespace KeePass.Storage
             var v = (Visibility)Application.Current
                    .Resources["PhoneLightThemeVisibility"];
             _theamPrefix = v != Visibility.Visible ? "dark" : "light";
-
+        
         }
-
         public static void Initialize()
         {
             if (!_appSettings.Contains(KEY_IMAGESTYLE_IN_Classic))

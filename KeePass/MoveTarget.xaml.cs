@@ -26,7 +26,7 @@ namespace KeePass
         public MoveTarget()
         {
             InitializeComponent();
-            
+
             _cmdMove = AppButton(0);
             _cmdMove.Text = Strings.MoveTarget_MoveHere;
         }
@@ -148,20 +148,23 @@ namespace KeePass
             {
                 Save(x =>
                 {
+                    Cache.LastMovedItems.Enqueue(_entry);
                     _entry.Remove();
                     _target.Add(_entry);
                     x.Location(_entry);
-                });                
+                });
             }
             else
             {
                 Save(x =>
                 {
+                    Cache.LastMovedItems.Enqueue(_group);
                     _group.Remove();
                     _target.Add(_group);
                     x.Location(_group);
                 });
             }
+
 
             NavigationService.GoBack();
         }

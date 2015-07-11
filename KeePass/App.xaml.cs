@@ -21,7 +21,6 @@ namespace KeePass
         {
             get { return (App)Application.Current; }
         }
-
         public PhoneApplicationFrame RootFrame { get; private set; }
         public Queue<FileOpenPickerContinuationEventArgs> QueueFileOpenPickerArgs { get; set; }
 
@@ -33,7 +32,7 @@ namespace KeePass
                 Host.Settings.EnableFrameRateCounter = true;
 
             InitializeComponent();
-     
+
             InitializePhoneApplication();
 
             // Show graphics profiling information while debugging.

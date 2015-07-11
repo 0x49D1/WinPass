@@ -90,6 +90,21 @@ namespace KeePass
 
             ThreadPool.QueueUserWorkItem(_ =>
                 ListHistory(database));
+            ItemRemovedAction();
+        }
+
+        void ItemRemovedAction()
+        {
+            if (Cache.LastMovedItems.Count < 1)
+                return;
+             var obj = Cache.LastMovedItems.Dequeue();
+            if (obj != null)
+            {
+                if(obj is Group)
+                    lstGroup.RemoveItem(new GroupItem(obj as Group, Dispatcher));
+                if(obj is Entry)
+                    lstGroup.RemoveItem(new GroupItem(obj as Entry, Dispatcher));
+            }
         }
 
         private static bool ConfirmDelete(
