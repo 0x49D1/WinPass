@@ -342,7 +342,7 @@ namespace KeePass.IO.Write
         /// </summary>
         /// <param name="xml">The XML.</param>
         /// <param name="recycleBin">The recycle bin.</param>
-        public void Save(Stream xml, Group recycleBin)
+        public void CreateRecycleBin(Stream xml, Group recycleBin)
         {
             if (xml == null)
                 throw new ArgumentNullException("xml");

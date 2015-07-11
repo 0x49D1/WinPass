@@ -118,7 +118,7 @@ namespace KeePass.IO.Write
             _xmlWriter.New(entry);
         }
 
-        public void Save(Stream stream, Group recycleBin)
+        public void CreateRecycleBin(Stream stream, Group recycleBin)
         {
             if (stream == null)
                 throw new ArgumentNullException("stream");
@@ -137,7 +137,7 @@ namespace KeePass.IO.Write
             using (var encrypted = Encrypt(stream,
                 _headers, _masterKey))
             {
-                _xmlWriter.Save(encrypted,
+                _xmlWriter.CreateRecycleBin(encrypted,
                     recycleBin);
             }
         }

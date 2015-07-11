@@ -321,7 +321,7 @@ namespace KeePass
                     writer.New(_entry);
                 }
 
-                info.SetDatabase(x => writer.Save(
+                info.SetDatabase(x => writer.CreateRecycleBin(
                     x, database.RecycleBin));
 
                 Dispatcher.BeginInvoke(() =>

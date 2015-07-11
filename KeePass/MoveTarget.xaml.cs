@@ -116,7 +116,7 @@ namespace KeePass
         }
 
         private void Save(Action<DatabaseWriter> save)
-        {
+        { // TODO - TEST 
             IsEnabled = false;
 
             var info = Cache.DbInfo;
@@ -127,7 +127,7 @@ namespace KeePass
                 .LoadExisting(x, info.Data.MasterKey));
 
             save(writer);
-            info.SetDatabase(x => writer.Save(
+            info.SetDatabase(x => writer.CreateRecycleBin(
                 x, database.RecycleBin));
 
             IsEnabled = true;

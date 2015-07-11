@@ -140,6 +140,9 @@ namespace KeePass
                     database.Remove(entry);
                 });
             }
+
+            ListItems(_group, database.RecycleBin);
+
         }
 
         private void Delete(Group group)
@@ -160,7 +163,10 @@ namespace KeePass
                 {
                     group.Remove();
                     recycleBin.Add(group);
-
+                    if (recycleBin.ID == group.ID)
+                    {
+                        database.RecycleBin = null;
+                    }
                     writer.Location(group);
                 });
             }
@@ -274,24 +280,29 @@ namespace KeePass
                 var database = Cache.Database;
 
                 var recycleBin = database.RecycleBin;
+
                 if (recycleBin == null)
                 {
-                    //var recycleBinParent = _group;
-                    //while (recycleBinParent != null && recycleBinParent.Parent != null)
-                    //    recycleBinParent = recycleBinParent.Parent;
 
                     recycleBin = database.AddNew(database.Root,
-                        Properties.Resources.RecycleBin);
+                    Properties.Resources.RecycleBin);
 
                     recycleBin.Icon = new IconData
                     {
                         Standard = 43,
                     };
-                    x.New(recycleBin);
                     database.RecycleBin = recycleBin;
+                    x.New(recycleBin);
                 }
-
+                //try
+                //{
                 action(x, recycleBin);
+                //}
+                //catch (KeyNotFoundException ex)
+                //{
+                //    database.RecycleBin = null;
+                //    MoveToRecycleBin(action);
+                //}
             });
         }
 
@@ -307,7 +318,7 @@ namespace KeePass
                 .LoadExisting(x, info.Data.MasterKey));
 
             save(writer);
-            info.SetDatabase(x => writer.Save(
+            info.SetDatabase(x => writer.CreateRecycleBin(
                 x, database.RecycleBin));
 
             IsEnabled = true;

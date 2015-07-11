@@ -8,6 +8,7 @@ using System.Windows.Threading;
 using System.Xml;
 using KeePass.IO.Data;
 using KeePass.IO.Utils;
+using System.Diagnostics;
 
 namespace KeePass.IO.Read
 {
@@ -55,11 +56,12 @@ namespace KeePass.IO.Read
                 using (var subReader = reader.ReadSubtree())
                 {
                     subReader.ReadToFollowing("Generator");
-
+                    string oldRoot = subReader.Name;
                     while (!string.IsNullOrEmpty(subReader.Name))
                     {
-                        subReader.Skip();
-
+                        if (oldRoot == subReader.Name)
+                            subReader.Skip();
+                        oldRoot = subReader.Name;
                         switch (subReader.Name)
                         {
                             case "DefaultUserName":
@@ -81,11 +83,17 @@ namespace KeePass.IO.Read
                                 var value = subReader
                                     .ReadElementContentAsString();
                                 recyleBinEnabled = value == "True";
+
                                 break;
 
                             case "RecycleBinUUID":
                                 recycleBinId = subReader
                                     .ReadElementContentAsString();
+                                break;
+                            default:
+#if DEBUG
+                                Debug.WriteLine(subReader.Name);
+#endif
                                 break;
                         }
                     }

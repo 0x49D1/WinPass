@@ -73,6 +73,7 @@ namespace KeePass.IO.Data
             if (customIcons == null) throw new ArgumentNullException("customIcons");
 
             _root = root;
+           // RecycleBin = _root.Entries.FirstOrDefault(p=>p.Group.Icon == 43)
             _customIcons = customIcons;
             Configuration = new DatabaseConfiguration();
             _groups = new Dictionary<string, Group>();
