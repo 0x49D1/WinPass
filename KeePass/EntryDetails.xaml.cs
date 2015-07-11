@@ -303,7 +303,7 @@ namespace KeePass
 
                 info.OpenDatabaseFile(x => writer
                     .LoadExisting(x, info.Data.MasterKey));
-                _entry.CustomFields.Clear();
+     
                 foreach (var fild in _fields)
                 {
                     _entry.Add(new Field() { Name = fild.Name, Value = fild.Value, Protected = fild.Protected });

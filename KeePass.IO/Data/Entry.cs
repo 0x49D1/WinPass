@@ -181,6 +181,14 @@ namespace KeePass.IO.Data
                 _fields.AddOrSet(field.Name, field);
         }
 
+        public void DeleteField(Field field)
+        {
+            if (field == null)
+                throw new ArgumentNullException("field");
+            if (_known.Any(n => n == field.Name))
+                throw new ArgumentException("Reserved Field");
+        }
+
         /// <summary>
         /// Gets all fields.
         /// </summary>
