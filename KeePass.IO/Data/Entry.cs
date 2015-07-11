@@ -338,5 +338,14 @@ namespace KeePass.IO.Data
                 field.Protected = isProtected;
             }
         }
+        public override int GetHashCode()
+        {
+            return ID.GetHashCode();
+        }
+        public override bool Equals(object obj)
+        {
+            var item = obj as Entry;
+            return item != null ? ID.Equals(item.ID) : false;
+        }
     }
 }

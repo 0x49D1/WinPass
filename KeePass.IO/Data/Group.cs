@@ -6,7 +6,7 @@ using System.Text;
 namespace KeePass.IO.Data
 {
     [DebuggerDisplay("Group {Name}, {Groups.Count} groups, {Entries.Count} entries")]
-    public class Group
+    public class Group 
     {
         private readonly List<Entry> _entries;
         private readonly List<Group> _groups;
@@ -143,6 +143,15 @@ namespace KeePass.IO.Data
         {
             _groups.Sort(new GroupSorter());
             _entries.Sort(new EntrySorter());
+        }
+        public override int GetHashCode()
+        {
+            return ID.GetHashCode();
+        }
+        public override bool Equals(object obj)
+        {
+            var item = obj as Group;
+            return item != null ? ID.Equals(item.ID) : false;
         }
     }
 }
