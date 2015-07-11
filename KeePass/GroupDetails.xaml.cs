@@ -141,7 +141,7 @@ namespace KeePass
                 });
             }
 
-            ListItems(_group, database.RecycleBin);
+
 
         }
 
@@ -244,6 +244,7 @@ namespace KeePass
 
             lstHistory.SetItems(recents);
         }
+
 
         private void ListItems(Group group, Group recycleBin)
         {
@@ -439,11 +440,12 @@ namespace KeePass
             if (entry != null)
             {
                 Delete(entry);
-
+                lstGroup.RemoveItem(new GroupItem(entry, Dispatcher));
                 return;
             }
-
-            Delete((Group)mnuDelete.Tag);
+            var group = (Group)mnuDelete.Tag;
+            Delete(group);
+            lstGroup.RemoveItem(new GroupItem(group,Dispatcher));
         }
 
         private void mnuHistory_Click(object sender, EventArgs e)

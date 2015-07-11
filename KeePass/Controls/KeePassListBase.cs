@@ -20,6 +20,12 @@ namespace KeePass.Controls
                 _ => SetItemsPrivate(items));
         }
 
+        public void RemoveItem<T>(T item)
+        {
+            var lstItems = ItemsSource as ObservableCollection<T>;
+            lstItems.Remove(item);
+        }
+
         private void SetItemsPrivate<T>(IEnumerable<T> items)
         {
             items = items.ToList();

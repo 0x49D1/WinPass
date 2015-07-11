@@ -59,5 +59,14 @@ namespace KeePass.Data
             _targetUri = Navigation.GetPathTo
                 <EntryDetails>("id={0}", entry.ID);
         }
+        public override bool Equals(object obj)
+        {
+            var item = obj as GroupItem;
+            return item != null ? _data.Equals(item.Data) : false;
+        }
+        public override int GetHashCode()
+        {
+            return _data.GetHashCode();
+        }
     }
 }
