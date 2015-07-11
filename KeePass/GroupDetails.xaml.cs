@@ -35,8 +35,8 @@ namespace KeePass
             AppMenu(1).Text = Strings.GroupDetails_ClearHistory;
             AppMenu(2).Text = Strings.MainPage_Pin;
             AppMenu(3).Text = Strings.MainPage_DBInfo;
-            AppMenu(4).Text = Strings.MainPage_Settings; 
-            
+            AppMenu(4).Text = Strings.MainPage_Settings;
+
             AppButton(0).Text = Strings.GroupDetails_NewEntry;
             AppButton(1).Text = Strings.GroupDetails_NewGroup;
             AppButton(2).Text = Strings.Refresh;
@@ -69,8 +69,8 @@ namespace KeePass
             if ((Cache.DbInfo != null) && (Cache.DbInfo.Details.Modified != null))
             {
                 convertedDate = DateTime.Parse(Cache.DbInfo.Details.Modified);
-                ApplicationTitle.Text = "WinPass - " + Cache.DbInfo.Details.Name + " (" + convertedDate + ")"; 
-            }            
+                ApplicationTitle.Text = "WinPass - " + Cache.DbInfo.Details.Name + " (" + convertedDate + ")";
+            }
 
             if (database == null)
             {
@@ -276,14 +276,17 @@ namespace KeePass
                 var recycleBin = database.RecycleBin;
                 if (recycleBin == null)
                 {
-                    recycleBin = database.AddNew(_group,
+                    //var recycleBinParent = _group;
+                    //while (recycleBinParent != null && recycleBinParent.Parent != null)
+                    //    recycleBinParent = recycleBinParent.Parent;
+
+                    recycleBin = database.AddNew(database.Root,
                         Properties.Resources.RecycleBin);
 
                     recycleBin.Icon = new IconData
                     {
                         Standard = 43,
                     };
-
                     x.New(recycleBin);
                     database.RecycleBin = recycleBin;
                 }
