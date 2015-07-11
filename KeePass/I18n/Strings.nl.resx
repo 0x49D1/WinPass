@@ -446,4 +446,7 @@ Het installatie ID dat doorgegeven wordt is:</value>
 	<data name="EntryDetails_NameDuplicate" xml:space="preserve">
 		<value>De ingevoerde naam '{0}' bestaat al en kan niet worden gebruikt.</value>
 	</data>
+	<data name="EntryDetails_NameReserved" xml:space="preserve">
+		<value>Sommige veldnamen voorbehouden</value>
+	</data>
 </root>

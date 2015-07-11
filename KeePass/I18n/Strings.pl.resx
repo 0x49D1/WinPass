@@ -446,4 +446,7 @@ Twój identyfikator instalacji to:</value>
 	<data name="EntryDetails_NameDuplicate" xml:space="preserve">
 		<value>Wprowadzona nazwa "{0}" już istnieje i nie może być używany.</value>
 	</data>
+	<data name="EntryDetails_NameReserved" xml:space="preserve">
+		<value>Niektóre nazwy pól zastrzeżone</value>
+	</data>
 </root>

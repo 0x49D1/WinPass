@@ -19,6 +19,10 @@ namespace KeePass.IO.Data
         {
             KEY_USER, KEY_PASS, KEY_NOTES, KEY_TITLE, KEY_URL
         };
+        public static bool IsSafeNameForField(string name)
+        {
+            return !_known.Any(p => p == name);
+        }
 
         private readonly IDictionary<string, Field> _fields;
         private readonly ICollection<Field> _original;

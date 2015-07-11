@@ -524,4 +524,7 @@ Die aktuelle Installations-ID lautet:</value>
 	<data name="EntryDetails_NameDuplicate" xml:space="preserve">
 		<value>Der eingegebene Name '{0}' ist bereits vorhanden und kann nicht verwendet werden.</value>
 	</data>
+	<data name="EntryDetails_NameReserved" xml:space="preserve">
+		<value>Einige Feldnamen reserviert</value>
+	</data>
 </root>

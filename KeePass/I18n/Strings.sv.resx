@@ -521,4 +521,7 @@ Vill du att WinPass lägger till ".doc" till din databasnamn och sedan hämta de
 	<data name="EntryDetails_NameDuplicate" xml:space="preserve">
 		<value>Det angivna namnet "{0}" finns redan och kan inte användas.</value>
 	</data>
+	<data name="EntryDetails_NameReserved" xml:space="preserve">
+		<value>Vissa fältnamn reserverade</value>
+	</data>
 </root>

@@ -244,6 +244,10 @@ namespace KeePass
         {
             return _fields.GroupBy(p => p.Name).SelectMany(f => f.Skip(1)).FirstOrDefault();
         }
+        private bool IsReservedName()
+        {
+            return _fields.Any(p => !Entry.IsSafeNameForField(p.Name));
+        }
         private void OpenUrl(bool useIntegreatedBrowser)
         {
             var url = GetUrl();
@@ -267,71 +271,80 @@ namespace KeePass
         private void Save()
         {
             progBusy.IsBusy = true;
-
+            string errorMessage = string.Empty;
             string groupId;
             if (!NavigationContext.QueryString
                 .TryGetValue("group", out groupId))
             {
                 groupId = null;
             }
+
+            if (IsReservedName())
+            {
+                errorMessage = Strings.EntryDetails_NameReserved;
+            }
+
             var duplicate = GetAnyDuplicateField();
             if (duplicate != null)
+                errorMessage = string.Format(Strings.EntryDetails_NameDuplicate, duplicate.Name);
+
+            if (!string.IsNullOrEmpty(errorMessage))
             {
-                MessageBox.Show(string.Format(Strings.EntryDetails_NameDuplicate, duplicate.Name), "Warning", MessageBoxButton.OK);
+                MessageBox.Show(errorMessage, "Warning", MessageBoxButton.OK);
                 progBusy.IsBusy = false;
                 return;
             }
-            else
-                ThreadPool.QueueUserWorkItem(_ =>
+
+            ThreadPool.QueueUserWorkItem(_ =>
+            {
+                var info = Cache.DbInfo;
+                var database = Cache.Database;
+                var writer = new DatabaseWriter();
+
+                info.OpenDatabaseFile(x => writer
+                    .LoadExisting(x, info.Data.MasterKey));
+                _entry.CustomFields.Clear();
+                foreach (var fild in _fields)
                 {
-                    var info = Cache.DbInfo;
-                    var database = Cache.Database;
-                    var writer = new DatabaseWriter();
+                    _entry.Add(new Field() { Name = fild.Name, Value = fild.Value, Protected = fild.Protected });
+                }
+                if (_entry.ID != null)
+                {
+                    _binding.Save();
+                    writer.Details(_entry);
+                }
+                else
+                {
+                    database.AddNew(
+                        _entry, groupId);
 
-                    info.OpenDatabaseFile(x => writer
-                        .LoadExisting(x, info.Data.MasterKey));
-                    _entry.CustomFields.Clear();
-                    foreach (var fild in _fields)
+                    writer.New(_entry);
+                }
+
+                info.SetDatabase(x => writer.Save(
+                    x, database.RecycleBin));
+
+                Dispatcher.BeginInvoke(() =>
+                {
+                    UpdateNotes();
+                    progBusy.IsBusy = false;
+                    _binding.HasChanges = false;
+
+                    if (!info.NotifyIfNotSyncable())
                     {
-                        _entry.Add(new Field() { Name = fild.Name, Value = fild.Value, Protected = fild.Protected });
-                    }
-                    if (_entry.ID != null)
-                    {
-                        _binding.Save();
-                        writer.Details(_entry);
-                    }
-                    else
-                    {
-                        database.AddNew(
-                            _entry, groupId);
-
-                        writer.New(_entry);
-                    }
-
-                    info.SetDatabase(x => writer.Save(
-                        x, database.RecycleBin));
-
-                    Dispatcher.BeginInvoke(() =>
-                    {
-                        UpdateNotes();
-                        progBusy.IsBusy = false;
-                        _binding.HasChanges = false;
-
-                        if (!info.NotifyIfNotSyncable())
+                        new ToastPrompt
                         {
-                            new ToastPrompt
-                            {
-                                Title = Properties.Resources.SavedTitle,
-                                Message = Properties.Resources.SavedCaption,
-                                TextOrientation = System.Windows.Controls
-                                    .Orientation.Vertical,
-                            }.Show();
-                        }
-                    });
-
-                    ThreadPool.QueueUserWorkItem(
-                        __ => Cache.AddRecent(_entry.ID));
+                            Title = Properties.Resources.SavedTitle,
+                            Message = Properties.Resources.SavedCaption,
+                            TextOrientation = System.Windows.Controls
+                                .Orientation.Vertical,
+                        }.Show();
+                    }
                 });
+
+                ThreadPool.QueueUserWorkItem(
+                    __ => Cache.AddRecent(_entry.ID));
+            });
         }
 
         private void UpdateNotes()

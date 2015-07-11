@@ -446,4 +446,7 @@ Votre ID d'installation collectée sera:</value>
 	<data name="EntryDetails_NameDuplicate" xml:space="preserve">
 		<value>Le nom entré '{0}' existe déjà et ne peut être utilisé.</value>
 	</data>
+	<data name="EntryDetails_NameReserved" xml:space="preserve">
+		<value>Certains noms de domaine réservé</value>
+	</data>
 </root>

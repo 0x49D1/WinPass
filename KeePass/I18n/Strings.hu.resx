@@ -446,4 +446,7 @@ Your installation ID that will be collected is:</value>
 	<data name="EntryDetails_NameDuplicate" xml:space="preserve">
 		<value>A megadott név '{0}' már létezik, és nem lehet használni.</value>
 	</data>
+	<data name="EntryDetails_NameReserved" xml:space="preserve">
+		<value>Néhány mezőneveket fenntartva</value>
+	</data>
 </root>
