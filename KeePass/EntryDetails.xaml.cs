@@ -70,7 +70,7 @@ namespace KeePass
             ApplicationBarIconButton AC_Button = new ApplicationBarIconButton();
             AC_Button.IconUri = new Uri("/Images/refresh.png", UriKind.Relative);
             AC_Button.Text = Strings.EntryNotes_ClearAll;
-            AC_Button.Click += cmdAdd_Click;
+            AC_Button.Click += cmdSync_Click;
 
             ApplicationBarIconButton Reset_Button = new ApplicationBarIconButton();
             Reset_Button.IconUri = new Uri("/Images/refresh.png", UriKind.Relative);
@@ -303,7 +303,7 @@ namespace KeePass
 
                 info.OpenDatabaseFile(x => writer
                     .LoadExisting(x, info.Data.MasterKey));
-     
+
                 foreach (var fild in _fields)
                 {
                     _entry.Add(new Field() { Name = fild.Name, Value = fild.Value, Protected = fild.Protected });
@@ -386,6 +386,12 @@ namespace KeePass
         {
             if (ConfirmNavigateAway())
                 this.BackToRoot();
+        }
+
+        private void cmdSync_Click(object sender, EventArgs e)
+        {
+            var dbfolder = Cache.DbInfo.Folder;
+            this.NavigateTo<MainPage>("db={0}&sync=1", dbfolder);
         }
 
         private void cmdPassGen_Click(object sender, EventArgs e)
