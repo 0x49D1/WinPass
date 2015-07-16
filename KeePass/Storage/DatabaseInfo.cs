@@ -15,6 +15,20 @@ namespace KeePass.Storage
 {
     internal class DatabaseInfo
     {
+        protected bool Equals(DatabaseInfo other)
+        {
+            return string.Equals(Folder, other.Folder);
+        }
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+              
+                return  (Folder != null ? Folder.GetHashCode() : 0);
+            }
+        }
+
         /// <summary>
         /// Gets the persistent data.
         /// </summary>
@@ -563,7 +577,7 @@ namespace KeePass.Storage
 
             writer.Flush();
         }
-
+        
         private void UpdateSavedPassword(IsolatedStorageFile store)
         {
             using (var fs = store.OpenFile(DatabasePath, FileMode.Open))
@@ -574,7 +588,6 @@ namespace KeePass.Storage
 
             Save(store, Data);
         }
-
         private static void Upgrade(IsolatedStorageFile store)
         {
             var files = new List<string>(
@@ -611,6 +624,14 @@ namespace KeePass.Storage
             store.DeleteFile("Database.kdbx");
             store.DeleteFile("Protection.bin");
             store.DeleteFile("Decrypted.xml");
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((DatabaseInfo) obj);
         }
     }
 }

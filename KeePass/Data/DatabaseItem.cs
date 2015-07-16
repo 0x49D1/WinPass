@@ -8,6 +8,16 @@ namespace KeePass.Data
 {
     public class DatabaseItem : INotifyPropertyChanged
     {
+        protected bool Equals(DatabaseItem other)
+        {
+            return Equals(_info, other._info);
+        }
+
+        public override int GetHashCode()
+        {
+            return (_info != null ? _info.GetHashCode() : 0);
+        }
+
         private readonly DatabaseInfo _info;
         private bool _hasKeyFile;
         private bool _hasPassword;
@@ -148,6 +158,14 @@ namespace KeePass.Data
         {
             if (PropertyChanged != null)
                 PropertyChanged(this, e);
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((DatabaseItem) obj);
         }
 
         protected void OnPropertyChanged(string propertyName)

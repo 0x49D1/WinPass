@@ -168,6 +168,7 @@ namespace KeePass
                 var local = item;
                 dispatcher.BeginInvoke(() =>
                 {
+                    if (_items.Contains(local)) return;
                     UpdateItem(local, null);
                     _items.Add(local);
                 });
