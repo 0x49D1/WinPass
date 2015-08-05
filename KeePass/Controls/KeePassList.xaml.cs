@@ -46,8 +46,7 @@ namespace KeePass.Controls
         /// instance containing the event data.</param>
         protected virtual void OnSelectionChanged(NavigationEventArgs e)
         {
-            if (SelectionChanged != null)
-                SelectionChanged(this, e);
+            SelectionChanged?.Invoke(this, e);
         }
 
         private void lstMain_Navigation(object sender,

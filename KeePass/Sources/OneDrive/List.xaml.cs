@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Windows;
 using System.Windows.Navigation;
+using Coding4Fun.Phone.Controls;
 using KeePass.Data;
 using KeePass.I18n;
 using KeePass.IO.Data;
 using KeePass.Storage;
 using KeePass.Utils;
+using Microsoft.Phone.Shell;
 
 namespace KeePass.Sources.OneDrive
 {
@@ -16,7 +19,7 @@ namespace KeePass.Sources.OneDrive
         private OneDriveClient _client;
         private string _current;
         private string _folder;
-
+        private bool _isToasted;
         public List()
         {
             InitializeComponent();
@@ -95,15 +98,14 @@ namespace KeePass.Sources.OneDrive
         private void RefreshList(string path)
         {
             progBusy.IsBusy = true;
-
+            _isToasted = false;
             _client.List(path, (parent, items) =>
             {
                 try
                 {
                     _current = path;
 
-                    var grandParent = parent != null
-                        ? parent.Parent : null;
+                    var grandParent = parent?.Parent;
 
                     if (!string.IsNullOrEmpty(grandParent))
                     {
@@ -160,6 +162,25 @@ namespace KeePass.Sources.OneDrive
             var parent = e.Item as ParentItem;
             if (parent != null)
                 RefreshList(parent.Path);
+        }
+
+        protected override void OnBackKeyPress(CancelEventArgs e)
+        {
+            if (!_isToasted)
+            {
+                var toast = new ToastPrompt
+                {
+                    TextWrapping = TextWrapping.NoWrap,
+                    TextOrientation = System.Windows.Controls.Orientation.Vertical,
+                    Message = "Click egain to reaturn main Window",
+                    Title = "back pressed"
+
+                };
+                toast.Show();
+                e.Cancel = _isToasted = true;
+            }
+
+            base.OnBackKeyPress(e);
         }
     }
 }
