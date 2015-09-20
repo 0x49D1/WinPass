@@ -79,7 +79,7 @@ namespace KeePass.Sources.OneDrive {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://login.live.com/oauth20_authorize.srf?client_id={0}&amp;scope=wl.skydrive_update%20wl.offline_access&amp;response_type=code&amp;redirect_uri={1}&amp;display=Touch&amp;theme={2}.
+        ///   Looks up a localized string similar to https://login.live.com/oauth20_authorize.srf?client_id={0}&amp;scope=wl.OneDrive_update%20wl.offline_access&amp;response_type=code&amp;redirect_uri={1}&amp;display=Touch&amp;theme={2}.
         /// </summary>
         internal static string AuthUrl {
             get {

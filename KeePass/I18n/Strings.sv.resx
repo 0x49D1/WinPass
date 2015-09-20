@@ -445,8 +445,8 @@ Din installation ID som kommer att samlas in är:</value>
 	<data name="Settings_SyncToast" xml:space="preserve">
     <value>Vis Toast meddelande efter Sync</value>
   </data>
-	<data name="SkyDrive_Unsupported" xml:space="preserve">
-    <value>På grund av SkyDrive begränsning, måste din databas döpas till ".doc".
+	<data name="OneDrive_Unsupported" xml:space="preserve">
+    <value>På grund av OneDrive begränsning, måste din databas döpas till ".doc".
 Vill du att WinPass lägger till ".doc" till din databasnamn och sedan hämta den?</value>
   </data>
 	<data name="Sync_MessDownSucc" xml:space="preserve">

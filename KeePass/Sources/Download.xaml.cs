@@ -134,7 +134,7 @@ namespace KeePass.Sources
             Navigate<DropBox.DropBoxAuth>();
         }
 
-        private void lnkSkyDrive_Click(object sender, RoutedEventArgs e)
+        private void lnkOneDrive_Click(object sender, RoutedEventArgs e)
         {
             Navigate<OneDrive.LiveAuth>();
         }

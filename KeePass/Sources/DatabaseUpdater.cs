@@ -12,7 +12,7 @@ namespace KeePass.Sources
         public const string DROPBOX_UPDATER = "DropBox";
         public const string WEBDAV_UPDATER = "WebDAV";
         public const string WEB_UPDATER = "Web";
-        public const string ONEDRIVE_UPDATER = "SkyDrive";
+        public const string ONEDRIVE_UPDATER = "OneDrive";
 
         public static void Update(this DatabaseInfo info,
             Func<DatabaseInfo, bool> queryUpdate,

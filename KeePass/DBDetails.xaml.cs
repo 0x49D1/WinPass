@@ -140,7 +140,7 @@ namespace KeePass
                     txtURLPW.Visibility = Visibility.Collapsed;
                     txtDomain.Visibility = Visibility.Collapsed;
                     break;
-                case "SkyDrive":
+                case "OneDrive":
                     convertedDate = DateTime.Parse(_database.Details.Modified);
                     lblSource.Text = _database.Details.Source + ", " + convertedDate.ToLocalTime() + locCH;
 

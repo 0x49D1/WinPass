@@ -43,7 +43,7 @@
                         <toolkit:ToggleSwitch
                     Name="chkSyncToast" 
                     Header="{Binding Path=Strings.Settings_SyncToast, Source={StaticResource UiStrings}}" Unchecked="chkSyncToast_CheckedChanged" Checked="chkSyncToast_CheckedChanged" />
-                        
+
                     </StackPanel>
                 </ScrollViewer>
             </controls:PivotItem>
@@ -59,11 +59,10 @@
                         </StackPanel>
 
                         <TextBlock Text="{Binding Path=Strings.About_Source_Code, Source={StaticResource UiStrings}}" HorizontalAlignment="Center" />
-                        <HyperlinkButton Content="https://github.com/0x49D1/WinPass" TargetName="_blank" NavigateUri="https://github.com/0x49D1/WinPass" />
+                        <HyperlinkButton Content="WinPass" TargetName="_blank" NavigateUri="https://github.com/0x49D1/WinPass" />
                         <TextBlock Text=" " />
                         <TextBlock HorizontalAlignment="Center">This App is based on:</TextBlock>
-                        <HyperlinkButton Content="WinPass" TargetName="_blank" NavigateUri="https://github.com/7pass/7pass" />
-
+                        <HyperlinkButton Content="7Pass" TargetName="_blank" NavigateUri="https://github.com/7pass/7pass" />
                         <TextBlock Text=" " />
                         <TextBlock Text="Desktop Client:" HorizontalAlignment="Center" />
                         <HyperlinkButton Content="KeePass" TargetName="_blank" NavigateUri="http://keepass.info" />

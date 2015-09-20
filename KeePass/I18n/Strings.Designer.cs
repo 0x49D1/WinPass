@@ -1078,12 +1078,12 @@ namespace KeePass.I18n {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Due to SkyDrive limitation, your database has to be renamed to &quot;.doc&quot; extension.
+        ///   Looks up a localized string similar to Due to OneDrive limitation, your database has to be renamed to &quot;.doc&quot; extension.
         ///Do you want WinPass to append &quot;.doc&quot; to your database name and then download it?.
         /// </summary>
-        public static string SkyDrive_Unsupported {
+        public static string OneDrive_Unsupported {
             get {
-                return ResourceManager.GetString("SkyDrive_Unsupported", resourceCulture);
+                return ResourceManager.GetString("OneDrive_Unsupported", resourceCulture);
             }
         }
         
