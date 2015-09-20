@@ -97,12 +97,12 @@ namespace KeePass
         {
             if (Cache.LastMovedItems.Count < 1)
                 return;
-             var obj = Cache.LastMovedItems.Dequeue();
+            var obj = Cache.LastMovedItems.Dequeue();
             if (obj != null)
             {
-                if(obj is Group)
+                if (obj is Group)
                     lstGroup.RemoveItem(new GroupItem(obj as Group, Dispatcher));
-                if(obj is Entry)
+                if (obj is Entry)
                     lstGroup.RemoveItem(new GroupItem(obj as Entry, Dispatcher));
             }
         }
@@ -529,10 +529,11 @@ namespace KeePass
 
         private void mnuPin_Click(object sender, EventArgs e)
         {
-            var item = (MenuItem)sender;
-            var database = (DatabaseInfo)item.Tag;
+            //var item = (MenuItem)sender;
+            
+            //var database = (DatabaseInfo)item.Tag;
 
-            if (TilesManager.Pin(database))
+            if (TilesManager.Pin(Cache.DbInfo))
                 return;
 
             MessageBox.Show(

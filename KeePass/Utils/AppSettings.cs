@@ -74,8 +74,8 @@ namespace KeePass.Utils
         /// </value>
         public bool HideRecycleBin
         {
-            get { return "1" == this[KEY_HIDE_BIN]; }
-            set { this[KEY_HIDE_BIN] = value ? "1" : "0"; }
+            get { return "0" == this[KEY_HIDE_BIN]; }
+            set { this[KEY_HIDE_BIN] = value ? "0" : "1"; }
         }
 
         /// <summary>

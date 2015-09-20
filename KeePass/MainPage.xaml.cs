@@ -391,7 +391,7 @@ namespace KeePass
         }
 
         private void mnuPin_Click(object sender, RoutedEventArgs e)
-        {
+        {//-- test it 
             var item = (MenuItem)sender;
             var database = (DatabaseInfo)item.Tag;
 

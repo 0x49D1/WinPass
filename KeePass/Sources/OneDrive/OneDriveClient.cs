@@ -120,7 +120,7 @@ namespace KeePass.Sources.OneDrive
             MetaListItemInfo[]> complete)
         {
             if (string.IsNullOrEmpty(path))
-                path = "me/OneDrive";
+                path = "me/SkyDrive";
 
             MetaListItemInfo parent = null;
             var items = new MetaListItemInfo[0];
