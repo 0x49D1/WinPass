@@ -3,7 +3,7 @@
   <Identity Name="fc098588-1c54-44fa-818a-69193487d5c9" Publisher="CN=bilbo" Version="1.1.0.4" />
   <mp:PhoneIdentity PhoneProductId="607307a5-bd5a-4d39-9150-5e016c231373" PhonePublisherId="717c216b-d9a0-4b1c-9e9a-cd2e14391571" />
   <Properties>
-    <DisplayName>KeePass</DisplayName>
+    <DisplayName>WinPass</DisplayName>
     <PublisherDisplayName>gkardava</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -16,7 +16,7 @@
   </Resources>
   <Applications>
     <Application Id="x607307a5ybd5ay4d39y9150y5e016c231373x" Executable="AGHost.exe" EntryPoint="MainPage.xaml">
-      <m3:VisualElements DisplayName="KeePass" Square150x150Logo="Assets\SquareTile150x150.png" Square44x44Logo="Assets\Logo.png" Description="KeePass" ForegroundText="light" BackgroundColor="#464646">
+      <m3:VisualElements DisplayName="WinPass" Square150x150Logo="Assets\SquareTile150x150.png" Square44x44Logo="Assets\Logo.png" Description="Unofficial KeePass password manager client, compatible with KeePass 2.x for desktop." ForegroundText="light" BackgroundColor="#464646">
         <m3:DefaultTile Square71x71Logo="Assets\SquareTile71x71.png">
         </m3:DefaultTile>
         <m3:SplashScreen Image="Assets\Splashscreen.png" />
