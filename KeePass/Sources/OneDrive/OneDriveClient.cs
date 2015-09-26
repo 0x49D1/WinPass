@@ -15,7 +15,8 @@ namespace KeePass.Sources.OneDrive
         private AccessTokenData _token;
 
         public OneDriveClient(string tokenData)
-            : this(Parse(tokenData)) {}
+            : this(Parse(tokenData))
+        { }
 
         private OneDriveClient(AccessTokenData token)
         {
@@ -25,7 +26,7 @@ namespace KeePass.Sources.OneDrive
             _client = new RestClient
             {
                 UserAgent = "WinPass",
-                BaseUrl = "https://apis.live.net/v5.0/",
+                BaseUrl = new Uri("https://apis.live.net/v5.0/"),
             };
 
             SetToken(token);
@@ -108,7 +109,7 @@ namespace KeePass.Sources.OneDrive
             var client = new WebClient();
             client.Headers[HttpRequestHeader.ContentType] =
                 "application/x-www-form-urlencoded";
-            
+
             client.UploadStringCompleted +=
                 (sender, args) => complete(args.Result);
             client.UploadStringAsync(
