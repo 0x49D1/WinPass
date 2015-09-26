@@ -12,7 +12,7 @@
     <Language code="ka-GE" />
     <Language code="ka" />
   </Languages>
-  <App xmlns="" ProductID="{607307a5-bd5a-4d39-9150-5e016c231373}" Title="WinPass" RuntimeType="Silverlight" Version="1.1.0.4" Genre="apps.normal" Author="Giorgi kardava" Description="KeePass for Windows Phone" Publisher="Giorgi kardava" PublisherID="{717c216b-d9a0-4b1c-9e9a-cd2e14391571}" SDOptOut="false">
+  <App xmlns="" ProductID="{6ba36dda-573b-46cf-b110-6beaaea81c98}" Title="WinPass" RuntimeType="Silverlight" Version="1.1.0.6" Genre="apps.normal" Author="Giorgi kardava" Description="KeePass for Windows Phone" Publisher="gkardava" PublisherID="{E2407FAA-54A5-4FBE-A000-72A83BCEBA17}" SDOptOut="false" NotificationService="MPN">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
@@ -25,17 +25,17 @@
     <Tokens>
       <PrimaryToken TokenID="KeePassToken" TaskName="_default">
         <TemplateFlip>
-          <SmallImageURI IsResource="false" IsRelative="true">Background.png</SmallImageURI>
+          <SmallImageURI IsRelative="true" IsResource="false">Logo.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsResource="false" IsRelative="true">Background.png</BackgroundImageURI>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Logo.png</BackgroundImageURI>
           <Title>WinPass</Title>
           <BackContent>
           </BackContent>
-          <BackBackgroundImageURI>
+          <BackBackgroundImageURI IsRelative="true" IsResource="false">
           </BackBackgroundImageURI>
           <BackTitle>
           </BackTitle>
-          <DeviceLockImageURI>
+          <DeviceLockImageURI IsRelative="true" IsResource="false">
           </DeviceLockImageURI>
           <HasLarge>false</HasLarge>
         </TemplateFlip>
