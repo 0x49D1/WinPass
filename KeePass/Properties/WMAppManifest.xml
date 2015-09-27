@@ -27,8 +27,9 @@
         <TemplateFlip>
           <SmallImageURI IsRelative="true" IsResource="false">Logo.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Logo.png</BackgroundImageURI>
-          <Title>WinPass</Title>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
+          <Title>
+          </Title>
           <BackContent>
           </BackContent>
           <BackBackgroundImageURI IsRelative="true" IsResource="false">
