@@ -199,7 +199,7 @@ namespace KeePass
         private void ViewMode_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var item = viewMode.SelectedItem as string;
-            if (item != null && MessageBox.Show(Properties.Resources.LanguageChangeWorrying, "", MessageBoxButton.OKCancel) == MessageBoxResult.OK)
+            if (item != null)
             {
                 if (item.Equals(Strings.Settings_ModeClassic) && !Cache.InClassicStyle() || !item.Equals(Strings.Settings_ModeClassic) && Cache.InClassicStyle())
                     Cache.InvertStyle();
